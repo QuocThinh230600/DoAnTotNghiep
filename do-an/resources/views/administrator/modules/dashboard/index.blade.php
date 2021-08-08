@@ -19,102 +19,74 @@
 @endpush
 
 @section('content')
-    @if (env('ANALYTICS_VIEW_ID') == NULL)
-        <div class="row font-weight text-center">
-            <div class="col-lg-12 my-auto">
-                <h1>Welcome to {{ env('APP_NAME') }}</h1>
-                <h5>Copyright by Trần Thanh Luân</h5>
+
+<!-- Content Row -->
+<div class="row">
+
+    <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-primary shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                            Earnings (Monthly)</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                    </div>
+                </div>
             </div>
         </div>
-    @else
-    <div class="row">
-        <div class="col-lg-12">
-            <x-card title="action.info" id="forms-target-left">
-                <div class="chart has-fixed-height" id="columns_basic" data-date="{{ $totalVisitorsDate }}" data-page="{{ $totalPageViewes }}" data-visitor="{{ $totalVisitors }}"></div>
-            </x-card>
-        </div>
     </div>
 
-    <div class="row">
-        <div class="col-lg-12">
-            <x-card title="action.info" id="forms-target-left">
-                <div class="map-container map-choropleth" id="map-national" data-nation="{{ $nation }}"></div>
-            </x-card>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-lg-6">
-            <x-card title="action.info" id="forms-target-left">
-                <div class="chart-container">
-                    <div class="chart has-fixed-height" id="pie_basic" data-topbrowser="{{ $topBrowser }}" data-browser="{{ $browser }}"></div>
+    <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-success shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                            Earnings (Annual)</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                    </div>
                 </div>
-            </x-card>
+            </div>
         </div>
+    </div>
 
-        <div class="col-lg-6">
-            <x-card title="action.info" id="forms-target-left">
-                <div class="chart-container">
-                    <div class="chart has-fixed-height" id="pie_donut" data-visitedpages="{{ $visitedPages }}" data-type="{{ $type }}"></div>
+    <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-info shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tasks
+                        </div>
+                        <div class="row no-gutters align-items-center">
+                            <div class="col-auto">
+                                <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+                            </div>
+                            <div class="col">
+                                <div class="progress progress-sm mr-2">
+                                    <div class="progress-bar bg-info" role="progressbar"
+                                        style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                    </div>
                 </div>
-            </x-card>
+            </div>
         </div>
     </div>
+</div>
 
-    <div class="row">
-        <div class="col-lg-6">
-            <x-card title="action.info" id="forms-target-left" table="true">
-                <table class="table table-hover datatable-basic">
-                    <thead>
-                        <tr>
-                            <th>{{ label('dashboard.title') }}</th>
-                            <th>{{ label('dashboard.viewed') }}</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach ($mostVisitedPages as $item)
-                        <tr>
-                            <td><a href="{{ $item["url"] }}">{{ Str::limit($item["pageTitle"],50) }}</a></td>
-                            <td>{{ $item["pageViews"] }}</td>
-                        </tr>
-                        @endforeach
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <th>{{ label('dashboard.title') }}</th>
-                            <th>{{ label('dashboard.viewed') }}</th>
-                        </tr>
-                    </tfoot>
-                </table>
-            </x-card>
-        </div>
-
-        <div class="col-lg-6">
-            <x-card title="action.info" id="forms-target-right" table="true">
-                <table class="table table-hover datatable-basic">
-                    <thead>
-                    <tr>
-                        <th>{{ label('dashboard.title') }}</th>
-                        <th>{{ label('dashboard.viewed') }}</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    @foreach ($peferrersData as $item)
-                        <tr>
-                            <td><a href="{{ $item["url"] }}">{{ $item["url"] }}</a></td>
-                            <td>{{ $item["pageViews"] }}</td>
-                        </tr>
-                    @endforeach
-                    </tbody>
-                    <tfoot>
-                    <tr>
-                        <th>{{ label('dashboard.title') }}</th>
-                        <th>{{ label('dashboard.viewed') }}</th>
-                    </tr>
-                    </tfoot>
-                </table>
-            </x-card>
-        </div>
-    </div>
-    @endif
 @endsection
