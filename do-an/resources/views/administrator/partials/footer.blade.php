@@ -8,12 +8,12 @@
 
     <div class="navbar-collapse collapse" id="navbar-footer">
         <span class="navbar-text">
-            &copy; {{ date("Y") }} <a href="#">Source code</a> by <a href="https://kingfox.vn" target="_blank">King Fox Agency</a>
+            &copy; {{ date("Y") }} <a href="#">Source code</a> by <a href="#" target="_blank">Nhóm 2 Người</a>
         </span>
 
         <ul class="navbar-nav ml-lg-auto">
             <li class="nav-item">
-                <a href="mailto:support@kingfox.vn" class="navbar-nav-link">support@kingfox.vn</a>
+                <a href="mailto:luantran04555@gmail.com" class="navbar-nav-link">luantran04555@gmail.com</a>
             </li>
 
             <li class="nav-item">
@@ -23,7 +23,7 @@
             </li>
 
             <li class="nav-item">
-                <a href="https://quoctuan.info" class="navbar-nav-link font-weight-semibold">
+                <a href="#" class="navbar-nav-link font-weight-semibold">
                     <span class="text-pink-400">
                         <i class="icon-cart2 mr-2"></i>
                         Hỗ trợ

@@ -23,7 +23,7 @@
         <div class="row font-weight text-center">
             <div class="col-lg-12 my-auto">
                 <h1>Welcome to {{ env('APP_NAME') }}</h1>
-                <h5>Copyright by Vũ Quốc Tuấn</h5>
+                <h5>Copyright by Trần Thanh Luân</h5>
             </div>
         </div>
     @else
