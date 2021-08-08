@@ -1,0 +1,28 @@
+/* Core variables and mixins*/
+
+@import "imports/core/variables";
+@import "imports/core/reset";
+@import "imports/core/mixins";
+@import "imports/core/layouts";
+@import "imports/core/elements";
+@import "imports/core/components";
+@import "imports/core/bootstrap_mini";
+@import "imports/core/libs";
+@import "imports/core/loading";
+
+/* Navigation, header, footer*/
+
+@import "imports/core/header";
+@import "imports/core/nav";
+@import "imports/core/footer";
+@import "imports/core/mobile_nav";
+
+/* Pages*/
+
+@import "imports/pages/home";
+@import "imports/pages/news";
+@import "imports/pages/news-detail";
+@import "imports/pages/category";
+@import "imports/pages/product";
+@import "imports/pages/cart";
+@import "imports/pages/cart-confirm";

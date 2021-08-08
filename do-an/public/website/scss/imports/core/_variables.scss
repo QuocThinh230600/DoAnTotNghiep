@@ -1,0 +1,50 @@
+
+// color
+$border-cl: #DEE2E6;
+$text-cl: #495057;
+$link-light-blue-cl: #0D6FFA;
+$link-blue-cl: #3881B8;
+$title-cl: #212529;
+$main-blue-cl: #0E4E7F;
+$main-yellow-cl: #FCD403;
+$sub-price-cl: #99A2AA;
+$white-cl:#ffff;
+$black-cl:#000;
+$main-gradient-cl: -webkit-linear-gradient(142.22deg, #2FCAB6 11.13%, #36A0DD 92.43%);
+
+$main-block-bg: #E9EFEF;
+$main-text-cl: #404040;
+$overlay-text-cl: #B0B0B0;
+$sub-text-cl: #6F6F6F;
+$footer-block-bg: #2FCAB6;
+// time transition
+$t: 0.4s;
+$cubic: cubic-bezier(0.84, 0.13, 0.33, 0.97);
+
+/*font families*/
+//$font-nunito: 'Nunito', sans-serif;
+//$font-redrose: 'Red Rose', cursive;
+
+$fz-text: 16px;
+$lh-text: normal;
+
+$fz-text-m: 16px;
+$lh-text-m: normal;
+
+/*GRID - media queries breakpoints*/
+$xxs-min: 340px;
+$xs-min: 768px;
+$sm-min: 992px;
+$md-min: 1200px;
+$lg-min: 1600px;
+
+$xxs-max: ($xxs-min - 1); // 340px - 1
+$xs-max: ($xs-min - 1); // 768px - 1
+$sm-max: ($sm-min - 1); // 992px;- 1
+$md-max: ($md-min - 1); // 1200px; - 1
+$lg-max: ($lg-min - 1); //1600 - 1
+
+/*BOXED LAYOUT*/
+$max-width: 1920px;
+$container-max-width: $max-width;
+$container-width: 1040px;
