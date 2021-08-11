@@ -12,7 +12,7 @@ class EloquentDistrict extends AbstractRepository implements DistrictRepository
     /**
      * EloquentDistrict constructor.
      * @param District $model
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(District $model)
     {

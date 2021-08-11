@@ -18,27 +18,27 @@ class Content extends BaseModel implements TranslatableContract
     /**
      * The table associated with the model.
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $table = 'contents';
 
     /**
      * The attributes that aren't mass assignable.
      * @var array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $guarded = [];
 
     /**
      * equivalent of ->cacheTags(['contents'])
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
     */
     public $cacheTags = ['contents'];
     /**
      * equivalent of ->cachePrefix('contents');
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
     */
     public $cachePrefix = 'contents_';
     /**
@@ -52,27 +52,27 @@ class Content extends BaseModel implements TranslatableContract
     /**
      * The attributes that should be mutated to dates.
      * @var array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $dates = ['created_at', 'updated_at'];
 
     /**
      * The attributes soft delete with function name.
      * @var array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $softCascade = ['content_translation'];
 
     /**
      * The attributes translate language.
      * @var array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public $translatedAttributes = ['content', 'image', 'locale'];
 
     /**
      * The auto generate uuid
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public static function boot()
     {
@@ -85,7 +85,7 @@ class Content extends BaseModel implements TranslatableContract
     /**
      * Relationship with translation
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function content_translation()
     {
@@ -95,7 +95,7 @@ class Content extends BaseModel implements TranslatableContract
     /**
      * Relationship with page
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function page ()
     {

@@ -16,7 +16,7 @@ class QuestionProductController extends Controller
 {
     /**
      * QuestionProductController constructor.
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     private $view   = 'administrator.modules.questionProduct.';
 
@@ -39,7 +39,7 @@ class QuestionProductController extends Controller
      * Display a listing of the resource.
      *
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function index()
     {
@@ -50,7 +50,7 @@ class QuestionProductController extends Controller
      * Show the form for creating a new resource.
      *
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function create()
     {
@@ -62,7 +62,7 @@ class QuestionProductController extends Controller
      *
      * @param  StoreRequest  $request
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function store(StoreRequest $request)
     {
@@ -95,7 +95,7 @@ class QuestionProductController extends Controller
      *
      * @param  string  $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function show(string $uuid)
     {
@@ -107,7 +107,7 @@ class QuestionProductController extends Controller
      *
      * @param  string  $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function edit(string $uuid)
     {
@@ -122,7 +122,7 @@ class QuestionProductController extends Controller
      * @param  UpdateRequest  $request
      * @param  string  $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function update(UpdateRequest $request, string $uuid)
     {   
@@ -154,7 +154,7 @@ class QuestionProductController extends Controller
      *
      * @param  string  $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function destroy(string $uuid)
     {

@@ -24,7 +24,7 @@ class ProvinceController extends AdminController
     /**
      * ProvinceController constructor.
      * @param ProvinceRepository $province
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(ProvinceRepository $province)
     {
@@ -40,7 +40,7 @@ class ProvinceController extends AdminController
      * Display a listing of the resource.
      *
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function index()
     {
@@ -56,7 +56,7 @@ class ProvinceController extends AdminController
      * Show the form for creating a new resource.
      *
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function create()
     {
@@ -68,7 +68,7 @@ class ProvinceController extends AdminController
      *
      * @param StoreRequest $request
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function store(StoreRequest $request)
     {
@@ -98,7 +98,7 @@ class ProvinceController extends AdminController
      *
      * @param int $id
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function show(int $id)
     {
@@ -116,7 +116,7 @@ class ProvinceController extends AdminController
      *
      * @param int $id
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function edit(int $id)
     {
@@ -131,7 +131,7 @@ class ProvinceController extends AdminController
      * @param UpdateRequest $request
      * @param int $id
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function update(UpdateRequest $request, int $id)
     {
@@ -161,7 +161,7 @@ class ProvinceController extends AdminController
      *
      * @param int $id
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function destroy(int $id)
     {
@@ -188,7 +188,7 @@ class ProvinceController extends AdminController
      * Process datatables ajax request.
      * @return mixed
      * @throws \Exception
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function dataTableIndex()
     {

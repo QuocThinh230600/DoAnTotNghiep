@@ -14,7 +14,7 @@ class ReviewController extends Controller
 {
     /**
      * ReviewController constructor.
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     private $view   = 'administrator.modules.review.';
 
@@ -37,7 +37,7 @@ class ReviewController extends Controller
      * Display a listing of the resource.
      *
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function index()
     {
@@ -49,7 +49,7 @@ class ReviewController extends Controller
      * Show the form for creating a new resource.
      *
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function create()
     {
@@ -61,7 +61,7 @@ class ReviewController extends Controller
      *
      * @param  StoreRequest  $request
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function store(StoreRequest $request)
     {
@@ -94,7 +94,7 @@ class ReviewController extends Controller
      *
      * @param  string  $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function show(string $uuid)
     {
@@ -106,7 +106,7 @@ class ReviewController extends Controller
      *
      * @param  string  $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function edit(string $uuid)
     {
@@ -121,7 +121,7 @@ class ReviewController extends Controller
      * @param  UpdateRequest  $request
      * @param  string  $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function update(UpdateRequest $request, string $uuid)
     {   
@@ -153,7 +153,7 @@ class ReviewController extends Controller
      *
      * @param  string  $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function destroy(string $uuid)
     {

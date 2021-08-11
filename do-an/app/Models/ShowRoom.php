@@ -34,13 +34,13 @@ class ShowRoom extends BaseModel
     /**
      * equivalent of ->cacheTags(['show_rooms'])
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
     */
     public $cacheTags = ['show_rooms'];
     /**
      * equivalent of ->cachePrefix('show_rooms');
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
     */
     public $cachePrefix = 'show_rooms_';
     

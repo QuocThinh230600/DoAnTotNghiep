@@ -10,7 +10,7 @@ class UpdateRequest extends FormRequest
      * Determine if the user is authorized to make this request.
      *
      * @return bool
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function authorize()
     {
@@ -21,7 +21,7 @@ class UpdateRequest extends FormRequest
      * Get the validation rules that apply to the request.
      *
      * @return array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function rules()
     {
@@ -37,7 +37,7 @@ class UpdateRequest extends FormRequest
      * Get the validation error messages.
      *
      * @return array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function messages()
     {
@@ -50,7 +50,7 @@ class UpdateRequest extends FormRequest
      * Get custom attributes for validator errors.
      *
      * @return array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function attributes()
     {

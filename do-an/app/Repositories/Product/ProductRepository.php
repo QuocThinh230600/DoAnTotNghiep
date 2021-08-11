@@ -9,7 +9,7 @@ interface ProductRepository extends AbstractInterface
     /**
      * Get product position in product
      * @return int
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getNewPosition(): int;
     public function getProductUuid($uuid);

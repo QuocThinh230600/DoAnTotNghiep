@@ -12,7 +12,7 @@ class NewsImage extends BaseModel
     /**
      * The table associated with the model.
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public $cacheFor = 3600; // equivalent of ->cacheFor(3600)
     
@@ -21,20 +21,20 @@ class NewsImage extends BaseModel
     /**
      * The attributes that aren't mass assignable.
      * @var array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $guarded = [];
 
     /**
      * equivalent of ->cacheTags(['news_image'])
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
     */
     public $cacheTags = ['news_image'];
     /**
      * equivalent of ->cachePrefix('news_image');
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
     */
     public $cachePrefix = 'news_image_';
     /**
@@ -48,7 +48,7 @@ class NewsImage extends BaseModel
     /**
      * Indicates if the model should be timestamped.
      * @var bool
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public $timestamps = false;
 

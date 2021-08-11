@@ -17,27 +17,27 @@ class Contact extends BaseModel
     /**
      * The table associated with the model.
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $table = 'contacts';
 
     /**
      * The attributes that aren't mass assignable.
      * @var array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $guarded = [];
 
     /**
      * equivalent of ->cacheTags(['contacts'])
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
     */
     public $cacheTags = ['contacts'];
     /**
      * equivalent of ->cachePrefix('contacts');
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
     */
     public $cachePrefix = 'contacts_';
     /**
@@ -51,20 +51,20 @@ class Contact extends BaseModel
     /**
      * The attributes that should be mutated to dates.
      * @var array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $dates = ['created_at', 'updated_at'];
 
     /**
      * The attributes soft delete with function name.
      * @var array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $softCascade = ['reply_contact'];
 
     /**
      * The auto generate uuid
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public static function boot()
     {
@@ -77,7 +77,7 @@ class Contact extends BaseModel
     /**
      * Relationship with reply
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function reply_contact()
     {

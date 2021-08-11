@@ -10,14 +10,14 @@ interface CategoryRepository extends AbstractInterface
      * Get max position by parent
      * @param $parent
      * @return int
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getMaxPosition(int $parent): int;
 
     /**
      * Get all category
      * @return object
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getAllCategoryRecursive(): object;
 
@@ -25,7 +25,7 @@ interface CategoryRepository extends AbstractInterface
      * Get all category to update
      * @param int $id
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getAllCategoryRecursiveToUpdate(int $id);
 
@@ -34,7 +34,7 @@ interface CategoryRepository extends AbstractInterface
      * @param int $id
      * @param int $position
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function updatePositionTable(int $id, int $position);
 
@@ -42,7 +42,7 @@ interface CategoryRepository extends AbstractInterface
      * Count child to delete
      * @param string $uuid
      * @return int
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function countChildToDelete($uuid): int;
 
@@ -50,7 +50,7 @@ interface CategoryRepository extends AbstractInterface
      * get all category child by parent id
      * @param string $id
      * @return int
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
 
     public function getAllCategoryRecursiveProduct($id);

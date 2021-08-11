@@ -13,7 +13,7 @@ class EloquentLoginHistory extends AbstractRepository implements LoginHistoryRep
     /**
      * EloquentLoginHistory constructor.
      * @param LoginHistory $model
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(LoginHistory $model)
     {
@@ -26,7 +26,7 @@ class EloquentLoginHistory extends AbstractRepository implements LoginHistoryRep
      * @param array $data
      * @param bool $getDataBack
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function updateBySessionId(string $session_id, array $data, bool $getDataBack = true)
     {

@@ -12,7 +12,7 @@ class EloquentPosition extends AbstractRepository implements PositionRepository
     /**
      * EloquentPosition constructor.
      * @param Position $model
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(Position $model)
     {
@@ -23,7 +23,7 @@ class EloquentPosition extends AbstractRepository implements PositionRepository
      * Get max position by parent
      * @param $parent
      * @return int
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getMaxPosition(int $parent): int
     {
@@ -34,7 +34,7 @@ class EloquentPosition extends AbstractRepository implements PositionRepository
     /**
      * Get all position
      * @return object
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getAllPositionRecursive(): object
     {
@@ -46,7 +46,7 @@ class EloquentPosition extends AbstractRepository implements PositionRepository
      * @param int $id
      * @param int $position
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function updatePositionTable(int $id, int $position)
     {
@@ -57,7 +57,7 @@ class EloquentPosition extends AbstractRepository implements PositionRepository
      * Count child to delete
      * @param string $uuid
      * @return int
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function countChildToDelete($uuid): int
     {
@@ -76,7 +76,7 @@ class EloquentPosition extends AbstractRepository implements PositionRepository
      * Get all position to update
      * @param int $id
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getAllPositionRecursiveToUpdate(int $id)
     {

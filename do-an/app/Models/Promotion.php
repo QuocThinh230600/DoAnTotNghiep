@@ -25,13 +25,13 @@ class Promotion extends Model
     /**
      * equivalent of ->cacheTags(['bonus_product'])
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
     */
     public $cacheTags = ['promotions'];
     /**
      * equivalent of ->cachePrefix('bonus_product');
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
     */
     public $cachePrefix = 'promotions_';
     /**

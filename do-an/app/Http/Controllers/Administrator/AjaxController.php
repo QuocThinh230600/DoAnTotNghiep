@@ -30,7 +30,7 @@ class AjaxController extends AdminController
      * @param Request $request
      * @return mixed
      * @throws \Throwable
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function addRowUploadImage(Request $request)
     {
@@ -51,7 +51,7 @@ class AjaxController extends AdminController
      * @param Request $request
      * @return mixed
      * @throws \Throwable
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function addRowUploadAttribute(Request $request)
     {
@@ -69,7 +69,7 @@ class AjaxController extends AdminController
      * @param Request $request
      * @return mixed
      * @throws \Throwable
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function addRowUploadProduct(Request $request)
     {
@@ -86,7 +86,7 @@ class AjaxController extends AdminController
      * Get district by province
      * @param Request $request
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getDistrict(Request $request)
     {
@@ -109,7 +109,7 @@ class AjaxController extends AdminController
      * Get ward by district
      * @param Request $request
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getWard(Request $request)
     {

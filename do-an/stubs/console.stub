@@ -10,7 +10,7 @@ class {{ class }} extends Command
      * The name and signature of the console command.
      *
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $signature = '{{ command }}';
 
@@ -18,7 +18,7 @@ class {{ class }} extends Command
      * The console command description.
      *
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $description = 'Command description';
 
@@ -26,7 +26,7 @@ class {{ class }} extends Command
      * Create a new command instance.
      *
      * @return void
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct()
     {
@@ -37,7 +37,7 @@ class {{ class }} extends Command
      * Execute the console command.
      *
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function handle()
     {

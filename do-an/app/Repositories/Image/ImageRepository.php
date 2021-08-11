@@ -10,14 +10,14 @@ interface ImageRepository extends AbstractInterface
      * Get max position by position
      * @param int $position
      * @return int
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getMaxPosition(int $position): int;
 
     /**
      * Get all image with position
      * @return object
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getAllImageWithPosition(): object;
 

@@ -39,7 +39,7 @@ class ContentController extends AdminController
      * @param PageRepository $page
      * @param ContentTranslationRepository $contentTranslation
      * @param LanguageRepository $language
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(ContentRepository $content,
                                 PageRepository $page,
@@ -62,7 +62,7 @@ class ContentController extends AdminController
      * Display a listing of the resource.
      *
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function index($pageUuid)
     {
@@ -81,7 +81,7 @@ class ContentController extends AdminController
      *
      * @param string $page
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function create(string $page)
     {
@@ -97,7 +97,7 @@ class ContentController extends AdminController
      * @param string $page
      * @return mixed
      * @throws \Throwable
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function store(StoreRequest $request, string $page)
     {
@@ -142,7 +142,7 @@ class ContentController extends AdminController
      *
      * @param string $content
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function show(string $content)
     {
@@ -161,7 +161,7 @@ class ContentController extends AdminController
      * @param string $page
      * @param string $content
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function edit(string $page, string $content)
     {
@@ -189,7 +189,7 @@ class ContentController extends AdminController
      * @param string $page
      * @param string $content
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function update(UpdateRequest $request, string $page, string $content)
     {
@@ -243,7 +243,7 @@ class ContentController extends AdminController
      * @param string $page
      * @param string $content
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function destroy(string $page, string $content)
     {
@@ -271,7 +271,7 @@ class ContentController extends AdminController
      * @param string $pageUuid
      * @return mixed
      * @throws \Exception
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function dataTableIndex(string $pageUuid)
     {
@@ -333,7 +333,7 @@ class ContentController extends AdminController
      * Number of languages ​​remaining after the data has been created
      * @param string $uuid
      * @return array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function translateRemaining(string $uuid): array
     {
@@ -359,7 +359,7 @@ class ContentController extends AdminController
      * @param string $page
      * @param string $content
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function language(string $page, string $content)
     {
@@ -382,7 +382,7 @@ class ContentController extends AdminController
      * @param string $page
      * @param string $content
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function translation(TranslationRequest $request, string $page, string $content)
     {

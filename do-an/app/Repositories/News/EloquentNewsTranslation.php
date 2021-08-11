@@ -12,7 +12,7 @@ class EloquentNewsTranslation extends AbstractTranslationRepository implements N
     /**
      * EloquentNewsTranslation constructor.
      * @param NewsTranslation $model
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(NewsTranslation $model)
     {

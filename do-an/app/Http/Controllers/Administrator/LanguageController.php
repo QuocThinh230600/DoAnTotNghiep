@@ -23,7 +23,7 @@ class LanguageController extends AdminController
     /**
      * LanguageController constructor.
      * @param LanguageRepository $language
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(LanguageRepository $language)
     {
@@ -39,7 +39,7 @@ class LanguageController extends AdminController
      * Display a listing of the resource.
      *
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function index()
     {
@@ -55,7 +55,7 @@ class LanguageController extends AdminController
      * Show the form for creating a new resource.
      *
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function create()
     {
@@ -69,7 +69,7 @@ class LanguageController extends AdminController
      *
      * @param StoreRequest $request
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function store(StoreRequest $request)
     {
@@ -99,7 +99,7 @@ class LanguageController extends AdminController
      *
      * @param string $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function show(string $uuid)
     {
@@ -117,7 +117,7 @@ class LanguageController extends AdminController
      *
      * @param string $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function edit(string $uuid)
     {
@@ -140,7 +140,7 @@ class LanguageController extends AdminController
      * @param UpdateRequest $request
      * @param string $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function update(UpdateRequest $request, string $uuid)
     {
@@ -175,7 +175,7 @@ class LanguageController extends AdminController
      * Remove the specified resource from storage.
      * @param string $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function destroy($uuid)
     {
@@ -224,7 +224,7 @@ class LanguageController extends AdminController
      * Process datatables ajax request.
      * @return mixed
      * @throws \Exception
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function dataTableIndex()
     {

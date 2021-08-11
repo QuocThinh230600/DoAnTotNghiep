@@ -12,7 +12,7 @@ class EloquentWard extends AbstractRepository implements WardRepository
     /**
      * EloquentWard constructor.
      * @param Ward $model
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(Ward $model)
     {
@@ -22,7 +22,7 @@ class EloquentWard extends AbstractRepository implements WardRepository
     /**
      * Get all ward
      * @return object
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getAllWard (): object
     {
@@ -35,7 +35,7 @@ class EloquentWard extends AbstractRepository implements WardRepository
      * Get ward by district
      * @param int $district
      * @return object
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getWardByDistrict (int $district): object
     {

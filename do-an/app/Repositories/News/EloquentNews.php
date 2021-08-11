@@ -12,7 +12,7 @@ class EloquentNews extends AbstractRepository implements NewsRepository
     /**
      * EloquentNews constructor.
      * @param News $model
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(News $model)
     {
@@ -22,7 +22,7 @@ class EloquentNews extends AbstractRepository implements NewsRepository
     /**
      * Get new position in news
      * @return int
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getNewPosition(): int
     {
@@ -34,7 +34,7 @@ class EloquentNews extends AbstractRepository implements NewsRepository
     /**
      * Get all data news with pivot category
      * @return object
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getAllNews(): object
     {
@@ -45,7 +45,7 @@ class EloquentNews extends AbstractRepository implements NewsRepository
      * Get data news with uuid
      * @param string $uuid
      * @return array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getNewsUuid(string $uuid): array
     {
@@ -63,7 +63,7 @@ class EloquentNews extends AbstractRepository implements NewsRepository
      * Get data news with category_id
      * @param string $category_id
      * @return array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getAllNewsByCateId($category_id)
     {

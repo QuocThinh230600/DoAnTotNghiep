@@ -29,7 +29,7 @@ class DistrictController extends AdminController
      * DistrictController constructor.
      * @param ProvinceRepository $province
      * @param DistrictRepository $district
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(ProvinceRepository $province,
                                 DistrictRepository $district)
@@ -47,7 +47,7 @@ class DistrictController extends AdminController
      * Display a listing of the resource.
      *
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function index()
     {
@@ -63,7 +63,7 @@ class DistrictController extends AdminController
      * Show the form for creating a new resource.
      *
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function create()
     {
@@ -76,7 +76,7 @@ class DistrictController extends AdminController
      *
      * @param StoreRequest $request
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function store(StoreRequest $request)
     {
@@ -106,7 +106,7 @@ class DistrictController extends AdminController
      *
      * @param int $id
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function show(int $id)
     {
@@ -124,7 +124,7 @@ class DistrictController extends AdminController
      *
      * @param int $id
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function edit(int $id)
     {
@@ -140,7 +140,7 @@ class DistrictController extends AdminController
      * @param UpdateRequest $request
      * @param int $id
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function update(UpdateRequest $request, int $id)
     {
@@ -170,7 +170,7 @@ class DistrictController extends AdminController
      *
      * @param int $id
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function destroy(int $id)
     {
@@ -197,7 +197,7 @@ class DistrictController extends AdminController
      * Process datatables ajax request.
      * @return mixed
      * @throws \Exception
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function dataTableIndex()
     {

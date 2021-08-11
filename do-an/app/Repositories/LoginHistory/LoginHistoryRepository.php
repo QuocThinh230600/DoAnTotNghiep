@@ -12,7 +12,7 @@ interface LoginHistoryRepository extends AbstractInterface
      * @param array $data
      * @param bool $getDataBack
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function updateBySessionId(string $session_id, array $data, bool $getDataBack = true);
 

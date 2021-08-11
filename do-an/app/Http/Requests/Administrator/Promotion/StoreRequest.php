@@ -11,7 +11,7 @@ class StoreRequest extends FormRequest
      * Determine if the user is authorized to make this request.
      *
      * @return bool
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function authorize()
     {
@@ -22,7 +22,7 @@ class StoreRequest extends FormRequest
      * Get the validation rules that apply to the request.
      *
      * @return array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function rules()
     {
@@ -56,7 +56,7 @@ class StoreRequest extends FormRequest
      * Get the validation error messages.
      *
      * @return array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function messages()
     {
@@ -69,7 +69,7 @@ class StoreRequest extends FormRequest
      * Get custom attributes for validator errors.
      *
      * @return array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function attributes()
     {

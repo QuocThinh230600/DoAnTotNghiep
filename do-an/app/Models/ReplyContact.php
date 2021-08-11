@@ -16,7 +16,7 @@ class ReplyContact extends BaseModel
     /**
      * The table associated with the model.
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $table = 'reply_contacts';
     
@@ -24,7 +24,7 @@ class ReplyContact extends BaseModel
     /**
      * equivalent of ->cachePrefix('reply_contacts_');
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
     */
     public $cachePrefix = 'reply_contacts_';
     /**
@@ -37,20 +37,20 @@ class ReplyContact extends BaseModel
     /**
      * The attributes that aren't mass assignable.
      * @var array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $guarded = [];
 
     /**
      * The attributes that should be mutated to dates.
      * @var array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $dates = [ 'created_at', 'updated_at'];
 
     /**
      * The auto generate uuid
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public static function boot()
     {
@@ -63,7 +63,7 @@ class ReplyContact extends BaseModel
     /**
      * Relationship with user
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function users () {
         return $this->belongsTo(User::class, 'user_id');

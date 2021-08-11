@@ -12,7 +12,7 @@ class EloquentLanguage extends AbstractRepository implements LanguageRepository
     /**
      * EloquentLanguage constructor.
      * @param Language $model
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(Language $model)
     {
@@ -22,7 +22,7 @@ class EloquentLanguage extends AbstractRepository implements LanguageRepository
     /**
      * Check language default on the site
      * @return bool
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function checkLanguageDefault(): bool
     {
@@ -39,7 +39,7 @@ class EloquentLanguage extends AbstractRepository implements LanguageRepository
      * Check language default on the site when edit or delete data
      * @param $uuid
      * @return bool
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function checkLanguageDefaultByUuid($uuid): bool
     {
@@ -59,7 +59,7 @@ class EloquentLanguage extends AbstractRepository implements LanguageRepository
     /**
      * Check language current
      * @return object
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function checkLanguageCurrent(): object
     {
@@ -71,7 +71,7 @@ class EloquentLanguage extends AbstractRepository implements LanguageRepository
     /**
      * Get all language with status is on
      * @return object
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getAllWithStatusOn(): object
     {
@@ -81,7 +81,7 @@ class EloquentLanguage extends AbstractRepository implements LanguageRepository
     /**
      * Get all locale language
      * @return object
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getAllLocale(): object
     {
@@ -92,7 +92,7 @@ class EloquentLanguage extends AbstractRepository implements LanguageRepository
      * Get language by locale
      * @param array $locale
      * @return object
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getLanguageByLocale($locale): object
     {

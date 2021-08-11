@@ -9,7 +9,7 @@ interface ContactRepository extends AbstractInterface
     /**
      * Get all contact with reply
      * @return object
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getAllContactWithReply(): object;
 }

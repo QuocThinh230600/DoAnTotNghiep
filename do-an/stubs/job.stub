@@ -13,7 +13,7 @@ class {{ class }}
      * Create a new job instance.
      *
      * @return void
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct()
     {
@@ -24,7 +24,7 @@ class {{ class }}
      * Execute the job.
      *
      * @return void
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function handle()
     {

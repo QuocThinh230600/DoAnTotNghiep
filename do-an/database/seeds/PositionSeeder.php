@@ -8,7 +8,7 @@ class PositionSeeder extends Seeder
      * Run the database seeds.
      *
      * @return void
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function run()
     {

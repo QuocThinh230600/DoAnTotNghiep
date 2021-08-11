@@ -20,7 +20,7 @@ class ConfigController extends AdminController
     /**
      * ConfigController constructor.
      * @param ConfigRepository $config
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(ConfigRepository $config)
     {
@@ -35,7 +35,7 @@ class ConfigController extends AdminController
      * Show the form for editing the specified resource.
      *
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function edit()
     {
@@ -50,7 +50,7 @@ class ConfigController extends AdminController
      * @param UpdateRequest $request
      * @return mixed
      * @throws \Throwable
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function update(UpdateRequest $request)
     {

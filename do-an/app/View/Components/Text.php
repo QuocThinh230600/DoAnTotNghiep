@@ -36,7 +36,7 @@ class Text extends Component
      * @param string|null $slug
      * @param string|null $title
      * @param string $type
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(string $name, string $label, string $placeholder, string $disabled = null, string $required = null, string $id = null, string $slug = null, string $title = null, string $type = 'text')
     {
@@ -64,7 +64,7 @@ class Text extends Component
     /**
      * CSS none if type hidden
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function hiddenCSS(): string
     {
@@ -74,7 +74,7 @@ class Text extends Component
     /**
      * Set id attribute for tag if another null
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function attrId(): string
     {
@@ -84,7 +84,7 @@ class Text extends Component
     /**
      * Set slug attribute for tag if another null
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function attrSlug(): string
     {
@@ -94,7 +94,7 @@ class Text extends Component
     /**
      * Set disabled attribute for tag if another null
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function attrDisabled(): string
     {
@@ -104,7 +104,7 @@ class Text extends Component
     /**
      * Add class title for tag if exist title tag
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function attrTitle(): string
     {
@@ -114,7 +114,7 @@ class Text extends Component
     /**
      * Add class title for tag if exist slug
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function attrSlugTitle(): string
     {
@@ -124,7 +124,7 @@ class Text extends Component
     /**
      * Add html required
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function attrRequired(): string
     {

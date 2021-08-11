@@ -7,14 +7,14 @@ class PasswordResets extends BaseModel
     /**
      * The table associated with the model.
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $table = 'password_resets';
 
     /**
      * The attributes that are mass assignable.
      * @var array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $guarded = [];
 }

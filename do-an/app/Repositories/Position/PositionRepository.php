@@ -10,14 +10,14 @@ interface PositionRepository extends AbstractInterface
      * Get max position by parent
      * @param $parent
      * @return int
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getMaxPosition(int $parent): int;
 
     /**
      * Get all position
      * @return object
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getAllPositionRecursive(): object;
 
@@ -26,7 +26,7 @@ interface PositionRepository extends AbstractInterface
      * @param int $id
      * @param int $position
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function updatePositionTable(int $id, int $position);
 
@@ -34,7 +34,7 @@ interface PositionRepository extends AbstractInterface
      * Count child to delete
      * @param string $uuid
      * @return int
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function countChildToDelete($uuid): int;
 
@@ -42,7 +42,7 @@ interface PositionRepository extends AbstractInterface
      * Get all position to update
      * @param int $id
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getAllPositionRecursiveToUpdate(int $id);
 }

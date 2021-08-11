@@ -48,7 +48,7 @@ class Language extends Component
     /**
      * Set disabled attribute for tag if another null
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function attrDisabled(): string
     {

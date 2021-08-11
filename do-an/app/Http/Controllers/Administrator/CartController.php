@@ -22,7 +22,7 @@ class CartController extends AdminController
     /**
      * ConfigController constructor.
      * @param ConfigRepository $config
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(PaydetailsRepository $paydetail,PayorderRepository $payorder)
     {
@@ -40,7 +40,7 @@ class CartController extends AdminController
      * Show the form for editing the specified resource.
      *
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function index()
     {
@@ -89,7 +89,7 @@ class CartController extends AdminController
      * @param string $pageUuid
      * @return mixed
      * @throws \Exception
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function dataTableIndex()
     {

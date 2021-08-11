@@ -10,7 +10,7 @@ class CreateReplyContactsTable extends Migration
      * Run the migrations.
      *
      * @return void
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function up()
     {
@@ -30,7 +30,7 @@ class CreateReplyContactsTable extends Migration
      * Reverse the migrations.
      *
      * @return void
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function down()
     {

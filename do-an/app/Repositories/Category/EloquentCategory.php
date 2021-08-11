@@ -12,7 +12,7 @@ class EloquentCategory extends AbstractRepository implements CategoryRepository
     /**
      * EloquentCategory constructor.
      * @param Category $model
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(Category $model)
     {
@@ -23,7 +23,7 @@ class EloquentCategory extends AbstractRepository implements CategoryRepository
      * Get max position by parent
      * @param $parent
      * @return int
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getMaxPosition(int $parent): int
     {
@@ -34,7 +34,7 @@ class EloquentCategory extends AbstractRepository implements CategoryRepository
     /**
      * Get all category != 1
      * @return object
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getAllCategoryRecursive(): object
     {
@@ -44,7 +44,7 @@ class EloquentCategory extends AbstractRepository implements CategoryRepository
     /**
      * Get all category website
      * @return object
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getAllCategoryProduct(): object
     {
@@ -55,7 +55,7 @@ class EloquentCategory extends AbstractRepository implements CategoryRepository
      * Get all category to update
      * @param int $id
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getAllCategoryRecursiveToUpdate(int $id)
     {
@@ -73,7 +73,7 @@ class EloquentCategory extends AbstractRepository implements CategoryRepository
      * @param int $id
      * @param int $position
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function updatePositionTable(int $id, int $position)
     {
@@ -84,7 +84,7 @@ class EloquentCategory extends AbstractRepository implements CategoryRepository
      * Count child to delete
      * @param string $uuid
      * @return int
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function countChildToDelete($uuid): int
     {
@@ -103,7 +103,7 @@ class EloquentCategory extends AbstractRepository implements CategoryRepository
      * get all category child by parent id
      * @param string $id
      * @return int
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getAllCategoryRecursiveProduct($id)
     {

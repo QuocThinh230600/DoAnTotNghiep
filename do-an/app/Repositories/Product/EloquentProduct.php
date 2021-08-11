@@ -25,7 +25,7 @@ class EloquentProduct extends AbstractRepository implements ProductRepository
     /*
      * Get product position in product
      * @return int
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getNewPosition(): int
     {

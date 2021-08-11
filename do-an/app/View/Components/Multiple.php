@@ -52,7 +52,7 @@ class Multiple extends Component
      * Set id attribute for tag if another null
      * @param object $item
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function attrId($item): string
     {
@@ -62,7 +62,7 @@ class Multiple extends Component
     /**
      * Set disabled attribute for tag if another null
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function attrDisabled(): string
     {
@@ -72,7 +72,7 @@ class Multiple extends Component
     /**
      * Set disabled button toggle
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function attrActiveButton(): string
     {
@@ -82,7 +82,7 @@ class Multiple extends Component
     /**
      * Add html required
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function attrRequired(): string
     {

@@ -1,7 +1,7 @@
 /* ------------------------------------------------------------------------------
  *
  *  # Template JS core
- *  # Author: Quốc Tuấn <contact.quoctuan@gmail.com>
+ *  # Author: 
  *  Includes minimum required JS code for proper template functioning
  *
  * ---------------------------------------------------------------------------- */

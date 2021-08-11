@@ -10,14 +10,14 @@ interface AttributeRepository extends AbstractInterface
      * Get max position by parent
      * @param $parent
      * @return int
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getMaxPosition(int $parent): int;
 
     /**
      * Get all attribute
      * @return object
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getAllAttributeRecursive(): object;
 
@@ -25,7 +25,7 @@ interface AttributeRepository extends AbstractInterface
      * Get all attribute to update
      * @param int $id
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getAllAttributeRecursiveToUpdate(int $id);
 
@@ -33,14 +33,14 @@ interface AttributeRepository extends AbstractInterface
      * Count child to delete
      * @param string $uuid
      * @return int
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function countChildToDelete($uuid): int;
 
     /**
      * Get all attribute
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getAllAttribute ();
 

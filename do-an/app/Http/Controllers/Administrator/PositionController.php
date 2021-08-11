@@ -23,7 +23,7 @@ class PositionController extends AdminController
     /**
      * PositionController constructor.
      * @param PositionRepository $position
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(PositionRepository $position)
     {
@@ -40,7 +40,7 @@ class PositionController extends AdminController
      * Display a listing of the resource.
      *
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function index()
     {
@@ -57,7 +57,7 @@ class PositionController extends AdminController
      * Show the form for creating a new resource.
      *
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function create()
     {
@@ -72,7 +72,7 @@ class PositionController extends AdminController
      *
      * @param StoreRequest $request
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function store(StoreRequest $request)
     {
@@ -103,7 +103,7 @@ class PositionController extends AdminController
      *
      * @param string $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function show(string $uuid)
     {
@@ -115,7 +115,7 @@ class PositionController extends AdminController
      *
      * @param string $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function edit(string $uuid)
     {
@@ -133,7 +133,7 @@ class PositionController extends AdminController
      * @param UpdateRequest $request
      * @param string $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function update(UpdateRequest $request, string $uuid)
     {
@@ -164,7 +164,7 @@ class PositionController extends AdminController
      *
      * @param string $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function destroy(string $uuid)
     {
@@ -199,7 +199,7 @@ class PositionController extends AdminController
      * Get position max of category after change parent category
      * @param RequestAjax $request
      * @return int
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function ajaxSelectPosition(RequestAjax $request): int
     {
@@ -210,7 +210,7 @@ class PositionController extends AdminController
      * Get position of category
      * @param RequestAjax $request
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function ajaxTablePosition(RequestAjax $request)
     {

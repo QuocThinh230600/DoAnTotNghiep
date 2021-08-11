@@ -9,7 +9,7 @@ class RoleSeeder extends Seeder
      *
      * @return void
      * @throws Throwable
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function run()
     {

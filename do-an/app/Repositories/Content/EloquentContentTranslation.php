@@ -12,7 +12,7 @@ class EloquentContentTranslation extends AbstractTranslationRepository implement
     /**
      * EloquentContentTranslation constructor.
      * @param ContentTranslation $model
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(ContentTranslation $model)
     {

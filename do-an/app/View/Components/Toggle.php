@@ -67,7 +67,7 @@ class Toggle extends Component
     /**
      * Set Disabled Attribute For Tag If Another Null
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function attrDisabled(): string
     {
@@ -77,7 +77,7 @@ class Toggle extends Component
     /**
      * Add html required
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function attrRequired(): string
     {

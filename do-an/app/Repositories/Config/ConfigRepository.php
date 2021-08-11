@@ -11,14 +11,14 @@ interface ConfigRepository extends AbstractInterface
      * @param string $attribute
      * @param string $value
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function update_value(string $attribute, string $value = null);
 
     /**
      * Get all config
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function get_all_config();
     

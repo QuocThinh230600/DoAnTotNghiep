@@ -32,7 +32,7 @@ class WardController extends AdminController
      * @param ProvinceRepository $province
      * @param DistrictRepository $district
      * @param WardRepository $ward
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(ProvinceRepository $province,
                                 DistrictRepository $district,
@@ -52,7 +52,7 @@ class WardController extends AdminController
      * Display a listing of the resource.
      *
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function index()
     {
@@ -68,7 +68,7 @@ class WardController extends AdminController
      * Show the form for creating a new resource.
      *
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function create()
     {
@@ -83,7 +83,7 @@ class WardController extends AdminController
      *
      * @param StoreRequest $request
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function store(StoreRequest $request)
     {
@@ -113,7 +113,7 @@ class WardController extends AdminController
      *
      * @param int $id
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function show(int $id)
     {
@@ -131,7 +131,7 @@ class WardController extends AdminController
      *
      * @param int $id
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function edit(int $id)
     {
@@ -151,7 +151,7 @@ class WardController extends AdminController
      * @param UpdateRequest $request
      * @param int $id
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function update(UpdateRequest $request, int $id)
     {
@@ -181,7 +181,7 @@ class WardController extends AdminController
      *
      * @param int $id
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function destroy(int $id)
     {
@@ -208,7 +208,7 @@ class WardController extends AdminController
      * Process datatables ajax request.
      * @return mixed
      * @throws \Exception
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function dataTableIndex()
     {
@@ -237,7 +237,7 @@ class WardController extends AdminController
      * Load district by province
      * @param \Illuminate\Http\Request $request
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function loadDistrict(\Illuminate\Http\Request $request)
     {

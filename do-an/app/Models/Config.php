@@ -12,27 +12,27 @@ class Config extends BaseModel
       /**
      * The table associated with the model.
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $table = 'configs';
 
     /**
      * The attributes that aren't mass assignable.
      * @var array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $guarded = [];
 
     /**
      * equivalent of ->cacheTags(['configs'])
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
     */
     public $cacheTags = ['configs'];
     /**
      * equivalent of ->cachePrefix('configs');
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
     */
     public $cachePrefix = 'configs_';
     /**
@@ -46,7 +46,7 @@ class Config extends BaseModel
     /**
      * The attributes that should be mutated to dates.
      * @var array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $dates = ['created_at', 'updated_at'];
 }

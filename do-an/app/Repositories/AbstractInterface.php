@@ -7,7 +7,7 @@ interface AbstractInterface
     /**
      * Count row
      * @return int
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function countRow(): int;
 
@@ -16,7 +16,7 @@ interface AbstractInterface
      * @param string $col
      * @param string $val
      * @return int
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function countRowCondition(string $col, string $val): int;
 
@@ -24,7 +24,7 @@ interface AbstractInterface
      * Get id with uuid in row
      * @param string $uuid
      * @return int
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getIdByUuid(string $uuid): int;
 
@@ -48,7 +48,7 @@ interface AbstractInterface
      * Get a row with id
      * @param int $id
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getById(int $id): object;
 
@@ -59,7 +59,7 @@ interface AbstractInterface
      * @param string $order_col
      * @param string $order_val
      * @return object
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getWithLimit($cols = array('*'), int $limit = 10, string $order_col = 'created_at', string $order_val = 'desc'): object;
 
@@ -69,7 +69,7 @@ interface AbstractInterface
      * @param string $order_col
      * @param string $order_val
      * @return object
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getAllQuery($cols = array('*'), string $order_col = 'created_at', string $order_val = 'desc'): object;
 
@@ -79,7 +79,7 @@ interface AbstractInterface
      * @param string $order_col
      * @param string $order_val
      * @return object
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getAll($cols = array('*'), string $order_col = 'created_at', string $order_val = 'desc'): object;
 
@@ -90,7 +90,7 @@ interface AbstractInterface
      * @param bool $useUuid
      * @param bool $getDataBack
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function update(array $attributes, string $uuid, bool $useUuid = true,bool $getDataBack = true): object;
 
@@ -99,7 +99,7 @@ interface AbstractInterface
      * @param string $uuid
      * @param bool $useUuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function remove(string $uuid, bool $useUuid = true);
 
@@ -107,14 +107,14 @@ interface AbstractInterface
      * Create data
      * @param array $attributes
      * @return object
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function create(array $attributes): object;
 
     /**
      * Query data
      * @return object
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function query(): object;
 }

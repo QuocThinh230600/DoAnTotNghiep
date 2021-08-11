@@ -16,7 +16,7 @@ class RegisterController extends Controller
     /**
      * Display member registration interface
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function showRegisterForm()
     {
@@ -28,7 +28,7 @@ class RegisterController extends Controller
      * @param RegisterRequest $request
      * @return mixed
      * @throws \Throwable
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function register(RegisterRequest $request)
     {

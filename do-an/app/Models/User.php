@@ -30,7 +30,7 @@ class User extends Authenticatable
     // /**
     //  * equivalent of ->cachePrefix('users_');
     //  * @var string
-    //  * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+    //  * @author 
     // */
     // public $cachePrefix = 'users_';
     // /**
@@ -63,20 +63,20 @@ class User extends Authenticatable
      * The attributes date.
      *
      * @var array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $dates = ['created_at', 'updated_at'];
 
     /**
      * The attributes soft delete with function name.
      * @var array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $softCascade = [];
 
     /**
      * Auto running on models
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public static function boot()
     {
@@ -88,7 +88,7 @@ class User extends Authenticatable
 
     /**
      * Send the user a verification email
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function sendVerificationEmail()
     {
@@ -98,7 +98,7 @@ class User extends Authenticatable
     /**
      * Send email forgot password with token
      * @param string $token
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function sendForgotPasswordEmail(string $token)
     {

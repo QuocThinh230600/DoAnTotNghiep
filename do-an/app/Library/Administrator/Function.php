@@ -5,7 +5,7 @@ if (!function_exists('checkedRole')) {
      * @param $array
      * @param $item
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function checkedRole($array, $item): string
     {
@@ -38,7 +38,7 @@ if (!function_exists('time_24_hours')) {
      * Show time for 24 hours
      * @param $active
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function time_24_hours(string $active = null): string
     {
@@ -95,7 +95,7 @@ if (!function_exists('get_user_agent')) {
     /**
      * Get client agent
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function get_user_agent(): string
     {
@@ -107,7 +107,7 @@ if (!function_exists('get_client_ip')) {
     /**
      * Get client IP
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function get_client_ip(): string
     {
@@ -135,7 +135,7 @@ if (!function_exists('get_os')) {
     /**
      * Get client os
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function get_os(): string
     {
@@ -180,7 +180,7 @@ if (!function_exists('get_browsers')) {
     /**
      * Get client browser
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function get_browsers(): string
     {
@@ -214,7 +214,7 @@ if (!function_exists('get_device')) {
     /**
      * Get client browser
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function get_device(): string
     {
@@ -278,7 +278,7 @@ if (!function_exists('recursiveSelect')) {
      * @param $selected
      * @param int $parent_id
      * @param string $char
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function recursiveSelect($data, $selected, int $parent_id = 1, string $char = '')
     {
@@ -304,7 +304,7 @@ if (!function_exists('recursiveTableCategory')) {
      * @param $classCategory
      * @param int $parent_id
      * @param string $char
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function recursiveTableCategory($data, $classCategory, int $parent_id = 1, string $char = '')
     {
@@ -366,7 +366,7 @@ if (!function_exists('recursiveTable')) {
      * @param $classCategory
      * @param int $parent_id
      * @param string $char
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function recursiveTable($data, int $parent_id = 1, string $char = '')
     {
@@ -411,7 +411,7 @@ if (!function_exists('recursionList')) {
      * @param array $checked
      * @param int $parent
      * @param int $level
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function recursionList($data, array $checked = array(), int $parent = 1, int $level = 0)
     {
@@ -456,7 +456,7 @@ if (!function_exists('recursiveSelectDatatable')) {
      * @param $selected
      * @param int $parent_id
      * @param string $char
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function recursiveSelectDatatable($data, $selected, int $parent_id = 1, string $char = '')
     {
@@ -481,7 +481,7 @@ if (!function_exists('humanFilesize')) {
      * @param $size
      * @param int $precision
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function humanFilesize($size, $precision = 2)
     {
@@ -505,7 +505,7 @@ if (!function_exists('recursiveSelectProduct')) {
      * @param $selected
      * @param int $parent_id
      * @param string $char
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function recursiveSelectProduct($data, $selected)
     {
@@ -525,7 +525,7 @@ if (!function_exists('showStar')) {
      * @param $selected
      * @param int $parent_id
      * @param string $char
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function showStar($number)
     {

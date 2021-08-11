@@ -12,7 +12,7 @@ class EloquentCoupon extends AbstractRepository implements CouponRepository
     /**
      * EloquentProductAttribute constructor.
      * @param Attribute $model
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(CouponModel $model)
     {

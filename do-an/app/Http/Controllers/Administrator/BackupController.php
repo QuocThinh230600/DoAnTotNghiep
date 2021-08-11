@@ -17,7 +17,7 @@ class BackupController extends AdminController
 
     /**
      * BackupController constructor.
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct()
     {
@@ -28,7 +28,7 @@ class BackupController extends AdminController
      * Display a listing of the resource.
      *
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function index()
     {
@@ -58,7 +58,7 @@ class BackupController extends AdminController
      * Show the form for creating a new resource.
      *
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function create()
     {
@@ -71,7 +71,7 @@ class BackupController extends AdminController
      * @param StoreRequest $request
      * @return mixed
      * @throws \Exception
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function store(StoreRequest $request)
     {
@@ -109,7 +109,7 @@ class BackupController extends AdminController
      * @param string $filename
      * @return mixed
      * @throws \League\Flysystem\FileNotFoundException
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function download(string $filename)
     {
@@ -147,7 +147,7 @@ class BackupController extends AdminController
      *
      * @param string $filename
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function destroy(string $filename)
     {

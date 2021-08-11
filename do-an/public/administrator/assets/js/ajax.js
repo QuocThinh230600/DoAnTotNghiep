@@ -1,7 +1,7 @@
 /* ------------------------------------------------------------------------------
  *
  *  # AjaxJS code
- *  # Author: Quốc Tuấn <contact.quoctuan@gmail.com>
+ *  # Author: 
  *  Place here all your ajax js. Make sure it's loaded after statistical.js
  *
  * ---------------------------------------------------------------------------- */

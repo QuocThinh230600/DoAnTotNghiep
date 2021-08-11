@@ -22,7 +22,7 @@ Route::group(['namespace'=>'Website'],function()
 {
     Route::get('/', 'HomeController@index')->name('home');
     Route::get('tin-tuc.html', 'NewsController@index')->name('news');
-    Route::get('chi-tiet-tin-tuc{slug?}.html', 'NewDetailController@index')->name('new_detail');
+    Route::get('chi-tiet-tin-tuc/{slug?}.html', 'NewDetailController@index')->name('new_detail');
     Route::get('the-loai/{slug?}.html', 'CategoryController@index')->name('category');
     Route::get('thuong-hieu/{slug?}.html', 'CategoryController@brand')->name('brand');
     Route::get('san-pham/{slug?}.html', 'ProductController@index')->name('product');

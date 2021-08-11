@@ -11,7 +11,7 @@ class MatchOldPassword implements Rule
      * Create a new rule instance.
      *
      * @return void
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct()
     {
@@ -24,7 +24,7 @@ class MatchOldPassword implements Rule
      * @param  string  $attribute
      * @param  mixed  $value
      * @return bool
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function passes($attribute, $value)
     {
@@ -35,7 +35,7 @@ class MatchOldPassword implements Rule
      * Get the validation error message.
      *
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function message()
     {

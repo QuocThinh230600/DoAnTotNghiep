@@ -51,7 +51,7 @@ class Editor extends Component
     /**
      * Set disabled attribute for tag if another null
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function attrDisabled(): string
     {
@@ -61,7 +61,7 @@ class Editor extends Component
     /**
      * Add html required
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function attrRequired(): string
     {

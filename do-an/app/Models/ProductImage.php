@@ -13,7 +13,7 @@ class ProductImage extends BaseModel
     /**
      * The table associated with the model.
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public $cacheFor = 3600; // equivalent of ->cacheFor(3600)
 
@@ -22,20 +22,20 @@ class ProductImage extends BaseModel
     /**
      * The attributes that aren't mass assignable.
      * @var array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $guarded = [];
 
     /**
      * equivalent of ->cacheTags(['product_images'])
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
     */
     public $cacheTags = ['product_images'];
     /**
      * equivalent of ->cachePrefix('product_images');
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
     */
     public $cachePrefix = 'product_images_';
     
@@ -50,7 +50,7 @@ class ProductImage extends BaseModel
     /**
      * Indicates if the model should be timestamped.
      * @var bool
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public $timestamps = false;
 

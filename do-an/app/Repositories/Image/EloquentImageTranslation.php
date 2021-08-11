@@ -12,7 +12,7 @@ class EloquentImageTranslation extends AbstractTranslationRepository implements 
     /**
      * EloquentImageTranslation constructor.
      * @param ImageTranslation $model
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(ImageTranslation $model)
     {

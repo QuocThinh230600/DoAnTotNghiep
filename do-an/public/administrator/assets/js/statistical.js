@@ -1,7 +1,7 @@
 /* ------------------------------------------------------------------------------
  *
  *  # statistical code
- *  # Author: Quốc Tuấn <contact.quoctuan@gmail.com>
+ *  # Author: 
  *  Place here all your statistical js. Make sure it's loaded after statistical.js
  *
  * ---------------------------------------------------------------------------- */

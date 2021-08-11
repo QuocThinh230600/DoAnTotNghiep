@@ -3,7 +3,7 @@ if (!function_exists('role_permissions')) {
     /**
      * Generate permission checkbox
      * @return array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function role_permissions(): array
     {
@@ -146,7 +146,7 @@ if (!function_exists('level')) {
     /**
      * Generate data level of user
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function level()
     {
@@ -170,7 +170,7 @@ if (!function_exists('cat_news')) {
     /**
      * Generate data level of user
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function cat_news()
     {
@@ -195,7 +195,7 @@ if(!function_exists('status_cart')){
     /**
      * Generate data status cart
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function status_cart()
     {
@@ -231,7 +231,7 @@ if(!function_exists('payment_method')){
     /**
      * Generate data payment method
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function payment_method()
     {
@@ -254,7 +254,7 @@ if (!function_exists('backup')) {
     /**
      * Generate data type of backup
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function backup()
     {
@@ -282,7 +282,7 @@ if (!function_exists('robot')) {
     /**
      * Generate data meta robot for SEO
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function robot()
     {
@@ -334,7 +334,7 @@ if (!function_exists('open_link')) {
     /**
      * Generate data open link for tag
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function open_link()
     {
@@ -366,7 +366,7 @@ if (!function_exists('template_detail_news')) {
     /**
      * Generate data template detail news
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function template_detail_news()
     {
@@ -389,7 +389,7 @@ if (!function_exists('template_detail_product')) {
     /**
      * Generate data template detail news
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function template_detail_product()
     {
@@ -408,7 +408,7 @@ if (!function_exists('status')) {
     /**
      * Generate data status
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function status()
     {
@@ -447,7 +447,7 @@ if (!function_exists('featured')) {
     /**
      * Generate data featured
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function featured()
     {
@@ -486,7 +486,7 @@ if (!function_exists('featured_cat')) {
     /**
      * Generate data featured
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function featured_cat()
     {
@@ -509,7 +509,7 @@ if (!function_exists('installment')) {
     /**
      * Generate data installment
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function installment()
     {
@@ -536,7 +536,7 @@ if (!function_exists('dateChoose')) {
     /**
      * Generate data installment
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function dateChoose()
     {
@@ -584,7 +584,7 @@ if (!function_exists('timeChoose')) {
     /**
      * Generate data installment
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function timeChoose()
     {
@@ -605,7 +605,7 @@ if (!function_exists('status_contact')) {
     /**
      * Generate data featured
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function status_contact()
     {
@@ -628,7 +628,7 @@ if (!function_exists('format_date')) {
     /**
      * Generate data format date
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function format_date()
     {
@@ -661,7 +661,7 @@ if (!function_exists('menu')) {
      * Generate menu sidebar
      * @param array $role
      * @return array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function menu(array $role): array
     {

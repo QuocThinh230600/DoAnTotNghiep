@@ -8,7 +8,7 @@ abstract class AdminController extends Controller
 {
     /**
      * AdminController constructor.
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct()
     {

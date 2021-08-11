@@ -1,7 +1,7 @@
 /* ------------------------------------------------------------------------------
  *
  *  # Custom JS code
- *  # Author: Quốc Tuấn <contact.quoctuan@gmail.com>
+ *  # Author: 
  *  Place here all your custom js. Make sure it's loaded after app.js
  *
  * ---------------------------------------------------------------------------- */

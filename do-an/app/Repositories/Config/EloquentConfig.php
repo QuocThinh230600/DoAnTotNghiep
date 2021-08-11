@@ -12,7 +12,7 @@ class EloquentConfig extends AbstractRepository implements ConfigRepository
     /**
      * EloquentConfig constructor.
      * @param Config $model
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(Config $model)
     {
@@ -24,7 +24,7 @@ class EloquentConfig extends AbstractRepository implements ConfigRepository
      * @param string $attribute
      * @param string $value
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function update_value(string $attribute, string $value = null)
     {
@@ -37,7 +37,7 @@ class EloquentConfig extends AbstractRepository implements ConfigRepository
     /**
      * Get all config
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function get_all_config()
     {

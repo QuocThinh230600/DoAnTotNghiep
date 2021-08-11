@@ -10,7 +10,7 @@ class Captcha extends Controller
      * Handle the incoming request.
      *
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __invoke()
     {

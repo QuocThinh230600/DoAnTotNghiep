@@ -27,7 +27,7 @@ class ReplyContactController extends AdminController
      * ReplyContactController constructor.
      * @param ContactRepository $contact
      * @param ReplyContactRepository $replyContact
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(ContactRepository $contact,
                                 ReplyContactRepository $replyContact)
@@ -45,7 +45,7 @@ class ReplyContactController extends AdminController
      * Display a listing of the resource.
      *
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function index()
     {
@@ -57,7 +57,7 @@ class ReplyContactController extends AdminController
      * 
      * @param string $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function reply(string $uuid)
     {
@@ -81,7 +81,7 @@ class ReplyContactController extends AdminController
      * @param SendReplyRequest $request
      * @param string $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function send_reply(SendReplyRequest $request, string $uuid)
     {
@@ -112,7 +112,7 @@ class ReplyContactController extends AdminController
      *
      * @param string $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function destroy(string $uuid)
     {
@@ -138,7 +138,7 @@ class ReplyContactController extends AdminController
      * Process datatables ajax request.
      * @return mixed
      * @throws \Exception
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function dataTableIndex()
     {

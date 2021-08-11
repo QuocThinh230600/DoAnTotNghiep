@@ -13,7 +13,7 @@ class Logout extends Controller
      *
      * @param \Illuminate\Http\Request $request
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __invoke(Request $request)
     {

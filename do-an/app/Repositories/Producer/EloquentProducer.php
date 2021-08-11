@@ -12,7 +12,7 @@ class EloquentProducer extends AbstractRepository implements ProducerRepository
     /**
      * EloquentProducer constructor.
      * @param Producer $model
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(Producer $model)
     {

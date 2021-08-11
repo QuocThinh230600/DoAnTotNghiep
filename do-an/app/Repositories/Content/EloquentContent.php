@@ -12,7 +12,7 @@ class EloquentContent extends AbstractRepository implements ContentRepository
     /**
      * EloquentContent constructor.
      * @param Content $model
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(Content $model)
     {

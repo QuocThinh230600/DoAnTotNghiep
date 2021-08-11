@@ -9,7 +9,7 @@ interface LanguageRepository extends AbstractInterface
     /**
      * Check language default on the site
      * @return bool
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function checkLanguageDefault(): bool;
 
@@ -17,28 +17,28 @@ interface LanguageRepository extends AbstractInterface
      * Check language default on the site when edit or delete data
      * @param $uuid
      * @return bool
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function checkLanguageDefaultByUuid($uuid): bool;
 
     /**
      * Check language current
      * @return object
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function checkLanguageCurrent();
 
     /**
      * Get all language with status is on
      * @return object
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getAllWithStatusOn(): object;
 
     /**
      * Get all locale language
      * @return object
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getAllLocale(): object;
 
@@ -46,7 +46,7 @@ interface LanguageRepository extends AbstractInterface
      * Get language by locale
      * @param array $locale
      * @return object
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getLanguageByLocale($locale): object;
 }

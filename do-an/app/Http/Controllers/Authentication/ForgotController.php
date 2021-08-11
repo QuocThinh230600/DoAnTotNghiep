@@ -18,7 +18,7 @@ class ForgotController extends Controller
     /**
      * Display for entering the account to retrieve the password
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function showForgotForm()
     {
@@ -29,7 +29,7 @@ class ForgotController extends Controller
      * The process of forgotten passwords
      * @param ForgotRequest $request
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function forgot(ForgotRequest $request)
     {
@@ -62,7 +62,7 @@ class ForgotController extends Controller
      * Show password change template
      * @param string $token
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function showChangePasswordForm(string $token)
     {
@@ -94,7 +94,7 @@ class ForgotController extends Controller
      * @param ChangePassRequest $request
      * @param string $token
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function changePassword(ChangePassRequest $request, string $token)
     {

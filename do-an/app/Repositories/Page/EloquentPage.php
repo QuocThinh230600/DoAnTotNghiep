@@ -12,7 +12,7 @@ class EloquentPage extends AbstractRepository implements PageRepository
     /**
      * EloquentPage constructor.
      * @param Page $model
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(Page $model)
     {

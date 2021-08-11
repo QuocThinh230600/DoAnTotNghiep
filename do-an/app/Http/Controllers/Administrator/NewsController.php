@@ -39,7 +39,7 @@ class NewsController extends AdminController
      * @param NewsRepository $news
      * @param CategoryRepository $category
      * @param NewsTranslationRepository $newsTranslation
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(LanguageRepository $language,
                                 NewsRepository $news,
@@ -62,7 +62,7 @@ class NewsController extends AdminController
      * Display a listing of the resource.
      *
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function index()
     {
@@ -80,7 +80,7 @@ class NewsController extends AdminController
      * Show the form for creating a new resource.
      *
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function create()
     {
@@ -97,7 +97,7 @@ class NewsController extends AdminController
      * @param StoreRequest $request
      * @return mixed
      * @throws \Throwable
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function store(StoreRequest $request)
     {
@@ -152,7 +152,7 @@ class NewsController extends AdminController
      *
      * @param string $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function show(string $uuid)
     {
@@ -170,7 +170,7 @@ class NewsController extends AdminController
      *
      * @param string $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function edit(string $uuid)
     {
@@ -203,7 +203,7 @@ class NewsController extends AdminController
      * @param string $uuid
      * @return mixed
      * @throws \Throwable
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function update(UpdateRequest $request, string $uuid)
     {
@@ -267,7 +267,7 @@ class NewsController extends AdminController
      *
      * @param string $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function destroy(string $uuid)
     {
@@ -294,7 +294,7 @@ class NewsController extends AdminController
      * Process datatables ajax request.
      * @return mixed
      * @throws \Exception
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function dataTableIndex()
     {
@@ -380,7 +380,7 @@ class NewsController extends AdminController
      * Number of languages ​​remaining after the data has been created
      * @param string $uuid
      * @return array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function translateRemaining(string $uuid): array
     {
@@ -405,7 +405,7 @@ class NewsController extends AdminController
      * Display language translation template
      * @param string $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function language(string $uuid)
     {
@@ -426,7 +426,7 @@ class NewsController extends AdminController
      * @param TranslationRequest $request
      * @param string $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function translation(TranslationRequest $request, string $uuid)
     {

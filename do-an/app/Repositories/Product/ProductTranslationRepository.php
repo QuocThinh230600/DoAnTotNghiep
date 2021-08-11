@@ -9,13 +9,13 @@ interface ProductTranslationRepository extends AbstractTranslationInterface
 /**
      * get all product by promotion_id
      * @param $promotion_id
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getAllProductByPromotion($promotion_id);
     /**
      * get all product by product_id
      * @param $product_id
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getByProductId($product_id);
 

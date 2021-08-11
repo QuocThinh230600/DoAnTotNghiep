@@ -31,7 +31,7 @@ class Image extends Component
     /**
      * Render image default
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function imageDefault(): string
     {

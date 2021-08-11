@@ -14,20 +14,20 @@ class CategoryNews extends BaseModel
     /**
      * The table associated with the model.
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $table = 'category_news';
 
     /**
      * equivalent of ->cacheTags(['category_news'])
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
     */
     public $cacheTags = ['category_news'];
     /**
      * equivalent of ->cachePrefix('category_news');
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
     */
     public $cachePrefix = 'category_news_';
     /**
@@ -41,21 +41,21 @@ class CategoryNews extends BaseModel
     /**
      * The attributes that aren't mass assignable.
      * @var array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $guarded = [];
 
     /**
      * Indicates if the model should be timestamped.
      * @var bool
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public $timestamps = false;
 
     /**
      * The attributes that should be mutated to dates.
      * @var array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $dates = ['deleted_at'];
 }

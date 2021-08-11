@@ -13,7 +13,7 @@ class PageTranslation extends BaseModel
     /**
      * The table associated with the model.
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public $cacheFor = 3600; // equivalent of ->cacheFor(3600)
     
@@ -22,20 +22,20 @@ class PageTranslation extends BaseModel
     /**
      * The attributes that aren't mass assignable.
      * @var array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $guarded = [];
 
     /**
      * equivalent of ->cacheTags(['pages_translations'])
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
     */
     public $cacheTags = ['pages_translations'];
     /**
      * equivalent of ->cachePrefix('pages_translations');
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
     */
     public $cachePrefix = 'pages_translations_';
     /**
@@ -49,13 +49,13 @@ class PageTranslation extends BaseModel
     /**
      * The attributes that should be mutated to dates.
      * @var array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $dates = ['deleted_at', 'created_at', 'updated_at'];
 
     /**
      * The auto generate uuid
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public static function boot ()
     {

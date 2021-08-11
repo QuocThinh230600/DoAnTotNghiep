@@ -12,7 +12,7 @@ class EloquentPayorder extends AbstractRepository implements PayorderRepository
     /**
      * EloquentPosition constructor.
      * @param Payoder $model
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(Payoder $model)
     {

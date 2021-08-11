@@ -14,7 +14,7 @@ class EloquentAttribute extends AbstractRepository implements AttributeRepositor
     /**
      * EloquentProductAttribute constructor.
      * @param Attribute $model
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(Attribute $model, ProductRepository $product)
     {
@@ -26,7 +26,7 @@ class EloquentAttribute extends AbstractRepository implements AttributeRepositor
      * Get max position by parent
      * @param $parent
      * @return int
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getMaxPosition(int $parent): int
     {
@@ -37,7 +37,7 @@ class EloquentAttribute extends AbstractRepository implements AttributeRepositor
     /**
      * Get all attribute
      * @return object
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getAllAttributeRecursive(): object
     {
@@ -48,7 +48,7 @@ class EloquentAttribute extends AbstractRepository implements AttributeRepositor
      * Get all attribute to update
      * @param int $id
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getAllAttributeRecursiveToUpdate(int $id)
     {
@@ -65,7 +65,7 @@ class EloquentAttribute extends AbstractRepository implements AttributeRepositor
      * Count child to delete
      * @param string $uuid
      * @return int
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function countChildToDelete($uuid): int
     {
@@ -83,7 +83,7 @@ class EloquentAttribute extends AbstractRepository implements AttributeRepositor
     /**
      * Get all attribute
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getAllAttribute ()
     {

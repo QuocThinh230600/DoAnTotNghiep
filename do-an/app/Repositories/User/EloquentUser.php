@@ -12,7 +12,7 @@ class EloquentUser extends AbstractRepository implements UserRepository
     /**
      * EloquentUser constructor.
      * @param User $model
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(User $model)
     {

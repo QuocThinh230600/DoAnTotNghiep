@@ -15,7 +15,7 @@ class Verify extends Controller
      *
      * @param $token
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __invoke($token)
     {

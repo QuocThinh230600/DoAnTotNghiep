@@ -25,13 +25,13 @@ class QuestionProduct extends Model
     /**
      * equivalent of ->cacheTags(['question_product'])
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
     */
     public $cacheTags = ['question_product'];
     /**
      * equivalent of ->cachePrefix('question_product');
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
     */
     public $cachePrefix = 'question_product_';
     

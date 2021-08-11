@@ -12,7 +12,7 @@ class CustomCKFinderAuth
      * @param \Illuminate\Http\Request $request
      * @param \Closure $next
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function handle($request, Closure $next)
     {

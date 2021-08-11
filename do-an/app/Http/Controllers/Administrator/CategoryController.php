@@ -33,7 +33,7 @@ class CategoryController extends AdminController
      * @param LanguageRepository $language
      * @param CategoryRepository $category
      * @param CategoryTranslationRepository $categoryTranslation
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(LanguageRepository $language,
                                 CategoryRepository $category,
@@ -54,7 +54,7 @@ class CategoryController extends AdminController
      * Display a listing of the resource.
      *
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function index() 
     {
@@ -73,7 +73,7 @@ class CategoryController extends AdminController
      * Show the form for creating a new resource.
      *
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function create()
     {
@@ -89,7 +89,7 @@ class CategoryController extends AdminController
      *
      * @param StoreRequest $request
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function store(StoreRequest $request)
     {
@@ -133,7 +133,7 @@ class CategoryController extends AdminController
      *
      * @param string $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function show(string $uuid)
     {
@@ -151,7 +151,7 @@ class CategoryController extends AdminController
      *
      * @param string $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function edit(string $uuid)
     {
@@ -181,7 +181,7 @@ class CategoryController extends AdminController
      * @param string $uuid
      * @return mixed
      * @throws \Throwable
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function update(UpdateRequest $request, string $uuid)
     {
@@ -233,7 +233,7 @@ class CategoryController extends AdminController
      *
      * @param string $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function destroy(string $uuid)
     {
@@ -269,7 +269,7 @@ class CategoryController extends AdminController
      * Display language translation template
      * @param string $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function language(string $uuid)
     {
@@ -290,7 +290,7 @@ class CategoryController extends AdminController
      * @param TranslationRequest $request
      * @param string $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function translation(TranslationRequest $request, string $uuid)
     {
@@ -332,7 +332,7 @@ class CategoryController extends AdminController
      * Number of languages ​​remaining after the data has been created
      * @param string $uuid
      * @return array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function translateRemaining(string $uuid): array
     {
@@ -357,7 +357,7 @@ class CategoryController extends AdminController
      * Get position max of category after change parent category
      * @param RequestAjax $request
      * @return int
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function ajaxSelectCategory(RequestAjax $request): int
     {
@@ -368,7 +368,7 @@ class CategoryController extends AdminController
      * Get position of category
      * @param RequestAjax $request
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function ajaxTableCategory(RequestAjax $request) 
     {

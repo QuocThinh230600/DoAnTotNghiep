@@ -9,7 +9,7 @@ interface WardRepository extends AbstractInterface
     /**
      * Get all ward
      * @return object
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getAllWard (): object;
 
@@ -17,7 +17,7 @@ interface WardRepository extends AbstractInterface
      * Get ward by district
      * @param int $district
      * @return object
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getWardByDistrict (int $district): object;
 }

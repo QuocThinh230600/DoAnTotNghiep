@@ -7,7 +7,7 @@ class AbstractRepository implements AbstractInterface
     /**
      * Count row
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function countRow(): int
     {
@@ -19,7 +19,7 @@ class AbstractRepository implements AbstractInterface
      * @param string $col
      * @param string $val
      * @return int
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function countRowCondition(string $col, string $val): int
     {
@@ -30,7 +30,7 @@ class AbstractRepository implements AbstractInterface
      * Get id with uuid in row
      * @param string $uuid
      * @return int
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getIdByUuid(string $uuid): int
     {
@@ -41,7 +41,7 @@ class AbstractRepository implements AbstractInterface
      * Get a row with uuid
      * @param string $uuid
      * @return object
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getByUuid(string $uuid): object
     {
@@ -63,7 +63,7 @@ class AbstractRepository implements AbstractInterface
      * Get a row with id
      * @param int $id
      * @return object
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getById(int $id): object
     {
@@ -77,7 +77,7 @@ class AbstractRepository implements AbstractInterface
      * @param string $order_col
      * @param string $order_val
      * @return object
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getWithLimit($cols = array('*'), int $limit = 10, string $order_col = 'created_at', string $order_val = 'desc'): object
     {
@@ -96,7 +96,7 @@ class AbstractRepository implements AbstractInterface
      * @param string $order_col
      * @param string $order_val
      * @return object
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getAllQuery($cols = array('*'), string $order_col = 'created_at', string $order_val = 'desc'): object
     {
@@ -109,7 +109,7 @@ class AbstractRepository implements AbstractInterface
      * @param string $order_col
      * @param string $order_val
      * @return object
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getAll($cols = array('*'), string $order_col = 'created_at', string $order_val = 'desc'): object
     {
@@ -123,7 +123,7 @@ class AbstractRepository implements AbstractInterface
      * @param bool $useUuid
      * @param bool $getDataBack
      * @return object
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function update(array $attributes, string $uuid, bool $useUuid = true, bool $getDataBack = true): object
     {
@@ -148,7 +148,7 @@ class AbstractRepository implements AbstractInterface
      * @param string $uuid
      * @param bool $useUuid
      * @return object
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function remove(string $uuid, bool $useUuid = true)
     {
@@ -163,7 +163,7 @@ class AbstractRepository implements AbstractInterface
      * Create data
      * @param array $attributes
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function create(array $attributes): object
     {
@@ -173,7 +173,7 @@ class AbstractRepository implements AbstractInterface
     /**
      * Query data
      * @return object
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function query(): object
     {

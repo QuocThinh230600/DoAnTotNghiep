@@ -12,7 +12,7 @@ class EloquentProductTranslation extends AbstractTranslationRepository implement
     /**
      * EloquentProductTranslation constructor.
      * @param ProductTranslation $model
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(ProductTranslation $model)
     {
@@ -22,7 +22,7 @@ class EloquentProductTranslation extends AbstractTranslationRepository implement
     /**
      * get all product by promotion_id
      * @param $promotion_id
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getAllProductByPromotion($promotion_id)
     {
@@ -31,7 +31,7 @@ class EloquentProductTranslation extends AbstractTranslationRepository implement
     /**
      * get all product by product_id
      * @param $product_id
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getByProductId($product_id){
         return $this->model->where('product_id',$product_id)->first(); 

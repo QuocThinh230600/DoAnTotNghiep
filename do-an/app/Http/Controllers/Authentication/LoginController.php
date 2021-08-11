@@ -14,7 +14,7 @@ class LoginController extends Controller
     /**
      * Get the login username to be used by the controller.
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function username()
     {
@@ -24,7 +24,7 @@ class LoginController extends Controller
     /**
      * Show template form login
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function showLoginForm()
     {
@@ -35,7 +35,7 @@ class LoginController extends Controller
      * Account login processing
      * @param LoginRequest $request
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function login(LoginRequest $request)
     {

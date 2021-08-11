@@ -12,7 +12,7 @@ class EloquentProvince extends AbstractRepository implements ProvinceRepository
     /**
      * EloquentProvince constructor.
      * @param Province $model
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(Province $model)
     {

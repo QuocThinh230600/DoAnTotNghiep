@@ -35,7 +35,7 @@ class AttributeController extends AdminController
      * @param AttributeRepository $attribute
      * @param AttributeTranslationRepository $attributeTranslation
      * @param LanguageRepository $language
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(AttributeRepository $attribute,
                                 AttributeTranslationRepository $attributeTranslation,
@@ -55,7 +55,7 @@ class AttributeController extends AdminController
      * Display a listing of the resource.
      *
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function index()
     {
@@ -73,7 +73,7 @@ class AttributeController extends AdminController
      * Show the form for creating a new resource.
      *
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function create()
     {
@@ -89,7 +89,7 @@ class AttributeController extends AdminController
      *
      * @param StoreRequest $request
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function store(StoreRequest $request)
     {
@@ -129,7 +129,7 @@ class AttributeController extends AdminController
      *
      * @param string $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function show(string $uuid)
     {
@@ -147,7 +147,7 @@ class AttributeController extends AdminController
      *
      * @param string $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function edit(string $uuid)
     {
@@ -176,7 +176,7 @@ class AttributeController extends AdminController
      * @param UpdateRequest $request
      * @param string $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function update(UpdateRequest $request, string $uuid)
     {
@@ -225,7 +225,7 @@ class AttributeController extends AdminController
      *
      * @param string $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function destroy(string $uuid)
     {
@@ -261,7 +261,7 @@ class AttributeController extends AdminController
      * Process datatables ajax request.
      * @return mixed
      * @throws \Exception
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function dataTableIndex()
     {
@@ -321,7 +321,7 @@ class AttributeController extends AdminController
      * Number of languages ​​remaining after the data has been created
      * @param string $uuid
      * @return array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function translateRemaining(string $uuid): array
     {
@@ -346,7 +346,7 @@ class AttributeController extends AdminController
      * Display language translation template
      * @param string $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function language(string $uuid)
     {
@@ -366,7 +366,7 @@ class AttributeController extends AdminController
      * Get position max of category after change parent category
      * @param RequestAjax $request
      * @return int 
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function ajaxSelectCategory(RequestAjax $request): int
     {
@@ -378,7 +378,7 @@ class AttributeController extends AdminController
      * @param TranslationRequest $request
      * @param string $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function translation(TranslationRequest $request, string $uuid)
     {
@@ -418,7 +418,7 @@ class AttributeController extends AdminController
      * Get position max of category after change parent category
      * @param RequestAjax $request
      * @return int
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function ajaxSelectAttribute(RequestAjax $request): int
     {

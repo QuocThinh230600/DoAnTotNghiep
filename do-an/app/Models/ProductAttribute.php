@@ -15,20 +15,20 @@ class ProductAttribute extends BaseModel
     /**
      * The table associated with the model.
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $table = 'product_attributes';
 
     /**
      * equivalent of ->cacheTags(['product_attributes'])
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
     */
     public $cacheTags = ['product_attributes'];
     /**
      * equivalent of ->cachePrefix('product_attributes_');
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
     */
     public $cachePrefix = 'product_attributes_';
     /**
@@ -42,7 +42,7 @@ class ProductAttribute extends BaseModel
     /**
      * The attributes that aren't mass assignable.
      * @var array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $guarded = [];
 }

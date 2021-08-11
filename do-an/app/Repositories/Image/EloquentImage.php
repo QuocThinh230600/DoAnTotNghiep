@@ -12,7 +12,7 @@ class EloquentImage extends AbstractRepository implements ImageRepository
     /**
      * EloquentImage constructor.
      * @param Image $model
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(Image $model)
     {
@@ -23,7 +23,7 @@ class EloquentImage extends AbstractRepository implements ImageRepository
      * Get max position by position
      * @param int $position
      * @return int
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getMaxPosition(int $position): int
     {
@@ -34,7 +34,7 @@ class EloquentImage extends AbstractRepository implements ImageRepository
     /**
      * Get all image with position
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getAllImageWithPosition(): object
     {

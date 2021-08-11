@@ -26,7 +26,7 @@ class PersonalController extends AdminController
      * PersonalController constructor.
      * @param UserRepository $user
      * @param LoginHistoryRepository $loginHistory
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(UserRepository $user, LoginHistoryRepository $loginHistory)
     {
@@ -38,7 +38,7 @@ class PersonalController extends AdminController
     /**
      * Display a personal account
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function show()
     {
@@ -51,7 +51,7 @@ class PersonalController extends AdminController
      * Update account login
      * @param UpdateAccountRequest $request
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function update_account(UpdateAccountRequest $request)
     {
@@ -77,7 +77,7 @@ class PersonalController extends AdminController
      * Update account information
      * @param Request $request
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function update_info(Request $request)
     {
@@ -104,7 +104,7 @@ class PersonalController extends AdminController
      * Update account only avatar
      * @param Request $request
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function update_avatar(Request $request)
     {
@@ -141,7 +141,7 @@ class PersonalController extends AdminController
      * Sign out of your account
      * @param Request $request
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function logout(Request $request)
     {

@@ -9,7 +9,7 @@ interface AbstractTranslationInterface extends AbstractInterface
      * @param int $id
      * @param string $col
      * @return int
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getTotalTranslated(string $col, int $id): int;
 
@@ -18,7 +18,7 @@ interface AbstractTranslationInterface extends AbstractInterface
      * @param int $id
      * @param string $col
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getTranslated(string $col, int $id);
 
@@ -27,7 +27,7 @@ interface AbstractTranslationInterface extends AbstractInterface
      * @param int $id
      * @param string $col
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getLocaleTranslated(string $col, int $id);
 
@@ -35,7 +35,7 @@ interface AbstractTranslationInterface extends AbstractInterface
      * Get uuid by page id and locale
      * @param array $trans
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getUuidByIdAndLocale(array $trans);
 }

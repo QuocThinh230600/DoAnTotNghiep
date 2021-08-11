@@ -26,13 +26,13 @@ class BonusProduct extends Model
     /**
      * equivalent of ->cacheTags(['bonus_product'])
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
     */
     public $cacheTags = ['bonus_product'];
     /**
      * equivalent of ->cachePrefix('bonus_product');
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
     */
     public $cachePrefix = 'bonus_product_';
     /**

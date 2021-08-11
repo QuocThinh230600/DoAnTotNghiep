@@ -12,7 +12,7 @@ class EloquentLogActivity extends AbstractRepository implements LogActivityRepos
     /**
      * EloquentLogActivity constructor.
      * @param LogActivity $model
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(LogActivity $model)
     {

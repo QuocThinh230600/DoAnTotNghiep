@@ -12,7 +12,7 @@ class EloquentContact extends AbstractRepository implements ContactRepository
     /**
      * EloquentContact constructor.
      * @param Contact $model
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(Contact $model)
     {
@@ -22,7 +22,7 @@ class EloquentContact extends AbstractRepository implements ContactRepository
     /**
      * Get all contact with reply
      * @return object
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getAllContactWithReply(): object
     {

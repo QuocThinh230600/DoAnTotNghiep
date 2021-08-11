@@ -79,7 +79,7 @@ class AjaxController extends Controller
      * Get ward by district
      * @param Request $request
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function getWard(Request $request)
     {

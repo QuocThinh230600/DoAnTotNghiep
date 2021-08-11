@@ -12,7 +12,7 @@ class EloquentCategoryTranslation extends AbstractTranslationRepository implemen
     /**
      * EloquentCategoryTranslation constructor.
      * @param CategoryTranslation $model
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(CategoryTranslation $model)
     {

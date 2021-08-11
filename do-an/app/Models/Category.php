@@ -19,20 +19,20 @@ class Category extends BaseModel implements TranslatableContract
     /**
      * The table associated with the model.
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $table = 'categories';
 
     /**
      * equivalent of ->cacheTags(['categories'])
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
     */
     public $cacheTags = ['categories'];
     /**
      * equivalent of ->cachePrefix('categories');
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
     */
     public $cachePrefix = 'categories_';
     /**
@@ -46,34 +46,34 @@ class Category extends BaseModel implements TranslatableContract
     /**
      * The attributes that aren't mass assignable.
      * @var array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $guarded = [];
 
     /**
      * The attributes that should be mutated to dates.
      * @var array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $dates = ['created_at', 'updated_at'];
 
     /**
      * The attributes soft delete with function name.
      * @var array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $softCascade = ['category_translation'];
 
     /**
      * The attributes translate language.
      * @var array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public $translatedAttributes = ['name', 'description', 'image', 'image_mobile', 'link', 'slug', 'title_tag', 'meta_keywords', 'meta_description', 'meta_robots', 'meta_google_bot', 'locale', 'categories_id']; 
 
     /**
      * The auto generate uuid
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public static function boot()
     {
@@ -86,7 +86,7 @@ class Category extends BaseModel implements TranslatableContract
     /**
      * Relationship with translation
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function category_translation()
     {
@@ -96,7 +96,7 @@ class Category extends BaseModel implements TranslatableContract
     /**
      * The news that belong to the category.
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function news()
     {

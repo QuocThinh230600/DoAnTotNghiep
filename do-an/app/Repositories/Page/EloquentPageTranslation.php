@@ -12,7 +12,7 @@ class EloquentPageTranslation extends AbstractTranslationRepository implements P
     /**
      * EloquentPageTranslation constructor.
      * @param PageTranslation $model
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(PageTranslation $model)
     {

@@ -10,7 +10,7 @@ class CreateAttributesTranslationsTable extends Migration
      * Run the migrations.
      *
      * @return void
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function up()
     {
@@ -31,7 +31,7 @@ class CreateAttributesTranslationsTable extends Migration
      * Reverse the migrations.
      *
      * @return void
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function down()
     {

@@ -39,7 +39,7 @@ class ImageController extends AdminController
      * @param LanguageRepository $language
      * @param PositionRepository $position
      * @param ImageTranslationRepository $imageTranslation
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(ImageRepository $image,
                                 LanguageRepository $language,
@@ -62,7 +62,7 @@ class ImageController extends AdminController
      * Display a listing of the resource.
      *
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function index()
     {
@@ -80,7 +80,7 @@ class ImageController extends AdminController
      * Show the form for creating a new resource.
      *
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function create()
     {
@@ -95,7 +95,7 @@ class ImageController extends AdminController
      *
      * @param StoreRequest $request
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function store(StoreRequest $request)
     {
@@ -136,7 +136,7 @@ class ImageController extends AdminController
      *
      * @param string $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function show(string $uuid)
     {
@@ -154,7 +154,7 @@ class ImageController extends AdminController
      *
      * @param string $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function edit(string $uuid)
     {
@@ -181,7 +181,7 @@ class ImageController extends AdminController
      * @param UpdateRequest $request
      * @param string $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function update(UpdateRequest $request, string $uuid)
     {
@@ -230,7 +230,7 @@ class ImageController extends AdminController
      *
      * @param string $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function destroy(string $uuid)
     {
@@ -257,7 +257,7 @@ class ImageController extends AdminController
      * Get position max of category after change parent category
      * @param RequestAjax $request
      * @return int
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function ajaxSelectPositionImages(RequestAjax $request): int
     {
@@ -268,7 +268,7 @@ class ImageController extends AdminController
      * Process datatables ajax request.
      * @return mixed
      * @throws \Exception
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function dataTableIndex()
     {
@@ -320,7 +320,7 @@ class ImageController extends AdminController
      * Number of languages ​​remaining after the data has been created
      * @param string $uuid
      * @return array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function translateRemaining(string $uuid): array
     {
@@ -345,7 +345,7 @@ class ImageController extends AdminController
      * Display language translation template
      * @param string $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function language(string $uuid)
     {
@@ -366,7 +366,7 @@ class ImageController extends AdminController
      * @param TranslationRequest $request
      * @param string $uuid
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function translation(TranslationRequest $request, string $uuid)
     {

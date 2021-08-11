@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers\Administrator;
 
+use App\Repositories\Cart\PayorderRepository;
+use App\Repositories\News\NewsRepository;
+use App\Repositories\Product\ProductRepository;
 use Illuminate\Support\Facades\Session;
 use Spatie\Analytics\Period;
 
@@ -11,22 +14,39 @@ class DashboardController extends AdminController
 
     /**
      * DashboardController constructor.
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author  
      */
-    public function __construct()
+
+    private $product;
+
+    private $order;
+
+    private $news;
+
+    public function __construct(ProductRepository $product,
+                                PayorderRepository $order,
+                                NewsRepository $news)
     {
+        $this->product  = $product;
+        $this->order    = $order;
+        $this->news     = $news;
+
         parent::__construct();
     }
 
     /**
      * Show view dashboard
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function index()
     {
+        $data['product']    = $this->product->query()->get();
+        $data['order']      = $this->order->query()->get();
+        $data['news']       = $this->news->query()->get();
+
         if (env('ANALYTICS_VIEW_ID') == NULL) {
-            return view($this->view . 'index');
+            return view($this->view . 'index', $data);
         } else {
             $data["peferrersData"] = \Analytics::fetchTopReferrers(Period::days(7));
 
@@ -65,6 +85,8 @@ class DashboardController extends AdminController
             $data['totalVisitors']     = $totalVisitedPages->pluck('visitors');
             $data['totalPageViewes']   = $totalVisitedPages->pluck('pageViews');
 
+
+            
             return view($this->view . 'index', $data);
         }
 
@@ -74,7 +96,7 @@ class DashboardController extends AdminController
      * Set locale to switch language
      * @param string $locale
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function locale(string $locale)
     {

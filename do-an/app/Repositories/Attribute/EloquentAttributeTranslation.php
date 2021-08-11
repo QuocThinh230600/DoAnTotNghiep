@@ -12,7 +12,7 @@ class EloquentAttributeTranslation extends AbstractTranslationRepository impleme
     /**
      * EloquentAttributeTranslation constructor.
      * @param AttributeTranslation $model
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(AttributeTranslation $model)
     {

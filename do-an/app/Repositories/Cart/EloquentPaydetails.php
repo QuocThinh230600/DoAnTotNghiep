@@ -12,7 +12,7 @@ class EloquentPaydetails extends AbstractRepository implements PaydetailsReposit
     /**
      * EloquentPosition constructor.
      * @param Paydetails $model
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(Paydetails $model)
     {

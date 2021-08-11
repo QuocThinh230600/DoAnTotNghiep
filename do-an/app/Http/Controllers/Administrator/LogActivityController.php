@@ -16,7 +16,7 @@ class LogActivityController extends AdminController
     /**
      * LogActivityController constructor.
      * @param LogActivityRepository $activity
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(LogActivityRepository $activity)
     {
@@ -30,7 +30,7 @@ class LogActivityController extends AdminController
      * Display a listing of the resource.
      *
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function index()
     {
@@ -42,7 +42,7 @@ class LogActivityController extends AdminController
      *
      * @param int $id
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function destroy(int $id)
     {
@@ -60,7 +60,7 @@ class LogActivityController extends AdminController
      * Process datatables ajax request.
      * @return mixed
      * @throws \Exception
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function dataTableIndex()
     {

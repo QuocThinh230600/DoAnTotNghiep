@@ -22,27 +22,27 @@ class Product extends BaseModel implements TranslatableContract
     /**
      * The table associated with the model.
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $table = 'products';
 
     /**
      * The attributes that aren't mass assignable.
      * @var array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $guarded = [];
 
     /**
      * equivalent of ->cacheTags(['products'])
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
     */
     public $cacheTags = ['products'];
     /**
      * equivalent of ->cachePrefix('products');
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
     */
     public $cachePrefix = 'products_';
     
@@ -57,27 +57,27 @@ class Product extends BaseModel implements TranslatableContract
     /**
      * The attributes that should be mutated to dates.
      * @var array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $dates = ['created_at', 'updated_at'];
 
     /**
      * The attributes soft delete with function name.
      * @var array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $softCascade = ['product_translation', 'product_images', 'category_product'];
 
     /**
      * The attributes translate language.
      * @var array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public $translatedAttributes = ['name', 'quantity', 'promotion_id', 'parent_id' , 'description', 'content', 'image', 'youtube', 'file', 'slug', 'title_tag', 'meta_keywords', 'meta_description', 'locale', 'product_id'];
 
     /**
      * The auto generate uuid
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public static function boot()
     {
@@ -90,7 +90,7 @@ class Product extends BaseModel implements TranslatableContract
     /**
      * Relationship with translation
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function product_translation()
     {
@@ -100,7 +100,7 @@ class Product extends BaseModel implements TranslatableContract
     /**
      * The category that belong to the news.
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function category()
     {
@@ -110,7 +110,7 @@ class Product extends BaseModel implements TranslatableContract
     /**
      * The category that belong to the product.
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function category_product()
     {
@@ -120,7 +120,7 @@ class Product extends BaseModel implements TranslatableContract
     /**
      * Get the images for the product.
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function product_images()
     {
@@ -130,7 +130,7 @@ class Product extends BaseModel implements TranslatableContract
     /**
      * Get the attribute for the product.
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function product_attribute()
     {
@@ -140,7 +140,7 @@ class Product extends BaseModel implements TranslatableContract
      /**
      * Get the bonus for the product.
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function product_bonus()
     {
@@ -150,7 +150,7 @@ class Product extends BaseModel implements TranslatableContract
     /**
      * Get the attribute for the product.
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function attribute_product()
     {

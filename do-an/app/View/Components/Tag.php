@@ -43,7 +43,7 @@ class Tag extends Component
     /**
      * Add html required
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function attrRequired(): string
     {

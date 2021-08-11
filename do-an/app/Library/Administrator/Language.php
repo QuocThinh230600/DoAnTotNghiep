@@ -6,7 +6,7 @@ if (!function_exists('mbUcFirst')) {
      * @param string $encoding
      * @param bool $lower_str_end
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function mbUcFirst(string $str, string $encoding = "UTF-8", bool $lower_str_end = false): string
     {
@@ -29,7 +29,7 @@ if (!function_exists('module')) {
      * Module name
      * @param string $name
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function module(string $name): string
     {
@@ -42,7 +42,7 @@ if (!function_exists('label')) {
      * Auto generate label
      * @param string $name
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function label(string $name): string
     {
@@ -55,7 +55,7 @@ if (!function_exists('placeholder')) {
      * Auto generate placeholder
      * @param string $name
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function placeholder(string $name): string
     {
@@ -68,7 +68,7 @@ if (!function_exists('behavior')) {
      * Act in function
      * @param string $content
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function behavior(string $content): string
     {
@@ -82,7 +82,7 @@ if (!function_exists('title_module')) {
      * @param string $module
      * @param string $action
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function title_module(string $module, string $action): string
     {
@@ -95,7 +95,7 @@ if (!function_exists('mail_content')) {
      * Mail content
      * @param string $content
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function mail_content(string $content): string
     {
@@ -108,7 +108,7 @@ if (!function_exists('message')) {
      * Notification of results
      * @param string $name
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function message(string $name): string
     {
@@ -121,7 +121,7 @@ if (!function_exists('attr')) {
      * Atribute form
      * @param string $name
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function attr($name): string
     {
@@ -138,7 +138,7 @@ if (!function_exists('message_module')) {
      * @param string $module
      * @param string $message
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     function message_module(string $module, string $message): string
     {

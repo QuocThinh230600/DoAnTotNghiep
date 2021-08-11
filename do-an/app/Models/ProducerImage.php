@@ -14,7 +14,7 @@ class ProducerImage extends Model
     /**
      * The table associated with the model.
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public $cacheFor = 3600; // equivalent of ->cacheFor(3600)
 
@@ -23,20 +23,20 @@ class ProducerImage extends Model
     /**
      * The attributes that aren't mass assignable.
      * @var array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $guarded = [];
 
     /**
      * equivalent of ->cacheTags(['product_images'])
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
     */
     public $cacheTags = ['producer_images'];
     /**
      * equivalent of ->cachePrefix('product_images');
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
     */
     public $cachePrefix = 'producer_images_';
     
@@ -51,7 +51,7 @@ class ProducerImage extends Model
     /**
      * Indicates if the model should be timestamped.
      * @var bool
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public $timestamps = false;
 

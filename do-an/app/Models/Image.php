@@ -16,7 +16,7 @@ class Image extends BaseModel implements TranslatableContract
     /**
      * The table associated with the model.
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public $cacheFor = 3600; // equivalent of ->cacheFor(3600)
     
@@ -25,19 +25,19 @@ class Image extends BaseModel implements TranslatableContract
     /**
      * The attributes that aren't mass assignable.
      * @var array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $guarded = [];
     /**
      * equivalent of ->cacheTags(['images'])
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
     */
     public $cacheTags = ['images'];
     /**
      * equivalent of ->cachePrefix('images');
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
     */
     public $cachePrefix = 'images_';
     /**
@@ -51,27 +51,27 @@ class Image extends BaseModel implements TranslatableContract
     /**
      * The attributes that should be mutated to dates.
      * @var array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $dates = ['created_at', 'updated_at'];
 
     /**
      * The attributes soft delete with function name.
      * @var array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $softCascade = ['images_translations'];
 
     /**
      * The attributes translate language.
      * @var array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public $translatedAttributes = ['name', 'script_code', 'image', 'link', 'video', 'description', 'locale', 'image_id'];
 
     /**
      * The auto generate uuid
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public static function boot()
     {
@@ -84,7 +84,7 @@ class Image extends BaseModel implements TranslatableContract
     /**
      * Relationship with translation
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function images_translations()
     {
@@ -94,7 +94,7 @@ class Image extends BaseModel implements TranslatableContract
     /**
      * Relationship with position
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function position_image ()
     {

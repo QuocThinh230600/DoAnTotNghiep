@@ -55,7 +55,7 @@ class Selectbox extends Component
      * Set id attribute for tag if another null
      * @param object $item
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function attrId(object $item): string
     {
@@ -65,7 +65,7 @@ class Selectbox extends Component
     /**
      * Set disabled attribute for tag if nother null
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function attrDisabled(): string
     {
@@ -75,7 +75,7 @@ class Selectbox extends Component
     /**
      * Add html required
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function attrRequired(): string
     {

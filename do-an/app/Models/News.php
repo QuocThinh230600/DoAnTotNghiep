@@ -16,7 +16,7 @@ class News extends BaseModel implements TranslatableContract
     /**
      * The table associated with the model.
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public $cacheFor = 3600; // equivalent of ->cacheFor(3600)
     
@@ -25,20 +25,20 @@ class News extends BaseModel implements TranslatableContract
     /**
      * The attributes that aren't mass assignable.
      * @var array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $guarded = [];
 
     /**
      * equivalent of ->cacheTags(['news'])
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
     */
     public $cacheTags = ['news'];
     /**
      * equivalent of ->cachePrefix('news');
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
     */
     public $cachePrefix = 'news_';
     /**
@@ -52,27 +52,27 @@ class News extends BaseModel implements TranslatableContract
     /**
      * The attributes that should be mutated to dates.
      * @var array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $dates = ['created_at', 'updated_at'];
 
     /**
      * The attributes soft delete with function name.
      * @var array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     protected $softCascade = ['news_translation', 'news_images', 'category_news'];
 
     /**
      * The attributes translate language.
      * @var array
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public $translatedAttributes = ['title', 'author', 'copyright', 'intro', 'content', 'foot', 'image', 'youtube', 'file', 'slug', 'title_tag', 'meta_keywords', 'meta_description', 'meta_robots', 'meta_google_bot', 'locale', 'news_id'];
 
     /**
      * The auto generate uuid
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public static function boot()
     {
@@ -85,7 +85,7 @@ class News extends BaseModel implements TranslatableContract
     /**
      * Relationship with translation
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function news_translation()
     {
@@ -95,7 +95,7 @@ class News extends BaseModel implements TranslatableContract
     /**
      * The category that belong to the news.
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function category()
     {
@@ -105,7 +105,7 @@ class News extends BaseModel implements TranslatableContract
     /**
      * The category that belong to the news.
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function category_news()
     {
@@ -115,7 +115,7 @@ class News extends BaseModel implements TranslatableContract
     /**
      * Get the images for the news.
      * @return mixed
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function news_images()
     {

@@ -26,13 +26,13 @@ class Review extends Model
     /**
      * equivalent of ->cacheTags(['review'])
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
     */
     public $cacheTags = ['review'];
     /**
      * equivalent of ->cachePrefix('review');
      * @var string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
     */
     public $cachePrefix = 'review_';
     

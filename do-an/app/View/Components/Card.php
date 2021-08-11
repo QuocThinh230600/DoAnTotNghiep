@@ -21,7 +21,7 @@ class Card extends Component
      * @param string|null $module
      * @param string|null $id
      * @param string|null $table
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function __construct(string $title = null, string $module = null, string $id = null, string $table = null)
     {
@@ -43,7 +43,7 @@ class Card extends Component
     /**
      * Set id attribute for tag if another null
      * @return string
-     * @author Quốc Tuấn <contact.quoctuan@gmail.com>
+     * @author 
      */
     public function attrId(): string
     {
