@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.3
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Aug 09, 2021 at 11:03 AM
--- Server version: 10.4.14-MariaDB
--- PHP Version: 7.4.11
+-- Máy chủ: 127.0.0.1
+-- Thời gian đã tạo: Th8 15, 2021 lúc 10:42 AM
+-- Phiên bản máy phục vụ: 10.4.11-MariaDB
+-- Phiên bản PHP: 7.4.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `kitchendb`
+-- Cơ sở dữ liệu: `doan`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_attributes`
+-- Cấu trúc bảng cho bảng `samcms_attributes`
 --
 
 CREATE TABLE `samcms_attributes` (
@@ -40,7 +40,7 @@ CREATE TABLE `samcms_attributes` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_attributes`
+-- Đang đổ dữ liệu cho bảng `samcms_attributes`
 --
 
 INSERT INTO `samcms_attributes` (`id`, `uuid`, `parent_id`, `position`, `status`, `user_id`, `deleted_at`, `created_at`, `updated_at`) VALUES
@@ -63,7 +63,7 @@ INSERT INTO `samcms_attributes` (`id`, `uuid`, `parent_id`, `position`, `status`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_attributes_translations`
+-- Cấu trúc bảng cho bảng `samcms_attributes_translations`
 --
 
 CREATE TABLE `samcms_attributes_translations` (
@@ -79,7 +79,7 @@ CREATE TABLE `samcms_attributes_translations` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_attributes_translations`
+-- Đang đổ dữ liệu cho bảng `samcms_attributes_translations`
 --
 
 INSERT INTO `samcms_attributes_translations` (`id`, `uuid`, `name`, `description`, `locale`, `attribute_id`, `deleted_at`, `created_at`, `updated_at`) VALUES
@@ -99,7 +99,7 @@ INSERT INTO `samcms_attributes_translations` (`id`, `uuid`, `name`, `description
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_bonus_product`
+-- Cấu trúc bảng cho bảng `samcms_bonus_product`
 --
 
 CREATE TABLE `samcms_bonus_product` (
@@ -112,7 +112,7 @@ CREATE TABLE `samcms_bonus_product` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_bonus_product`
+-- Đang đổ dữ liệu cho bảng `samcms_bonus_product`
 --
 
 INSERT INTO `samcms_bonus_product` (`id`, `uuid`, `value`, `product_id`, `created_at`, `updated_at`) VALUES
@@ -138,7 +138,7 @@ INSERT INTO `samcms_bonus_product` (`id`, `uuid`, `value`, `product_id`, `create
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_categories`
+-- Cấu trúc bảng cho bảng `samcms_categories`
 --
 
 CREATE TABLE `samcms_categories` (
@@ -164,7 +164,7 @@ CREATE TABLE `samcms_categories` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_categories`
+-- Đang đổ dữ liệu cho bảng `samcms_categories`
 --
 
 INSERT INTO `samcms_categories` (`id`, `uuid`, `icon`, `parent_id`, `banner3`, `banner1`, `banner2`, `link1`, `link2`, `link3`, `position`, `featured`, `access`, `open_link`, `status`, `user_id`, `deleted_at`, `created_at`, `updated_at`) VALUES
@@ -199,7 +199,7 @@ INSERT INTO `samcms_categories` (`id`, `uuid`, `icon`, `parent_id`, `banner3`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_categories_translations`
+-- Cấu trúc bảng cho bảng `samcms_categories_translations`
 --
 
 CREATE TABLE `samcms_categories_translations` (
@@ -224,7 +224,7 @@ CREATE TABLE `samcms_categories_translations` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_categories_translations`
+-- Đang đổ dữ liệu cho bảng `samcms_categories_translations`
 --
 
 INSERT INTO `samcms_categories_translations` (`id`, `uuid`, `name`, `description`, `image`, `image_mobile`, `link`, `slug`, `title_tag`, `meta_keywords`, `meta_description`, `meta_robots`, `meta_google_bot`, `locale`, `category_id`, `deleted_at`, `created_at`, `updated_at`) VALUES
@@ -260,7 +260,7 @@ INSERT INTO `samcms_categories_translations` (`id`, `uuid`, `name`, `description
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_category_images`
+-- Cấu trúc bảng cho bảng `samcms_category_images`
 --
 
 CREATE TABLE `samcms_category_images` (
@@ -275,7 +275,7 @@ CREATE TABLE `samcms_category_images` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_category_news`
+-- Cấu trúc bảng cho bảng `samcms_category_news`
 --
 
 CREATE TABLE `samcms_category_news` (
@@ -286,7 +286,7 @@ CREATE TABLE `samcms_category_news` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_category_news`
+-- Đang đổ dữ liệu cho bảng `samcms_category_news`
 --
 
 INSERT INTO `samcms_category_news` (`id`, `category_id`, `news_id`, `deleted_at`) VALUES
@@ -317,7 +317,7 @@ INSERT INTO `samcms_category_news` (`id`, `category_id`, `news_id`, `deleted_at`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_category_products`
+-- Cấu trúc bảng cho bảng `samcms_category_products`
 --
 
 CREATE TABLE `samcms_category_products` (
@@ -328,7 +328,7 @@ CREATE TABLE `samcms_category_products` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_category_products`
+-- Đang đổ dữ liệu cho bảng `samcms_category_products`
 --
 
 INSERT INTO `samcms_category_products` (`id`, `category_id`, `product_id`, `deleted_at`) VALUES
@@ -458,7 +458,7 @@ INSERT INTO `samcms_category_products` (`id`, `category_id`, `product_id`, `dele
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_configs`
+-- Cấu trúc bảng cho bảng `samcms_configs`
 --
 
 CREATE TABLE `samcms_configs` (
@@ -470,7 +470,7 @@ CREATE TABLE `samcms_configs` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_configs`
+-- Đang đổ dữ liệu cho bảng `samcms_configs`
 --
 
 INSERT INTO `samcms_configs` (`id`, `attribute`, `value`, `created_at`, `updated_at`) VALUES
@@ -478,10 +478,10 @@ INSERT INTO `samcms_configs` (`id`, `attribute`, `value`, `created_at`, `updated
 (2, 'title', 'SamCMS', '2021-05-07 01:29:02', '2021-05-19 01:55:57'),
 (3, 'meta_robots', 'index,follow', '2021-05-07 01:29:02', '2021-05-19 01:55:57'),
 (4, 'meta_google_bot', 'index,follow', '2021-05-07 01:29:02', '2021-05-19 01:55:57'),
-(5, 'meta_keywords', 'quoctuan.info', '2021-05-07 01:29:02', '2021-05-19 01:55:57'),
+(5, 'meta_keywords', 'luantran.info', '2021-05-07 01:29:02', '2021-05-19 01:55:57'),
 (6, 'meta_description', 'SamCMS', '2021-05-07 01:29:02', '2021-05-19 01:55:57'),
-(7, 'copyright', 'quoctuan.info', '2021-05-07 01:29:02', '2021-05-19 01:55:57'),
-(8, 'author', 'KingFox', '2021-05-07 01:29:02', '2021-05-19 01:55:57'),
+(7, 'copyright', 'luantran.info', '2021-05-07 01:29:02', '2021-05-19 01:55:57'),
+(8, 'author', 'TranThanhLuan', '2021-05-07 01:29:02', '2021-05-19 01:55:57'),
 (9, 'placename', 'Ho Chi Minh, Viet Nam', '2021-05-07 01:29:02', '2021-05-19 01:55:57'),
 (10, 'region', 'VN-HN', '2021-05-07 01:29:02', '2021-05-19 01:55:58'),
 (11, 'position', '21.030624;105.782431', '2021-05-07 01:29:02', '2021-05-19 01:55:58'),
@@ -504,7 +504,7 @@ INSERT INTO `samcms_configs` (`id`, `attribute`, `value`, `created_at`, `updated
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_contacts`
+-- Cấu trúc bảng cho bảng `samcms_contacts`
 --
 
 CREATE TABLE `samcms_contacts` (
@@ -522,7 +522,7 @@ CREATE TABLE `samcms_contacts` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_contacts`
+-- Đang đổ dữ liệu cho bảng `samcms_contacts`
 --
 
 INSERT INTO `samcms_contacts` (`id`, `uuid`, `full_name`, `email`, `phone`, `address`, `message`, `product_id`, `deleted_at`, `created_at`, `updated_at`) VALUES
@@ -536,7 +536,7 @@ INSERT INTO `samcms_contacts` (`id`, `uuid`, `full_name`, `email`, `phone`, `add
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_contents`
+-- Cấu trúc bảng cho bảng `samcms_contents`
 --
 
 CREATE TABLE `samcms_contents` (
@@ -551,7 +551,7 @@ CREATE TABLE `samcms_contents` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_contents`
+-- Đang đổ dữ liệu cho bảng `samcms_contents`
 --
 
 INSERT INTO `samcms_contents` (`id`, `uuid`, `status`, `page_id`, `user_id`, `deleted_at`, `created_at`, `updated_at`) VALUES
@@ -653,7 +653,7 @@ INSERT INTO `samcms_contents` (`id`, `uuid`, `status`, `page_id`, `user_id`, `de
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_contents_translations`
+-- Cấu trúc bảng cho bảng `samcms_contents_translations`
 --
 
 CREATE TABLE `samcms_contents_translations` (
@@ -669,7 +669,7 @@ CREATE TABLE `samcms_contents_translations` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_contents_translations`
+-- Đang đổ dữ liệu cho bảng `samcms_contents_translations`
 --
 
 INSERT INTO `samcms_contents_translations` (`id`, `uuid`, `content`, `image`, `locale`, `content_id`, `deleted_at`, `created_at`, `updated_at`) VALUES
@@ -771,7 +771,7 @@ INSERT INTO `samcms_contents_translations` (`id`, `uuid`, `content`, `image`, `l
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_coupons`
+-- Cấu trúc bảng cho bảng `samcms_coupons`
 --
 
 CREATE TABLE `samcms_coupons` (
@@ -791,7 +791,7 @@ CREATE TABLE `samcms_coupons` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_coupons`
+-- Đang đổ dữ liệu cho bảng `samcms_coupons`
 --
 
 INSERT INTO `samcms_coupons` (`id`, `uuid`, `date_start`, `time_start`, `date_end`, `time_end`, `name`, `percent`, `code`, `status`, `deleted_at`, `created_at`, `updated_at`) VALUES
@@ -801,7 +801,7 @@ INSERT INTO `samcms_coupons` (`id`, `uuid`, `date_start`, `time_start`, `date_en
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_districts`
+-- Cấu trúc bảng cho bảng `samcms_districts`
 --
 
 CREATE TABLE `samcms_districts` (
@@ -817,7 +817,7 @@ CREATE TABLE `samcms_districts` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_districts`
+-- Đang đổ dữ liệu cho bảng `samcms_districts`
 --
 
 INSERT INTO `samcms_districts` (`id`, `name`, `gso_id`, `status`, `featured`, `province_id`, `deleted_at`, `created_at`, `updated_at`) VALUES
@@ -1528,7 +1528,7 @@ INSERT INTO `samcms_districts` (`id`, `name`, `gso_id`, `status`, `featured`, `p
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_failed_jobs`
+-- Cấu trúc bảng cho bảng `samcms_failed_jobs`
 --
 
 CREATE TABLE `samcms_failed_jobs` (
@@ -1543,7 +1543,7 @@ CREATE TABLE `samcms_failed_jobs` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_image360`
+-- Cấu trúc bảng cho bảng `samcms_image360`
 --
 
 CREATE TABLE `samcms_image360` (
@@ -1554,7 +1554,7 @@ CREATE TABLE `samcms_image360` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_image360`
+-- Đang đổ dữ liệu cho bảng `samcms_image360`
 --
 
 INSERT INTO `samcms_image360` (`id`, `image`, `product_id`, `deleted_at`) VALUES
@@ -1642,7 +1642,7 @@ INSERT INTO `samcms_image360` (`id`, `image`, `product_id`, `deleted_at`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_images`
+-- Cấu trúc bảng cho bảng `samcms_images`
 --
 
 CREATE TABLE `samcms_images` (
@@ -1660,7 +1660,7 @@ CREATE TABLE `samcms_images` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_images`
+-- Đang đổ dữ liệu cho bảng `samcms_images`
 --
 
 INSERT INTO `samcms_images` (`id`, `uuid`, `position`, `access`, `open_link`, `status`, `position_id`, `user_id`, `deleted_at`, `created_at`, `updated_at`) VALUES
@@ -1679,7 +1679,7 @@ INSERT INTO `samcms_images` (`id`, `uuid`, `position`, `access`, `open_link`, `s
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_images_translations`
+-- Cấu trúc bảng cho bảng `samcms_images_translations`
 --
 
 CREATE TABLE `samcms_images_translations` (
@@ -1699,7 +1699,7 @@ CREATE TABLE `samcms_images_translations` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_images_translations`
+-- Đang đổ dữ liệu cho bảng `samcms_images_translations`
 --
 
 INSERT INTO `samcms_images_translations` (`id`, `uuid`, `name`, `script_code`, `image`, `link`, `video`, `description`, `locale`, `image_id`, `deleted_at`, `created_at`, `updated_at`) VALUES
@@ -1718,7 +1718,7 @@ INSERT INTO `samcms_images_translations` (`id`, `uuid`, `name`, `script_code`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_languages`
+-- Cấu trúc bảng cho bảng `samcms_languages`
 --
 
 CREATE TABLE `samcms_languages` (
@@ -1740,7 +1740,7 @@ CREATE TABLE `samcms_languages` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_languages`
+-- Đang đổ dữ liệu cho bảng `samcms_languages`
 --
 
 INSERT INTO `samcms_languages` (`id`, `uuid`, `name`, `locale`, `timezone`, `currency`, `exchange_rate`, `flag`, `format_date`, `status`, `default`, `user_id`, `deleted_at`, `created_at`, `updated_at`) VALUES
@@ -1749,7 +1749,7 @@ INSERT INTO `samcms_languages` (`id`, `uuid`, `name`, `locale`, `timezone`, `cur
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_login_history`
+-- Cấu trúc bảng cho bảng `samcms_login_history`
 --
 
 CREATE TABLE `samcms_login_history` (
@@ -1767,7 +1767,7 @@ CREATE TABLE `samcms_login_history` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_login_history`
+-- Đang đổ dữ liệu cho bảng `samcms_login_history`
 --
 
 INSERT INTO `samcms_login_history` (`id`, `login_at`, `logout_at`, `login_ip`, `device`, `os`, `browser`, `session_id`, `user_uuid`, `created_at`, `updated_at`) VALUES
@@ -1795,7 +1795,7 @@ INSERT INTO `samcms_login_history` (`id`, `login_at`, `logout_at`, `login_ip`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_log_activity`
+-- Cấu trúc bảng cho bảng `samcms_log_activity`
 --
 
 CREATE TABLE `samcms_log_activity` (
@@ -1813,7 +1813,7 @@ CREATE TABLE `samcms_log_activity` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_log_activity`
+-- Đang đổ dữ liệu cho bảng `samcms_log_activity`
 --
 
 INSERT INTO `samcms_log_activity` (`id`, `module`, `action`, `description`, `url`, `method`, `ip`, `agent`, `user_id`, `created_at`, `updated_at`) VALUES
@@ -2048,7 +2048,7 @@ INSERT INTO `samcms_log_activity` (`id`, `module`, `action`, `description`, `url
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_migrations`
+-- Cấu trúc bảng cho bảng `samcms_migrations`
 --
 
 CREATE TABLE `samcms_migrations` (
@@ -2058,7 +2058,7 @@ CREATE TABLE `samcms_migrations` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_migrations`
+-- Đang đổ dữ liệu cho bảng `samcms_migrations`
 --
 
 INSERT INTO `samcms_migrations` (`id`, `migration`, `batch`) VALUES
@@ -2117,7 +2117,7 @@ INSERT INTO `samcms_migrations` (`id`, `migration`, `batch`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_model_has_permissions`
+-- Cấu trúc bảng cho bảng `samcms_model_has_permissions`
 --
 
 CREATE TABLE `samcms_model_has_permissions` (
@@ -2129,7 +2129,7 @@ CREATE TABLE `samcms_model_has_permissions` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_model_has_roles`
+-- Cấu trúc bảng cho bảng `samcms_model_has_roles`
 --
 
 CREATE TABLE `samcms_model_has_roles` (
@@ -2139,7 +2139,7 @@ CREATE TABLE `samcms_model_has_roles` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_model_has_roles`
+-- Đang đổ dữ liệu cho bảng `samcms_model_has_roles`
 --
 
 INSERT INTO `samcms_model_has_roles` (`role_id`, `model_type`, `model_id`) VALUES
@@ -2150,7 +2150,7 @@ INSERT INTO `samcms_model_has_roles` (`role_id`, `model_type`, `model_id`) VALUE
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_news`
+-- Cấu trúc bảng cho bảng `samcms_news`
 --
 
 CREATE TABLE `samcms_news` (
@@ -2174,7 +2174,7 @@ CREATE TABLE `samcms_news` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_news`
+-- Đang đổ dữ liệu cho bảng `samcms_news`
 --
 
 INSERT INTO `samcms_news` (`id`, `uuid`, `date_start`, `time_start`, `date_end`, `time_end`, `position`, `access`, `open_link`, `status`, `featured`, `template`, `viewed`, `user_id`, `deleted_at`, `created_at`, `updated_at`) VALUES
@@ -2205,7 +2205,7 @@ INSERT INTO `samcms_news` (`id`, `uuid`, `date_start`, `time_start`, `date_end`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_news_image`
+-- Cấu trúc bảng cho bảng `samcms_news_image`
 --
 
 CREATE TABLE `samcms_news_image` (
@@ -2220,7 +2220,7 @@ CREATE TABLE `samcms_news_image` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_news_translations`
+-- Cấu trúc bảng cho bảng `samcms_news_translations`
 --
 
 CREATE TABLE `samcms_news_translations` (
@@ -2256,41 +2256,41 @@ CREATE TABLE `samcms_news_translations` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_news_translations`
+-- Đang đổ dữ liệu cho bảng `samcms_news_translations`
 --
 
 INSERT INTO `samcms_news_translations` (`id`, `uuid`, `title`, `author`, `price_min`, `copyright`, `form_of_work`, `price_max`, `need`, `benefit`, `soft_desc`, `promotion_percent`, `intro`, `content`, `foot`, `image`, `youtube`, `file`, `slug`, `title_tag`, `meta_keywords`, `meta_description`, `meta_robots`, `meta_google_bot`, `locale`, `news_id`, `deleted_at`, `created_at`, `updated_at`) VALUES
-(1, 'ef70d96e-0e67-408c-8d42-d6a45fb08e9b', 'Laptop MSI GL65 Leopard 10SCXK 089VN', 'Vũ Quốc Tuấn', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<p>aaaaaaaaaaaaaaa</p>', '<p>a</p>', NULL, 'http://localhost:8000/uploads/images/banner-img.jpg', NULL, NULL, 'laptop-msi-gl65-leopard-10scxk-089vn', 'Laptop MSI GL65 Leopard 10SCXK 089VN', NULL, NULL, 'index,follow', 'index,follow', 'vi', 1, NULL, '2021-05-11 06:43:48', '2021-05-11 06:43:48'),
-(2, 'ff2be42b-44cd-4475-8409-e8fd8613b6f6', 'Mừng lễ', 'Vũ Quốc Tuấn', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '10', '<p>Mừng đại lễ&nbsp;</p>', NULL, NULL, 'http://localhost:8000/uploads/images/01_Index_v1.jpg', NULL, NULL, 'mung-le', 'Mừng lễ', NULL, NULL, 'index,follow', 'index,follow', 'vi', 2, NULL, '2021-05-12 06:38:48', '2021-05-13 01:29:57'),
+(1, 'ef70d96e-0e67-408c-8d42-d6a45fb08e9b', 'Laptop MSI GL65 Leopard 10SCXK 089VN', 'Trần Thanh Luân', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<p>aaaaaaaaaaaaaaa</p>', '<p>a</p>', NULL, 'http://localhost:8000/uploads/images/banner-img.jpg', NULL, NULL, 'laptop-msi-gl65-leopard-10scxk-089vn', 'Laptop MSI GL65 Leopard 10SCXK 089VN', NULL, NULL, 'index,follow', 'index,follow', 'vi', 1, NULL, '2021-05-11 06:43:48', '2021-05-11 06:43:48'),
+(2, 'ff2be42b-44cd-4475-8409-e8fd8613b6f6', 'Mừng lễ', 'Trần Thanh Luân', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '10', '<p>Mừng đại lễ&nbsp;</p>', NULL, NULL, 'http://localhost:8000/uploads/images/01_Index_v1.jpg', NULL, NULL, 'mung-le', 'Mừng lễ', NULL, NULL, 'index,follow', 'index,follow', 'vi', 2, NULL, '2021-05-12 06:38:48', '2021-05-13 01:29:57'),
 (3, '65152352-97b0-4e6b-ba0c-00ea40a8f2c6', 'Cách làm phiếu khảo sát trong Word 2016 2010 cực nhanh, đơn giản', 'Trần Thanh Luân', NULL, '@luancopy', NULL, NULL, NULL, NULL, NULL, NULL, '<h2>Để có thể làm phiếu khảo sát nhanh chóng và đơn giản không thể nào bỏ qua việc thực hiện trên&nbsp;<a href=\"https://www.thegioididong.com/game-app/microsoft-word-tao-chinh-sua-chia-se-tai-lieu-nhanh-chong-220667\" target=\"_blank\">Word</a>. Bài viết này sẽ hướng dẫn các bạn cách làm phiếu khảo sát trong Word 2016 2010 cực nhanh.</h2>', '<h3 id=\"hmenuid1\"><strong>1. Cách làm phiếu khảo sát trong Word</strong></h3>\r\n\r\n<p><strong>Bước 1: Đánh câu hỏi và câu trả lời không cần định dạng</strong></p>\r\n\r\n<p>Nhập câu hỏi và câu trả lời như sau:</p>\r\n\r\n<p>Trước mỗi đáp án hãy chèn thêm ký tự&nbsp;<strong>\'</strong>&nbsp;để các bước sau sẽ cần sử dụng đến.</p>\r\n\r\n<p><img alt=\"Nhập câu hỏi và câu trả lời \" data-original=\"//cdn.tgdd.vn/hoi-dap/1350010/cach-lam-phieu-khao-sat-trong-word-2016-2010-cuc-nhanh-don-001-800x600.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1350010/cach-lam-phieu-khao-sat-trong-word-2016-2010-cuc-nhanh-don-001-800x600.jpg\" title=\"Nhập câu hỏi và câu trả lời \" /></p>\r\n\r\n<p>Nhập câu hỏi và câu trả lời</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Bước 2: Đánh số thứ tự cho mỗi câu</strong></p>\r\n\r\n<p>Bôi đen câu hỏi đầu &gt; Chọn&nbsp;<strong>Numbering</strong>&nbsp;trong tab&nbsp;<b>Home</b>.</p>\r\n\r\n<p><img alt=\"Chọn Numbering\" data-original=\"//cdn.tgdd.vn/hoi-dap/1350010/cach-lam-phieu-khao-sat-trong-word-2016-2010-cuc-nhanh-don-002-800x600.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1350010/cach-lam-phieu-khao-sat-trong-word-2016-2010-cuc-nhanh-don-002-800x600.jpg\" title=\"Chọn Numbering\" /></p>\r\n\r\n<p>Chọn Numbering</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Chọn&nbsp;<strong>Define New Number Format</strong>&nbsp;&gt; Trong&nbsp;<strong>Number format</strong>&nbsp;nhập \"C<strong>âu</strong>\" vào trước số&nbsp;<strong>1</strong>.</p>\r\n\r\n<p><img alt=\"Nhập \" data-original=\"//cdn.tgdd.vn/hoi-dap/1350010/cach-lam-phieu-khao-sat-trong-word-2016-2010-cuc-nhanh-don-003-800x600.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1350010/cach-lam-phieu-khao-sat-trong-word-2016-2010-cuc-nhanh-don-003-800x600.jpg\" title=\"Nhập \" /></p>\r\n\r\n<p>Nhập</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Bôi đen câu hỏi vừa định dạng &gt; Nhấn<strong>&nbsp;2</strong>&nbsp;lần vào&nbsp;<strong>Format Painter</strong>&nbsp;&gt; Trỏ chuột vào đầu dòng câu hỏi tiếp theo để áp dụng định dạng câu hỏi.</p>', '<h3 id=\"hmenuid2\"><strong>2. Cần lưu ý gì khi làm bảng khảo sát trong Word?</strong></h3>\r\n\r\n<p><strong>\"^t\"&nbsp;</strong>như một cú pháp giúp điều chỉnh khoảng cách giữa các đáp án rõ ràng và ngay ngắn hơn.</p>', 'http://localhost:8000/uploads/images/cai-ngot.jpg', 'https://www.youtube.com/watch?v=1ssJXZMSZl8', 'http://localhost:8000/uploads/images/cai-ngot.jpg', 'cach-lam-phieu-khao-sat-trong-word-2016-2010-cuc-nhanh-don-gian', 'Cách làm phiếu khảo sát trong Word 2016 2010 cực nhanh, đơn giản', NULL, NULL, 'index,follow', 'index,follow', 'vi', 3, NULL, '2021-05-13 01:23:14', '2021-05-13 01:24:53'),
-(4, '59c455f2-4e13-4f04-99d3-c8589b6d2bac', 'HOTSALE 2h', 'Vũ Quốc Tuấn', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '30', '<p>Giảm giá cực mạnh với các sản phẩm không phải hàng tồn kho</p>', NULL, NULL, 'http://localhost:8000/uploads/images/cai-ngot.jpg', NULL, NULL, 'hotsale-2h', 'HOTSALE 2h', NULL, NULL, 'index,follow', 'index,follow', 'vi', 4, NULL, '2021-05-13 01:53:34', '2021-05-13 01:53:34'),
-(5, 'e05c8b15-d75d-4458-a1b2-f7b0e26bd0e9', 'Lỗi ID Apple này chưa được sử dụng - Nguyên nhân và cách khắc phục', 'Vũ Quốc Tuấn', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<h2>Lỗi ID Apple này chưa được sử dụng sẽ gây bất tiện cho bạn khi sử dụng các dịch vụ của Apple trên App store cũng như các tính năng khác. Vậy phải xử lý như thế nào khi&nbsp;<a href=\"https://www.thegioididong.com/dtdd\" target=\"_blank\">điện thoại</a>&nbsp;của bạn hiển thị thông báo này của Apple. Cùng xem cách giải quyết dưới đây nhé!</h2>\r\n\r\n<p><label onclick=\"toogleMenuQuick()\">Xem nhanh</label></p>', '<h3 id=\"hmenuid1\"><strong>1. Nguyên nhân báo lỗi ID Apple này chưa được sử dụng</strong></h3>\r\n\r\n<p>Lỗi&nbsp;<a href=\"https://www.thegioididong.com/hoi-dap/apple-id-icloud-id-la-gi-hai-tai-khoan-nay-co-giong-nhau-757113\" target=\"_blank\">ID Apple</a>&nbsp;này chưa được sử dụng xảy ra khi bạn tạo ID Apple thông qua trang web của Apple sau đó đăng nhập trên các thiết bị như: iPhone,&nbsp;<a href=\"https://www.thegioididong.com/may-tinh-bang-apple-ipad\" target=\"_blank\">iPad</a>,&nbsp;<a href=\"https://www.thegioididong.com/laptop-apple-macbook\" target=\"_blank\">Macbook</a>,... Khác với việc tạo ID từ App hoặc iTune Store, khi bạn tạo ID từ trang web Apple sẽ không có mục Địa chỉ thanh toán và giao hàng.</p>\r\n\r\n<p><img alt=\"Lỗi ID Apple này chưa được sử dụng trước đây ở iTunes Store\" data-original=\"//cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x (2)-800x500.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x%20(2)-800x500.jpg\" title=\"Lỗi ID Apple này chưa được sử dụng trước đây ở iTunes Store\" /></p>\r\n\r\n<p>Lỗi ID Apple này chưa được sử dụng trước đây ở iTunes Store</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Vì vậy khi bạn sử dụng ID đăng ký từ web để đăng nhập trên các thiết bị khác thì lỗi này sẽ xảy ra. Mục đích chính là để Apple&nbsp;<strong>xác minh lại</strong>&nbsp;Địa chỉ thanh toán và giao hàng của bạn.</p>\r\n\r\n<h3 id=\"hmenuid2\"><strong>2. Cách khắc phục lỗi ID Apple này chưa được sử dụng</strong></h3>\r\n\r\n<h4 id=\"subhmenuid1\"><strong>Cập nhật thông tin thanh toán và thông tin giao hàng trong Cài đặt</strong></h4>\r\n\r\n<p>Việc bạn cần làm đầu tiên đó chính là cập nhật đầy đủ thông tin của mình trên&nbsp;<a href=\"https://www.thegioididong.com/dtdd-apple-iphone\" target=\"_blank\">iPhone</a>.</p>\r\n\r\n<p>Bạn vào&nbsp;<strong>Cài đặt</strong>&nbsp;(Settings), chọn vào&nbsp;<strong>Profile</strong>&nbsp;của mình &gt; Chọn&nbsp;<strong>Thanh toán &amp; Giao hàng</strong>&nbsp;(Payment &amp; Shipping).</p>\r\n\r\n<p><img alt=\"Chọn mục Thanh toán &amp; Giao hàng\" data-original=\"//cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x (3)-800x500.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x%20(3)-800x500.jpg\" title=\"Chọn mục Thanh toán &amp; Giao hàng\" /></p>\r\n\r\n<p>Chọn mục Thanh toán &amp; Giao hàng</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Tại cửa sổ Thanh toán &amp; Giao hàng bạn hãy cập nhật thêm thông tin của mình bằng việc hoàn thiện đầy đủ thông tin của các mục lần lượt từ&nbsp;<strong>Phương thức thanh toán đến Địa chỉ giao hàng, Địa chỉ thanh toán</strong>.</p>\r\n\r\n<p><img alt=\"Bạn cần cập nhật đầy đủ thông tin trong cửa sổ Thanh toán &amp; Giao hàng\" data-original=\"//cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x (4)-800x500.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x%20(4)-800x500.jpg\" title=\"Bạn cần cập nhật đầy đủ thông tin trong cửa sổ Thanh toán &amp; Giao hàng\" /></p>\r\n\r\n<p>Bạn cần cập nhật đầy đủ thông tin trong cửa sổ Thanh toán &amp; Giao hàng</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Chỉ với hai thao tác đơn giản bạn đã hoàn thành việc cập nhật thông tin của mình, và chỉ khi bạn thực hiện một hành động mua nào trên App Store hoặc sử dụng các dịch vụ của Apple thì tài khoản mới bị trừ đi những khoản phí đó.</p>\r\n\r\n<p>Nếu xảy ra lỗi 4013 sau khi bạn hoàn tất thông tin thì hãy kiểm tra và cập nhật cho thiết bị của mình một phiên bản iOS mới nhất.</p>\r\n\r\n<h4 id=\"subhmenuid2\"><strong>Cài đặt thông tin tại Xem xét</strong></h4>\r\n\r\n<p><strong>Bước 1</strong>: Nhấn&nbsp;<strong>Xem xét</strong>&nbsp;tại thông báo của Apple &gt; Chọn&nbsp;<strong>Việt Nam</strong>&nbsp;trong danh sách vùng.</p>\r\n\r\n<p><img alt=\"Nhấn vào Xem xét ở thông báo\" data-original=\"//cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x (5)-800x500.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x%20(5)-800x500.jpg\" title=\"Nhấn vào Xem xét ở thông báo\" /></p>\r\n\r\n<p>Nhấn vào Xem xét ở thông báo</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Bước 2</strong>: Chọn&nbsp;<strong>Đồng ý</strong>&nbsp;với các Điều khoản và Điều kiện &gt; Nhấn&nbsp;<strong>Tiếp theo</strong>&nbsp;ở góc phải màn hình phía trên cùng.</p>\r\n\r\n<p><img alt=\"Chọn Đồng ý với các Điều khoản và Điều kiện\" data-original=\"//cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x (7)-800x500.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x%20(7)-800x500.jpg\" title=\"Chọn Đồng ý với các Điều khoản và Điều kiện\" /></p>\r\n\r\n<p>Chọn Đồng ý với các Điều khoản và Điều kiện</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Bước 3</strong>: Nhập đầy đủ các thông tin tại cửa sổ&nbsp;<strong>Hoàn tất ID Apple của bạn</strong>.</p>\r\n\r\n<p>Có ba mục lớn mà bạn cần phải hoàn tất sau đây:</p>\r\n\r\n<p><strong>Phương thức thanh toán</strong>: Tại mục này bạn sẽ chọn cho mình một phương thức thanh toán phù hợp. Có thể là&nbsp;<strong>Thẻ Tín dụng/Ghi nợ</strong>&nbsp;hoặc một&nbsp;<strong>phương thức khác</strong>.</p>\r\n\r\n<p><img alt=\"Chọn cho mình một phương thức thanh toán phù hợp\" data-original=\"//cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x (8)-800x500.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x%20(8)-800x500.jpg\" title=\"Chọn cho mình một phương thức thanh toán phù hợp\" /></p>\r\n\r\n<p>Chọn cho mình một phương thức thanh toán phù hợp</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>- Tên thanh toán</strong>: Bạn hãy nhập đầy đủ về họ, tên của mình.</p>\r\n\r\n<p><strong>- Địa chỉ thanh toán</strong>: Bạn cần nhập đúng địa chỉ của mình ở mục này với các thông tin cần thiết như: Đường, tòa nhà, thành phố,... Và một thông tin cực kỳ quan trọng bạn không được bỏ qua đó chính là&nbsp;<strong>mã Zip - Mã bưu chính</strong>&nbsp;của 63 tỉnh thành phố tại Việt Nam.</p>\r\n\r\n<p><img alt=\"Mã Zip là điều bắt buộc phải có\" data-original=\"//cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x (10)-800x500.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x%20(10)-800x500.jpg\" title=\"Mã Zip là điều bắt buộc phải có\" /></p>\r\n\r\n<p>Mã Zip là điều bắt buộc phải có</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Nếu bạn chưa biết cách tra mã Zip cho mình thì hãy tham khảo bài viết&nbsp;<a href=\"https://www.thegioididong.com/hoi-dap/ma-thu-tin-la-gi-656178\" target=\"_blank\">Mã bưu chính là gì? Mã bưu điện của 63 tỉnh thành Việt Nam</a>.</p>\r\n\r\n<p><strong>Bước 4</strong>: Nhấn&nbsp;<strong>Tiếp theo</strong>&nbsp;để kết thúc.</p>\r\n\r\n<p>Sau khi bạn hoàn tất các bước ở trên nhấn&nbsp;<strong>Xong</strong>&nbsp;&gt; Màn hình sẽ hiển thị thông báo ID Apple đã hoàn tất và bạn nhấn vào&nbsp;<strong>Tiếp tục</strong>.</p>\r\n\r\n<p><img alt=\"Nhấn Tiếp tục để kết thúc\" data-original=\"//cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x (12)-800x500.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x%20(12)-800x500.jpg\" title=\"Nhấn Tiếp tục để kết thúc\" /></p>\r\n\r\n<p>Nhấn Tiếp tục để kết thúc</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h4 id=\"subhmenuid3\"><strong>Đăng nhập vào thiết bị khác</strong></h4>\r\n\r\n<p>Nếu đã thử hai cách trên cho thiết bị gặp lỗi mà vẫn không thể sửa thì bạn hãy sử dụng ID Apple của mình để đăng nhập trên một thiết bị khác sau đó đăng nhập lại vào thiết bị gặp lỗi thì ID Apple của bạn sẽ không bị lỗi này nữa.</p>\r\n\r\n<p><img alt=\"Bạn có thể thử đăng nhập trên thiết bị khác\" data-original=\"//cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x (11)-800x500.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x%20(11)-800x500.jpg\" title=\"Bạn có thể thử đăng nhập trên thiết bị khác\" />​</p>\r\n\r\n<p>Bạn có thể thử đăng nhập trên thiết bị khác</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h4 id=\"subhmenuid4\"><strong>Liên lạc với bộ phận hỗ trợ của Apple</strong></h4>\r\n\r\n<p>Nơi cứu cánh cuối cùng dành cho bạn khi đã thử hết tất cả nhưng vẫn không cứu vãn được tình hình đó chính là liên lạc với bộ phận hỗ trợ của Apple thông qua số điện thoại&nbsp;<strong>1800 1127</strong>&nbsp;(từ 9h - 18h, thứ hai đến thứ sáu) để được giải quyết.</p>\r\n\r\n<p><img alt=\"Tìm đến Tổng đài hỗ trợ của Apple \" data-original=\"//cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x (1)-800x500.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x%20(1)-800x500.jpg\" title=\"Tìm đến Tổng đài hỗ trợ của Apple \" /></p>\r\n\r\n<p>Tìm đến Tổng đài hỗ trợ của Apple</p>', '<p>Nếu bạn chưa biết cách liên lạc với tổng đài hỗ trợ của Apple thì hãy xem bài viết&nbsp;<a href=\"https://www.thegioididong.com/tin-tuc/tin-vui-apple-da-co-tong-dai-ho-tro-bang-ngon-ngu-tieng-viet-842883\" target=\"_blank\">Tin vui: Apple đã có tổng đài hỗ trợ bằng tiếng Việt để tìm hiểu về Tổng đài hỗ trợ của Apple</a>.</p>', 'http://localhost:8000/uploads/images/cho-e-hoie-da-tao-xong-tai-khoan-id-apple.jpg', NULL, NULL, 'loi-id-apple-nay-chua-duoc-su-dung-nguyen-nhan-va-cach-khac-phuc', 'Lỗi ID Apple này chưa được sử dụng - Nguyên nhân và cách khắc phục', NULL, NULL, 'index,follow', 'index,follow', 'vi', 5, NULL, '2021-05-17 04:14:16', '2021-05-17 04:29:29'),
-(6, '620cb99c-856e-4640-90b3-3883445187f2', 'Tháng 10 là cung gì? Tính cách, sự nghiệp, tình yêu của cung tháng 10', 'Vũ Quốc Tuấn', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<h2>Ngày tháng sinh với một người không đơn giản chỉ là ngày để kỷ niệm mà nó còn liên quan đến vận mệnh trong tương lai như sự nghiệp, tình duyên, sức khỏe. Hãy cùng Thế Giới Di Động tìm hiểu xem sinh tháng 10 cung gì, tính cách, sự nghiệp, tình duyên của những người thuộc cung này như thế nào nhé.</h2>', '<h3 id=\"hmenuid1\"><strong>1. Tháng 10 là cung gì?</strong></h3>\r\n\r\n<p>Những người sinh vào tháng 10 sẽ thuộc cung hoàng đạo&nbsp;<strong>Bọ Cạp</strong>&nbsp;(có thời gian sinh từ 1/10 đến 22/10) hoặc cung hoàng đạo&nbsp;<strong>Thiên Bình</strong>&nbsp;(từ 23/10 đến 31/10). Tùy theo ngày sinh mà mỗi người sẽ sở hữu một vận mệnh khác nhau.</p>\r\n\r\n<p>Đối với những người sinh vào tháng 10 thuộc<strong>&nbsp;</strong>cung Bọ Cạp sẽ thuộc nguyên tố nước. Đây là nguyên tố đại diện cho yếu tố trực giác và tình cảm của con người.</p>\r\n\r\n<p>Còn đối với những Người sinh tháng 10 thuộc cung Thiên Bình sẽ thuộc nguyên tố<strong>&nbsp;k</strong>hí. Nguyên tố này đại diện cho ý chí và tinh thần của con người.</p>\r\n\r\n<p><img alt=\"Những người sinh tháng 10 sẽ thuộc cung Bọ Cạp hoặc cung Thiên Bình\" data-original=\"//cdn.tgdd.vn/hoi-dap/1347809/thang-10-la-cung-gi-tinh-cach-su-nghiep-tinh-yeu-cua-cung-1-800x531.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1347809/thang-10-la-cung-gi-tinh-cach-su-nghiep-tinh-yeu-cua-cung-1-800x531.jpg\" title=\"Những người sinh tháng 10 sẽ thuộc cung Bọ Cạp hoặc cung Thiên Bình\" /></p>\r\n\r\n<p>Những người sinh tháng 10 sẽ thuộc cung Bọ Cạp hoặc cung Thiên Bình</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid2\"><strong>2. Tổng quan những người sinh tháng 10</strong></h3>\r\n\r\n<p><strong>​</strong>Những người sinh vào tháng 10 thường có thể đưa ra những phán quyết tài ba và luôn thấu tình đạt lý, họ có khả năng nhìn rõ hai mặt lợi hại của bất kỳ vấn đề nào. Họ là người có trực giác khá nhạy bén, luôn suy xét cẩn thận mọi diễn biến có thể xảy ra, đồng thời họ luôn có sức chịu đựng cực tốt và khó bị lừa gạt.</p>\r\n\r\n<p><img alt=\"​Người sinh vào tháng 10 có thể đưa ra những phán quyết tài ba và luôn thấu tình đạt lý\" data-original=\"//cdn.tgdd.vn/hoi-dap/1347809/thang-10-la-cung-gi-tinh-cach-su-nghiep-tinh-yeu-cua-cung-2-800x498.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1347809/thang-10-la-cung-gi-tinh-cach-su-nghiep-tinh-yeu-cua-cung-2-800x498.jpg\" title=\"​Người sinh vào tháng 10 có thể đưa ra những phán quyết tài ba và luôn thấu tình đạt lý\" /></p>\r\n\r\n<p>​Người sinh vào tháng 10 có thể đưa ra những phán quyết tài ba và luôn thấu tình đạt lý</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Từ góc độ cung hoàng đạo, những người sinh vào tháng 10 đều là người thật thà, ngay thẳng và trung thành. Họ luôn làm việc gì cũng cần tính toán cẩn thận, chu đáo và tỉ mỉ. Do đó, họ dễ dàng đạt thành công trong sự nghiệp lẫn cuộc sống.</p>\r\n\r\n<p>Tuy nhiên, họ cũng rất dễ nổi nóng và thù lâu nhớ dai. Họ ghét nhất sự dối trá và luôn cầu toàn đối với cuộc sống của mình.</p>\r\n\r\n<h3 id=\"hmenuid3\"><strong>3. Tính cách, tình yêu, sự nghiệp của cung hoàng đạo tháng 10</strong></h3>\r\n\r\n<h4 id=\"subhmenuid1\"><strong>3.1. Cung Thiên Bình</strong></h4>\r\n\r\n<p><strong>Tính cách</strong></p>\r\n\r\n<p>Điểm mà Thiên Bình mang lại ấn tượng cho người khác về tính cách chính là sự ngay thẳng, chân thành và biết lắng nghe người khác. Hơn nữa, người thuộc cung Thiên Bình luôn cảm nhận nỗi niềm của người khác bằng cả trái tim và sự chia sẻ. Thiên Bình luôn sống bằng tấm lòng chân thật của bản thân, hiền lành, hướng thiện, tốt bụng và giàu lòng vị tha.</p>\r\n\r\n<p><img alt=\"Thiên Bình là người có tính cách ngay thẳng\" data-original=\"//cdn.tgdd.vn/hoi-dap/1347809/thang-10-la-cung-gi-tinh-cach-su-nghiep-tinh-yeu-cua-cung-3-800x600.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1347809/thang-10-la-cung-gi-tinh-cach-su-nghiep-tinh-yeu-cua-cung-3-800x600.jpg\" title=\"Thiên Bình là người có tính cách ngay thẳng\" /></p>\r\n\r\n<p>Thiên Bình là người có tính cách ngay thẳng</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Tình yêu</strong></p>\r\n\r\n<p>Thiên Bình trong tình yêu rất chung thủy và chân thành. Khi yêu, họ luôn quý mến, trân trọng và sẵn sàng đánh đổi tất cả để người mình thương yêu được vui vẻ và hạnh phúc. Họ rất xem trọng tình cảm, đặt người mình yêu thương ở vị trí cao nhất trước khi đưa ra một quyết định nào đó.</p>\r\n\r\n<p><strong>Sự nghiệp</strong></p>\r\n\r\n<p>Trên con đường sự nghiệp, Thiên Bình không được nhiều may mắn. Khi gặp thử thách, khó khăn thì họ dễ dàng trở nên lúng túng và mất phương hướng. Họ không biết cách xử lý và giải quyết tình huống dẫn tới thất bại trắng tay. Bên cạnh đó, những người sinh tháng 10 thuộc cung Thiên Bình lại quá xem trọng tình cảm. Vì thế, họ dễ bị tình cảm chi phối và thường để lại nhiều hệ quả đáng tiếc.</p>\r\n\r\n<p><img alt=\"Trên con đường sự nghiệp, Thiên Bình không được nhiều may mắn\" data-original=\"//cdn.tgdd.vn/hoi-dap/1347809/thang-10-la-cung-gi-tinh-cach-su-nghiep-tinh-yeu-cua-cung-4-800x523.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1347809/thang-10-la-cung-gi-tinh-cach-su-nghiep-tinh-yeu-cua-cung-4-800x523.jpg\" title=\"Trên con đường sự nghiệp, Thiên Bình không được nhiều may mắn\" /></p>\r\n\r\n<p>Trên con đường sự nghiệp, Thiên Bình không được nhiều may mắn</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Sức khỏe</strong></p>\r\n\r\n<p>Thiên Bình nên chú ý các vấn đề sức khỏe liên quan đến thận, lưng dưới và vùng xương chậu. Họ là người có nhiều khả năng bị đau lưng và sỏi ở thận hoặc bàng quang so với bất kỳ ai khác. Do đó, họ phải tránh hoạt động quá mạnh thường xuyên, đồng thời không ăn thực phẩm và đồ uống có khả năng gây hại cho những khu vực dễ bị tổn thương này.</p>\r\n\r\n<h4 id=\"subhmenuid2\"><strong>3.2. Cung Bọ Cạp</strong></h4>\r\n\r\n<p><strong>Tính cách</strong></p>\r\n\r\n<p>Những người thuộc cung Bọ Cạp thường thích sống hướng nội và tính cách khá trầm lặng. Họ luôn phát huy được tối đa khả năng bản thân và đưa ra những suy tính, kế hoạch rất chu đáo và hoàn thiện khi họ làm việc một mình. Ngoài ra, họ là người luôn có suy nghĩ chắc chắn trước khi đưa ra 1 quyết định nào đó. Bản chất của Bọ Cạp rất mạnh mẽ và kiên cường, họ quan niệm rằng nếu càng gặp nhiều thử thách, khó khăn thì càng tạo động lực giúp họ phát huy được hết khả năng của bản thân.</p>\r\n\r\n<p><img alt=\"Bọ Cạp thường thích sống hướng nội và tính cách khá trầm lặng\" data-original=\"//cdn.tgdd.vn/hoi-dap/1347809/thang-10-la-cung-gi-tinh-cach-su-nghiep-tinh-yeu-cua-cung-5-800x450.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1347809/thang-10-la-cung-gi-tinh-cach-su-nghiep-tinh-yeu-cua-cung-5-800x450.jpg\" title=\"Bọ Cạp thường thích sống hướng nội và tính cách khá trầm lặng\" /></p>\r\n\r\n<p>Bọ Cạp thường thích sống hướng nội và tính cách khá trầm lặng</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Tình yêu</strong></p>\r\n\r\n<p>Về hôn nhân và tình yêu, Bọ Cạp có thể chịu nhiều tủi nhục và cay đắng dù tình yêu của họ khá chung thủy và chân thành. Tuy nhiên, họ luôn bị đối phương làm những việc khiến bản thân đau buồn và tổn thương. Nhưng về sau thì cuộc sống hôn nhân của họ sẽ vô cùng tốt đẹp, gia đạo hạnh phúc và bình an.</p>\r\n\r\n<p><img alt=\"Bọ Cạp khá chung thủy và chân thành.\" data-original=\"//cdn.tgdd.vn/hoi-dap/1347809/thang-10-la-cung-gi-tinh-cach-su-nghiep-tinh-yeu-cua-cung-6-800x533.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1347809/thang-10-la-cung-gi-tinh-cach-su-nghiep-tinh-yeu-cua-cung-6-800x533.jpg\" title=\"Bọ Cạp khá chung thủy và chân thành.\" /></p>\r\n\r\n<p>Bọ Cạp khá chung thủy và chân thành.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Sự nghiệp</strong></p>\r\n\r\n<p>Bọ Cạp có đường công danh sự nghiệp vô cùng sáng lạn. Họ luôn gặp may mắn và làm việc thường được quý nhân giúp đỡ và tương trợ. Thành công đến với họ không quá dễ dàng, mà họ sẽ phải trải qua rất nhiều vất vả, khó khăn.</p>\r\n\r\n<p><strong>Sức khỏe</strong></p>\r\n\r\n<p>Cung hoàng đạo Bọ Cạp được dự đoán là dễ có xu hướng mắc bệnh trong hệ thống sinh sản và tiết niệu. Ví dụ như các vấn đề về thận, sỏi trong bàng quang hoặc bộ phận sinh dục và bệnh trĩ. Tình trạng da như loét, mụn nhọt và áp xe cũng có khả năng là vấn đề đối với Bọ Cạp. Vì vậy, những người thuộc cung này hãy thường xuyên thăm khám bác sĩ để được hỗ trợ tốt nhất các vấn đề về sức khỏe.</p>\r\n\r\n<h3 id=\"hmenuid4\"><strong>4. Cung hoàng đạo tháng 10 hợp với cung nào?</strong></h3>\r\n\r\n<p>Những người sinh tháng 10 thuộc cung hoàng đạo&nbsp;<strong>Thiên Bình</strong>&nbsp;sẽ hợp với cung&nbsp;<strong>Bảo Bình</strong>&nbsp;và cung&nbsp;<strong>Song Tử</strong>. Tương đương với những người sinh vào tháng 1, 2 và tháng 5, 6.</p>\r\n\r\n<p><img alt=\"Các cung hoàng đạo hợp với Thiên Bình và Bọ Cạp\" data-original=\"//cdn.tgdd.vn/hoi-dap/1347809/thang-10-la-cung-gi-tinh-cach-su-nghiep-tinh-yeu-cua-cung-7-800x401.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1347809/thang-10-la-cung-gi-tinh-cach-su-nghiep-tinh-yeu-cua-cung-7-800x401.jpg\" title=\"Các cung hoàng đạo hợp với Thiên Bình và Bọ Cạp\" /></p>\r\n\r\n<p>Các cung hoàng đạo hợp với Thiên Bình và Bọ Cạp</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Những người sinh tháng 10 thuộc cung hoàng đạo&nbsp;<strong>Bọ Cạp</strong>&nbsp;sẽ hợp với cung&nbsp;<strong>Song Ngư&nbsp;</strong>và cung&nbsp;<strong>Cự Giải</strong>. Tương đương với những người sinh vào tháng 2, 3 và tháng 6, 7.</p>\r\n\r\n<h3 id=\"hmenuid5\"><strong>5. Người sinh tháng 10 hợp màu gì?</strong></h3>\r\n\r\n<p>Những người sinh tháng 10 thuộc cung hoàng đạo Thiên Bình sẽ hợp với màu hồng, màu xanh lá cây,…</p>\r\n\r\n<p><img alt=\"Những màu sắc hợp với cung hoàng đạo tháng 10\" data-original=\"//cdn.tgdd.vn/hoi-dap/1347809/thang-10-la-cung-gi-tinh-cach-su-nghiep-tinh-yeu-cua-cung-8-800x533.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1347809/thang-10-la-cung-gi-tinh-cach-su-nghiep-tinh-yeu-cua-cung-8-800x533.jpg\" title=\"Những màu sắc hợp với cung hoàng đạo tháng 10\" /></p>\r\n\r\n<p>Những màu sắc hợp với cung hoàng đạo tháng 10</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Những người sinh tháng 10 thuộc cung hoàng đạo Bọ Cạp sẽ hợp với màu hồng, màu xanh dương, màu đen, màu vàng,…</p>\r\n\r\n<h3 id=\"hmenuid6\"><strong>6. Người sinh tháng 10 hợp đá phong thủy gì?</strong></h3>\r\n\r\n<p>Những người sinh tháng 10 thuộc cung Thiên Bình sẽ hợp với đá quý như citrin màu cam đậm. Ngoài ra, cung này cũng có thể dùng thạch anh ám khói hoặc một số loại khác như Aventurin, Berin, ngọc Jadeit, Nephrit, Peridot.</p>\r\n\r\n<p><img alt=\"Các loại đá phong thủy hợp với cung Thiên Bình và Bọ Cạp\" data-original=\"//cdn.tgdd.vn/hoi-dap/1347809/thang-10-la-cung-gi-tinh-cach-su-nghiep-tinh-yeu-cua-cung-10-800x600.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1347809/thang-10-la-cung-gi-tinh-cach-su-nghiep-tinh-yeu-cua-cung-10-800x600.jpg\" title=\"Các loại đá phong thủy hợp với cung Thiên Bình và Bọ Cạp\" /></p>\r\n\r\n<p>Các loại đá phong thủy hợp với cung Thiên Bình và Bọ Cạp</p>', '<p>Những người sinh tháng 10 thuộc cung Bọ Cạp sẽ hợp với đá quý như Carnelian màu đỏ. Ngoài ra, cung này cũng có thể hợp với một số loại đá màu đỏ khác như Ruby, Granat, Canxedon, Obsidian, Agat.</p>', 'http://localhost:8000/uploads/images/thang-10-cung-gi.jpg', NULL, NULL, 'thang-10-la-cung-gi-tinh-cach-su-nghiep-tinh-yeu-cua-cung-thang-10', 'Tháng 10 là cung gì? Tính cách, sự nghiệp, tình yêu của cung tháng 10', NULL, NULL, 'index,follow', 'index,follow', 'vi', 6, NULL, '2021-05-17 04:21:10', '2021-05-17 04:30:07'),
-(7, '745566b0-697d-4b40-8590-a24a4b3c0ba8', 'Cách mở và sử dụng Spotlight trên MacBook để làm việc hiệu quả hơn', 'Vũ Quốc Tuấn', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<h2><a href=\"https://www.thegioididong.com/laptop-apple-macbook\" target=\"_blank\">MacBook</a>&nbsp;là thiết bị&nbsp;<a href=\"https://www.thegioididong.com/laptop\" target=\"_blank\">laptop</a>&nbsp;được nhiều người sử dụng bởi những tính năng tuy nhỏ nhưng lại hỗ trợ rất nhiều trong công việc. Và một trong những tính năng cơ bản trên MacBook mà không thể không nhắc đến đó là Spotlight. Vậy chính xác Spotlight là gì, dùng như thế nào và làm thế nào để dùng Spotlight trên MacBook cho hiệu quả.</h2>', '<h3 id=\"hmenuid1\"><strong>1. Spotlight trên MacBook là gì?</strong></h3>\r\n\r\n<p>Spotlight là một tính năng được trang bị sẵn trên hệ điều hành&nbsp;<a href=\"https://www.thegioididong.com/hoi-dap/he-dieu-hanh-macos-la-gi-956642\" target=\"_blank\">macOS</a>, có khả năng giúp người dùng tìm kiếm thông tin trên máy tính hoặc trên Internet. Chẳng hạn, bạn có thể thực hiện tìm kiếm file, ứng dụng được cài đặt trong máy, hay thậm chí là dịch thuật từ khi cần thiết.</p>\r\n\r\n<p>Bạn có thể bật Spotlight bằng tổ hợp phím hết sức đơn giản là&nbsp;<strong>Command (⌘) + Space</strong>, sau đó thì bạn chỉ cần nhập từ khóa mà bạn muốn tìm kiếm vào thanh Spotlight. Kết quả sẽ được trả ra dưới dạng danh sách, và dựa vào đó mà bạn sẽ lựa chọn thao tác tiếp theo nhé!</p>\r\n\r\n<p><img alt=\"Tổ hợp phím Command + Space\" data-original=\"//cdn.tgdd.vn/hoi-dap/1350402/cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu.001-800x450.jpeg\" src=\"https://cdn.tgdd.vn/hoi-dap/1350402/cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu.001-800x450.jpeg\" title=\"Tổ hợp phím Command + Space\" /></p>\r\n\r\n<p>Tổ hợp phím Command + Space</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Ngoài tổ hợp phím Command (⌘) + Space vô cùng cơ bản, bạn cũng có thể tham khảo thêm bảng phím tắt dưới đây để có thể tận dụng được tối ưu hóa quá trình sử dụng Spotlight trên MacBook.</p>\r\n\r\n<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\">\r\n	<tbody>\r\n		<tr>\r\n			<td>\r\n			<p><strong>Phím/Tổ hợp phím tắt</strong></p>\r\n			</td>\r\n			<td>\r\n			<p><strong>Thao tác</strong></p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td>\r\n			<p>Phím Tab</p>\r\n			</td>\r\n			<td>\r\n			<p>Hiển thị cửa sổ xem trước</p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td>\r\n			<p>Phím lên</p>\r\n			</td>\r\n			<td>\r\n			<p>Chuyển tùy chọn lên phía trên</p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td>\r\n			<p>Phím xuống</p>\r\n			</td>\r\n			<td>\r\n			<p>Chuyển tùy chọn xuống phía dưới</p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td>\r\n			<p>Command (⌘) + Phím lên</p>\r\n			</td>\r\n			<td>\r\n			<p>Chuyển lên tùy chọn đầu tiên trong danh mục ở phía trên</p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td>\r\n			<p>Command (⌘) + Phím xuống</p>\r\n			</td>\r\n			<td>\r\n			<p>Chuyển xuống tùy chọn đầu tiên trong danh mục ở phía dưới</p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td>\r\n			<p>Command (⌘) (Nhấn giữ)</p>\r\n			</td>\r\n			<td>\r\n			<p>Hiển thị vị trí của tệp trong máy</p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td>\r\n			<p>Phím Return</p>\r\n			</td>\r\n			<td>\r\n			<p>Truy cập kết quả tìm kiếm</p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td>\r\n			<p>Command (⌘) + R</p>\r\n			</td>\r\n			<td>\r\n			<p>Mở thư mục chứa tệp đang tìm kiếm</p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td>\r\n			<p>Option + Command (⌘) + Space</p>\r\n			</td>\r\n			<td>\r\n			<p>Mở tính năng tìm kiếm theo thư mục trên Finder</p>\r\n			</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n\r\n<p><img alt=\"Tính năng tìm kiếm theo thư mục (Option + Command + Space)\" data-original=\"//cdn.tgdd.vn/hoi-dap/1350402/cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu.003-800x450.jpeg\" src=\"https://cdn.tgdd.vn/hoi-dap/1350402/cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu.003-800x450.jpeg\" title=\"Tính năng tìm kiếm theo thư mục (Option + Command + Space)\" /></p>\r\n\r\n<p>Tính năng tìm kiếm theo thư mục (Option + Command + Space)</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid2\"><strong>2. 7 mẹo sử dụng Spotlight trên MacBook</strong></h3>\r\n\r\n<h4 id=\"subhmenuid1\"><strong>- Tìm kiếm phần mềm, thư mục, tệp cực nhanh</strong></h4>\r\n\r\n<p>Để có thể tìm kiếm nhanh phần mềm, thư mục hay tệp, bạn chỉ cần đơn giản bật tính năng Spotlight trên MacBook lên, sau đó thì nhập tên vào thì Spotlight sẽ trả lại kết quả trong vòng tích tắc. Thao tác này sẽ giúp bạn tiết kiệm được rất nhiều thời gian, thay vì vào Launchpad để tìm ứng dụng, hay là lần mò các thư mục để tìm tệp.</p>\r\n\r\n<p><img alt=\"Tìm kiếm phần mềm cực nhanh với Spotlight\" data-original=\"//cdn.tgdd.vn/hoi-dap/1350402/cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu.004-800x450.jpeg\" src=\"https://cdn.tgdd.vn/hoi-dap/1350402/cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu.004-800x450.jpeg\" title=\"Tìm kiếm phần mềm cực nhanh với Spotlight\" /></p>\r\n\r\n<p>Tìm kiếm phần mềm cực nhanh với Spotlight</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h4 id=\"subhmenuid2\"><strong>- Quét và tìm dữ liệu bằng từ khóa</strong></h4>\r\n\r\n<p>Đối với các ứng dụng chính chủ đến từ Apple như là Tin nhắn, Mail hay là Ghi chú, bạn có thể tìm kiếm nhanh thông tin bên trong các ứng dụng này bằng cách nhập từ khóa xuất hiện trong tệp mà bạn mong muốn.</p>\r\n\r\n<p>Để việc tìm kiếm thông tin trên Spotlight trở nên đỉnh hơn, bạn có thể đưa ra các điều kiện một cách cụ thể hơn với các câu lệnh như&nbsp;<strong>AND&nbsp;</strong>(và),&nbsp;<strong>OR</strong>&nbsp;(hoặc) hay&nbsp;<strong>NOT</strong>&nbsp;(không).</p>\r\n\r\n<p>Chẳng hạn ở dưới đây, cụm từ là “Protein NOT Collagen”. Với cụm từ này, bạn đang tìm kiếm tệp có chứa từ khóa Protein, nhưng không được chứa từ Collagen.</p>\r\n\r\n<p><img alt=\"TÌm kiếm với từ khóa \" collagen=\"\" data-original=\"//cdn.tgdd.vn/hoi-dap/1350402/cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu.005-800x450.jpeg\" not=\"\" protein=\"\" src=\"https://cdn.tgdd.vn/hoi-dap/1350402/cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu.005-800x450.jpeg\" title=\"TÌm kiếm với từ khóa \" /></p>\r\n\r\n<p>TÌm kiếm với từ khóa</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h4 id=\"subhmenuid3\"><strong>- Tra từ điển Anh, Việt</strong></h4>\r\n\r\n<p>Bởi vì các thiết bị chạy macOS đều được trang bị bộ Từ điển đến từ Apple, vậy nên khi bạn nhập từ vào trong mục Spotlight, thiết bị sẽ có khả năng truy xuất nghĩa được ngay lập tức. Để xem nghĩa trực tiếp trong Spotlight, bạn cần&nbsp;<strong>di chuyển bằng phím lên/xuống</strong>&nbsp;để tới vị trí có&nbsp;<strong>biểu tượng từ điển</strong>, sau đó nhấn&nbsp;<strong>nút Tab</strong>&nbsp;để hiển thị cửa sổ từ điển.</p>\r\n\r\n<p><img alt=\"Sử dụng tính năng tra từ nhanh trên Spotlight\" data-original=\"//cdn.tgdd.vn/hoi-dap/1350402/cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu.006-800x450.jpeg\" src=\"https://cdn.tgdd.vn/hoi-dap/1350402/cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu.006-800x450.jpeg\" title=\"Sử dụng tính năng tra từ nhanh trên Spotlight\" /></p>\r\n\r\n<p>Sử dụng tính năng tra từ nhanh trên Spotlight</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Tham khảo chi tiết cách cài từ điển Anh-Việt cho MacBook tại:&nbsp;<a href=\"https://www.thegioididong.com/hoi-dap/cach-cai-dat-tu-dien-anh-viet-tren-macbook-973994\" target=\"_blank\">Cách cài đặt từ điển Anh Việt trên Macbook</a></p>\r\n\r\n<h4 id=\"subhmenuid4\"><strong>- Làm toán</strong></h4>\r\n\r\n<p>Nếu bạn cần thực hiện các phép toán đơn giản mà không có máy tính bỏ túi bên cạnh, bạn cũng có thể nhờ vả đến Spotlight đấy. Việc của bạn là nhập phép toán vào thanh Spotlight, chưa đến 1 giây thì thiết bị của bạn sẽ trả lại kết quả cho bạn.</p>\r\n\r\n<p>Lưu ý rằng hiện nay tính năng tính toán trên Spotlight chỉ hỗ trợ các phép toán đơn giản, chẳng hạn cộng (+), trừ (-), nhân (*), chia (/) hay là lũy thừa (^). Ngoài ra, bạn cũng có thể sử dụng dấu đóng mở ngoặc để sắp xếp thứ tự ưu tiên của phép tính.</p>\r\n\r\n<p><img alt=\"Bạn có thể thực hiện tính toán thông qua Spotlight\" data-original=\"//cdn.tgdd.vn/hoi-dap/1350402/cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu.007-800x450.jpeg\" src=\"https://cdn.tgdd.vn/hoi-dap/1350402/cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu.007-800x450.jpeg\" title=\"Bạn có thể thực hiện tính toán thông qua Spotlight\" /></p>\r\n\r\n<p>Bạn có thể thực hiện tính toán thông qua Spotlight</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h4 id=\"subhmenuid5\"><strong>- Đổi đơn vị</strong></h4>\r\n\r\n<p>Với Spotlight, bạn có thể đổi nhanh đơn vị, bao gồm cả đơn vị tiền tệ, nhiệt độ, cân nặng,... Trong trường hợp kết quả hiển thị nhanh của Spotlight không hiển thị đơn vị mà bạn mong muốn, bạn chỉ di chuyển đến lựa chọn có&nbsp;<strong>biểu tượng máy tính</strong>&nbsp;phía trước, sau đó nhấn<strong>&nbsp;phím Tab</strong>&nbsp;để hiển thị thêm nhiều đơn vị khác.</p>\r\n\r\n<p><img alt=\"Tính năng này hỗ trợ cả đơn vị nhiệt độ, tiền tệ hay cân nặng\" data-original=\"//cdn.tgdd.vn/hoi-dap/1350402/cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu.008-800x450.jpeg\" src=\"https://cdn.tgdd.vn/hoi-dap/1350402/cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu.008-800x450.jpeg\" title=\"Tính năng này hỗ trợ cả đơn vị nhiệt độ, tiền tệ hay cân nặng\" /></p>\r\n\r\n<p>Tính năng này hỗ trợ cả đơn vị nhiệt độ, tiền tệ hay cân nặng</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h4 id=\"subhmenuid6\"><strong>- Truy cập website đã lưu</strong></h4>\r\n\r\n<p>Trong trường hợp bạn có sử dụng trình duyệt Safari, đồng thời có đánh dấu trang lại các trang web thường sử dụng thì bạn có thể truy cập vào trang hết sức nhanh chóng bằng cách nhấn tổ hợp phím để mở Spotlight, sau đó gõ tên của trang web. Thao tác này đòi hỏi bạn vài giây để hoàn thành.</p>\r\n\r\n<p><img alt=\"Truy cập nhanh các website đã được đánh dấu trang thông qua Spotlight\" data-original=\"//cdn.tgdd.vn/hoi-dap/1350402/cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu.009-800x450.jpeg\" src=\"https://cdn.tgdd.vn/hoi-dap/1350402/cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu.009-800x450.jpeg\" title=\"Truy cập nhanh các website đã được đánh dấu trang thông qua Spotlight\" /></p>\r\n\r\n<p>Truy cập nhanh các website đã được đánh dấu trang thông qua Spotlight</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h4 id=\"subhmenuid7\"><strong>- Xem thời tiết</strong></h4>\r\n\r\n<p>Hiện nay tính năng này vẫn chưa hỗ trợ tại Việt Nam (tính tới thời điểm ngày 11/05/2021).</p>', '<p>Chỉ với các câu lệnh bao gồm vị trí + “weather”, bạn đã có thể xem nhanh được tình trạng thời tiết ở các thời điểm khác nhau trong ngày hoặc các ngày khác nhau trong tuần. Các thông tin này được cập nhật thông qua&nbsp;<a href=\"https://weather.com/vi-VN/weather/today/l/VMXX0006:1:VM?Goto=Redirected\" rel=\"nofollow\" target=\"_blank\">The Weather Channel</a>.</p>\r\n\r\n<p><img alt=\"Tính năng này hiện chưa được hỗ trợ tại Việt Nam\" data-original=\"//cdn.tgdd.vn/hoi-dap/1350402/cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu.010-800x450.jpeg\" src=\"https://cdn.tgdd.vn/hoi-dap/1350402/cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu.010-800x450.jpeg\" title=\"Tính năng này hiện chưa được hỗ trợ tại Việt Nam\" /></p>\r\n\r\n<p>Tính năng này hiện chưa được hỗ trợ tại Việt Nam</p>', 'http://localhost:8000/uploads/images/cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu_thumbnail_001.jpeg', NULL, NULL, 'cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu-qua-hon', 'Cách mở và sử dụng Spotlight trên MacBook để làm việc hiệu quả hơn', NULL, NULL, 'index,follow', 'index,follow', 'vi', 7, NULL, '2021-05-17 04:23:13', '2021-05-17 04:30:29'),
-(8, '16bac9ac-d5b8-4adb-a0b8-2df73cf65310', 'Tại sao logo trái táo phát sáng của Apple bị “khai tử”?', 'Vũ Quốc Tuấn', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<h2>Những chiếc&nbsp;<a href=\"https://www.thegioididong.com/laptop-apple-macbook\" target=\"_blank\">MacBook</a>&nbsp;từng được người dùng nhận biết đến với những chiếc logo trái táo phát sáng ở mặt trên của thiết bị, nhưng từ năm 2015 trở đi thì hãng đã bắt đầu bỏ đi thiết kế này. Vậy đâu là nguyên nhân khiến Apple từ bỏ logo phát sáng ở mặt lưng? Bài viết này sẽ giúp bạn giải đáp thắc mắc này nhé!</h2>\r\n\r\n<p><label onclick=\"toogleMenuQuick()\">Xem nhanh</label></p>', '<p>Có thể bạn chưa biết, những thiết bị&nbsp;<a href=\"https://www.thegioididong.com/dtdd-apple-iphone\" target=\"_blank\">iPhone</a>&nbsp;từng đã có tin đồn rằng sẽ có thể được trang bị logo phát sáng ở mặt lưng. Thậm chí, Apple đã từng nộp bằng sáng chế về tính năng hiển thị thông báo thông qua việc phát sáng logo ở mặt lưng của thiết bị. Tuy nhiên, tin đồn vẫn chỉ là tin đồn.</p>\r\n\r\n<p>Logo phát sáng đã từng được nhiều người thử đưa lên iPhone, và nếu bạn hứng thú thì có thể nhấn vào bài viết này để tìm hiểu thêm nhé!</p>\r\n\r\n<ul>\r\n	<li><a href=\"https://www.thegioididong.com/tin-tuc/day-la-cach-khien-logo-tao-khuyet-tren-iphone-7-phat-sang-908019\" target=\"_blank\">Đây là cách khiến logo táo khuyết trên iPhone 7 có thể phát sáng</a></li>\r\n</ul>\r\n\r\n<p><img alt=\"Logo phát sáng trên iPhone\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351139/tai-sao-logo-trai-tao-phat-sang-cua-apple-bi-khai-tu.001-800x450.jpeg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351139/tai-sao-logo-trai-tao-phat-sang-cua-apple-bi-khai-tu.001-800x450.jpeg\" title=\"Logo phát sáng trên iPhone\" /></p>\r\n\r\n<p>Logo phát sáng trên iPhone</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid1\"><strong>1. Apple loại bỏ logo phát sáng từ bao giờ?</strong></h3>\r\n\r\n<p>Thiết bị MacBook đầu tiên được ra mắt mà không có thiết kế logo phát sáng ở mặt lưng đó là MacBook 12 inch phiên bản năm 2015. Ngay sau đó, năm 2016 thì những chiếc logo phát sáng trên MacBook Pro mới cũng bị thay thế bởi thiết kế logo phẳng. Không lâu sau, người đàn em là MacBook Air cũng được cập nhật thiết kế này vào năm 2018, từ đây chính thức chấm dứt thiết kế logo trái táo phát sáng huyền thoại trên MacBook.</p>\r\n\r\n<p>Hiện nay (13/05/2021), trên thị trường thì vẫn còn&nbsp;<a href=\"https://www.thegioididong.com/laptop/apple-macbook-air-mqd32sa-a-i5-5350u?src=osp\" target=\"_blank\">MacBook Air 2017</a>&nbsp;là sản phẩm duy nhất còn giữ lại logo phát sáng ở mặt lưng của thiết bị.</p>\r\n\r\n<p><img alt=\"MacBook 12 inch (2015) là sản phẩm đầu tiên bỏ thiết kế logo phát sáng\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351139/tai-sao-logo-trai-tao-phat-sang-cua-apple-bi-khai-tu.002-800x450.jpeg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351139/tai-sao-logo-trai-tao-phat-sang-cua-apple-bi-khai-tu.002-800x450.jpeg\" title=\"MacBook 12 inch (2015) là sản phẩm đầu tiên bỏ thiết kế logo phát sáng\" /></p>\r\n\r\n<p>MacBook 12 inch (2015) là sản phẩm đầu tiên bỏ thiết kế logo phát sáng</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid2\"><strong>2. 4 lý do khiến Apple loại bỏ logo phát sáng</strong></h3>\r\n\r\n<p><strong>- Chất lượng hiển thị của màn hình bị ảnh hưởng</strong></p>\r\n\r\n<p>Đối với những người sử dụng các sản phẩm MacBook đời cũ thì chắc chắn sẽ không còn lạ với việc chất lượng màn hình bị ảnh hưởng mỗi khi làm việc ở những điều kiện ngược sáng, hay là ở trong môi trường quá tối (trong trường hợp độ sáng màn hình cũng bị giảm theo). Khi này, bạn có thể thấy hình logo trái táo mập mờ trên màn hình của mình, gây ra tình trạng sai lệch màu sắc, và chắc chắn đây là trải nghiệm không mấy dễ chịu.</p>\r\n\r\n<p><img alt=\"Chất lượng màn hình có thể bị ảnh hưởng\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351139/tai-sao-logo-trai-tao-phat-sang-cua-apple-bi-khai-tu.003-800x450.jpeg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351139/tai-sao-logo-trai-tao-phat-sang-cua-apple-bi-khai-tu.003-800x450.jpeg\" title=\"Chất lượng màn hình có thể bị ảnh hưởng\" /></p>\r\n\r\n<p>Chất lượng màn hình có thể bị ảnh hưởng</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>- Thiết bị sẽ mỏng, gọn hơn</strong></p>\r\n\r\n<p>Việc loại bỏ đi phần logo phát sáng đằng sau giúp cho độ dày của thiết bị có thể giảm xuống đáng kể do không cần trang bị phần đèn&nbsp;<a href=\"https://vi.wikipedia.org/wiki/LED\" rel=\"nofollow\" target=\"_blank\">LED</a>&nbsp;phát sáng. Một minh chứng cho thấy độ dày của thiết bị đã được giảm xuống đó là những chiếc MacBook Air 2017 (cũ) có độ dày là 17mm, trong khi những chiếc&nbsp;<a href=\"https://www.thegioididong.com/laptop/apple-macbook-air-2020-m1-mgne3saa\" target=\"_blank\">MacBook Air M1 2020</a>&nbsp;chỉ có độ dày 16.1mm.</p>\r\n\r\n<p><img alt=\"Những thiết bị MacBook Air mới có phần màn hình mỏng hơn đáng kể\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351139/tai-sao-logo-trai-tao-phat-sang-cua-apple-bi-khai-tu.004-800x450.jpeg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351139/tai-sao-logo-trai-tao-phat-sang-cua-apple-bi-khai-tu.004-800x450.jpeg\" title=\"Những thiết bị MacBook Air mới có phần màn hình mỏng hơn đáng kể\" /></p>\r\n\r\n<p>Những thiết bị MacBook Air mới có phần màn hình mỏng hơn đáng kể</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>- Khung màn hình bị bẻ cong</strong></p>\r\n\r\n<p>Việc khoét một phần trên mặt lưng của những chiếc MacBook có thể trở thành điểm gờ, nhất là khi thiết bị được làm mỏng hơn, khiến cho phần màn hình dễ bị gãy hơn nếu như có lực tác động đúng điểm yếu này. Trong quá khứ, những chiếc&nbsp;<a href=\"https://www.thegioididong.com/tin-tuc/iphone-6-plus-bi-phat-hien-rat-de-be-cong-568752\" target=\"_blank\">iPhone 6 Plus cũng đã từng mắc phải sai lầm</a>&nbsp;chết người này, khiến danh tiếng của công ty do đó cũng bị ảnh hưởng theo.</p>\r\n\r\n<p>Do đó, việc loại bỏ đi thiết kế này là một điều cần thiết giúp cho sản phẩm trở nên cứng cáp hơn.</p>\r\n\r\n<p><img alt=\"Nếu được gọt mỏng hơn, đây có thể là điểm gờ khiến cho các thiết bị dễ bị gãy\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351139/tai-sao-logo-trai-tao-phat-sang-cua-apple-bi-khai-tu.005-800x450.jpeg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351139/tai-sao-logo-trai-tao-phat-sang-cua-apple-bi-khai-tu.005-800x450.jpeg\" title=\"Nếu được gọt mỏng hơn, đây có thể là điểm gờ khiến cho các thiết bị dễ bị gãy\" /></p>\r\n\r\n<p>Nếu được gọt mỏng hơn, đây có thể là điểm gờ khiến cho các thiết bị dễ bị gãy</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>- Sự thay đổi chiến lược thương hiệu của Apple</strong></p>\r\n\r\n<p>Vào thời điểm những năm 1999, những chiếc PowerBook G3 khi ấy được trình làng như là sự khẳng định cho sự quay lại của Steve Jobs. Logo phát sáng này đã đi cùng với chiến dịch quảng cáo đình đám của Apple là&nbsp;<a href=\"https://en.wikipedia.org/wiki/Think_different\" rel=\"nofollow\" target=\"_blank\">Think Different</a>, giúp cho hãng có thể gây được sự chú ý đến những khách của mình. Lúc bấy giờ logo phát sáng chính là ý đồ của hãng để sản phẩm của mình nổi bật hơn, dễ dàng nhận diện hơn.</p>\r\n\r\n<p><img alt=\"Logo phát sáng trên PowerBook G3\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351139/tai-sao-logo-trai-tao-phat-sang-cua-apple-bi-khai-tu.006-800x450.jpeg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351139/tai-sao-logo-trai-tao-phat-sang-cua-apple-bi-khai-tu.006-800x450.jpeg\" title=\"Logo phát sáng trên PowerBook G3\" /></p>\r\n\r\n<p>Logo phát sáng trên PowerBook G3</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Đến ngày nay, các sản phẩm của Apple đã có độ nhận diện thương hiệu rộng rãi, vậy nên, chiến lược quảng bá cũ của hãng đã bị thay thế. Ngày nay, các sản phẩm của Apple đang tập chung vào tính thẩm mỹ của sản phẩm hơn, thậm chí là loại bỏ logo ra khỏi thiết bị. Một minh chứng cho thấy xu hướng mới này của Apple là những chiếc tai nghe như&nbsp;<a href=\"https://www.thegioididong.com/tai-nghe/tai-nghe-bluetooth-airpods-pro-apple-mwp22?src=osp\" target=\"_blank\">Airpods 2</a>&nbsp;hay&nbsp;<a href=\"https://www.thegioididong.com/tai-nghe/tai-nghe-bluetooth-airpods-pro-apple-mwp22?src=osp\" target=\"_blank\">Airpods Pro</a>&nbsp;của hãng.</p>\r\n\r\n<p>Ngoài ra, việc loại logo phát sáng trên những chiếc MacBook cũng giúp cho các thiết bị trong hệ sinh thái như iPhone hay&nbsp;<a href=\"https://www.thegioididong.com/may-tinh-bang-apple-ipad\" target=\"_blank\">iPad</a>&nbsp;trở nên đồng bộ hơn.</p>\r\n\r\n<p><img alt=\"Hệ sinh thái sản phẩm của Apple\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351139/tai-sao-logo-trai-tao-phat-sang-cua-apple-bi-khai-tu.007-800x450.jpeg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351139/tai-sao-logo-trai-tao-phat-sang-cua-apple-bi-khai-tu.007-800x450.jpeg\" title=\"Hệ sinh thái sản phẩm của Apple\" /></p>\r\n\r\n<p>Hệ sinh thái sản phẩm của Apple</p>', NULL, 'http://localhost:8000/uploads/images/tai-sao-logo-trai-tao-phat-sang-cua-apple-bi-khai-tu_thumbnail_001.jpeg', 'https://youtu.be/YnXghrexEBw', NULL, 'tai-sao-logo-trai-tao-phat-sang-cua-apple-bi-khai-tu', 'Tại sao logo trái táo phát sáng của Apple bị “khai tử”?', NULL, NULL, 'index,follow', 'index,follow', 'vi', 8, NULL, '2021-05-17 04:24:48', '2021-05-17 04:29:49');
+(4, '59c455f2-4e13-4f04-99d3-c8589b6d2bac', 'HOTSALE 2h', 'Trần Thanh Luân', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '30', '<p>Giảm giá cực mạnh với các sản phẩm không phải hàng tồn kho</p>', NULL, NULL, 'http://localhost:8000/uploads/images/cai-ngot.jpg', NULL, NULL, 'hotsale-2h', 'HOTSALE 2h', NULL, NULL, 'index,follow', 'index,follow', 'vi', 4, NULL, '2021-05-13 01:53:34', '2021-05-13 01:53:34'),
+(5, 'e05c8b15-d75d-4458-a1b2-f7b0e26bd0e9', 'Lỗi ID Apple này chưa được sử dụng - Nguyên nhân và cách khắc phục', 'Trần Thanh Luân', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<h2>Lỗi ID Apple này chưa được sử dụng sẽ gây bất tiện cho bạn khi sử dụng các dịch vụ của Apple trên App store cũng như các tính năng khác. Vậy phải xử lý như thế nào khi&nbsp;<a href=\"https://www.thegioididong.com/dtdd\" target=\"_blank\">điện thoại</a>&nbsp;của bạn hiển thị thông báo này của Apple. Cùng xem cách giải quyết dưới đây nhé!</h2>\r\n\r\n<p><label onclick=\"toogleMenuQuick()\">Xem nhanh</label></p>', '<h3 id=\"hmenuid1\"><strong>1. Nguyên nhân báo lỗi ID Apple này chưa được sử dụng</strong></h3>\r\n\r\n<p>Lỗi&nbsp;<a href=\"https://www.thegioididong.com/hoi-dap/apple-id-icloud-id-la-gi-hai-tai-khoan-nay-co-giong-nhau-757113\" target=\"_blank\">ID Apple</a>&nbsp;này chưa được sử dụng xảy ra khi bạn tạo ID Apple thông qua trang web của Apple sau đó đăng nhập trên các thiết bị như: iPhone,&nbsp;<a href=\"https://www.thegioididong.com/may-tinh-bang-apple-ipad\" target=\"_blank\">iPad</a>,&nbsp;<a href=\"https://www.thegioididong.com/laptop-apple-macbook\" target=\"_blank\">Macbook</a>,... Khác với việc tạo ID từ App hoặc iTune Store, khi bạn tạo ID từ trang web Apple sẽ không có mục Địa chỉ thanh toán và giao hàng.</p>\r\n\r\n<p><img alt=\"Lỗi ID Apple này chưa được sử dụng trước đây ở iTunes Store\" data-original=\"//cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x (2)-800x500.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x%20(2)-800x500.jpg\" title=\"Lỗi ID Apple này chưa được sử dụng trước đây ở iTunes Store\" /></p>\r\n\r\n<p>Lỗi ID Apple này chưa được sử dụng trước đây ở iTunes Store</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Vì vậy khi bạn sử dụng ID đăng ký từ web để đăng nhập trên các thiết bị khác thì lỗi này sẽ xảy ra. Mục đích chính là để Apple&nbsp;<strong>xác minh lại</strong>&nbsp;Địa chỉ thanh toán và giao hàng của bạn.</p>\r\n\r\n<h3 id=\"hmenuid2\"><strong>2. Cách khắc phục lỗi ID Apple này chưa được sử dụng</strong></h3>\r\n\r\n<h4 id=\"subhmenuid1\"><strong>Cập nhật thông tin thanh toán và thông tin giao hàng trong Cài đặt</strong></h4>\r\n\r\n<p>Việc bạn cần làm đầu tiên đó chính là cập nhật đầy đủ thông tin của mình trên&nbsp;<a href=\"https://www.thegioididong.com/dtdd-apple-iphone\" target=\"_blank\">iPhone</a>.</p>\r\n\r\n<p>Bạn vào&nbsp;<strong>Cài đặt</strong>&nbsp;(Settings), chọn vào&nbsp;<strong>Profile</strong>&nbsp;của mình &gt; Chọn&nbsp;<strong>Thanh toán &amp; Giao hàng</strong>&nbsp;(Payment &amp; Shipping).</p>\r\n\r\n<p><img alt=\"Chọn mục Thanh toán &amp; Giao hàng\" data-original=\"//cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x (3)-800x500.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x%20(3)-800x500.jpg\" title=\"Chọn mục Thanh toán &amp; Giao hàng\" /></p>\r\n\r\n<p>Chọn mục Thanh toán &amp; Giao hàng</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Tại cửa sổ Thanh toán &amp; Giao hàng bạn hãy cập nhật thêm thông tin của mình bằng việc hoàn thiện đầy đủ thông tin của các mục lần lượt từ&nbsp;<strong>Phương thức thanh toán đến Địa chỉ giao hàng, Địa chỉ thanh toán</strong>.</p>\r\n\r\n<p><img alt=\"Bạn cần cập nhật đầy đủ thông tin trong cửa sổ Thanh toán &amp; Giao hàng\" data-original=\"//cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x (4)-800x500.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x%20(4)-800x500.jpg\" title=\"Bạn cần cập nhật đầy đủ thông tin trong cửa sổ Thanh toán &amp; Giao hàng\" /></p>\r\n\r\n<p>Bạn cần cập nhật đầy đủ thông tin trong cửa sổ Thanh toán &amp; Giao hàng</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Chỉ với hai thao tác đơn giản bạn đã hoàn thành việc cập nhật thông tin của mình, và chỉ khi bạn thực hiện một hành động mua nào trên App Store hoặc sử dụng các dịch vụ của Apple thì tài khoản mới bị trừ đi những khoản phí đó.</p>\r\n\r\n<p>Nếu xảy ra lỗi 4013 sau khi bạn hoàn tất thông tin thì hãy kiểm tra và cập nhật cho thiết bị của mình một phiên bản iOS mới nhất.</p>\r\n\r\n<h4 id=\"subhmenuid2\"><strong>Cài đặt thông tin tại Xem xét</strong></h4>\r\n\r\n<p><strong>Bước 1</strong>: Nhấn&nbsp;<strong>Xem xét</strong>&nbsp;tại thông báo của Apple &gt; Chọn&nbsp;<strong>Việt Nam</strong>&nbsp;trong danh sách vùng.</p>\r\n\r\n<p><img alt=\"Nhấn vào Xem xét ở thông báo\" data-original=\"//cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x (5)-800x500.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x%20(5)-800x500.jpg\" title=\"Nhấn vào Xem xét ở thông báo\" /></p>\r\n\r\n<p>Nhấn vào Xem xét ở thông báo</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Bước 2</strong>: Chọn&nbsp;<strong>Đồng ý</strong>&nbsp;với các Điều khoản và Điều kiện &gt; Nhấn&nbsp;<strong>Tiếp theo</strong>&nbsp;ở góc phải màn hình phía trên cùng.</p>\r\n\r\n<p><img alt=\"Chọn Đồng ý với các Điều khoản và Điều kiện\" data-original=\"//cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x (7)-800x500.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x%20(7)-800x500.jpg\" title=\"Chọn Đồng ý với các Điều khoản và Điều kiện\" /></p>\r\n\r\n<p>Chọn Đồng ý với các Điều khoản và Điều kiện</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Bước 3</strong>: Nhập đầy đủ các thông tin tại cửa sổ&nbsp;<strong>Hoàn tất ID Apple của bạn</strong>.</p>\r\n\r\n<p>Có ba mục lớn mà bạn cần phải hoàn tất sau đây:</p>\r\n\r\n<p><strong>Phương thức thanh toán</strong>: Tại mục này bạn sẽ chọn cho mình một phương thức thanh toán phù hợp. Có thể là&nbsp;<strong>Thẻ Tín dụng/Ghi nợ</strong>&nbsp;hoặc một&nbsp;<strong>phương thức khác</strong>.</p>\r\n\r\n<p><img alt=\"Chọn cho mình một phương thức thanh toán phù hợp\" data-original=\"//cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x (8)-800x500.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x%20(8)-800x500.jpg\" title=\"Chọn cho mình một phương thức thanh toán phù hợp\" /></p>\r\n\r\n<p>Chọn cho mình một phương thức thanh toán phù hợp</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>- Tên thanh toán</strong>: Bạn hãy nhập đầy đủ về họ, tên của mình.</p>\r\n\r\n<p><strong>- Địa chỉ thanh toán</strong>: Bạn cần nhập đúng địa chỉ của mình ở mục này với các thông tin cần thiết như: Đường, tòa nhà, thành phố,... Và một thông tin cực kỳ quan trọng bạn không được bỏ qua đó chính là&nbsp;<strong>mã Zip - Mã bưu chính</strong>&nbsp;của 63 tỉnh thành phố tại Việt Nam.</p>\r\n\r\n<p><img alt=\"Mã Zip là điều bắt buộc phải có\" data-original=\"//cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x (10)-800x500.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x%20(10)-800x500.jpg\" title=\"Mã Zip là điều bắt buộc phải có\" /></p>\r\n\r\n<p>Mã Zip là điều bắt buộc phải có</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Nếu bạn chưa biết cách tra mã Zip cho mình thì hãy tham khảo bài viết&nbsp;<a href=\"https://www.thegioididong.com/hoi-dap/ma-thu-tin-la-gi-656178\" target=\"_blank\">Mã bưu chính là gì? Mã bưu điện của 63 tỉnh thành Việt Nam</a>.</p>\r\n\r\n<p><strong>Bước 4</strong>: Nhấn&nbsp;<strong>Tiếp theo</strong>&nbsp;để kết thúc.</p>\r\n\r\n<p>Sau khi bạn hoàn tất các bước ở trên nhấn&nbsp;<strong>Xong</strong>&nbsp;&gt; Màn hình sẽ hiển thị thông báo ID Apple đã hoàn tất và bạn nhấn vào&nbsp;<strong>Tiếp tục</strong>.</p>\r\n\r\n<p><img alt=\"Nhấn Tiếp tục để kết thúc\" data-original=\"//cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x (12)-800x500.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x%20(12)-800x500.jpg\" title=\"Nhấn Tiếp tục để kết thúc\" /></p>\r\n\r\n<p>Nhấn Tiếp tục để kết thúc</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h4 id=\"subhmenuid3\"><strong>Đăng nhập vào thiết bị khác</strong></h4>\r\n\r\n<p>Nếu đã thử hai cách trên cho thiết bị gặp lỗi mà vẫn không thể sửa thì bạn hãy sử dụng ID Apple của mình để đăng nhập trên một thiết bị khác sau đó đăng nhập lại vào thiết bị gặp lỗi thì ID Apple của bạn sẽ không bị lỗi này nữa.</p>\r\n\r\n<p><img alt=\"Bạn có thể thử đăng nhập trên thiết bị khác\" data-original=\"//cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x (11)-800x500.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x%20(11)-800x500.jpg\" title=\"Bạn có thể thử đăng nhập trên thiết bị khác\" />​</p>\r\n\r\n<p>Bạn có thể thử đăng nhập trên thiết bị khác</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h4 id=\"subhmenuid4\"><strong>Liên lạc với bộ phận hỗ trợ của Apple</strong></h4>\r\n\r\n<p>Nơi cứu cánh cuối cùng dành cho bạn khi đã thử hết tất cả nhưng vẫn không cứu vãn được tình hình đó chính là liên lạc với bộ phận hỗ trợ của Apple thông qua số điện thoại&nbsp;<strong>1800 1127</strong>&nbsp;(từ 9h - 18h, thứ hai đến thứ sáu) để được giải quyết.</p>\r\n\r\n<p><img alt=\"Tìm đến Tổng đài hỗ trợ của Apple \" data-original=\"//cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x (1)-800x500.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/631236/cho-e-hoie-da-tao-xong-tai-khoan-id-apple-roi-da-x%20(1)-800x500.jpg\" title=\"Tìm đến Tổng đài hỗ trợ của Apple \" /></p>\r\n\r\n<p>Tìm đến Tổng đài hỗ trợ của Apple</p>', '<p>Nếu bạn chưa biết cách liên lạc với tổng đài hỗ trợ của Apple thì hãy xem bài viết&nbsp;<a href=\"https://www.thegioididong.com/tin-tuc/tin-vui-apple-da-co-tong-dai-ho-tro-bang-ngon-ngu-tieng-viet-842883\" target=\"_blank\">Tin vui: Apple đã có tổng đài hỗ trợ bằng tiếng Việt để tìm hiểu về Tổng đài hỗ trợ của Apple</a>.</p>', 'http://localhost:8000/uploads/images/cho-e-hoie-da-tao-xong-tai-khoan-id-apple.jpg', NULL, NULL, 'loi-id-apple-nay-chua-duoc-su-dung-nguyen-nhan-va-cach-khac-phuc', 'Lỗi ID Apple này chưa được sử dụng - Nguyên nhân và cách khắc phục', NULL, NULL, 'index,follow', 'index,follow', 'vi', 5, NULL, '2021-05-17 04:14:16', '2021-05-17 04:29:29'),
+(6, '620cb99c-856e-4640-90b3-3883445187f2', 'Tháng 10 là cung gì? Tính cách, sự nghiệp, tình yêu của cung tháng 10', 'Trần Thanh Luân', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<h2>Ngày tháng sinh với một người không đơn giản chỉ là ngày để kỷ niệm mà nó còn liên quan đến vận mệnh trong tương lai như sự nghiệp, tình duyên, sức khỏe. Hãy cùng Thế Giới Di Động tìm hiểu xem sinh tháng 10 cung gì, tính cách, sự nghiệp, tình duyên của những người thuộc cung này như thế nào nhé.</h2>', '<h3 id=\"hmenuid1\"><strong>1. Tháng 10 là cung gì?</strong></h3>\r\n\r\n<p>Những người sinh vào tháng 10 sẽ thuộc cung hoàng đạo&nbsp;<strong>Bọ Cạp</strong>&nbsp;(có thời gian sinh từ 1/10 đến 22/10) hoặc cung hoàng đạo&nbsp;<strong>Thiên Bình</strong>&nbsp;(từ 23/10 đến 31/10). Tùy theo ngày sinh mà mỗi người sẽ sở hữu một vận mệnh khác nhau.</p>\r\n\r\n<p>Đối với những người sinh vào tháng 10 thuộc<strong>&nbsp;</strong>cung Bọ Cạp sẽ thuộc nguyên tố nước. Đây là nguyên tố đại diện cho yếu tố trực giác và tình cảm của con người.</p>\r\n\r\n<p>Còn đối với những Người sinh tháng 10 thuộc cung Thiên Bình sẽ thuộc nguyên tố<strong>&nbsp;k</strong>hí. Nguyên tố này đại diện cho ý chí và tinh thần của con người.</p>\r\n\r\n<p><img alt=\"Những người sinh tháng 10 sẽ thuộc cung Bọ Cạp hoặc cung Thiên Bình\" data-original=\"//cdn.tgdd.vn/hoi-dap/1347809/thang-10-la-cung-gi-tinh-cach-su-nghiep-tinh-yeu-cua-cung-1-800x531.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1347809/thang-10-la-cung-gi-tinh-cach-su-nghiep-tinh-yeu-cua-cung-1-800x531.jpg\" title=\"Những người sinh tháng 10 sẽ thuộc cung Bọ Cạp hoặc cung Thiên Bình\" /></p>\r\n\r\n<p>Những người sinh tháng 10 sẽ thuộc cung Bọ Cạp hoặc cung Thiên Bình</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid2\"><strong>2. Tổng quan những người sinh tháng 10</strong></h3>\r\n\r\n<p><strong>​</strong>Những người sinh vào tháng 10 thường có thể đưa ra những phán quyết tài ba và luôn thấu tình đạt lý, họ có khả năng nhìn rõ hai mặt lợi hại của bất kỳ vấn đề nào. Họ là người có trực giác khá nhạy bén, luôn suy xét cẩn thận mọi diễn biến có thể xảy ra, đồng thời họ luôn có sức chịu đựng cực tốt và khó bị lừa gạt.</p>\r\n\r\n<p><img alt=\"​Người sinh vào tháng 10 có thể đưa ra những phán quyết tài ba và luôn thấu tình đạt lý\" data-original=\"//cdn.tgdd.vn/hoi-dap/1347809/thang-10-la-cung-gi-tinh-cach-su-nghiep-tinh-yeu-cua-cung-2-800x498.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1347809/thang-10-la-cung-gi-tinh-cach-su-nghiep-tinh-yeu-cua-cung-2-800x498.jpg\" title=\"​Người sinh vào tháng 10 có thể đưa ra những phán quyết tài ba và luôn thấu tình đạt lý\" /></p>\r\n\r\n<p>​Người sinh vào tháng 10 có thể đưa ra những phán quyết tài ba và luôn thấu tình đạt lý</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Từ góc độ cung hoàng đạo, những người sinh vào tháng 10 đều là người thật thà, ngay thẳng và trung thành. Họ luôn làm việc gì cũng cần tính toán cẩn thận, chu đáo và tỉ mỉ. Do đó, họ dễ dàng đạt thành công trong sự nghiệp lẫn cuộc sống.</p>\r\n\r\n<p>Tuy nhiên, họ cũng rất dễ nổi nóng và thù lâu nhớ dai. Họ ghét nhất sự dối trá và luôn cầu toàn đối với cuộc sống của mình.</p>\r\n\r\n<h3 id=\"hmenuid3\"><strong>3. Tính cách, tình yêu, sự nghiệp của cung hoàng đạo tháng 10</strong></h3>\r\n\r\n<h4 id=\"subhmenuid1\"><strong>3.1. Cung Thiên Bình</strong></h4>\r\n\r\n<p><strong>Tính cách</strong></p>\r\n\r\n<p>Điểm mà Thiên Bình mang lại ấn tượng cho người khác về tính cách chính là sự ngay thẳng, chân thành và biết lắng nghe người khác. Hơn nữa, người thuộc cung Thiên Bình luôn cảm nhận nỗi niềm của người khác bằng cả trái tim và sự chia sẻ. Thiên Bình luôn sống bằng tấm lòng chân thật của bản thân, hiền lành, hướng thiện, tốt bụng và giàu lòng vị tha.</p>\r\n\r\n<p><img alt=\"Thiên Bình là người có tính cách ngay thẳng\" data-original=\"//cdn.tgdd.vn/hoi-dap/1347809/thang-10-la-cung-gi-tinh-cach-su-nghiep-tinh-yeu-cua-cung-3-800x600.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1347809/thang-10-la-cung-gi-tinh-cach-su-nghiep-tinh-yeu-cua-cung-3-800x600.jpg\" title=\"Thiên Bình là người có tính cách ngay thẳng\" /></p>\r\n\r\n<p>Thiên Bình là người có tính cách ngay thẳng</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Tình yêu</strong></p>\r\n\r\n<p>Thiên Bình trong tình yêu rất chung thủy và chân thành. Khi yêu, họ luôn quý mến, trân trọng và sẵn sàng đánh đổi tất cả để người mình thương yêu được vui vẻ và hạnh phúc. Họ rất xem trọng tình cảm, đặt người mình yêu thương ở vị trí cao nhất trước khi đưa ra một quyết định nào đó.</p>\r\n\r\n<p><strong>Sự nghiệp</strong></p>\r\n\r\n<p>Trên con đường sự nghiệp, Thiên Bình không được nhiều may mắn. Khi gặp thử thách, khó khăn thì họ dễ dàng trở nên lúng túng và mất phương hướng. Họ không biết cách xử lý và giải quyết tình huống dẫn tới thất bại trắng tay. Bên cạnh đó, những người sinh tháng 10 thuộc cung Thiên Bình lại quá xem trọng tình cảm. Vì thế, họ dễ bị tình cảm chi phối và thường để lại nhiều hệ quả đáng tiếc.</p>\r\n\r\n<p><img alt=\"Trên con đường sự nghiệp, Thiên Bình không được nhiều may mắn\" data-original=\"//cdn.tgdd.vn/hoi-dap/1347809/thang-10-la-cung-gi-tinh-cach-su-nghiep-tinh-yeu-cua-cung-4-800x523.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1347809/thang-10-la-cung-gi-tinh-cach-su-nghiep-tinh-yeu-cua-cung-4-800x523.jpg\" title=\"Trên con đường sự nghiệp, Thiên Bình không được nhiều may mắn\" /></p>\r\n\r\n<p>Trên con đường sự nghiệp, Thiên Bình không được nhiều may mắn</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Sức khỏe</strong></p>\r\n\r\n<p>Thiên Bình nên chú ý các vấn đề sức khỏe liên quan đến thận, lưng dưới và vùng xương chậu. Họ là người có nhiều khả năng bị đau lưng và sỏi ở thận hoặc bàng quang so với bất kỳ ai khác. Do đó, họ phải tránh hoạt động quá mạnh thường xuyên, đồng thời không ăn thực phẩm và đồ uống có khả năng gây hại cho những khu vực dễ bị tổn thương này.</p>\r\n\r\n<h4 id=\"subhmenuid2\"><strong>3.2. Cung Bọ Cạp</strong></h4>\r\n\r\n<p><strong>Tính cách</strong></p>\r\n\r\n<p>Những người thuộc cung Bọ Cạp thường thích sống hướng nội và tính cách khá trầm lặng. Họ luôn phát huy được tối đa khả năng bản thân và đưa ra những suy tính, kế hoạch rất chu đáo và hoàn thiện khi họ làm việc một mình. Ngoài ra, họ là người luôn có suy nghĩ chắc chắn trước khi đưa ra 1 quyết định nào đó. Bản chất của Bọ Cạp rất mạnh mẽ và kiên cường, họ quan niệm rằng nếu càng gặp nhiều thử thách, khó khăn thì càng tạo động lực giúp họ phát huy được hết khả năng của bản thân.</p>\r\n\r\n<p><img alt=\"Bọ Cạp thường thích sống hướng nội và tính cách khá trầm lặng\" data-original=\"//cdn.tgdd.vn/hoi-dap/1347809/thang-10-la-cung-gi-tinh-cach-su-nghiep-tinh-yeu-cua-cung-5-800x450.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1347809/thang-10-la-cung-gi-tinh-cach-su-nghiep-tinh-yeu-cua-cung-5-800x450.jpg\" title=\"Bọ Cạp thường thích sống hướng nội và tính cách khá trầm lặng\" /></p>\r\n\r\n<p>Bọ Cạp thường thích sống hướng nội và tính cách khá trầm lặng</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Tình yêu</strong></p>\r\n\r\n<p>Về hôn nhân và tình yêu, Bọ Cạp có thể chịu nhiều tủi nhục và cay đắng dù tình yêu của họ khá chung thủy và chân thành. Tuy nhiên, họ luôn bị đối phương làm những việc khiến bản thân đau buồn và tổn thương. Nhưng về sau thì cuộc sống hôn nhân của họ sẽ vô cùng tốt đẹp, gia đạo hạnh phúc và bình an.</p>\r\n\r\n<p><img alt=\"Bọ Cạp khá chung thủy và chân thành.\" data-original=\"//cdn.tgdd.vn/hoi-dap/1347809/thang-10-la-cung-gi-tinh-cach-su-nghiep-tinh-yeu-cua-cung-6-800x533.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1347809/thang-10-la-cung-gi-tinh-cach-su-nghiep-tinh-yeu-cua-cung-6-800x533.jpg\" title=\"Bọ Cạp khá chung thủy và chân thành.\" /></p>\r\n\r\n<p>Bọ Cạp khá chung thủy và chân thành.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Sự nghiệp</strong></p>\r\n\r\n<p>Bọ Cạp có đường công danh sự nghiệp vô cùng sáng lạn. Họ luôn gặp may mắn và làm việc thường được quý nhân giúp đỡ và tương trợ. Thành công đến với họ không quá dễ dàng, mà họ sẽ phải trải qua rất nhiều vất vả, khó khăn.</p>\r\n\r\n<p><strong>Sức khỏe</strong></p>\r\n\r\n<p>Cung hoàng đạo Bọ Cạp được dự đoán là dễ có xu hướng mắc bệnh trong hệ thống sinh sản và tiết niệu. Ví dụ như các vấn đề về thận, sỏi trong bàng quang hoặc bộ phận sinh dục và bệnh trĩ. Tình trạng da như loét, mụn nhọt và áp xe cũng có khả năng là vấn đề đối với Bọ Cạp. Vì vậy, những người thuộc cung này hãy thường xuyên thăm khám bác sĩ để được hỗ trợ tốt nhất các vấn đề về sức khỏe.</p>\r\n\r\n<h3 id=\"hmenuid4\"><strong>4. Cung hoàng đạo tháng 10 hợp với cung nào?</strong></h3>\r\n\r\n<p>Những người sinh tháng 10 thuộc cung hoàng đạo&nbsp;<strong>Thiên Bình</strong>&nbsp;sẽ hợp với cung&nbsp;<strong>Bảo Bình</strong>&nbsp;và cung&nbsp;<strong>Song Tử</strong>. Tương đương với những người sinh vào tháng 1, 2 và tháng 5, 6.</p>\r\n\r\n<p><img alt=\"Các cung hoàng đạo hợp với Thiên Bình và Bọ Cạp\" data-original=\"//cdn.tgdd.vn/hoi-dap/1347809/thang-10-la-cung-gi-tinh-cach-su-nghiep-tinh-yeu-cua-cung-7-800x401.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1347809/thang-10-la-cung-gi-tinh-cach-su-nghiep-tinh-yeu-cua-cung-7-800x401.jpg\" title=\"Các cung hoàng đạo hợp với Thiên Bình và Bọ Cạp\" /></p>\r\n\r\n<p>Các cung hoàng đạo hợp với Thiên Bình và Bọ Cạp</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Những người sinh tháng 10 thuộc cung hoàng đạo&nbsp;<strong>Bọ Cạp</strong>&nbsp;sẽ hợp với cung&nbsp;<strong>Song Ngư&nbsp;</strong>và cung&nbsp;<strong>Cự Giải</strong>. Tương đương với những người sinh vào tháng 2, 3 và tháng 6, 7.</p>\r\n\r\n<h3 id=\"hmenuid5\"><strong>5. Người sinh tháng 10 hợp màu gì?</strong></h3>\r\n\r\n<p>Những người sinh tháng 10 thuộc cung hoàng đạo Thiên Bình sẽ hợp với màu hồng, màu xanh lá cây,…</p>\r\n\r\n<p><img alt=\"Những màu sắc hợp với cung hoàng đạo tháng 10\" data-original=\"//cdn.tgdd.vn/hoi-dap/1347809/thang-10-la-cung-gi-tinh-cach-su-nghiep-tinh-yeu-cua-cung-8-800x533.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1347809/thang-10-la-cung-gi-tinh-cach-su-nghiep-tinh-yeu-cua-cung-8-800x533.jpg\" title=\"Những màu sắc hợp với cung hoàng đạo tháng 10\" /></p>\r\n\r\n<p>Những màu sắc hợp với cung hoàng đạo tháng 10</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Những người sinh tháng 10 thuộc cung hoàng đạo Bọ Cạp sẽ hợp với màu hồng, màu xanh dương, màu đen, màu vàng,…</p>\r\n\r\n<h3 id=\"hmenuid6\"><strong>6. Người sinh tháng 10 hợp đá phong thủy gì?</strong></h3>\r\n\r\n<p>Những người sinh tháng 10 thuộc cung Thiên Bình sẽ hợp với đá quý như citrin màu cam đậm. Ngoài ra, cung này cũng có thể dùng thạch anh ám khói hoặc một số loại khác như Aventurin, Berin, ngọc Jadeit, Nephrit, Peridot.</p>\r\n\r\n<p><img alt=\"Các loại đá phong thủy hợp với cung Thiên Bình và Bọ Cạp\" data-original=\"//cdn.tgdd.vn/hoi-dap/1347809/thang-10-la-cung-gi-tinh-cach-su-nghiep-tinh-yeu-cua-cung-10-800x600.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1347809/thang-10-la-cung-gi-tinh-cach-su-nghiep-tinh-yeu-cua-cung-10-800x600.jpg\" title=\"Các loại đá phong thủy hợp với cung Thiên Bình và Bọ Cạp\" /></p>\r\n\r\n<p>Các loại đá phong thủy hợp với cung Thiên Bình và Bọ Cạp</p>', '<p>Những người sinh tháng 10 thuộc cung Bọ Cạp sẽ hợp với đá quý như Carnelian màu đỏ. Ngoài ra, cung này cũng có thể hợp với một số loại đá màu đỏ khác như Ruby, Granat, Canxedon, Obsidian, Agat.</p>', 'http://localhost:8000/uploads/images/thang-10-cung-gi.jpg', NULL, NULL, 'thang-10-la-cung-gi-tinh-cach-su-nghiep-tinh-yeu-cua-cung-thang-10', 'Tháng 10 là cung gì? Tính cách, sự nghiệp, tình yêu của cung tháng 10', NULL, NULL, 'index,follow', 'index,follow', 'vi', 6, NULL, '2021-05-17 04:21:10', '2021-05-17 04:30:07'),
+(7, '745566b0-697d-4b40-8590-a24a4b3c0ba8', 'Cách mở và sử dụng Spotlight trên MacBook để làm việc hiệu quả hơn', 'Trần Thanh Luân', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<h2><a href=\"https://www.thegioididong.com/laptop-apple-macbook\" target=\"_blank\">MacBook</a>&nbsp;là thiết bị&nbsp;<a href=\"https://www.thegioididong.com/laptop\" target=\"_blank\">laptop</a>&nbsp;được nhiều người sử dụng bởi những tính năng tuy nhỏ nhưng lại hỗ trợ rất nhiều trong công việc. Và một trong những tính năng cơ bản trên MacBook mà không thể không nhắc đến đó là Spotlight. Vậy chính xác Spotlight là gì, dùng như thế nào và làm thế nào để dùng Spotlight trên MacBook cho hiệu quả.</h2>', '<h3 id=\"hmenuid1\"><strong>1. Spotlight trên MacBook là gì?</strong></h3>\r\n\r\n<p>Spotlight là một tính năng được trang bị sẵn trên hệ điều hành&nbsp;<a href=\"https://www.thegioididong.com/hoi-dap/he-dieu-hanh-macos-la-gi-956642\" target=\"_blank\">macOS</a>, có khả năng giúp người dùng tìm kiếm thông tin trên máy tính hoặc trên Internet. Chẳng hạn, bạn có thể thực hiện tìm kiếm file, ứng dụng được cài đặt trong máy, hay thậm chí là dịch thuật từ khi cần thiết.</p>\r\n\r\n<p>Bạn có thể bật Spotlight bằng tổ hợp phím hết sức đơn giản là&nbsp;<strong>Command (⌘) + Space</strong>, sau đó thì bạn chỉ cần nhập từ khóa mà bạn muốn tìm kiếm vào thanh Spotlight. Kết quả sẽ được trả ra dưới dạng danh sách, và dựa vào đó mà bạn sẽ lựa chọn thao tác tiếp theo nhé!</p>\r\n\r\n<p><img alt=\"Tổ hợp phím Command + Space\" data-original=\"//cdn.tgdd.vn/hoi-dap/1350402/cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu.001-800x450.jpeg\" src=\"https://cdn.tgdd.vn/hoi-dap/1350402/cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu.001-800x450.jpeg\" title=\"Tổ hợp phím Command + Space\" /></p>\r\n\r\n<p>Tổ hợp phím Command + Space</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Ngoài tổ hợp phím Command (⌘) + Space vô cùng cơ bản, bạn cũng có thể tham khảo thêm bảng phím tắt dưới đây để có thể tận dụng được tối ưu hóa quá trình sử dụng Spotlight trên MacBook.</p>\r\n\r\n<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\">\r\n	<tbody>\r\n		<tr>\r\n			<td>\r\n			<p><strong>Phím/Tổ hợp phím tắt</strong></p>\r\n			</td>\r\n			<td>\r\n			<p><strong>Thao tác</strong></p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td>\r\n			<p>Phím Tab</p>\r\n			</td>\r\n			<td>\r\n			<p>Hiển thị cửa sổ xem trước</p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td>\r\n			<p>Phím lên</p>\r\n			</td>\r\n			<td>\r\n			<p>Chuyển tùy chọn lên phía trên</p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td>\r\n			<p>Phím xuống</p>\r\n			</td>\r\n			<td>\r\n			<p>Chuyển tùy chọn xuống phía dưới</p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td>\r\n			<p>Command (⌘) + Phím lên</p>\r\n			</td>\r\n			<td>\r\n			<p>Chuyển lên tùy chọn đầu tiên trong danh mục ở phía trên</p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td>\r\n			<p>Command (⌘) + Phím xuống</p>\r\n			</td>\r\n			<td>\r\n			<p>Chuyển xuống tùy chọn đầu tiên trong danh mục ở phía dưới</p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td>\r\n			<p>Command (⌘) (Nhấn giữ)</p>\r\n			</td>\r\n			<td>\r\n			<p>Hiển thị vị trí của tệp trong máy</p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td>\r\n			<p>Phím Return</p>\r\n			</td>\r\n			<td>\r\n			<p>Truy cập kết quả tìm kiếm</p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td>\r\n			<p>Command (⌘) + R</p>\r\n			</td>\r\n			<td>\r\n			<p>Mở thư mục chứa tệp đang tìm kiếm</p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td>\r\n			<p>Option + Command (⌘) + Space</p>\r\n			</td>\r\n			<td>\r\n			<p>Mở tính năng tìm kiếm theo thư mục trên Finder</p>\r\n			</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n\r\n<p><img alt=\"Tính năng tìm kiếm theo thư mục (Option + Command + Space)\" data-original=\"//cdn.tgdd.vn/hoi-dap/1350402/cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu.003-800x450.jpeg\" src=\"https://cdn.tgdd.vn/hoi-dap/1350402/cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu.003-800x450.jpeg\" title=\"Tính năng tìm kiếm theo thư mục (Option + Command + Space)\" /></p>\r\n\r\n<p>Tính năng tìm kiếm theo thư mục (Option + Command + Space)</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid2\"><strong>2. 7 mẹo sử dụng Spotlight trên MacBook</strong></h3>\r\n\r\n<h4 id=\"subhmenuid1\"><strong>- Tìm kiếm phần mềm, thư mục, tệp cực nhanh</strong></h4>\r\n\r\n<p>Để có thể tìm kiếm nhanh phần mềm, thư mục hay tệp, bạn chỉ cần đơn giản bật tính năng Spotlight trên MacBook lên, sau đó thì nhập tên vào thì Spotlight sẽ trả lại kết quả trong vòng tích tắc. Thao tác này sẽ giúp bạn tiết kiệm được rất nhiều thời gian, thay vì vào Launchpad để tìm ứng dụng, hay là lần mò các thư mục để tìm tệp.</p>\r\n\r\n<p><img alt=\"Tìm kiếm phần mềm cực nhanh với Spotlight\" data-original=\"//cdn.tgdd.vn/hoi-dap/1350402/cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu.004-800x450.jpeg\" src=\"https://cdn.tgdd.vn/hoi-dap/1350402/cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu.004-800x450.jpeg\" title=\"Tìm kiếm phần mềm cực nhanh với Spotlight\" /></p>\r\n\r\n<p>Tìm kiếm phần mềm cực nhanh với Spotlight</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h4 id=\"subhmenuid2\"><strong>- Quét và tìm dữ liệu bằng từ khóa</strong></h4>\r\n\r\n<p>Đối với các ứng dụng chính chủ đến từ Apple như là Tin nhắn, Mail hay là Ghi chú, bạn có thể tìm kiếm nhanh thông tin bên trong các ứng dụng này bằng cách nhập từ khóa xuất hiện trong tệp mà bạn mong muốn.</p>\r\n\r\n<p>Để việc tìm kiếm thông tin trên Spotlight trở nên đỉnh hơn, bạn có thể đưa ra các điều kiện một cách cụ thể hơn với các câu lệnh như&nbsp;<strong>AND&nbsp;</strong>(và),&nbsp;<strong>OR</strong>&nbsp;(hoặc) hay&nbsp;<strong>NOT</strong>&nbsp;(không).</p>\r\n\r\n<p>Chẳng hạn ở dưới đây, cụm từ là “Protein NOT Collagen”. Với cụm từ này, bạn đang tìm kiếm tệp có chứa từ khóa Protein, nhưng không được chứa từ Collagen.</p>\r\n\r\n<p><img alt=\"TÌm kiếm với từ khóa \" collagen=\"\" data-original=\"//cdn.tgdd.vn/hoi-dap/1350402/cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu.005-800x450.jpeg\" not=\"\" protein=\"\" src=\"https://cdn.tgdd.vn/hoi-dap/1350402/cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu.005-800x450.jpeg\" title=\"TÌm kiếm với từ khóa \" /></p>\r\n\r\n<p>TÌm kiếm với từ khóa</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h4 id=\"subhmenuid3\"><strong>- Tra từ điển Anh, Việt</strong></h4>\r\n\r\n<p>Bởi vì các thiết bị chạy macOS đều được trang bị bộ Từ điển đến từ Apple, vậy nên khi bạn nhập từ vào trong mục Spotlight, thiết bị sẽ có khả năng truy xuất nghĩa được ngay lập tức. Để xem nghĩa trực tiếp trong Spotlight, bạn cần&nbsp;<strong>di chuyển bằng phím lên/xuống</strong>&nbsp;để tới vị trí có&nbsp;<strong>biểu tượng từ điển</strong>, sau đó nhấn&nbsp;<strong>nút Tab</strong>&nbsp;để hiển thị cửa sổ từ điển.</p>\r\n\r\n<p><img alt=\"Sử dụng tính năng tra từ nhanh trên Spotlight\" data-original=\"//cdn.tgdd.vn/hoi-dap/1350402/cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu.006-800x450.jpeg\" src=\"https://cdn.tgdd.vn/hoi-dap/1350402/cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu.006-800x450.jpeg\" title=\"Sử dụng tính năng tra từ nhanh trên Spotlight\" /></p>\r\n\r\n<p>Sử dụng tính năng tra từ nhanh trên Spotlight</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Tham khảo chi tiết cách cài từ điển Anh-Việt cho MacBook tại:&nbsp;<a href=\"https://www.thegioididong.com/hoi-dap/cach-cai-dat-tu-dien-anh-viet-tren-macbook-973994\" target=\"_blank\">Cách cài đặt từ điển Anh Việt trên Macbook</a></p>\r\n\r\n<h4 id=\"subhmenuid4\"><strong>- Làm toán</strong></h4>\r\n\r\n<p>Nếu bạn cần thực hiện các phép toán đơn giản mà không có máy tính bỏ túi bên cạnh, bạn cũng có thể nhờ vả đến Spotlight đấy. Việc của bạn là nhập phép toán vào thanh Spotlight, chưa đến 1 giây thì thiết bị của bạn sẽ trả lại kết quả cho bạn.</p>\r\n\r\n<p>Lưu ý rằng hiện nay tính năng tính toán trên Spotlight chỉ hỗ trợ các phép toán đơn giản, chẳng hạn cộng (+), trừ (-), nhân (*), chia (/) hay là lũy thừa (^). Ngoài ra, bạn cũng có thể sử dụng dấu đóng mở ngoặc để sắp xếp thứ tự ưu tiên của phép tính.</p>\r\n\r\n<p><img alt=\"Bạn có thể thực hiện tính toán thông qua Spotlight\" data-original=\"//cdn.tgdd.vn/hoi-dap/1350402/cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu.007-800x450.jpeg\" src=\"https://cdn.tgdd.vn/hoi-dap/1350402/cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu.007-800x450.jpeg\" title=\"Bạn có thể thực hiện tính toán thông qua Spotlight\" /></p>\r\n\r\n<p>Bạn có thể thực hiện tính toán thông qua Spotlight</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h4 id=\"subhmenuid5\"><strong>- Đổi đơn vị</strong></h4>\r\n\r\n<p>Với Spotlight, bạn có thể đổi nhanh đơn vị, bao gồm cả đơn vị tiền tệ, nhiệt độ, cân nặng,... Trong trường hợp kết quả hiển thị nhanh của Spotlight không hiển thị đơn vị mà bạn mong muốn, bạn chỉ di chuyển đến lựa chọn có&nbsp;<strong>biểu tượng máy tính</strong>&nbsp;phía trước, sau đó nhấn<strong>&nbsp;phím Tab</strong>&nbsp;để hiển thị thêm nhiều đơn vị khác.</p>\r\n\r\n<p><img alt=\"Tính năng này hỗ trợ cả đơn vị nhiệt độ, tiền tệ hay cân nặng\" data-original=\"//cdn.tgdd.vn/hoi-dap/1350402/cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu.008-800x450.jpeg\" src=\"https://cdn.tgdd.vn/hoi-dap/1350402/cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu.008-800x450.jpeg\" title=\"Tính năng này hỗ trợ cả đơn vị nhiệt độ, tiền tệ hay cân nặng\" /></p>\r\n\r\n<p>Tính năng này hỗ trợ cả đơn vị nhiệt độ, tiền tệ hay cân nặng</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h4 id=\"subhmenuid6\"><strong>- Truy cập website đã lưu</strong></h4>\r\n\r\n<p>Trong trường hợp bạn có sử dụng trình duyệt Safari, đồng thời có đánh dấu trang lại các trang web thường sử dụng thì bạn có thể truy cập vào trang hết sức nhanh chóng bằng cách nhấn tổ hợp phím để mở Spotlight, sau đó gõ tên của trang web. Thao tác này đòi hỏi bạn vài giây để hoàn thành.</p>\r\n\r\n<p><img alt=\"Truy cập nhanh các website đã được đánh dấu trang thông qua Spotlight\" data-original=\"//cdn.tgdd.vn/hoi-dap/1350402/cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu.009-800x450.jpeg\" src=\"https://cdn.tgdd.vn/hoi-dap/1350402/cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu.009-800x450.jpeg\" title=\"Truy cập nhanh các website đã được đánh dấu trang thông qua Spotlight\" /></p>\r\n\r\n<p>Truy cập nhanh các website đã được đánh dấu trang thông qua Spotlight</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h4 id=\"subhmenuid7\"><strong>- Xem thời tiết</strong></h4>\r\n\r\n<p>Hiện nay tính năng này vẫn chưa hỗ trợ tại Việt Nam (tính tới thời điểm ngày 11/05/2021).</p>', '<p>Chỉ với các câu lệnh bao gồm vị trí + “weather”, bạn đã có thể xem nhanh được tình trạng thời tiết ở các thời điểm khác nhau trong ngày hoặc các ngày khác nhau trong tuần. Các thông tin này được cập nhật thông qua&nbsp;<a href=\"https://weather.com/vi-VN/weather/today/l/VMXX0006:1:VM?Goto=Redirected\" rel=\"nofollow\" target=\"_blank\">The Weather Channel</a>.</p>\r\n\r\n<p><img alt=\"Tính năng này hiện chưa được hỗ trợ tại Việt Nam\" data-original=\"//cdn.tgdd.vn/hoi-dap/1350402/cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu.010-800x450.jpeg\" src=\"https://cdn.tgdd.vn/hoi-dap/1350402/cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu.010-800x450.jpeg\" title=\"Tính năng này hiện chưa được hỗ trợ tại Việt Nam\" /></p>\r\n\r\n<p>Tính năng này hiện chưa được hỗ trợ tại Việt Nam</p>', 'http://localhost:8000/uploads/images/cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu_thumbnail_001.jpeg', NULL, NULL, 'cach-mo-va-su-dung-spotlight-tren-macbook-de-lam-viec-hieu-qua-hon', 'Cách mở và sử dụng Spotlight trên MacBook để làm việc hiệu quả hơn', NULL, NULL, 'index,follow', 'index,follow', 'vi', 7, NULL, '2021-05-17 04:23:13', '2021-05-17 04:30:29'),
+(8, '16bac9ac-d5b8-4adb-a0b8-2df73cf65310', 'Tại sao logo trái táo phát sáng của Apple bị “khai tử”?', 'Trần Thanh Luân', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<h2>Những chiếc&nbsp;<a href=\"https://www.thegioididong.com/laptop-apple-macbook\" target=\"_blank\">MacBook</a>&nbsp;từng được người dùng nhận biết đến với những chiếc logo trái táo phát sáng ở mặt trên của thiết bị, nhưng từ năm 2015 trở đi thì hãng đã bắt đầu bỏ đi thiết kế này. Vậy đâu là nguyên nhân khiến Apple từ bỏ logo phát sáng ở mặt lưng? Bài viết này sẽ giúp bạn giải đáp thắc mắc này nhé!</h2>\r\n\r\n<p><label onclick=\"toogleMenuQuick()\">Xem nhanh</label></p>', '<p>Có thể bạn chưa biết, những thiết bị&nbsp;<a href=\"https://www.thegioididong.com/dtdd-apple-iphone\" target=\"_blank\">iPhone</a>&nbsp;từng đã có tin đồn rằng sẽ có thể được trang bị logo phát sáng ở mặt lưng. Thậm chí, Apple đã từng nộp bằng sáng chế về tính năng hiển thị thông báo thông qua việc phát sáng logo ở mặt lưng của thiết bị. Tuy nhiên, tin đồn vẫn chỉ là tin đồn.</p>\r\n\r\n<p>Logo phát sáng đã từng được nhiều người thử đưa lên iPhone, và nếu bạn hứng thú thì có thể nhấn vào bài viết này để tìm hiểu thêm nhé!</p>\r\n\r\n<ul>\r\n	<li><a href=\"https://www.thegioididong.com/tin-tuc/day-la-cach-khien-logo-tao-khuyet-tren-iphone-7-phat-sang-908019\" target=\"_blank\">Đây là cách khiến logo táo khuyết trên iPhone 7 có thể phát sáng</a></li>\r\n</ul>\r\n\r\n<p><img alt=\"Logo phát sáng trên iPhone\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351139/tai-sao-logo-trai-tao-phat-sang-cua-apple-bi-khai-tu.001-800x450.jpeg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351139/tai-sao-logo-trai-tao-phat-sang-cua-apple-bi-khai-tu.001-800x450.jpeg\" title=\"Logo phát sáng trên iPhone\" /></p>\r\n\r\n<p>Logo phát sáng trên iPhone</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid1\"><strong>1. Apple loại bỏ logo phát sáng từ bao giờ?</strong></h3>\r\n\r\n<p>Thiết bị MacBook đầu tiên được ra mắt mà không có thiết kế logo phát sáng ở mặt lưng đó là MacBook 12 inch phiên bản năm 2015. Ngay sau đó, năm 2016 thì những chiếc logo phát sáng trên MacBook Pro mới cũng bị thay thế bởi thiết kế logo phẳng. Không lâu sau, người đàn em là MacBook Air cũng được cập nhật thiết kế này vào năm 2018, từ đây chính thức chấm dứt thiết kế logo trái táo phát sáng huyền thoại trên MacBook.</p>\r\n\r\n<p>Hiện nay (13/05/2021), trên thị trường thì vẫn còn&nbsp;<a href=\"https://www.thegioididong.com/laptop/apple-macbook-air-mqd32sa-a-i5-5350u?src=osp\" target=\"_blank\">MacBook Air 2017</a>&nbsp;là sản phẩm duy nhất còn giữ lại logo phát sáng ở mặt lưng của thiết bị.</p>\r\n\r\n<p><img alt=\"MacBook 12 inch (2015) là sản phẩm đầu tiên bỏ thiết kế logo phát sáng\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351139/tai-sao-logo-trai-tao-phat-sang-cua-apple-bi-khai-tu.002-800x450.jpeg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351139/tai-sao-logo-trai-tao-phat-sang-cua-apple-bi-khai-tu.002-800x450.jpeg\" title=\"MacBook 12 inch (2015) là sản phẩm đầu tiên bỏ thiết kế logo phát sáng\" /></p>\r\n\r\n<p>MacBook 12 inch (2015) là sản phẩm đầu tiên bỏ thiết kế logo phát sáng</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid2\"><strong>2. 4 lý do khiến Apple loại bỏ logo phát sáng</strong></h3>\r\n\r\n<p><strong>- Chất lượng hiển thị của màn hình bị ảnh hưởng</strong></p>\r\n\r\n<p>Đối với những người sử dụng các sản phẩm MacBook đời cũ thì chắc chắn sẽ không còn lạ với việc chất lượng màn hình bị ảnh hưởng mỗi khi làm việc ở những điều kiện ngược sáng, hay là ở trong môi trường quá tối (trong trường hợp độ sáng màn hình cũng bị giảm theo). Khi này, bạn có thể thấy hình logo trái táo mập mờ trên màn hình của mình, gây ra tình trạng sai lệch màu sắc, và chắc chắn đây là trải nghiệm không mấy dễ chịu.</p>\r\n\r\n<p><img alt=\"Chất lượng màn hình có thể bị ảnh hưởng\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351139/tai-sao-logo-trai-tao-phat-sang-cua-apple-bi-khai-tu.003-800x450.jpeg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351139/tai-sao-logo-trai-tao-phat-sang-cua-apple-bi-khai-tu.003-800x450.jpeg\" title=\"Chất lượng màn hình có thể bị ảnh hưởng\" /></p>\r\n\r\n<p>Chất lượng màn hình có thể bị ảnh hưởng</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>- Thiết bị sẽ mỏng, gọn hơn</strong></p>\r\n\r\n<p>Việc loại bỏ đi phần logo phát sáng đằng sau giúp cho độ dày của thiết bị có thể giảm xuống đáng kể do không cần trang bị phần đèn&nbsp;<a href=\"https://vi.wikipedia.org/wiki/LED\" rel=\"nofollow\" target=\"_blank\">LED</a>&nbsp;phát sáng. Một minh chứng cho thấy độ dày của thiết bị đã được giảm xuống đó là những chiếc MacBook Air 2017 (cũ) có độ dày là 17mm, trong khi những chiếc&nbsp;<a href=\"https://www.thegioididong.com/laptop/apple-macbook-air-2020-m1-mgne3saa\" target=\"_blank\">MacBook Air M1 2020</a>&nbsp;chỉ có độ dày 16.1mm.</p>\r\n\r\n<p><img alt=\"Những thiết bị MacBook Air mới có phần màn hình mỏng hơn đáng kể\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351139/tai-sao-logo-trai-tao-phat-sang-cua-apple-bi-khai-tu.004-800x450.jpeg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351139/tai-sao-logo-trai-tao-phat-sang-cua-apple-bi-khai-tu.004-800x450.jpeg\" title=\"Những thiết bị MacBook Air mới có phần màn hình mỏng hơn đáng kể\" /></p>\r\n\r\n<p>Những thiết bị MacBook Air mới có phần màn hình mỏng hơn đáng kể</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>- Khung màn hình bị bẻ cong</strong></p>\r\n\r\n<p>Việc khoét một phần trên mặt lưng của những chiếc MacBook có thể trở thành điểm gờ, nhất là khi thiết bị được làm mỏng hơn, khiến cho phần màn hình dễ bị gãy hơn nếu như có lực tác động đúng điểm yếu này. Trong quá khứ, những chiếc&nbsp;<a href=\"https://www.thegioididong.com/tin-tuc/iphone-6-plus-bi-phat-hien-rat-de-be-cong-568752\" target=\"_blank\">iPhone 6 Plus cũng đã từng mắc phải sai lầm</a>&nbsp;chết người này, khiến danh tiếng của công ty do đó cũng bị ảnh hưởng theo.</p>\r\n\r\n<p>Do đó, việc loại bỏ đi thiết kế này là một điều cần thiết giúp cho sản phẩm trở nên cứng cáp hơn.</p>\r\n\r\n<p><img alt=\"Nếu được gọt mỏng hơn, đây có thể là điểm gờ khiến cho các thiết bị dễ bị gãy\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351139/tai-sao-logo-trai-tao-phat-sang-cua-apple-bi-khai-tu.005-800x450.jpeg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351139/tai-sao-logo-trai-tao-phat-sang-cua-apple-bi-khai-tu.005-800x450.jpeg\" title=\"Nếu được gọt mỏng hơn, đây có thể là điểm gờ khiến cho các thiết bị dễ bị gãy\" /></p>\r\n\r\n<p>Nếu được gọt mỏng hơn, đây có thể là điểm gờ khiến cho các thiết bị dễ bị gãy</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>- Sự thay đổi chiến lược thương hiệu của Apple</strong></p>\r\n\r\n<p>Vào thời điểm những năm 1999, những chiếc PowerBook G3 khi ấy được trình làng như là sự khẳng định cho sự quay lại của Steve Jobs. Logo phát sáng này đã đi cùng với chiến dịch quảng cáo đình đám của Apple là&nbsp;<a href=\"https://en.wikipedia.org/wiki/Think_different\" rel=\"nofollow\" target=\"_blank\">Think Different</a>, giúp cho hãng có thể gây được sự chú ý đến những khách của mình. Lúc bấy giờ logo phát sáng chính là ý đồ của hãng để sản phẩm của mình nổi bật hơn, dễ dàng nhận diện hơn.</p>\r\n\r\n<p><img alt=\"Logo phát sáng trên PowerBook G3\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351139/tai-sao-logo-trai-tao-phat-sang-cua-apple-bi-khai-tu.006-800x450.jpeg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351139/tai-sao-logo-trai-tao-phat-sang-cua-apple-bi-khai-tu.006-800x450.jpeg\" title=\"Logo phát sáng trên PowerBook G3\" /></p>\r\n\r\n<p>Logo phát sáng trên PowerBook G3</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Đến ngày nay, các sản phẩm của Apple đã có độ nhận diện thương hiệu rộng rãi, vậy nên, chiến lược quảng bá cũ của hãng đã bị thay thế. Ngày nay, các sản phẩm của Apple đang tập chung vào tính thẩm mỹ của sản phẩm hơn, thậm chí là loại bỏ logo ra khỏi thiết bị. Một minh chứng cho thấy xu hướng mới này của Apple là những chiếc tai nghe như&nbsp;<a href=\"https://www.thegioididong.com/tai-nghe/tai-nghe-bluetooth-airpods-pro-apple-mwp22?src=osp\" target=\"_blank\">Airpods 2</a>&nbsp;hay&nbsp;<a href=\"https://www.thegioididong.com/tai-nghe/tai-nghe-bluetooth-airpods-pro-apple-mwp22?src=osp\" target=\"_blank\">Airpods Pro</a>&nbsp;của hãng.</p>\r\n\r\n<p>Ngoài ra, việc loại logo phát sáng trên những chiếc MacBook cũng giúp cho các thiết bị trong hệ sinh thái như iPhone hay&nbsp;<a href=\"https://www.thegioididong.com/may-tinh-bang-apple-ipad\" target=\"_blank\">iPad</a>&nbsp;trở nên đồng bộ hơn.</p>\r\n\r\n<p><img alt=\"Hệ sinh thái sản phẩm của Apple\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351139/tai-sao-logo-trai-tao-phat-sang-cua-apple-bi-khai-tu.007-800x450.jpeg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351139/tai-sao-logo-trai-tao-phat-sang-cua-apple-bi-khai-tu.007-800x450.jpeg\" title=\"Hệ sinh thái sản phẩm của Apple\" /></p>\r\n\r\n<p>Hệ sinh thái sản phẩm của Apple</p>', NULL, 'http://localhost:8000/uploads/images/tai-sao-logo-trai-tao-phat-sang-cua-apple-bi-khai-tu_thumbnail_001.jpeg', 'https://youtu.be/YnXghrexEBw', NULL, 'tai-sao-logo-trai-tao-phat-sang-cua-apple-bi-khai-tu', 'Tại sao logo trái táo phát sáng của Apple bị “khai tử”?', NULL, NULL, 'index,follow', 'index,follow', 'vi', 8, NULL, '2021-05-17 04:24:48', '2021-05-17 04:29:49');
 INSERT INTO `samcms_news_translations` (`id`, `uuid`, `title`, `author`, `price_min`, `copyright`, `form_of_work`, `price_max`, `need`, `benefit`, `soft_desc`, `promotion_percent`, `intro`, `content`, `foot`, `image`, `youtube`, `file`, `slug`, `title_tag`, `meta_keywords`, `meta_description`, `meta_robots`, `meta_google_bot`, `locale`, `news_id`, `deleted_at`, `created_at`, `updated_at`) VALUES
 (9, 'bbabb396-a343-40dc-a978-cbc5426bd5e5', 'Cách xóa nhật ký, bài viết cũ trên Zalo cực đơn giản, ai cũng làm được', 'Vũ Quốc Tuấn', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<h2>Vì&nbsp;<a href=\"https://www.thegioididong.com/game-app/zalo-ung-dung-mang-xa-hoi-pho-bien-viet-nam-219921\" target=\"_blank\">Zalo</a>&nbsp;chưa có tính năng chỉnh sửa bài viết cũ như các trang mạng xã hội khác nên đây cũng là một bất cập nhỏ cho người dùng Zalo. Tuy nhiên, bạn có thể xóa nhật ký, bài viết cũ trên Zalo bằng&nbsp;<a href=\"https://www.thegioididong.com/dtdd\" target=\"_blank\">điện thoại</a>&nbsp;rất dễ dàng để thay bằng một bài đăng hoàn chỉnh hơn. Cùng xem bài viết dưới đây để biết các bước thực hiện nhé!</h2>', '<h3 id=\"hmenuid1\"><strong>1. Cách xóa nhật ký chung, bài viết chung trên Zalo</strong></h3>\r\n\r\n<h4 id=\"subhmenuid1\"><strong>Cách xóa nhật ký chung, bài viết chung trên Zalo qua Trang cá nhân</strong></h4>\r\n\r\n<p><strong>Bước 1</strong>: Vào ứng dụng Zalo &gt; Mở&nbsp;<strong>cuộc trò chuyện&nbsp;</strong>của bạn và người có nhật ký, bài viết chung với bạn.</p>\r\n\r\n<p><img alt=\"Mở cuộc trò chuyện cá nhân với người có chung nhật ký, bài đăng với bạn trên Zalo\" data-original=\"//cdn.tgdd.vn/hoi-dap/613780/lam-sao-xoa-dk-nhat-ky-tren-zalo-01-800x451.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/613780/lam-sao-xoa-dk-nhat-ky-tren-zalo-01-800x451.jpg\" title=\"Mở cuộc trò chuyện cá nhân với người có chung nhật ký, bài đăng với bạn trên Zalo\" /></p>\r\n\r\n<p>Mở cuộc trò chuyện cá nhân với người có chung nhật ký, bài đăng với bạn trên Zalo</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Bước 2</strong>: Chọn biểu tượng&nbsp;<strong>3 dấu gạch ngang</strong>&nbsp;ở góc trên bên phải &gt; Nhấn vào<strong>&nbsp;Nhật ký chung</strong>.</p>\r\n\r\n<p><img alt=\"Mở Nhật ký chung của hai người lên\" data-original=\"//cdn.tgdd.vn/hoi-dap/613780/lam-sao-xoa-dk-nhat-ky-tren-zalo-02-800x451.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/613780/lam-sao-xoa-dk-nhat-ky-tren-zalo-02-800x451.jpg\" title=\"Mở Nhật ký chung của hai người lên\" /></p>\r\n\r\n<p>Mở Nhật ký chung của hai người lên</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Bước 3</strong>: Nhấn chọn bức ảnh/nội dung bạn muốn xóa &gt; Chọn dấu&nbsp;<strong>3 chấm</strong>&nbsp;ở góc trên bên phải.</p>\r\n\r\n<p><img alt=\"Mở bức ảnh hay nội dung bạn muốn xóa \" data-original=\"//cdn.tgdd.vn/hoi-dap/613780/lam-sao-xoa-dk-nhat-ky-tren-zalo-03-800x451.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/613780/lam-sao-xoa-dk-nhat-ky-tren-zalo-03-800x451.jpg\" title=\"Mở bức ảnh hay nội dung bạn muốn xóa \" /></p>\r\n\r\n<p>Mở bức ảnh hay nội dung bạn muốn xóa</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Bước 4</strong>: Chọn<strong>&nbsp;Xóa ảnh</strong>&nbsp;&gt; Bấm vào&nbsp;<strong>Có&nbsp;</strong>để xác nhận xóa ảnh.</p>\r\n\r\n<p><img alt=\"Xác nhân Xóa ảnh để xóa phần nhật ký, bài đăng chung trên Zalo\" data-original=\"//cdn.tgdd.vn/hoi-dap/613780/lam-sao-xoa-dk-nhat-ky-tren-zalo-04-800x449.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/613780/lam-sao-xoa-dk-nhat-ky-tren-zalo-04-800x449.jpg\" title=\"Xác nhân Xóa ảnh để xóa phần nhật ký, bài đăng chung trên Zalo\" /></p>\r\n\r\n<p>Xác nhân Xóa ảnh để xóa phần nhật ký, bài đăng chung trên Zalo</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Nhật ký Zalo không chỉ được xem trên điện thoại, bạn cũng có thể chia sẻ và xem các bài đăng của bạn bè trên&nbsp;<a href=\"https://www.thegioididong.com/laptop\" target=\"_blank\">máy tính</a>&nbsp;dễ dàng. Bạn vui lòng tham khảo bài viết&nbsp;<a href=\"https://www.thegioididong.com/hoi-dap/huong-dan-xem-nhat-ky-zalo-tren-may-tinh-1057862\" target=\"_blank\">Cách xem nhật ký Zalo trên máy tính với trình giả lập đơn giản nhất</a>&nbsp;để biết cách thực hiện nhé!</p>\r\n\r\n<h4 id=\"subhmenuid2\"><strong>Cách xóa nhật ký chung, bài viết chung trên Zalo qua Nhật ký</strong></h4>\r\n\r\n<p><strong>Bước 1</strong>: Mở ứng dụng Zalo &gt; Chọn phần<strong>&nbsp;Nhật ký</strong>.</p>\r\n\r\n<p><img alt=\"Truy cập vào phần Nhật ký trên ứng dụng Zalo\" data-original=\"//cdn.tgdd.vn/hoi-dap/613780/lam-sao-xoa-dk-nhat-ky-tren-zalo-05-800x449.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/613780/lam-sao-xoa-dk-nhat-ky-tren-zalo-05-800x449.jpg\" title=\"Truy cập vào phần Nhật ký trên ứng dụng Zalo\" /></p>\r\n\r\n<p>Truy cập vào phần Nhật ký trên ứng dụng Zalo</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Bước 2</strong>: Lướt đến bài viết chung &gt; Chọn dấu&nbsp;<strong>3 chấm</strong>&nbsp;ở dưới bức ảnh/nội dung cần xóa.</p>\r\n\r\n<p><img alt=\"Chọn dấu 3 chấm phía dưới bài đăng để tùy chọn Xóa nhật ký cũ\" data-original=\"//cdn.tgdd.vn/hoi-dap/613780/lam-sao-xoa-dk-nhat-ky-tren-zalo-06-800x449.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/613780/lam-sao-xoa-dk-nhat-ky-tren-zalo-06-800x449.jpg\" title=\"Chọn dấu 3 chấm phía dưới bài đăng để tùy chọn Xóa nhật ký cũ\" /></p>\r\n\r\n<p>Chọn dấu 3 chấm phía dưới bài đăng để tùy chọn Xóa nhật ký cũ</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Bước 3</strong>: Chọn&nbsp;<strong>Xóa hoạt động</strong>&nbsp;&gt; Nhấn&nbsp;<strong>Có</strong>&nbsp;để xác nhận xóa hoạt động này.</p>\r\n\r\n<p><img alt=\"Xác nhận để xóa hoạt động của nhật ký, bài đăng chung trên Zalo\" data-original=\"//cdn.tgdd.vn/hoi-dap/613780/lam-sao-xoa-dk-nhat-ky-tren-zalo-07-800x449.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/613780/lam-sao-xoa-dk-nhat-ky-tren-zalo-07-800x449.jpg\" title=\"Xác nhận để xóa hoạt động của nhật ký, bài đăng chung trên Zalo\" /></p>\r\n\r\n<p>Xác nhận để xóa hoạt động của nhật ký, bài đăng chung trên Zalo</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid2\"><strong>2. Cách xóa nhật ký cũ, bài viết cũ đã đăng trên Zalo</strong></h3>\r\n\r\n<p>Tương tự như xóa nhật ký hay bài viết chung thì xóa nhật ký cũ hay bài viết cũ cũng có hai cách thực hiện. Các thao tác cũng rất đơn giản như dưới đây:</p>\r\n\r\n<h4 id=\"subhmenuid3\"><strong>Cách xóa nhật ký cũ, bài viết cũ đã đăng trên Zalo tại Trang cá nhân</strong></h4>\r\n\r\n<p><strong>Bước 1</strong>: Vào Zalo và chọn<strong>&nbsp;Thêm&nbsp;</strong>&gt; Nhấn vào&nbsp;<strong>Trang cá nhân</strong>&nbsp;của bạn.</p>\r\n\r\n<p><img alt=\"Chọn mục Thêm trong ứng dụng Zalo\" data-original=\"//cdn.tgdd.vn/hoi-dap/613780/lam-sao-xoa-dk-nhat-ky-tren-zalo-08-800x449.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/613780/lam-sao-xoa-dk-nhat-ky-tren-zalo-08-800x449.jpg\" title=\"Chọn mục Thêm trong ứng dụng Zalo\" /></p>\r\n\r\n<p>Chọn mục Thêm trong ứng dụng Zalo</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Bước 2</strong>: Lướt đến bài viết cũ muốn xóa &gt; Chọn dấu<strong>&nbsp;3 chấm&nbsp;</strong>ở phía cuối bài đó.</p>\r\n\r\n<p><img alt=\"Chọn dấu 3 chấm bên dưới bài đăng cũ bạn muốn xóa\" data-original=\"//cdn.tgdd.vn/hoi-dap/613780/lam-sao-xoa-dk-nhat-ky-tren-zalo-09-800x449.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/613780/lam-sao-xoa-dk-nhat-ky-tren-zalo-09-800x449.jpg\" title=\"Chọn dấu 3 chấm bên dưới bài đăng cũ bạn muốn xóa\" /></p>\r\n\r\n<p>Chọn dấu 3 chấm bên dưới bài đăng cũ bạn muốn xóa</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Bước 3</strong>: Chọn&nbsp;<strong>Xóa hoạt động&nbsp;</strong>&gt; Nhấn&nbsp;<strong>Có</strong>&nbsp;để xác nhận xóa hoạt động này.</p>\r\n\r\n<p><img alt=\"Xác nhận để xóa các bài đăng hay nhật ký cũ trên Zalo của bạn\" data-original=\"//cdn.tgdd.vn/hoi-dap/613780/lam-sao-xoa-dk-nhat-ky-tren-zalo-010-800x451.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/613780/lam-sao-xoa-dk-nhat-ky-tren-zalo-010-800x451.jpg\" title=\"Xác nhận để xóa các bài đăng hay nhật ký cũ trên Zalo của bạn\" /></p>\r\n\r\n<p>Xác nhận để xóa các bài đăng hay nhật ký cũ trên Zalo của bạn</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h4 id=\"subhmenuid4\"><strong>Cách xóa nhật ký cũ, bài viết cũ đã đăng trên Zalo tại trang Nhật ký</strong></h4>\r\n\r\n<p><strong>Bước 1</strong>: Mở ứng dụng Zalo &gt; Truy cập vào phần&nbsp;<strong>Nhật ký</strong>.</p>\r\n\r\n<p><img alt=\"Truy cập vào phần Nhật ký trên ứng dụng Zalo\" data-original=\"//cdn.tgdd.vn/hoi-dap/613780/lam-sao-xoa-dk-nhat-ky-tren-zalo-05-800x449.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/613780/lam-sao-xoa-dk-nhat-ky-tren-zalo-05-800x449.jpg\" title=\"Truy cập vào phần Nhật ký trên ứng dụng Zalo\" /></p>\r\n\r\n<p>Truy cập vào phần Nhật ký trên ứng dụng Zalo</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Bước 2</strong>: Lướt xuống bài viết cũ bạn muốn xóa &gt; Chọn dấu<strong>&nbsp;3 chấm</strong>&nbsp;dưới bài viết đó.</p>\r\n\r\n<p><img alt=\"Nhấn dấu 3 chấm ở cuối bài đăng để tùy chọn Xóa hoạt động\" data-original=\"//cdn.tgdd.vn/hoi-dap/613780/lam-sao-xoa-dk-nhat-ky-tren-zalo-011-800x453.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/613780/lam-sao-xoa-dk-nhat-ky-tren-zalo-011-800x453.jpg\" title=\"Nhấn dấu 3 chấm ở cuối bài đăng để tùy chọn Xóa hoạt động\" /></p>\r\n\r\n<p>Nhấn dấu 3 chấm ở cuối bài đăng để tùy chọn Xóa hoạt động</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Bước 3</strong>: Chọn&nbsp;<strong>Xóa hoạt động</strong>&nbsp;&gt; Nhấn&nbsp;<strong>Có</strong>&nbsp;để xác nhận xóa hoạt động đó.</p>\r\n\r\n<p><img alt=\"Hoàn tất việc xóa bài đăng hoặc nhật ký cũ trên Zalo\" data-original=\"//cdn.tgdd.vn/hoi-dap/613780/lam-sao-xoa-dk-nhat-ky-tren-zalo-012-800x449.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/613780/lam-sao-xoa-dk-nhat-ky-tren-zalo-012-800x449.jpg\" title=\"Hoàn tất việc xóa bài đăng hoặc nhật ký cũ trên Zalo\" /></p>\r\n\r\n<p>Hoàn tất việc xóa bài đăng hoặc nhật ký cũ trên Zalo</p>', NULL, 'http://localhost:8000/uploads/images/lam-sao-xoa-dk-nhat-ky-tren-zalo-1010.jpg', 'https://youtu.be/0GHqfSjeSMQ', NULL, 'cach-xoa-nhat-ky-bai-viet-cu-tren-zalo-cuc-don-gian-ai-cung-lam-duoc', 'Cách xóa nhật ký, bài viết cũ trên Zalo cực đơn giản, ai cũng làm được', NULL, NULL, 'index,follow', 'index,follow', 'vi', 9, NULL, '2021-05-17 04:26:12', '2021-05-17 04:30:45'),
-(10, '82496495-0420-4f03-b4fd-9e3384414c6f', 'TOP 15 tiện ích trên Chrome cực kỳ hữu dụng mà bạn nên biết', 'Vũ Quốc Tuấn', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<h2>Chrome - một trình duyệt nhẹ nhàng và nhanh chóng. Với ưu điểm hiện đại, tốc độ tải trang nhanh, giao diện ưa nhìn cùng bộ công cụ tìm kiếm siêu mạnh Google tích hợp, thật khó để người dùng có thể từ chối Chrome. Bên cạnh đó, Chrome còn được trang bị cho mình những tiện ích giúp cho trải nghiệm người dùng ngày càng trở nên thú vị. Hôm nay, hãy cùng mình điểm qua 15 tiện ích Chrome hữu dụng mà ai cũng nên biết nhé!</h2>', '<h3 id=\"hmenuid1\"><strong>1. AdBlock - best ad blocker</strong></h3>\r\n\r\n<p>Đây là công cụ âm thầm mà mạnh mẽ giúp chúng ta loại bỏ quảng cáo khỏi những trang web. Đối với một số người thì quảng cáo là bình thường. Nhưng với nhiều người đó là điều khó chịu, nếu gặp trường hợp đó thì bạn hãy thử dùng Adblock nhé!</p>\r\n\r\n<ul>\r\n	<li>Tải Adblock&nbsp;<a href=\"http://chrome.google.com/webstore/detail/adblock-%E2%80%94-best-ad-blocker/gighmmpiobklfepjocnamgkkbiglidom\" rel=\"nofollow\" target=\"_blank\">TẠI ĐÂY</a></li>\r\n</ul>\r\n\r\n<p><em>Lưu ý:</em>&nbsp;một số trang web duy trì hoạt động là nhờ quảng cáo. Bạn nên cân nhắc trước khi chặn hoàn toàn quảng cáo của một trang.</p>\r\n\r\n<p><img alt=\"AdBlock là một công cụ chặn quảng cáo cực kỳ nổi tiếng\" data-original=\"//cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet.jpg\" title=\"AdBlock là một công cụ chặn quảng cáo cực kỳ nổi tiếng\" /></p>\r\n\r\n<p>AdBlock là một công cụ chặn quảng cáo cực kỳ nổi tiếng</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid2\"><strong>2. Google Translate</strong></h3>\r\n\r\n<p>Google Translate hay còn gọi là Google Dịch đã vốn quá quen thuộc với chúng ta khi đây là công cụ dịch văn bản hàng đầu thế giới. Google Translate có thể dịch văn bản lên tới 3900 ký tự và cho ra kết quả nhanh nhất hiện nay.</p>\r\n\r\n<ul>\r\n	<li>Tải Google Translate&nbsp;<a href=\"https://chrome.google.com/webstore/detail/google-translate/aapbdbdomjkkjkaonfhkkikfgjllcleb\" rel=\"nofollow\" target=\"_blank\">NHẤN TẠI ĐÂY</a></li>\r\n</ul>\r\n\r\n<p><img alt=\"Đây có lẽ là tiện ích không còn xa lạ đối với tất cả chúng ta\" data-original=\"//cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(1).jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(1).jpg\" title=\"Đây có lẽ là tiện ích không còn xa lạ đối với tất cả chúng ta\" /></p>\r\n\r\n<p>Đây có lẽ là tiện ích không còn xa lạ đối với tất cả chúng ta</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid3\"><strong>3. Grammarly for Chrome</strong></h3>\r\n\r\n<p>Công cụ kiểm tra chính tả tiếng Anh tốt nhất hiện nay. Không chỉ có thể sử dụng trực tiếp trên trình duyệt Chrome mà người dùng còn có thể cài đặt Grammarly vào máy tính để sử dụng ngay cả khi không có Chrome.</p>\r\n\r\n<ul>\r\n	<li>Tải Grammarly for Chrome&nbsp;<a href=\"https://chrome.google.com/webstore/detail/grammarly-for-chrome/kbfnbcaeplbcioakkpcpgfkobkghlhen\" rel=\"nofollow\" target=\"_blank\">NHẤN TẠI ĐÂY</a></li>\r\n</ul>\r\n\r\n<p><img alt=\"Với Grammarly thì bạn sẽ không còn nỗi lo sai chính tả nữa\" data-original=\"//cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(2).jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(2).jpg\" title=\"Với Grammarly thì bạn sẽ không còn nỗi lo sai chính tả nữa\" /></p>\r\n\r\n<p>Với Grammarly thì bạn sẽ không còn nỗi lo sai chính tả nữa</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid4\"><strong>4. Google Dictionary</strong></h3>\r\n\r\n<p>Là một tiện ích hiệu quả để tìm kiếm thông tin của từ khó khi khi đang duyệt web hay đọc tài liệu bằng tiếng Anh,.... Với Google Dictionary, bạn không còn phải copy – paste từ mới vào một tab từ điển khác nữa mà chỉ cần click đúp vào từ để xem nghĩa và cách phát âm.</p>\r\n\r\n<p>Ngoài ra, bạn có thể bôi đen một cụm từ chưa rõ nghĩa rồi bấm vào icon Google Dictionary trên thanh tiện ích ở góc phải màn hình để xem giải thích (theo kết quả tìm kiếm Google).</p>\r\n\r\n<ul>\r\n	<li>Tải Google Dictionary&nbsp;<a href=\"https://chrome.google.com/webstore/detail/google-dictionary-by-goog/mgijmajocgfcbeboacabfgobmjgjcoja\" rel=\"nofollow\" target=\"_blank\">NHẤN TẠI ĐÂY</a></li>\r\n</ul>\r\n\r\n<p><img alt=\"Google Dictionary sẽ giúp bạn hiểu hết những từ bạn chưa biết\" data-original=\"//cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(3).jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(3).jpg\" title=\"Google Dictionary sẽ giúp bạn hiểu hết những từ bạn chưa biết\" /></p>\r\n\r\n<p>Google Dictionary sẽ giúp bạn hiểu hết những từ bạn chưa biết</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid5\"><strong>5. Đọc Cho Tôi Nghe - Read Aloud</strong></h3>\r\n\r\n<p>Đây là tiện ích đọc nội dung trang web - tiếng Anh và Việt, với giọng đọc hay, ngữ điệu đúng, biết ngắt quãng và chuyên nghiệp như người đưa tin. Mỏi mắt? Mỏi lưng? Hãy cài tiện ích này rồi ngả lưng xuống giường, để Đọc Cho Tôi Nghe đọc nội dung của trang web yêu thích cho bạn nghe.</p>\r\n\r\n<ul>\r\n	<li>Tải Đọc Cho Tôi Nghe&nbsp;<a href=\"https://chrome.google.com/webstore/detail/read-aloud-a-text-to-spee/hdhinadidafjejdhmfkjgnolgimiaplp\" rel=\"nofollow\" target=\"_blank\">NHẤN TẠI ĐÂY</a></li>\r\n</ul>\r\n\r\n<p><img alt=\"Còn gì tuyệt vời hơn vừa được thoải mái nằm mà vẫn được \" data-original=\"//cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(5).jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(5).jpg\" title=\"Còn gì tuyệt vời hơn vừa được thoải mái nằm mà vẫn được \" /></p>\r\n\r\n<p>Còn gì tuyệt vời hơn vừa được thoải mái nằm mà vẫn được</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid6\"><strong>6. Lịch Google - Google Calendar</strong></h3>\r\n\r\n<p>Một ứng dụng quản lý thời gian miễn phí của Google cho phép bạn tạo và chỉnh sửa các sự kiện. Bạn có thể đặt lời nhắc, ghi chú, địa điểm tổ chức sự kiện và người dùng khác có thể được mời tham gia chỉnh sửa sự kiện đó. Google Calendar còn đồng bộ với Gmail. Thông tin và sự kiện từ Gmail sẽ được tự động thêm vào Google Calendar.</p>\r\n\r\n<ul>\r\n	<li>Tải Google Calendar&nbsp;<a href=\"https://chrome.google.com/webstore/detail/button-for-google-calenda/lfjnmopldodmmdhddmeacgjnjeakjpki\" rel=\"nofollow\" target=\"_blank\">NHẤN TẠI ĐÂY</a></li>\r\n</ul>\r\n\r\n<p><img alt=\"Google Calendar giúp bạn quản lý thời gian\" data-original=\"//cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(6).jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(6).jpg\" title=\"Google Calendar giúp bạn quản lý thời gian\" /></p>\r\n\r\n<p>Google Calendar giúp bạn quản lý thời gian</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid7\"><strong>7. Tiện ích giúp quản lý các tab</strong></h3>\r\n\r\n<p>Rất nhiều người dùng Chrome có thói quen bật hàng tá tab để đọc dần nhưng do quá nhiều nên người dùng chỉ có thể thấy biểu tượng của web mình truy cập mà không biết nội dung tab đó là gì nếu không di chuyển chuột tới từng tab đó hoặc chưa kịp động đến thì máy đã đơ vì ngốn quá nhiều RAM. Các tiện ích này của Chrome đã ra đời để cứu tình huống khó đỡ trên:</p>\r\n\r\n<ul>\r\n	<li>Tải Tab Manager cho Chrome&nbsp;<a href=\"https://chrome.google.com/webstore/detail/tab-manager-plus-for-chro/cnkdjjdmfiffagllbiiilooaoofcoeff\" rel=\"nofollow\" target=\"_blank\">NHẤN TẠI ĐÂY</a></li>\r\n	<li>Tải Tab Wrangler/One Tab&nbsp;<a href=\"https://chrome.google.com/webstore/detail/tab-wrangler/egnjhciaieeiiohknchakcodbpgjnchh\" rel=\"nofollow\" target=\"_blank\">NHẤN TẠI ĐÂY</a></li>\r\n	<li>Tải Session Buddy&nbsp;<a href=\"https://chrome.google.com/webstore/detail/session-buddy/edacconmaakjimmfgnblocblbcdcpbko\" rel=\"nofollow\" target=\"_blank\">NHẤN TẠI ĐÂY</a></li>\r\n</ul>\r\n\r\n<p>Ba tiện ích trên đều có chung một tính năng “thần thánh” đó là tập hợp tất cả các tab - cửa sổ vào một chế độ xem, mục đích tiện truy cập lại khi cần.</p>\r\n\r\n<p><img alt=\"Với những tiện ích trên thì bạn sẽ không còn sợ bật nhiều tab nữa\" data-original=\"//cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(7).jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(7).jpg\" title=\"Với những tiện ích trên thì bạn sẽ không còn sợ bật nhiều tab nữa\" /></p>\r\n\r\n<p>Với những tiện ích trên thì bạn sẽ không còn sợ bật nhiều tab nữa</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid8\"><strong>8. LastPass: Free Password Manager</strong></h3>\r\n\r\n<p>Là một ứng dụng quản lý mật khẩu cho phép lưu và sắp xếp mật khẩu tài khoản online thành các nhóm như&nbsp;<a href=\"https://www.thegioididong.com/hoi-dap/chu-de/mang-xa-hoi\" target=\"_blank\">mạng xã hội</a>, công việc, học hành, ngân hàng,… và đăng nhập tự động ngay khi bạn vào site. Phần mềm này sẽ giúp bạn đăng nhập tài khoản nhanh chóng chỉ với một cú click chuột đơn giản. Bên cạnh đó, LastPass sẽ yêu cầu người dùng tạo tài khoản để có thể đồng bộ dữ liệu do đó bạn có thể xem lại, sửa hoặc xoá danh sách thông tin lưu trữ ở nhiều thiết bị khác nhau. Bạn chỉ cần ghi nhớ password đăng nhập Chrome và LastPass.</p>\r\n\r\n<ul>\r\n	<li>Tải LastPass&nbsp;<a href=\"https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd\" rel=\"nofollow\" target=\"_blank\">NHẤN TẠI ĐÂY</a></li>\r\n</ul>\r\n\r\n<p><img alt=\"Với LastPass thì bạn sẽ không còn nỗi lo quên password nữa\" data-original=\"//cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(8).jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(8).jpg\" title=\"Với LastPass thì bạn sẽ không còn nỗi lo quên password nữa\" /></p>\r\n\r\n<p>Với LastPass thì bạn sẽ không còn nỗi lo quên password nữa</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid9\"><strong>9. Enable Copy</strong></h3>\r\n\r\n<p>Enable Copy cho phép người dùng sao chép dữ liệu, văn bản trên những trang web được bảo vệ bản quyền, không cho copy. Bạn có thể cắt dán các đoạn text hay sử dụng chuột phải để lưu các hình ảnh về máy tính của mình.</p>\r\n\r\n<ul>\r\n	<li>Tải Enable Copy&nbsp;<a href=\"https://chrome.google.com/webstore/detail/enable-copy/lmnganadkecefnhncokdlaohlkneihio\" rel=\"nofollow\" target=\"_blank\">NHẤN TẠI ĐÂY</a></li>\r\n</ul>\r\n\r\n<p><img alt=\"Plugin Enable Copy giúp sao chép những nội dung được bảo vệ bản quyền\" data-original=\"//cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(9).jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(9).jpg\" title=\"Plugin Enable Copy giúp sao chép những nội dung được bảo vệ bản quyền\" /></p>\r\n\r\n<p>Plugin Enable Copy giúp sao chép những nội dung được bảo vệ bản quyền</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid10\"><strong>10. Save to Pocket</strong></h3>\r\n\r\n<p>Cuộc sống bận rộn đang khiến con người ta không có đủ thời gian để ngồi thưởng thức trọn vẹn những bài báo thú vị. Hãy save tất cả vào Pocket để mở ra đọc offline những lúc rảnh rỗi hoặc ngồi trên tàu xe. Save To Pocket là tiện ích bất ly thân của những “con mọt tin tức online”. Để xem lại các bài báo đã đánh dấu (lưu), hãy vào Pocket bản PC hoặc tải về điện thoại ứng dụng Pocket trên iOS hoặc Android.</p>\r\n\r\n<ul>\r\n	<li>Để tải Enable Copy&nbsp;<a href=\"https://chrome.google.com/webstore/detail/save-to-pocket/niloccemoadcdkdjlinkgdfekeahmflj\" rel=\"nofollow\" target=\"_blank\">NHẤN TẠI ĐÂY</a></li>\r\n</ul>\r\n\r\n<p><img alt=\"Save to Pocket giúp bạn lưu lại những thông tin cần thiết\" data-original=\"//cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(10).jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(10).jpg\" title=\"Save to Pocket giúp bạn lưu lại những thông tin cần thiết\" /></p>\r\n\r\n<p>Save to Pocket giúp bạn lưu lại những thông tin cần thiết</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid11\"><strong>11. StayFocusd</strong></h3>\r\n\r\n<p>Tiện ích này cho phép bạn cài đặt thời lượng tối đa có thể truy cập các site/link dễ gây xao nhãng. Chẳng hạn nếu set thời lượng truy cập Facebook là 3 tiếng/ngày thì sau khi online trên site hết tổng cộng 3 tiếng, bạn sẽ bị chặn không thể vào lại Facebook cho đến ngày hôm sau.</p>\r\n\r\n<ul>\r\n	<li>Tải StayFocusd&nbsp;<a href=\"https://chrome.google.com/webstore/detail/stayfocusd/laankejkbhbdhmipfmgcngdelahlfoji\" rel=\"nofollow\" target=\"_blank\">NHẤN TẠI ĐÂY</a></li>\r\n</ul>\r\n\r\n<p><img alt=\"Tập trung không còn là một điều khó khăn với StayFocusd\" data-original=\"//cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(11).jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(11).jpg\" title=\"Tập trung không còn là một điều khó khăn với StayFocusd\" /></p>\r\n\r\n<p>Tập trung không còn là một điều khó khăn với StayFocusd</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid12\"><strong>12. Pushbullet</strong></h3>\r\n\r\n<p>Bạn mất quá nhiều thời gian để đọc và trả lời tin nhắn của tất cả ứng dụng? Pushbullet cho phép bạn đồng bộ nhắn tin từ tất cả các thiết bị vào một chỗ để nhận và gửi tin nhanh chóng hơn ngay trên góc phải trình duyệt.</p>\r\n\r\n<ul>\r\n	<li>Tải Pushbullet&nbsp;<a href=\"https://chrome.google.com/webstore/detail/pushbullet/chlffgpmiacpedhhbkiomidkjlcfhogd\" rel=\"nofollow\" target=\"_blank\">NHẤN TẠI ĐÂY</a></li>\r\n</ul>\r\n\r\n<p><img alt=\"PushBullet giúp bạn đồng bộ hóa tin nhắn từ nhiều ứng dụng\" data-original=\"//cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet(12).jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet(12).jpg\" title=\"PushBullet giúp bạn đồng bộ hóa tin nhắn từ nhiều ứng dụng\" /></p>\r\n\r\n<p>PushBullet giúp bạn đồng bộ hóa tin nhắn từ nhiều ứng dụng</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid13\"><strong>13. Todoist cho Chrome</strong></h3>\r\n\r\n<p>Todoist là tiện ích sắp xếp công việc và cuộc sống, lập kế hoạch trong ngày, ghi nhớ thời hạn với lời nhắc của Todoist và ngày đến hạn, giúp bạn xây dựng thói quen lâu dài với “các ngày đến hạn định kỳ”, sắp xếp thứ tự công việc phụ thuộc vào mức độ ưu tiên.</p>\r\n\r\n<ul>\r\n	<li><em>Tải Todoist&nbsp;</em><a href=\"https://chrome.google.com/webstore/detail/todoist-for-chrome/jldhpllghnbhlbpcmnajkpdmadaolakh\" rel=\"nofollow\" target=\"_blank\">NHẤN TẠI ĐÂY</a></li>\r\n</ul>\r\n\r\n<p><img alt=\"Todoist là một plugin giúp bạn sắp xếp công việc dễ dàng hơn\" data-original=\"//cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(13).jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(13).jpg\" title=\"Todoist là một plugin giúp bạn sắp xếp công việc dễ dàng hơn\" /></p>\r\n\r\n<p>Todoist là một plugin giúp bạn sắp xếp công việc dễ dàng hơn</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid14\"><strong>14. Google Hangouts</strong></h3>\r\n\r\n<p>Là một ứng dụng cho phép người sử dụng trên toàn thế giới dễ dàng trò chuyện qua video, tương tác và chia sẻ từ những cuộc họp. Ngoài ra còn có thể dùng để trình bày ý tưởng, thuyết trình.</p>\r\n\r\n<ul>\r\n	<li>Tải Google Hangouts&nbsp;<a href=\"https://chrome.google.com/webstore/detail/google-hangouts/nckgahadagoaajjgafhacjanaoiihapd\" rel=\"nofollow\" target=\"_blank\">NHẤN TẠI ĐÂY</a></li>\r\n</ul>\r\n\r\n<p><img alt=\"Google Hangouts có lẽ không còn xa lạ đối với những người dùng internet nữa\" data-original=\"//cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(14).jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(14).jpg\" title=\"Google Hangouts có lẽ không còn xa lạ đối với những người dùng internet nữa\" /></p>\r\n\r\n<p>Google Hangouts có lẽ không còn xa lạ đối với những người dùng internet nữa</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid15\"><strong>15. Darkness - Beautiful Dark Themes</strong></h3>\r\n\r\n<p>Chủ đề - giao diện tối đầy phong cách, ngầu, sang trọng còn có mục đích khác là bảo vệ đôi mắt của bạn. Khi kích hoạt Darkness, mạng xã hội, các trang web chính thống và tất cả các tab mới khác sẽ được áp dụng cùng nhau thành màu đen.</p>\r\n\r\n<ul>\r\n	<li>Tải Darkness - Beautiful Dark Themes&nbsp;<a href=\"https://chrome.google.com/webstore/detail/darkness-beautiful-dark-t/imilbobhamcfahccagbncamhpnbkaenm\" rel=\"nofollow\" target=\"_blank\">NHẤN TẠI ĐÂY</a></li>\r\n</ul>\r\n\r\n<p><img alt=\"Với Darkness - Beautiful Dark Themes thì Chrome đã trông phong cách hơn, đúng không nào?\" data-original=\"//cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(15).jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(15).jpg\" title=\"Với Darkness - Beautiful Dark Themes thì Chrome đã trông phong cách hơn, đúng không nào?\" /></p>\r\n\r\n<p>Với Darkness - Beautiful Dark Themes thì Chrome đã trông phong cách hơn, đúng không nào?</p>', NULL, 'http://localhost:8000/uploads/images/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(16).jpg', 'https://youtu.be/3-vzvChsMo0', NULL, 'top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet', 'TOP 15 tiện ích trên Chrome cực kỳ hữu dụng mà bạn nên biết', NULL, NULL, 'index,follow', 'index,follow', 'vi', 10, NULL, '2021-05-17 04:27:41', '2021-05-17 04:27:41'),
-(11, '76b13957-0ae8-4cbe-b40a-ea33b71f9058', '10 cách sửa lỗi micro trên Google Meet không hoạt động siêu hiệu quả', 'Vũ Quốc Tuấn', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<h2>Chúng ta đã không còn xa lạ gì với các ứng dụng học online, họp trực tuyến bằng&nbsp;<a href=\"https://www.thegioididong.com/dtdd\" target=\"_blank\">điện thoại</a>,&nbsp;<a href=\"https://www.thegioididong.com/laptop\" target=\"_blank\">laptop</a>&nbsp;hay&nbsp;<a href=\"https://www.thegioididong.com/pc-may-in\" target=\"_blank\">PC</a>&nbsp;như&nbsp;<a href=\"https://www.thegioididong.com/game-app/google-meet-app-hop-truc-tuyen-hoc-online-khong-gioi-228059\" target=\"_blank\">Google Meet</a>. Tuy nhiên, cũng trong quá trình sử dụng, chắc chắn không thể tránh khỏi những trục trặc không mong muốn, chẳng hạn như micro bị lỗi. Vì vậy bài viết dưới đây sẽ giới thiệu đến bạn 10 cách sửa lỗi micro trên Google Meet khi không hoạt động siêu hiệu quả, áp dụng cho cả Windows và&nbsp;<a href=\"https://www.thegioididong.com/hoi-dap/mac-os-la-gi-838020\" target=\"_blank\">macOS</a>.</h2>', '<h3 id=\"hmenuid1\"><strong>1. Đảm bảo bạn đã biết cách bật micro trên Google Meet</strong></h3>\r\n\r\n<p>Trước hết, phải đảm bảo rằng bạn không<strong>&nbsp;tự tắt tiếng</strong>&nbsp;trên Google Meet. Hãy nhìn phía dưới màn hình của ứng dụng, bạn sẽ thấy một biểu tượng micro màu đỏ với dấu gạch chéo biểu thị micro của bạn đang bị tắt tiếng.<img alt=\"Nhấn vào biểu tượng để bật micro của bạn\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong fix-798x351.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong%20fix-798x351.jpg\" title=\"Nhấn vào biểu tượng để bật micro của bạn\" /></p>\r\n\r\n<p>Nhấn vào biểu tượng để bật micro của bạn</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Trong trường hợp này, chỉ cần nhấn vào biểu tượng để bật micro của bạn. Bạn cũng hoàn toàn có thể kiểm tra trạng thái micro trong Google Meet trước khi tham gia cuộc họp.</p>\r\n\r\n<h3 id=\"hmenuid2\"><strong>2. Mở quyền truy cập cho micro trên Google Meet</strong></h3>\r\n\r\n<p>Vì vấn đề&nbsp;<strong>bảo mật</strong>&nbsp;nên hầu hết các trình duyệt web chính đều chặn quyền truy cập của micro vào các trang web và ứng dụng như Google Meet theo mặc định.</p>\r\n\r\n<p>Như vậy, trong trường hợp này, đối với&nbsp;<strong>Google Chrome</strong>, bạn cần cung cấp cho trang web quyền truy cập cần thiết. Bạn chỉ cần nhấp vào biểu tượng hình ổ khóa ở góc trái của thanh địa chỉ, sau đó đặt micro thành&nbsp;<strong>Cho phép</strong>.</p>\r\n\r\n<p><img alt=\"Cho phép Micro trong Google Meet\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong 2 fixx-798x351.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong%202%20fixx-798x351.jpg\" title=\"Cho phép Micro trong Google Meet\" /></p>\r\n\r\n<p>Cho phép Micro trong Google Meet</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Còn đối với&nbsp;<strong>Safari</strong>: Đi tới&nbsp;<strong>Safari menu</strong>&nbsp;&gt;&nbsp;<strong>Preferences</strong>, nhấp vào tab&nbsp;<strong>Website &gt;</strong>&nbsp;<strong>Micro</strong>&nbsp;sau đó đặt&nbsp;<strong>meet.google.com</strong>&nbsp;thành&nbsp;<strong>Allow</strong>.</p>\r\n\r\n<p><img alt=\"Đặt meet.google.com thành Allow\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong-fix-800x408.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong-fix-800x408.jpg\" title=\"Đặt meet.google.com thành Allow\" /></p>\r\n\r\n<p>Đặt meet.google.com thành Allow</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid3\"><strong>3. Cho phép cấp quyền truy cập micrô vào trình duyệt</strong></h3>\r\n\r\n<p>Cả Windows và macOS đều có cài đặt bảo mật tích hợp có thể ngăn các chương trình sử dụng micro của bạn. Tốt nhất bạn nên kiểm tra xem điều đó có ngăn trình duyệt truy cập micro của mình hay không.</p>\r\n\r\n<p>- Trên Windows, đi tới<strong>&nbsp;Windows Settings</strong>&nbsp;&gt;&nbsp;<strong>Privacy</strong>&nbsp;&gt;&nbsp;<strong>Microphone</strong>. Đảm bảo rằng nút chuyển trong&nbsp;<strong>Allow apps to access your microphone</strong>&nbsp;được đặt thành&nbsp;<strong>On</strong>.<img alt=\"Đặt \'On\' cho nút chuyển trong \'Allow apps to access your microphone\' \" data-original=\"//cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong-fix 2-798x351.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong-fix%202-798x351.jpg\" title=\"Đặt \'On\' cho nút chuyển trong \'Allow apps to access your microphone\' \" /></p>\r\n\r\n<p>Đặt \'On\' cho nút chuyển trong \'Allow apps to access your microphone\'</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Cuộn xuống dưới và đảm bảo rằng nút chuyển trong&nbsp;<strong>Allow desktop apps to access your microphone</strong>&nbsp;cũng được đặt thành&nbsp;<strong>On</strong>.</p>\r\n\r\n<p><img alt=\"Nút chuyển trong \'Allow desktop apps to access your microphone\' cũng được đặt thành \'On\'.\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong-fix 3-798x351.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong-fix%203-798x351.jpg\" title=\"Nút chuyển trong \'Allow desktop apps to access your microphone\' cũng được đặt thành \'On\'.\" /></p>\r\n\r\n<p>Nút chuyển trong \'Allow desktop apps to access your microphone\' cũng được đặt thành \'On\'.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>- Trên<a href=\"https://www.thegioididong.com/laptop-apple-macbook\" target=\"_blank\">&nbsp;Mac</a>, bắt đầu bằng cách nhấn vào biểu tượng logo Apple &gt; Chọn&nbsp;<strong>System Preference.</strong></p>\r\n\r\n<p><img alt=\"Nhấn vào biểu tượng logo Apple và chọn System Preferences \" data-original=\"//cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong 17 fix-1200x849.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong%2017%20fix-1200x849.jpg\" title=\"Nhấn vào biểu tượng logo Apple và chọn System Preferences \" /></p>\r\n\r\n<p>Nhấn vào biểu tượng logo Apple và chọn System Preferences</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Sau đó, chọn&nbsp;<strong>Security &amp; Privacy</strong>.</p>\r\n\r\n<p><img alt=\"Chọn \'Security &amp; Privacy\'\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong 3 fix-1200x683.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong%203%20fix-1200x683.jpg\" title=\"Chọn \'Security &amp; Privacy\'\" /></p>\r\n\r\n<p>Chọn \'Security &amp; Privacy\'</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Chọn&nbsp;<strong>Microphone</strong>, sau đó đảm bảo chọn các ứng dụng mà bạn cho phép truy cập micro (<strong>Allow the apps below to access your microphone</strong>).</p>\r\n\r\n<p><img alt=\"Chọn ứng dụng mà bạn cho phép truy cập micro\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong 8 fixx-1200x871.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong%208%20fixx-1200x871.jpg\" title=\"Chọn ứng dụng mà bạn cho phép truy cập micro\" /></p>\r\n\r\n<p>Chọn ứng dụng mà bạn cho phép truy cập micro</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid4\"><strong>4. Khởi động lại trình duyệt web</strong></h3>\r\n\r\n<p>Thử&nbsp;<strong>thoát&nbsp;</strong>và&nbsp;<strong>khởi chạy lại trình duyệt</strong>&nbsp;của bạn. Đó là cách tốt nhất để khắc phục các sự cố liên quan đến micro xảy ra liên tục, chẳng hạn như trong trường hợp âm thanh của bạn không phát được sau vài phút tham gia Google Meet. Sau khi khởi chạy lại trình duyệt, hãy tham gia lại cuộc họp.</p>\r\n\r\n<p>Trên Mac, hãy đảm bảo thoát khỏi trình duyệt qua thanh menu trước khi khởi chạy lại.</p>\r\n\r\n<p>Một mẹo nhỏ cho bạn là nếu bạn sử dụng Chrome, hãy nhập<strong>&nbsp;chrome: // restart&nbsp;</strong>ở một tab mới và nhấn&nbsp;<strong>Enter&nbsp;</strong>để khởi chạy trình duyệt mà vẫn đảm bảo giữ nguyên các tab còn lại.</p>\r\n\r\n<h3 id=\"hmenuid5\"><strong>5. Truy cập Google Meet bằng trình duyệt Chrome</strong></h3>\r\n\r\n<p>Google Meet chỉ có thể truy cập qua giao diện trên trình duyệt trên PC và Mac. Mặc dù nó có thể hoạt động được trên tất cả các trình duyệt chính như&nbsp;<a href=\"https://www.thegioididong.com/game-app/tai-trinh-duyet-firefox-phien-ban-tieng-viet-nhe-luot-web-nhanh-224279\" target=\"_blank\">Firefox&nbsp;</a>hoặc Safari, nhưng tốt hơn bạn nên sử dụng nó trên&nbsp;<strong>Google Chrome</strong>. Lý do là bởi các sản phẩm và dịch vụ của Google thường sẽ hoạt động tốt nhất trên trình duyệt web của Google.</p>\r\n\r\n<p>Nếu bạn vẫn gặp những sự cố lẻ tẻ với micro của mình, ít nhất bạn hãy thử sử dụng Google Chrome cho các cuộc họp trên Google Meet của bạn.</p>\r\n\r\n<h3 id=\"hmenuid6\"><strong>6. Khởi động lại máy tính của bạn</strong></h3>\r\n\r\n<p>Nếu như việc khởi động lại trình duyệt của bạn không hiệu quả, hãy thử khởi động lại PC hoặc Mac của bạn. Điều này cũng có thể giúp khắc phục các bất thường khác nhau của micro trong Google Meet.</p>\r\n\r\n<p><img alt=\"Hãy thử khởi động lại máy tính của bạn để khắc phục sự cố này\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong 9.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong%209.jpg\" title=\"Hãy thử khởi động lại máy tính của bạn để khắc phục sự cố này\" /></p>\r\n\r\n<p>Hãy thử khởi động lại máy tính của bạn để khắc phục sự cố này</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid7\"><strong>7. Chọn micrô ưa thích</strong></h3>\r\n\r\n<p>Nếu bạn có nhiều thiết bị ngoại vi âm thanh được kết nối với PC hoặc Mac, Google Meet có thể sử dụng một micrô khác, chẳng hạn như micrô được tích hợp trong máy tính. Vì vậy, hãy thử chỉ định ứng dụng web micro chính xác mà bạn muốn sử dụng.</p>\r\n\r\n<p>Đầu tiên, nhấn vào biểu tượng&nbsp;<strong>3 dấu chấm</strong>&nbsp;(góc dưới cùng bên phải) &gt; Nhấn vào&nbsp;<strong>Cài đặt.</strong></p>\r\n\r\n<p><img alt=\"Nhấp vào Cài đặt trong Menu Google Meet\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong 22 fix-800x600.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong%2022%20fix-800x600.jpg\" title=\"Nhấp vào Cài đặt trong Menu Google Meet\" /></p>\r\n\r\n<p>Nhấp vào Cài đặt trong Menu Google Meet</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Bên dưới tab&nbsp;<b>Âm thanh</b>, hãy chọn đúng micro mà bạn muốn sử dụng. Bạn có thể đặt các loa sử dụng cùng một phần cứng (nếu có) để ngăn chặn các vấn đề về tiếng vang.<img alt=\"Chọn đúng micro mà bạn muốn sử dụng trong tab Âm thanh\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong a fix-800x450.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong%20a%20fix-800x450.jpg\" title=\"Chọn đúng micro mà bạn muốn sử dụng trong tab Âm thanh\" /></p>\r\n\r\n<p>Chọn đúng micro mà bạn muốn sử dụng trong tab Âm thanh</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid8\"><strong>8. Kiểm tra mức đầu vào của micro</strong></h3>\r\n\r\n<p>Micro trên PC hoặc Mac của bạn có thể có mức đầu vào quá thấp để có thể thu được giọng nói của bạn.</p>\r\n\r\n<p>- Trên PC, mở ứng dụng&nbsp;<strong>Windows Settings</strong>&nbsp;(qua Start menu or Action Center), bấm&nbsp;<strong>System&nbsp;</strong>&gt;&nbsp;<strong>Sound</strong>&nbsp;&gt;&nbsp;<strong>Sound Control Panel</strong>&nbsp;(bên dưới ‘Related Settings’).<img alt=\"Khắc phục lỗi micro bằng cách chọn Sound Control Panel\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong b fix-800x450.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong%20b%20fix-800x450.jpg\" title=\"Khắc phục lỗi micro bằng cách chọn Sound Control Panel\" /></p>\r\n\r\n<p>Khắc phục lỗi micro bằng cách chọn Sound Control Panel</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Chuyển sang tab&nbsp;<strong>Recording</strong>&nbsp;&gt; Chọn&nbsp;<strong>Microphone</strong>&nbsp;&gt; Nhấp vào&nbsp;<strong>Properties</strong>&nbsp;&gt; Kéo để di chuyển thanh trượt bên dưới micro đến mức cao hơn.</p>\r\n\r\n<p><img alt=\"Di chuyển thanh trượt bên dưới micro đến mức cao hơn\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong 18 fix-800x450.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong%2018%20fix-800x450.jpg\" title=\"Di chuyển thanh trượt bên dưới micro đến mức cao hơn\" /></p>\r\n\r\n<p>Di chuyển thanh trượt bên dưới micro đến mức cao hơn</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>-Trên Mac, đi đến hộp thoại&nbsp;<strong>System Preferences</strong>&nbsp;(<strong>Apple menu</strong>&nbsp;&gt;&nbsp;<strong>System Preferences</strong>), nhấp vào&nbsp;<strong>Sound</strong>, sau đó chuyển sang tab&nbsp;<strong>Input</strong>&nbsp;&gt; Kéo thanh trượt để điều chỉnh&nbsp;<strong>Input Volume</strong>.</p>\r\n\r\n<p><img alt=\"Điều chỉnh mức âm lượng đầu vào phù hợp\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong 21 fix-800x600.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong%2021%20fix-800x600.jpg\" title=\"Điều chỉnh mức âm lượng đầu vào phù hợp\" /></p>\r\n\r\n<p>Điều chỉnh mức âm lượng đầu vào phù hợp</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Chọn micro ưa thích của bạn, sau đó điều chỉnh mức âm lượng đầu vào phù hợp. Các thay đổi của bạn sẽ tự động lưu.</p>\r\n\r\n<h3 id=\"hmenuid9\"><strong>9. Khắc phục sự cố micro (Windows)</strong></h3>\r\n\r\n<p>Windows 10 đi kèm với trình khắc phục sự cố tích hợp có thể phát hiện và khắc phục các sự cố liên quan đến micrô. Đi tới&nbsp;<strong>Windows Settings</strong>&nbsp;&gt;&nbsp;<strong>System</strong>&nbsp;&gt;&nbsp;<strong>Sound</strong>.</p>\r\n\r\n<p>Cuộn xuống phần&nbsp;<strong>Input</strong>, chọn micro ưa thích của bạn bằng cách sử dụng menu trong&nbsp;<strong>Choose your input device</strong>&nbsp;và sau đó nhấp vào&nbsp;<strong>Troubleshoot</strong>.</p>\r\n\r\n<p><img alt=\"Nhấp vào Troubleshoot để khắc phục sự cố\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong 20 fix-800x450.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong%2020%20fix-800x450.jpg\" title=\"Nhấp vào Troubleshoot để khắc phục sự cố\" /></p>\r\n\r\n<p>Nhấp vào Troubleshoot để khắc phục sự cố</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Nếu trình khắc phục sự cố phát hiện bất kỳ sự cố nào với micro của bạn, hãy làm theo lời nhắc trên màn hình để giải quyết chúng.</p>\r\n\r\n<h3 id=\"hmenuid10\"><strong>10. Sửa lỗi micro (Mac)</strong></h3>\r\n\r\n<p>Trên máy Mac, micro của bạn có thể bị các ứng dụng hoặc tiện ích mở rộng trình duyệt khác sử dụng, do đó ngăn Google Meet hoạt động một cách hiệu quả.</p>\r\n\r\n<p>Để kiểm tra xem có đúng như vậy không, hãy bắt đầu bằng cách rời khỏi bất kỳ cuộc họp đang diễn ra trên Google Meet. Tiếp theo, mở&nbsp;<strong>Terminal</strong>&nbsp;(<strong>Finder</strong>&gt;&nbsp;<strong>Applications</strong>&gt;&nbsp;<strong>Utilities</strong>&gt;&nbsp;<strong>Terminal</strong>) và nhập lệnh bên dưới:</p>\r\n\r\n<p><strong>sudo killall coreaudiod</strong><img alt=\"Nhập lệnh theo hướng dẫn và nhấn Enter để thực thi lệnh\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong 16.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong%2016.jpg\" title=\"Nhập lệnh theo hướng dẫn và nhấn Enter để thực thi lệnh\" /></p>\r\n\r\n<p>Nhập lệnh theo hướng dẫn và nhấn Enter để thực thi lệnh</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Nhấn&nbsp;<strong>Enter</strong>&nbsp;và chèn mật khẩu đăng nhập máy Mac của bạn để thực thi lệnh. Sau đó, khởi động lại máy Mac của bạn. Lúc này hãy tham gia lại cuộc họp trên Google Meet như thường.</p>', NULL, 'http://localhost:8000/uploads/images/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong-thumb-new.jpg', 'https://youtu.be/IWZpk4JtrbI', NULL, '10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong-sieu-hieu-qua', '10 cách sửa lỗi micro trên Google Meet không hoạt động siêu hiệu quả', NULL, NULL, 'index,follow', 'index,follow', 'vi', 11, NULL, '2021-05-17 04:29:02', '2021-05-17 04:29:02'),
-(12, '1b42dce1-bd1b-44ed-af48-e448c0265a65', 'Nhân viên Kho Bán Hàng Bách Hóa Xanh', 'Vũ Quốc Tuấn', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<h2>Nơi làm việc&nbsp;<strong>TP.HCM và 21 tỉnh thành khác,&nbsp;</strong>Cấp bậc:&nbsp;<strong>Nhân viên,&nbsp;</strong>Hình thức:&nbsp;<strong>Việc làm theo Ca,&nbsp;</strong>Bằng cấp:&nbsp;<strong>Không yêu cầu,&nbsp;</strong>Thu nhập:&nbsp;<strong>5 - 8 Triệu</strong></h2>', '<h2>MÔ TẢ CÔNG VIỆC</h2>\r\n\r\n<p>- Tư vấn hỗ trợ Khách hàng đến siêu thị</p>\r\n\r\n<p>- Trưng bày, sắp xếp hàng hóa đảm bảo quầy kệ gọn gàng, sạch sẽ</p>\r\n\r\n<p>- Làm cá, thịt, sơ chế món ăn có sẵn, các thực phẩm tươi sống</p>\r\n\r\n<p>- Kiểm kê hàng hóa siêu thị</p>\r\n\r\n<p>- Hủy hàng theo quy định triển khai công ty</p>\r\n\r\n<p>- Nhập hàng từ nhà cung cấp hoặc kho tổng ( Cân, nhập, kiểm đếm)</p>\r\n\r\n<p>- Vệ sinh siêu thị ( Lau dọn sàn, kính, quầy kệ)</p>\r\n\r\n<p>- Bưng bê/sắp xếp hàng, quản lý kho hàng gọn gàng</p>\r\n\r\n<p>- Tính chất công việc đa nhiệm nên có thể làm thu ngân luân phiên</p>\r\n\r\n<p>- Các công việc vệ sinh siêu thị theo phân công Quản lý&nbsp;</p>\r\n\r\n<h2>YÊU CẦU CÔNG VIỆC</h2>\r\n\r\n<p>- Nam/ Nữ từ 18- 40 tuổi</p>\r\n\r\n<p>- Thân thiện, vui vẻ, xởi lởi</p>\r\n\r\n<p>- Có sức khỏe tốt, tháo vát</p>\r\n\r\n<p>**&nbsp; Những yêu cầu công việc bắt buộc sau đây:</p>\r\n\r\n<p>+&nbsp; Có smartphone để làm việc, có phương tiện di chuyển (xe máy)</p>\r\n\r\n<p>+ Sẵn sàng làm sơ chế thịt, cá</p>\r\n\r\n<p>+&nbsp; Bắt buộc làm ca đêm&nbsp;luân phiên trong tuần</p>\r\n\r\n<p>+ Bắt buộc làm việc theo ca xoay theo sự phân công của Quản lý ( không tự đăng ký ca hoặc không cố định ca)</p>\r\n\r\n<p>Bao gồm 3 ca xoay:</p>\r\n\r\n<p>+ Ca Sáng: 5h30 - 14h30</p>\r\n\r\n<p>+ Ca Chiều: 14h30 - 22g00</p>\r\n\r\n<p>+ Ca Đêm: 22g00 - 5h30</p>\r\n\r\n<h2>QUYỀN LỢI</h2>\r\n\r\n<p>- Thu nhập trung bình từ 5 - 8 triệu trở lên, tăng lên theo hiệu quả làm việc và giờ công làm việc</p>\r\n\r\n<p>-&nbsp;Thưởng trong tháng và thưởng cuối năm hấp dẫn</p>\r\n\r\n<p>-&nbsp;Cơ hội thăng tiến lên Quản lý</p>\r\n\r\n<p>- Được bố trí làm việc thuận tiện gần nhà</p>\r\n\r\n<p>- Được hướng dẫn, đào tạo phát triển kỹ năng/ chuyên môn</p>\r\n\r\n<p>- Ký Hợp đồng lao động, công việc chính thức Lâu dài - Ổn định</p>\r\n\r\n<p>- Môi trường làm việc thân thiện, hỗ trợ đồng đội</p>\r\n\r\n<p>- Phúc lợi đầy đủ : Tham gia BHYT, BHXH, Đi du lịch Teambuilding, 12 ngày phép/ năm, nghỉ thai sản, ốm đau...</p>\r\n\r\n<h2>LƯU Ý</h2>\r\n\r\n<p>- Công việc làm chính thức, không phù hợp cho học sinh/ sinh viên đang có chương trình học</p>\r\n\r\n<p>- Nhân viên làm việc linh hoạt, đa nhiệm vị trí trong siêu thị</p>\r\n\r\n<p>- Vì phạm vi kinh doanh có liên quan tới Luật An Toàn Thực Phẩm nên ứng viên đang mắc các bệnh dễ lây nhiễm sẽ không phù hợp làm việc tại Bách Hóa Xanh ( VD:&nbsp;bệnh tả, lỵ, thương hàn, viêm gan A, E, viêm da nhiễm trùng, lao phổi,...”- tham khảo Nghị định số 155/2018/NĐ-CP).</p>\r\n\r\n<p>- Công việc bắt buộc tiếp xúc thịt cá, sơ chế thịt cá nên có thể không phù hợp nếu điều kiện của ứng viên không cho phép ( tín ngưỡng, quan điểm cá nhân...)</p>\r\n\r\n<p>- Công việc sắp xếp thuận tiện gần nhà nhất ( trong phạm vi còn có nhu cầu tuyển dụng)</p>', NULL, 'http://localhost:8000/uploads/images/banner-bhx-new-campaign2.jpg', NULL, NULL, 'nhan-vien-kho-ban-hang-bach-hoa-xanh', 'Nhân viên Kho Bán Hàng Bách Hóa Xanh', NULL, NULL, 'index,follow', 'index,follow', 'vi', 12, NULL, '2021-05-17 04:34:27', '2021-05-17 04:39:27');
+(10, '82496495-0420-4f03-b4fd-9e3384414c6f', 'TOP 15 tiện ích trên Chrome cực kỳ hữu dụng mà bạn nên biết', 'Trần Thanh Luân', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<h2>Chrome - một trình duyệt nhẹ nhàng và nhanh chóng. Với ưu điểm hiện đại, tốc độ tải trang nhanh, giao diện ưa nhìn cùng bộ công cụ tìm kiếm siêu mạnh Google tích hợp, thật khó để người dùng có thể từ chối Chrome. Bên cạnh đó, Chrome còn được trang bị cho mình những tiện ích giúp cho trải nghiệm người dùng ngày càng trở nên thú vị. Hôm nay, hãy cùng mình điểm qua 15 tiện ích Chrome hữu dụng mà ai cũng nên biết nhé!</h2>', '<h3 id=\"hmenuid1\"><strong>1. AdBlock - best ad blocker</strong></h3>\r\n\r\n<p>Đây là công cụ âm thầm mà mạnh mẽ giúp chúng ta loại bỏ quảng cáo khỏi những trang web. Đối với một số người thì quảng cáo là bình thường. Nhưng với nhiều người đó là điều khó chịu, nếu gặp trường hợp đó thì bạn hãy thử dùng Adblock nhé!</p>\r\n\r\n<ul>\r\n	<li>Tải Adblock&nbsp;<a href=\"http://chrome.google.com/webstore/detail/adblock-%E2%80%94-best-ad-blocker/gighmmpiobklfepjocnamgkkbiglidom\" rel=\"nofollow\" target=\"_blank\">TẠI ĐÂY</a></li>\r\n</ul>\r\n\r\n<p><em>Lưu ý:</em>&nbsp;một số trang web duy trì hoạt động là nhờ quảng cáo. Bạn nên cân nhắc trước khi chặn hoàn toàn quảng cáo của một trang.</p>\r\n\r\n<p><img alt=\"AdBlock là một công cụ chặn quảng cáo cực kỳ nổi tiếng\" data-original=\"//cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet.jpg\" title=\"AdBlock là một công cụ chặn quảng cáo cực kỳ nổi tiếng\" /></p>\r\n\r\n<p>AdBlock là một công cụ chặn quảng cáo cực kỳ nổi tiếng</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid2\"><strong>2. Google Translate</strong></h3>\r\n\r\n<p>Google Translate hay còn gọi là Google Dịch đã vốn quá quen thuộc với chúng ta khi đây là công cụ dịch văn bản hàng đầu thế giới. Google Translate có thể dịch văn bản lên tới 3900 ký tự và cho ra kết quả nhanh nhất hiện nay.</p>\r\n\r\n<ul>\r\n	<li>Tải Google Translate&nbsp;<a href=\"https://chrome.google.com/webstore/detail/google-translate/aapbdbdomjkkjkaonfhkkikfgjllcleb\" rel=\"nofollow\" target=\"_blank\">NHẤN TẠI ĐÂY</a></li>\r\n</ul>\r\n\r\n<p><img alt=\"Đây có lẽ là tiện ích không còn xa lạ đối với tất cả chúng ta\" data-original=\"//cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(1).jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(1).jpg\" title=\"Đây có lẽ là tiện ích không còn xa lạ đối với tất cả chúng ta\" /></p>\r\n\r\n<p>Đây có lẽ là tiện ích không còn xa lạ đối với tất cả chúng ta</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid3\"><strong>3. Grammarly for Chrome</strong></h3>\r\n\r\n<p>Công cụ kiểm tra chính tả tiếng Anh tốt nhất hiện nay. Không chỉ có thể sử dụng trực tiếp trên trình duyệt Chrome mà người dùng còn có thể cài đặt Grammarly vào máy tính để sử dụng ngay cả khi không có Chrome.</p>\r\n\r\n<ul>\r\n	<li>Tải Grammarly for Chrome&nbsp;<a href=\"https://chrome.google.com/webstore/detail/grammarly-for-chrome/kbfnbcaeplbcioakkpcpgfkobkghlhen\" rel=\"nofollow\" target=\"_blank\">NHẤN TẠI ĐÂY</a></li>\r\n</ul>\r\n\r\n<p><img alt=\"Với Grammarly thì bạn sẽ không còn nỗi lo sai chính tả nữa\" data-original=\"//cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(2).jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(2).jpg\" title=\"Với Grammarly thì bạn sẽ không còn nỗi lo sai chính tả nữa\" /></p>\r\n\r\n<p>Với Grammarly thì bạn sẽ không còn nỗi lo sai chính tả nữa</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid4\"><strong>4. Google Dictionary</strong></h3>\r\n\r\n<p>Là một tiện ích hiệu quả để tìm kiếm thông tin của từ khó khi khi đang duyệt web hay đọc tài liệu bằng tiếng Anh,.... Với Google Dictionary, bạn không còn phải copy – paste từ mới vào một tab từ điển khác nữa mà chỉ cần click đúp vào từ để xem nghĩa và cách phát âm.</p>\r\n\r\n<p>Ngoài ra, bạn có thể bôi đen một cụm từ chưa rõ nghĩa rồi bấm vào icon Google Dictionary trên thanh tiện ích ở góc phải màn hình để xem giải thích (theo kết quả tìm kiếm Google).</p>\r\n\r\n<ul>\r\n	<li>Tải Google Dictionary&nbsp;<a href=\"https://chrome.google.com/webstore/detail/google-dictionary-by-goog/mgijmajocgfcbeboacabfgobmjgjcoja\" rel=\"nofollow\" target=\"_blank\">NHẤN TẠI ĐÂY</a></li>\r\n</ul>\r\n\r\n<p><img alt=\"Google Dictionary sẽ giúp bạn hiểu hết những từ bạn chưa biết\" data-original=\"//cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(3).jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(3).jpg\" title=\"Google Dictionary sẽ giúp bạn hiểu hết những từ bạn chưa biết\" /></p>\r\n\r\n<p>Google Dictionary sẽ giúp bạn hiểu hết những từ bạn chưa biết</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid5\"><strong>5. Đọc Cho Tôi Nghe - Read Aloud</strong></h3>\r\n\r\n<p>Đây là tiện ích đọc nội dung trang web - tiếng Anh và Việt, với giọng đọc hay, ngữ điệu đúng, biết ngắt quãng và chuyên nghiệp như người đưa tin. Mỏi mắt? Mỏi lưng? Hãy cài tiện ích này rồi ngả lưng xuống giường, để Đọc Cho Tôi Nghe đọc nội dung của trang web yêu thích cho bạn nghe.</p>\r\n\r\n<ul>\r\n	<li>Tải Đọc Cho Tôi Nghe&nbsp;<a href=\"https://chrome.google.com/webstore/detail/read-aloud-a-text-to-spee/hdhinadidafjejdhmfkjgnolgimiaplp\" rel=\"nofollow\" target=\"_blank\">NHẤN TẠI ĐÂY</a></li>\r\n</ul>\r\n\r\n<p><img alt=\"Còn gì tuyệt vời hơn vừa được thoải mái nằm mà vẫn được \" data-original=\"//cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(5).jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(5).jpg\" title=\"Còn gì tuyệt vời hơn vừa được thoải mái nằm mà vẫn được \" /></p>\r\n\r\n<p>Còn gì tuyệt vời hơn vừa được thoải mái nằm mà vẫn được</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid6\"><strong>6. Lịch Google - Google Calendar</strong></h3>\r\n\r\n<p>Một ứng dụng quản lý thời gian miễn phí của Google cho phép bạn tạo và chỉnh sửa các sự kiện. Bạn có thể đặt lời nhắc, ghi chú, địa điểm tổ chức sự kiện và người dùng khác có thể được mời tham gia chỉnh sửa sự kiện đó. Google Calendar còn đồng bộ với Gmail. Thông tin và sự kiện từ Gmail sẽ được tự động thêm vào Google Calendar.</p>\r\n\r\n<ul>\r\n	<li>Tải Google Calendar&nbsp;<a href=\"https://chrome.google.com/webstore/detail/button-for-google-calenda/lfjnmopldodmmdhddmeacgjnjeakjpki\" rel=\"nofollow\" target=\"_blank\">NHẤN TẠI ĐÂY</a></li>\r\n</ul>\r\n\r\n<p><img alt=\"Google Calendar giúp bạn quản lý thời gian\" data-original=\"//cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(6).jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(6).jpg\" title=\"Google Calendar giúp bạn quản lý thời gian\" /></p>\r\n\r\n<p>Google Calendar giúp bạn quản lý thời gian</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid7\"><strong>7. Tiện ích giúp quản lý các tab</strong></h3>\r\n\r\n<p>Rất nhiều người dùng Chrome có thói quen bật hàng tá tab để đọc dần nhưng do quá nhiều nên người dùng chỉ có thể thấy biểu tượng của web mình truy cập mà không biết nội dung tab đó là gì nếu không di chuyển chuột tới từng tab đó hoặc chưa kịp động đến thì máy đã đơ vì ngốn quá nhiều RAM. Các tiện ích này của Chrome đã ra đời để cứu tình huống khó đỡ trên:</p>\r\n\r\n<ul>\r\n	<li>Tải Tab Manager cho Chrome&nbsp;<a href=\"https://chrome.google.com/webstore/detail/tab-manager-plus-for-chro/cnkdjjdmfiffagllbiiilooaoofcoeff\" rel=\"nofollow\" target=\"_blank\">NHẤN TẠI ĐÂY</a></li>\r\n	<li>Tải Tab Wrangler/One Tab&nbsp;<a href=\"https://chrome.google.com/webstore/detail/tab-wrangler/egnjhciaieeiiohknchakcodbpgjnchh\" rel=\"nofollow\" target=\"_blank\">NHẤN TẠI ĐÂY</a></li>\r\n	<li>Tải Session Buddy&nbsp;<a href=\"https://chrome.google.com/webstore/detail/session-buddy/edacconmaakjimmfgnblocblbcdcpbko\" rel=\"nofollow\" target=\"_blank\">NHẤN TẠI ĐÂY</a></li>\r\n</ul>\r\n\r\n<p>Ba tiện ích trên đều có chung một tính năng “thần thánh” đó là tập hợp tất cả các tab - cửa sổ vào một chế độ xem, mục đích tiện truy cập lại khi cần.</p>\r\n\r\n<p><img alt=\"Với những tiện ích trên thì bạn sẽ không còn sợ bật nhiều tab nữa\" data-original=\"//cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(7).jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(7).jpg\" title=\"Với những tiện ích trên thì bạn sẽ không còn sợ bật nhiều tab nữa\" /></p>\r\n\r\n<p>Với những tiện ích trên thì bạn sẽ không còn sợ bật nhiều tab nữa</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid8\"><strong>8. LastPass: Free Password Manager</strong></h3>\r\n\r\n<p>Là một ứng dụng quản lý mật khẩu cho phép lưu và sắp xếp mật khẩu tài khoản online thành các nhóm như&nbsp;<a href=\"https://www.thegioididong.com/hoi-dap/chu-de/mang-xa-hoi\" target=\"_blank\">mạng xã hội</a>, công việc, học hành, ngân hàng,… và đăng nhập tự động ngay khi bạn vào site. Phần mềm này sẽ giúp bạn đăng nhập tài khoản nhanh chóng chỉ với một cú click chuột đơn giản. Bên cạnh đó, LastPass sẽ yêu cầu người dùng tạo tài khoản để có thể đồng bộ dữ liệu do đó bạn có thể xem lại, sửa hoặc xoá danh sách thông tin lưu trữ ở nhiều thiết bị khác nhau. Bạn chỉ cần ghi nhớ password đăng nhập Chrome và LastPass.</p>\r\n\r\n<ul>\r\n	<li>Tải LastPass&nbsp;<a href=\"https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd\" rel=\"nofollow\" target=\"_blank\">NHẤN TẠI ĐÂY</a></li>\r\n</ul>\r\n\r\n<p><img alt=\"Với LastPass thì bạn sẽ không còn nỗi lo quên password nữa\" data-original=\"//cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(8).jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(8).jpg\" title=\"Với LastPass thì bạn sẽ không còn nỗi lo quên password nữa\" /></p>\r\n\r\n<p>Với LastPass thì bạn sẽ không còn nỗi lo quên password nữa</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid9\"><strong>9. Enable Copy</strong></h3>\r\n\r\n<p>Enable Copy cho phép người dùng sao chép dữ liệu, văn bản trên những trang web được bảo vệ bản quyền, không cho copy. Bạn có thể cắt dán các đoạn text hay sử dụng chuột phải để lưu các hình ảnh về máy tính của mình.</p>\r\n\r\n<ul>\r\n	<li>Tải Enable Copy&nbsp;<a href=\"https://chrome.google.com/webstore/detail/enable-copy/lmnganadkecefnhncokdlaohlkneihio\" rel=\"nofollow\" target=\"_blank\">NHẤN TẠI ĐÂY</a></li>\r\n</ul>\r\n\r\n<p><img alt=\"Plugin Enable Copy giúp sao chép những nội dung được bảo vệ bản quyền\" data-original=\"//cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(9).jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(9).jpg\" title=\"Plugin Enable Copy giúp sao chép những nội dung được bảo vệ bản quyền\" /></p>\r\n\r\n<p>Plugin Enable Copy giúp sao chép những nội dung được bảo vệ bản quyền</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid10\"><strong>10. Save to Pocket</strong></h3>\r\n\r\n<p>Cuộc sống bận rộn đang khiến con người ta không có đủ thời gian để ngồi thưởng thức trọn vẹn những bài báo thú vị. Hãy save tất cả vào Pocket để mở ra đọc offline những lúc rảnh rỗi hoặc ngồi trên tàu xe. Save To Pocket là tiện ích bất ly thân của những “con mọt tin tức online”. Để xem lại các bài báo đã đánh dấu (lưu), hãy vào Pocket bản PC hoặc tải về điện thoại ứng dụng Pocket trên iOS hoặc Android.</p>\r\n\r\n<ul>\r\n	<li>Để tải Enable Copy&nbsp;<a href=\"https://chrome.google.com/webstore/detail/save-to-pocket/niloccemoadcdkdjlinkgdfekeahmflj\" rel=\"nofollow\" target=\"_blank\">NHẤN TẠI ĐÂY</a></li>\r\n</ul>\r\n\r\n<p><img alt=\"Save to Pocket giúp bạn lưu lại những thông tin cần thiết\" data-original=\"//cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(10).jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(10).jpg\" title=\"Save to Pocket giúp bạn lưu lại những thông tin cần thiết\" /></p>\r\n\r\n<p>Save to Pocket giúp bạn lưu lại những thông tin cần thiết</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid11\"><strong>11. StayFocusd</strong></h3>\r\n\r\n<p>Tiện ích này cho phép bạn cài đặt thời lượng tối đa có thể truy cập các site/link dễ gây xao nhãng. Chẳng hạn nếu set thời lượng truy cập Facebook là 3 tiếng/ngày thì sau khi online trên site hết tổng cộng 3 tiếng, bạn sẽ bị chặn không thể vào lại Facebook cho đến ngày hôm sau.</p>\r\n\r\n<ul>\r\n	<li>Tải StayFocusd&nbsp;<a href=\"https://chrome.google.com/webstore/detail/stayfocusd/laankejkbhbdhmipfmgcngdelahlfoji\" rel=\"nofollow\" target=\"_blank\">NHẤN TẠI ĐÂY</a></li>\r\n</ul>\r\n\r\n<p><img alt=\"Tập trung không còn là một điều khó khăn với StayFocusd\" data-original=\"//cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(11).jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(11).jpg\" title=\"Tập trung không còn là một điều khó khăn với StayFocusd\" /></p>\r\n\r\n<p>Tập trung không còn là một điều khó khăn với StayFocusd</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid12\"><strong>12. Pushbullet</strong></h3>\r\n\r\n<p>Bạn mất quá nhiều thời gian để đọc và trả lời tin nhắn của tất cả ứng dụng? Pushbullet cho phép bạn đồng bộ nhắn tin từ tất cả các thiết bị vào một chỗ để nhận và gửi tin nhanh chóng hơn ngay trên góc phải trình duyệt.</p>\r\n\r\n<ul>\r\n	<li>Tải Pushbullet&nbsp;<a href=\"https://chrome.google.com/webstore/detail/pushbullet/chlffgpmiacpedhhbkiomidkjlcfhogd\" rel=\"nofollow\" target=\"_blank\">NHẤN TẠI ĐÂY</a></li>\r\n</ul>\r\n\r\n<p><img alt=\"PushBullet giúp bạn đồng bộ hóa tin nhắn từ nhiều ứng dụng\" data-original=\"//cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet(12).jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet(12).jpg\" title=\"PushBullet giúp bạn đồng bộ hóa tin nhắn từ nhiều ứng dụng\" /></p>\r\n\r\n<p>PushBullet giúp bạn đồng bộ hóa tin nhắn từ nhiều ứng dụng</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid13\"><strong>13. Todoist cho Chrome</strong></h3>\r\n\r\n<p>Todoist là tiện ích sắp xếp công việc và cuộc sống, lập kế hoạch trong ngày, ghi nhớ thời hạn với lời nhắc của Todoist và ngày đến hạn, giúp bạn xây dựng thói quen lâu dài với “các ngày đến hạn định kỳ”, sắp xếp thứ tự công việc phụ thuộc vào mức độ ưu tiên.</p>\r\n\r\n<ul>\r\n	<li><em>Tải Todoist&nbsp;</em><a href=\"https://chrome.google.com/webstore/detail/todoist-for-chrome/jldhpllghnbhlbpcmnajkpdmadaolakh\" rel=\"nofollow\" target=\"_blank\">NHẤN TẠI ĐÂY</a></li>\r\n</ul>\r\n\r\n<p><img alt=\"Todoist là một plugin giúp bạn sắp xếp công việc dễ dàng hơn\" data-original=\"//cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(13).jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(13).jpg\" title=\"Todoist là một plugin giúp bạn sắp xếp công việc dễ dàng hơn\" /></p>\r\n\r\n<p>Todoist là một plugin giúp bạn sắp xếp công việc dễ dàng hơn</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid14\"><strong>14. Google Hangouts</strong></h3>\r\n\r\n<p>Là một ứng dụng cho phép người sử dụng trên toàn thế giới dễ dàng trò chuyện qua video, tương tác và chia sẻ từ những cuộc họp. Ngoài ra còn có thể dùng để trình bày ý tưởng, thuyết trình.</p>\r\n\r\n<ul>\r\n	<li>Tải Google Hangouts&nbsp;<a href=\"https://chrome.google.com/webstore/detail/google-hangouts/nckgahadagoaajjgafhacjanaoiihapd\" rel=\"nofollow\" target=\"_blank\">NHẤN TẠI ĐÂY</a></li>\r\n</ul>\r\n\r\n<p><img alt=\"Google Hangouts có lẽ không còn xa lạ đối với những người dùng internet nữa\" data-original=\"//cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(14).jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(14).jpg\" title=\"Google Hangouts có lẽ không còn xa lạ đối với những người dùng internet nữa\" /></p>\r\n\r\n<p>Google Hangouts có lẽ không còn xa lạ đối với những người dùng internet nữa</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid15\"><strong>15. Darkness - Beautiful Dark Themes</strong></h3>\r\n\r\n<p>Chủ đề - giao diện tối đầy phong cách, ngầu, sang trọng còn có mục đích khác là bảo vệ đôi mắt của bạn. Khi kích hoạt Darkness, mạng xã hội, các trang web chính thống và tất cả các tab mới khác sẽ được áp dụng cùng nhau thành màu đen.</p>\r\n\r\n<ul>\r\n	<li>Tải Darkness - Beautiful Dark Themes&nbsp;<a href=\"https://chrome.google.com/webstore/detail/darkness-beautiful-dark-t/imilbobhamcfahccagbncamhpnbkaenm\" rel=\"nofollow\" target=\"_blank\">NHẤN TẠI ĐÂY</a></li>\r\n</ul>\r\n\r\n<p><img alt=\"Với Darkness - Beautiful Dark Themes thì Chrome đã trông phong cách hơn, đúng không nào?\" data-original=\"//cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(15).jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1348858/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(15).jpg\" title=\"Với Darkness - Beautiful Dark Themes thì Chrome đã trông phong cách hơn, đúng không nào?\" /></p>\r\n\r\n<p>Với Darkness - Beautiful Dark Themes thì Chrome đã trông phong cách hơn, đúng không nào?</p>', NULL, 'http://localhost:8000/uploads/images/top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet-(16).jpg', 'https://youtu.be/3-vzvChsMo0', NULL, 'top-15-tien-ich-tren-chrome-cuc-ky-huu-dung-ma-ban-nen-biet', 'TOP 15 tiện ích trên Chrome cực kỳ hữu dụng mà bạn nên biết', NULL, NULL, 'index,follow', 'index,follow', 'vi', 10, NULL, '2021-05-17 04:27:41', '2021-05-17 04:27:41'),
+(11, '76b13957-0ae8-4cbe-b40a-ea33b71f9058', '10 cách sửa lỗi micro trên Google Meet không hoạt động siêu hiệu quả', 'Trần Thanh Luân', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<h2>Chúng ta đã không còn xa lạ gì với các ứng dụng học online, họp trực tuyến bằng&nbsp;<a href=\"https://www.thegioididong.com/dtdd\" target=\"_blank\">điện thoại</a>,&nbsp;<a href=\"https://www.thegioididong.com/laptop\" target=\"_blank\">laptop</a>&nbsp;hay&nbsp;<a href=\"https://www.thegioididong.com/pc-may-in\" target=\"_blank\">PC</a>&nbsp;như&nbsp;<a href=\"https://www.thegioididong.com/game-app/google-meet-app-hop-truc-tuyen-hoc-online-khong-gioi-228059\" target=\"_blank\">Google Meet</a>. Tuy nhiên, cũng trong quá trình sử dụng, chắc chắn không thể tránh khỏi những trục trặc không mong muốn, chẳng hạn như micro bị lỗi. Vì vậy bài viết dưới đây sẽ giới thiệu đến bạn 10 cách sửa lỗi micro trên Google Meet khi không hoạt động siêu hiệu quả, áp dụng cho cả Windows và&nbsp;<a href=\"https://www.thegioididong.com/hoi-dap/mac-os-la-gi-838020\" target=\"_blank\">macOS</a>.</h2>', '<h3 id=\"hmenuid1\"><strong>1. Đảm bảo bạn đã biết cách bật micro trên Google Meet</strong></h3>\r\n\r\n<p>Trước hết, phải đảm bảo rằng bạn không<strong>&nbsp;tự tắt tiếng</strong>&nbsp;trên Google Meet. Hãy nhìn phía dưới màn hình của ứng dụng, bạn sẽ thấy một biểu tượng micro màu đỏ với dấu gạch chéo biểu thị micro của bạn đang bị tắt tiếng.<img alt=\"Nhấn vào biểu tượng để bật micro của bạn\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong fix-798x351.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong%20fix-798x351.jpg\" title=\"Nhấn vào biểu tượng để bật micro của bạn\" /></p>\r\n\r\n<p>Nhấn vào biểu tượng để bật micro của bạn</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Trong trường hợp này, chỉ cần nhấn vào biểu tượng để bật micro của bạn. Bạn cũng hoàn toàn có thể kiểm tra trạng thái micro trong Google Meet trước khi tham gia cuộc họp.</p>\r\n\r\n<h3 id=\"hmenuid2\"><strong>2. Mở quyền truy cập cho micro trên Google Meet</strong></h3>\r\n\r\n<p>Vì vấn đề&nbsp;<strong>bảo mật</strong>&nbsp;nên hầu hết các trình duyệt web chính đều chặn quyền truy cập của micro vào các trang web và ứng dụng như Google Meet theo mặc định.</p>\r\n\r\n<p>Như vậy, trong trường hợp này, đối với&nbsp;<strong>Google Chrome</strong>, bạn cần cung cấp cho trang web quyền truy cập cần thiết. Bạn chỉ cần nhấp vào biểu tượng hình ổ khóa ở góc trái của thanh địa chỉ, sau đó đặt micro thành&nbsp;<strong>Cho phép</strong>.</p>\r\n\r\n<p><img alt=\"Cho phép Micro trong Google Meet\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong 2 fixx-798x351.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong%202%20fixx-798x351.jpg\" title=\"Cho phép Micro trong Google Meet\" /></p>\r\n\r\n<p>Cho phép Micro trong Google Meet</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Còn đối với&nbsp;<strong>Safari</strong>: Đi tới&nbsp;<strong>Safari menu</strong>&nbsp;&gt;&nbsp;<strong>Preferences</strong>, nhấp vào tab&nbsp;<strong>Website &gt;</strong>&nbsp;<strong>Micro</strong>&nbsp;sau đó đặt&nbsp;<strong>meet.google.com</strong>&nbsp;thành&nbsp;<strong>Allow</strong>.</p>\r\n\r\n<p><img alt=\"Đặt meet.google.com thành Allow\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong-fix-800x408.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong-fix-800x408.jpg\" title=\"Đặt meet.google.com thành Allow\" /></p>\r\n\r\n<p>Đặt meet.google.com thành Allow</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid3\"><strong>3. Cho phép cấp quyền truy cập micrô vào trình duyệt</strong></h3>\r\n\r\n<p>Cả Windows và macOS đều có cài đặt bảo mật tích hợp có thể ngăn các chương trình sử dụng micro của bạn. Tốt nhất bạn nên kiểm tra xem điều đó có ngăn trình duyệt truy cập micro của mình hay không.</p>\r\n\r\n<p>- Trên Windows, đi tới<strong>&nbsp;Windows Settings</strong>&nbsp;&gt;&nbsp;<strong>Privacy</strong>&nbsp;&gt;&nbsp;<strong>Microphone</strong>. Đảm bảo rằng nút chuyển trong&nbsp;<strong>Allow apps to access your microphone</strong>&nbsp;được đặt thành&nbsp;<strong>On</strong>.<img alt=\"Đặt \'On\' cho nút chuyển trong \'Allow apps to access your microphone\' \" data-original=\"//cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong-fix 2-798x351.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong-fix%202-798x351.jpg\" title=\"Đặt \'On\' cho nút chuyển trong \'Allow apps to access your microphone\' \" /></p>\r\n\r\n<p>Đặt \'On\' cho nút chuyển trong \'Allow apps to access your microphone\'</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Cuộn xuống dưới và đảm bảo rằng nút chuyển trong&nbsp;<strong>Allow desktop apps to access your microphone</strong>&nbsp;cũng được đặt thành&nbsp;<strong>On</strong>.</p>\r\n\r\n<p><img alt=\"Nút chuyển trong \'Allow desktop apps to access your microphone\' cũng được đặt thành \'On\'.\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong-fix 3-798x351.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong-fix%203-798x351.jpg\" title=\"Nút chuyển trong \'Allow desktop apps to access your microphone\' cũng được đặt thành \'On\'.\" /></p>\r\n\r\n<p>Nút chuyển trong \'Allow desktop apps to access your microphone\' cũng được đặt thành \'On\'.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>- Trên<a href=\"https://www.thegioididong.com/laptop-apple-macbook\" target=\"_blank\">&nbsp;Mac</a>, bắt đầu bằng cách nhấn vào biểu tượng logo Apple &gt; Chọn&nbsp;<strong>System Preference.</strong></p>\r\n\r\n<p><img alt=\"Nhấn vào biểu tượng logo Apple và chọn System Preferences \" data-original=\"//cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong 17 fix-1200x849.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong%2017%20fix-1200x849.jpg\" title=\"Nhấn vào biểu tượng logo Apple và chọn System Preferences \" /></p>\r\n\r\n<p>Nhấn vào biểu tượng logo Apple và chọn System Preferences</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Sau đó, chọn&nbsp;<strong>Security &amp; Privacy</strong>.</p>\r\n\r\n<p><img alt=\"Chọn \'Security &amp; Privacy\'\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong 3 fix-1200x683.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong%203%20fix-1200x683.jpg\" title=\"Chọn \'Security &amp; Privacy\'\" /></p>\r\n\r\n<p>Chọn \'Security &amp; Privacy\'</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Chọn&nbsp;<strong>Microphone</strong>, sau đó đảm bảo chọn các ứng dụng mà bạn cho phép truy cập micro (<strong>Allow the apps below to access your microphone</strong>).</p>\r\n\r\n<p><img alt=\"Chọn ứng dụng mà bạn cho phép truy cập micro\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong 8 fixx-1200x871.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong%208%20fixx-1200x871.jpg\" title=\"Chọn ứng dụng mà bạn cho phép truy cập micro\" /></p>\r\n\r\n<p>Chọn ứng dụng mà bạn cho phép truy cập micro</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid4\"><strong>4. Khởi động lại trình duyệt web</strong></h3>\r\n\r\n<p>Thử&nbsp;<strong>thoát&nbsp;</strong>và&nbsp;<strong>khởi chạy lại trình duyệt</strong>&nbsp;của bạn. Đó là cách tốt nhất để khắc phục các sự cố liên quan đến micro xảy ra liên tục, chẳng hạn như trong trường hợp âm thanh của bạn không phát được sau vài phút tham gia Google Meet. Sau khi khởi chạy lại trình duyệt, hãy tham gia lại cuộc họp.</p>\r\n\r\n<p>Trên Mac, hãy đảm bảo thoát khỏi trình duyệt qua thanh menu trước khi khởi chạy lại.</p>\r\n\r\n<p>Một mẹo nhỏ cho bạn là nếu bạn sử dụng Chrome, hãy nhập<strong>&nbsp;chrome: // restart&nbsp;</strong>ở một tab mới và nhấn&nbsp;<strong>Enter&nbsp;</strong>để khởi chạy trình duyệt mà vẫn đảm bảo giữ nguyên các tab còn lại.</p>\r\n\r\n<h3 id=\"hmenuid5\"><strong>5. Truy cập Google Meet bằng trình duyệt Chrome</strong></h3>\r\n\r\n<p>Google Meet chỉ có thể truy cập qua giao diện trên trình duyệt trên PC và Mac. Mặc dù nó có thể hoạt động được trên tất cả các trình duyệt chính như&nbsp;<a href=\"https://www.thegioididong.com/game-app/tai-trinh-duyet-firefox-phien-ban-tieng-viet-nhe-luot-web-nhanh-224279\" target=\"_blank\">Firefox&nbsp;</a>hoặc Safari, nhưng tốt hơn bạn nên sử dụng nó trên&nbsp;<strong>Google Chrome</strong>. Lý do là bởi các sản phẩm và dịch vụ của Google thường sẽ hoạt động tốt nhất trên trình duyệt web của Google.</p>\r\n\r\n<p>Nếu bạn vẫn gặp những sự cố lẻ tẻ với micro của mình, ít nhất bạn hãy thử sử dụng Google Chrome cho các cuộc họp trên Google Meet của bạn.</p>\r\n\r\n<h3 id=\"hmenuid6\"><strong>6. Khởi động lại máy tính của bạn</strong></h3>\r\n\r\n<p>Nếu như việc khởi động lại trình duyệt của bạn không hiệu quả, hãy thử khởi động lại PC hoặc Mac của bạn. Điều này cũng có thể giúp khắc phục các bất thường khác nhau của micro trong Google Meet.</p>\r\n\r\n<p><img alt=\"Hãy thử khởi động lại máy tính của bạn để khắc phục sự cố này\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong 9.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong%209.jpg\" title=\"Hãy thử khởi động lại máy tính của bạn để khắc phục sự cố này\" /></p>\r\n\r\n<p>Hãy thử khởi động lại máy tính của bạn để khắc phục sự cố này</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid7\"><strong>7. Chọn micrô ưa thích</strong></h3>\r\n\r\n<p>Nếu bạn có nhiều thiết bị ngoại vi âm thanh được kết nối với PC hoặc Mac, Google Meet có thể sử dụng một micrô khác, chẳng hạn như micrô được tích hợp trong máy tính. Vì vậy, hãy thử chỉ định ứng dụng web micro chính xác mà bạn muốn sử dụng.</p>\r\n\r\n<p>Đầu tiên, nhấn vào biểu tượng&nbsp;<strong>3 dấu chấm</strong>&nbsp;(góc dưới cùng bên phải) &gt; Nhấn vào&nbsp;<strong>Cài đặt.</strong></p>\r\n\r\n<p><img alt=\"Nhấp vào Cài đặt trong Menu Google Meet\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong 22 fix-800x600.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong%2022%20fix-800x600.jpg\" title=\"Nhấp vào Cài đặt trong Menu Google Meet\" /></p>\r\n\r\n<p>Nhấp vào Cài đặt trong Menu Google Meet</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Bên dưới tab&nbsp;<b>Âm thanh</b>, hãy chọn đúng micro mà bạn muốn sử dụng. Bạn có thể đặt các loa sử dụng cùng một phần cứng (nếu có) để ngăn chặn các vấn đề về tiếng vang.<img alt=\"Chọn đúng micro mà bạn muốn sử dụng trong tab Âm thanh\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong a fix-800x450.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong%20a%20fix-800x450.jpg\" title=\"Chọn đúng micro mà bạn muốn sử dụng trong tab Âm thanh\" /></p>\r\n\r\n<p>Chọn đúng micro mà bạn muốn sử dụng trong tab Âm thanh</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3 id=\"hmenuid8\"><strong>8. Kiểm tra mức đầu vào của micro</strong></h3>\r\n\r\n<p>Micro trên PC hoặc Mac của bạn có thể có mức đầu vào quá thấp để có thể thu được giọng nói của bạn.</p>\r\n\r\n<p>- Trên PC, mở ứng dụng&nbsp;<strong>Windows Settings</strong>&nbsp;(qua Start menu or Action Center), bấm&nbsp;<strong>System&nbsp;</strong>&gt;&nbsp;<strong>Sound</strong>&nbsp;&gt;&nbsp;<strong>Sound Control Panel</strong>&nbsp;(bên dưới ‘Related Settings’).<img alt=\"Khắc phục lỗi micro bằng cách chọn Sound Control Panel\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong b fix-800x450.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong%20b%20fix-800x450.jpg\" title=\"Khắc phục lỗi micro bằng cách chọn Sound Control Panel\" /></p>\r\n\r\n<p>Khắc phục lỗi micro bằng cách chọn Sound Control Panel</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Chuyển sang tab&nbsp;<strong>Recording</strong>&nbsp;&gt; Chọn&nbsp;<strong>Microphone</strong>&nbsp;&gt; Nhấp vào&nbsp;<strong>Properties</strong>&nbsp;&gt; Kéo để di chuyển thanh trượt bên dưới micro đến mức cao hơn.</p>\r\n\r\n<p><img alt=\"Di chuyển thanh trượt bên dưới micro đến mức cao hơn\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong 18 fix-800x450.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong%2018%20fix-800x450.jpg\" title=\"Di chuyển thanh trượt bên dưới micro đến mức cao hơn\" /></p>\r\n\r\n<p>Di chuyển thanh trượt bên dưới micro đến mức cao hơn</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>-Trên Mac, đi đến hộp thoại&nbsp;<strong>System Preferences</strong>&nbsp;(<strong>Apple menu</strong>&nbsp;&gt;&nbsp;<strong>System Preferences</strong>), nhấp vào&nbsp;<strong>Sound</strong>, sau đó chuyển sang tab&nbsp;<strong>Input</strong>&nbsp;&gt; Kéo thanh trượt để điều chỉnh&nbsp;<strong>Input Volume</strong>.</p>\r\n\r\n<p><img alt=\"Điều chỉnh mức âm lượng đầu vào phù hợp\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong 21 fix-800x600.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong%2021%20fix-800x600.jpg\" title=\"Điều chỉnh mức âm lượng đầu vào phù hợp\" /></p>\r\n\r\n<p>Điều chỉnh mức âm lượng đầu vào phù hợp</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Chọn micro ưa thích của bạn, sau đó điều chỉnh mức âm lượng đầu vào phù hợp. Các thay đổi của bạn sẽ tự động lưu.</p>\r\n\r\n<h3 id=\"hmenuid9\"><strong>9. Khắc phục sự cố micro (Windows)</strong></h3>\r\n\r\n<p>Windows 10 đi kèm với trình khắc phục sự cố tích hợp có thể phát hiện và khắc phục các sự cố liên quan đến micrô. Đi tới&nbsp;<strong>Windows Settings</strong>&nbsp;&gt;&nbsp;<strong>System</strong>&nbsp;&gt;&nbsp;<strong>Sound</strong>.</p>\r\n\r\n<p>Cuộn xuống phần&nbsp;<strong>Input</strong>, chọn micro ưa thích của bạn bằng cách sử dụng menu trong&nbsp;<strong>Choose your input device</strong>&nbsp;và sau đó nhấp vào&nbsp;<strong>Troubleshoot</strong>.</p>\r\n\r\n<p><img alt=\"Nhấp vào Troubleshoot để khắc phục sự cố\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong 20 fix-800x450.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong%2020%20fix-800x450.jpg\" title=\"Nhấp vào Troubleshoot để khắc phục sự cố\" /></p>\r\n\r\n<p>Nhấp vào Troubleshoot để khắc phục sự cố</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Nếu trình khắc phục sự cố phát hiện bất kỳ sự cố nào với micro của bạn, hãy làm theo lời nhắc trên màn hình để giải quyết chúng.</p>\r\n\r\n<h3 id=\"hmenuid10\"><strong>10. Sửa lỗi micro (Mac)</strong></h3>\r\n\r\n<p>Trên máy Mac, micro của bạn có thể bị các ứng dụng hoặc tiện ích mở rộng trình duyệt khác sử dụng, do đó ngăn Google Meet hoạt động một cách hiệu quả.</p>\r\n\r\n<p>Để kiểm tra xem có đúng như vậy không, hãy bắt đầu bằng cách rời khỏi bất kỳ cuộc họp đang diễn ra trên Google Meet. Tiếp theo, mở&nbsp;<strong>Terminal</strong>&nbsp;(<strong>Finder</strong>&gt;&nbsp;<strong>Applications</strong>&gt;&nbsp;<strong>Utilities</strong>&gt;&nbsp;<strong>Terminal</strong>) và nhập lệnh bên dưới:</p>\r\n\r\n<p><strong>sudo killall coreaudiod</strong><img alt=\"Nhập lệnh theo hướng dẫn và nhấn Enter để thực thi lệnh\" data-original=\"//cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong 16.jpg\" src=\"https://cdn.tgdd.vn/hoi-dap/1351105/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong%2016.jpg\" title=\"Nhập lệnh theo hướng dẫn và nhấn Enter để thực thi lệnh\" /></p>\r\n\r\n<p>Nhập lệnh theo hướng dẫn và nhấn Enter để thực thi lệnh</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Nhấn&nbsp;<strong>Enter</strong>&nbsp;và chèn mật khẩu đăng nhập máy Mac của bạn để thực thi lệnh. Sau đó, khởi động lại máy Mac của bạn. Lúc này hãy tham gia lại cuộc họp trên Google Meet như thường.</p>', NULL, 'http://localhost:8000/uploads/images/10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong-thumb-new.jpg', 'https://youtu.be/IWZpk4JtrbI', NULL, '10-cach-sua-loi-micro-tren-google-meet-khong-hoat-dong-sieu-hieu-qua', '10 cách sửa lỗi micro trên Google Meet không hoạt động siêu hiệu quả', NULL, NULL, 'index,follow', 'index,follow', 'vi', 11, NULL, '2021-05-17 04:29:02', '2021-05-17 04:29:02'),
+(12, '1b42dce1-bd1b-44ed-af48-e448c0265a65', 'Nhân viên Kho Bán Hàng Bách Hóa Xanh', 'Trần Thanh Luân', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<h2>Nơi làm việc&nbsp;<strong>TP.HCM và 21 tỉnh thành khác,&nbsp;</strong>Cấp bậc:&nbsp;<strong>Nhân viên,&nbsp;</strong>Hình thức:&nbsp;<strong>Việc làm theo Ca,&nbsp;</strong>Bằng cấp:&nbsp;<strong>Không yêu cầu,&nbsp;</strong>Thu nhập:&nbsp;<strong>5 - 8 Triệu</strong></h2>', '<h2>MÔ TẢ CÔNG VIỆC</h2>\r\n\r\n<p>- Tư vấn hỗ trợ Khách hàng đến siêu thị</p>\r\n\r\n<p>- Trưng bày, sắp xếp hàng hóa đảm bảo quầy kệ gọn gàng, sạch sẽ</p>\r\n\r\n<p>- Làm cá, thịt, sơ chế món ăn có sẵn, các thực phẩm tươi sống</p>\r\n\r\n<p>- Kiểm kê hàng hóa siêu thị</p>\r\n\r\n<p>- Hủy hàng theo quy định triển khai công ty</p>\r\n\r\n<p>- Nhập hàng từ nhà cung cấp hoặc kho tổng ( Cân, nhập, kiểm đếm)</p>\r\n\r\n<p>- Vệ sinh siêu thị ( Lau dọn sàn, kính, quầy kệ)</p>\r\n\r\n<p>- Bưng bê/sắp xếp hàng, quản lý kho hàng gọn gàng</p>\r\n\r\n<p>- Tính chất công việc đa nhiệm nên có thể làm thu ngân luân phiên</p>\r\n\r\n<p>- Các công việc vệ sinh siêu thị theo phân công Quản lý&nbsp;</p>\r\n\r\n<h2>YÊU CẦU CÔNG VIỆC</h2>\r\n\r\n<p>- Nam/ Nữ từ 18- 40 tuổi</p>\r\n\r\n<p>- Thân thiện, vui vẻ, xởi lởi</p>\r\n\r\n<p>- Có sức khỏe tốt, tháo vát</p>\r\n\r\n<p>**&nbsp; Những yêu cầu công việc bắt buộc sau đây:</p>\r\n\r\n<p>+&nbsp; Có smartphone để làm việc, có phương tiện di chuyển (xe máy)</p>\r\n\r\n<p>+ Sẵn sàng làm sơ chế thịt, cá</p>\r\n\r\n<p>+&nbsp; Bắt buộc làm ca đêm&nbsp;luân phiên trong tuần</p>\r\n\r\n<p>+ Bắt buộc làm việc theo ca xoay theo sự phân công của Quản lý ( không tự đăng ký ca hoặc không cố định ca)</p>\r\n\r\n<p>Bao gồm 3 ca xoay:</p>\r\n\r\n<p>+ Ca Sáng: 5h30 - 14h30</p>\r\n\r\n<p>+ Ca Chiều: 14h30 - 22g00</p>\r\n\r\n<p>+ Ca Đêm: 22g00 - 5h30</p>\r\n\r\n<h2>QUYỀN LỢI</h2>\r\n\r\n<p>- Thu nhập trung bình từ 5 - 8 triệu trở lên, tăng lên theo hiệu quả làm việc và giờ công làm việc</p>\r\n\r\n<p>-&nbsp;Thưởng trong tháng và thưởng cuối năm hấp dẫn</p>\r\n\r\n<p>-&nbsp;Cơ hội thăng tiến lên Quản lý</p>\r\n\r\n<p>- Được bố trí làm việc thuận tiện gần nhà</p>\r\n\r\n<p>- Được hướng dẫn, đào tạo phát triển kỹ năng/ chuyên môn</p>\r\n\r\n<p>- Ký Hợp đồng lao động, công việc chính thức Lâu dài - Ổn định</p>\r\n\r\n<p>- Môi trường làm việc thân thiện, hỗ trợ đồng đội</p>\r\n\r\n<p>- Phúc lợi đầy đủ : Tham gia BHYT, BHXH, Đi du lịch Teambuilding, 12 ngày phép/ năm, nghỉ thai sản, ốm đau...</p>\r\n\r\n<h2>LƯU Ý</h2>\r\n\r\n<p>- Công việc làm chính thức, không phù hợp cho học sinh/ sinh viên đang có chương trình học</p>\r\n\r\n<p>- Nhân viên làm việc linh hoạt, đa nhiệm vị trí trong siêu thị</p>\r\n\r\n<p>- Vì phạm vi kinh doanh có liên quan tới Luật An Toàn Thực Phẩm nên ứng viên đang mắc các bệnh dễ lây nhiễm sẽ không phù hợp làm việc tại Bách Hóa Xanh ( VD:&nbsp;bệnh tả, lỵ, thương hàn, viêm gan A, E, viêm da nhiễm trùng, lao phổi,...”- tham khảo Nghị định số 155/2018/NĐ-CP).</p>\r\n\r\n<p>- Công việc bắt buộc tiếp xúc thịt cá, sơ chế thịt cá nên có thể không phù hợp nếu điều kiện của ứng viên không cho phép ( tín ngưỡng, quan điểm cá nhân...)</p>\r\n\r\n<p>- Công việc sắp xếp thuận tiện gần nhà nhất ( trong phạm vi còn có nhu cầu tuyển dụng)</p>', NULL, 'http://localhost:8000/uploads/images/banner-bhx-new-campaign2.jpg', NULL, NULL, 'nhan-vien-kho-ban-hang-bach-hoa-xanh', 'Nhân viên Kho Bán Hàng Bách Hóa Xanh', NULL, NULL, 'index,follow', 'index,follow', 'vi', 12, NULL, '2021-05-17 04:34:27', '2021-05-17 04:39:27');
 INSERT INTO `samcms_news_translations` (`id`, `uuid`, `title`, `author`, `price_min`, `copyright`, `form_of_work`, `price_max`, `need`, `benefit`, `soft_desc`, `promotion_percent`, `intro`, `content`, `foot`, `image`, `youtube`, `file`, `slug`, `title_tag`, `meta_keywords`, `meta_description`, `meta_robots`, `meta_google_bot`, `locale`, `news_id`, `deleted_at`, `created_at`, `updated_at`) VALUES
-(13, 'bedaedf1-3a93-4db1-ad73-9c4f23886054', 'Cộng Tác Viên Giao Hàng Lắp Đặt Điện Máy Xanh', 'Vũ Quốc Tuấn', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<ul>\r\n	<li>Nơi làm việc<strong>26 tỉnh thành</strong></li>\r\n	<li>Cấp bậc:<strong>Cộng tác viên</strong></li>\r\n	<li>Hình thức:<strong>Cộng tác viên/Thời vụ/ Bán thời gian</strong></li>\r\n	<li>Bằng cấp:<strong>Không yêu cầu</strong></li>\r\n	<li>Kinh nghiệm:<strong>Không cần kinh nghiệm</strong></li>\r\n	<li>Thu nhập:<strong>7 - 10 Triệu</strong></li>\r\n</ul>', '<h2>MÔ TẢ CÔNG VIỆC</h2>\r\n\r\n<p>Công việc của bạn sẽ linh hoạt giữa việc Tư vấn bán hàng cho KH và Giao nhận lắp đặt sản phẩm cho KH khi cần, cụ thể:<br />\r\n- Tư vấn các sản phẩm điện tử điện lạnh gia dụng<br />\r\n- Mang sản phẩm đến tận nhà cho Khách Hàng, hỗ trợ thông tin, hướng dẫn cách sử dụng sản phẩm.<br />\r\n- Hỗ trợ khách hàng thủ tục thanh toán và thu tiền hàng hoá.<br />\r\n- Tư vấn linh kiện phục vụ việc lắp đặt các thiết bị Điện Tử, Điện Lạnh cho Khách Hàng.<br />\r\n- Lắp đặt, bảo trì các thiết bị Điện Tử, Điện Lạnh theo yêu cầu Khách Hàng.<br />\r\n- Được đào tạo chuyên môn trước khi làm việc.</p>\r\n\r\n<h2>YÊU CẦU CÔNG VIỆC</h2>\r\n\r\n<p>- Nam, tuổi từ 20 đến 30, sức khỏe tốt.</p>\r\n\r\n<p>- Có xe máy, có Smartphone</p>\r\n\r\n<p>- Nếu bạn chưa có kinh nghiệm, chỉ cần bạn yêu thích công việc này công ty sẽ đào tạo cho bạn&nbsp;</p>\r\n\r\n<p>- Có tính kỷ luật, trách nhiệm và nghiêm túc trong công việc&nbsp;</p>\r\n\r\n<h2>QUYỀN LỢI</h2>\r\n\r\n<p>- Môi trường làm việc thân thiện chuyên nghiệp<br />\r\n- Được hướng dẫn đào tạo từ Công ty và Quản lý trực tiếp<br />\r\n- Cơ hội học hỏi, tiếp xúc với quy trình làm việc chuyên nghiệp<br />\r\n- Cơ hội lên nhân viên chính thức</p>', NULL, 'http://localhost:8000/uploads/images/banner-dmx-new-campaign2.jpg', NULL, NULL, 'cong-tac-vien-giao-hang-lap-dat-dien-may-xanh', 'Cộng Tác Viên Giao Hàng Lắp Đặt Điện Máy Xanh', NULL, NULL, 'index,follow', 'index,follow', 'vi', 13, NULL, '2021-05-17 04:35:23', '2021-05-17 04:35:23'),
-(14, '875c33df-c927-45c5-a7c5-7cf24a895d7f', 'Nhân viên siêu thị Điện Máy Xanh mô hình Supermini', 'Vũ Quốc Tuấn', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<ul>\r\n	<li>Nơi làm việc<strong>TP.HCM và 45 tỉnh thành khác</strong></li>\r\n	<li>Cấp bậc:<strong>Nhân viên</strong></li>\r\n	<li>Hình thức:<strong>Việc làm theo Ca</strong></li>\r\n	<li>Bằng cấp:<strong>THPT</strong></li>\r\n	<li>Kinh nghiệm:<strong>Không cần kinh nghiệm</strong></li>\r\n	<li>Thu nhập:<strong>7 - 10 triệu</strong></li>\r\n</ul>', '<h2>MÔ TẢ CÔNG VIỆC</h2>\r\n\r\n<p>- Làm việc tại các siêu thị Điện Máy Xanh Supermini (cửa hàng có sắp xếp tinh gọn về vận hành với diện tích chỉ tầm 1/2 Điện Máy Xanh nhỏ).</p>\r\n\r\n<p>- Bạn sẽ trở thành nhân viên đa nhiệm, đa năng (gia tăng năng suất, một nhân viên làm tất cả các việc, sử dụng tối đa tác nghiệp qua smartphone). Cụ thể:</p>\r\n\r\n<p>+ Tư vấn bán hàng, hỗ trợ và hướng dẫn Khách Hàng đến tham quan và mua sắm</p>\r\n\r\n<p>+ Quản lý, sắp xếp, trưng bày hàng hóa tại siêu thị&nbsp;</p>\r\n\r\n<p>+ Hỗ trợ cài đặt phần mềm, hình ảnh, nhạc cho sản phẩm</p>\r\n\r\n<p>+ Thu tiền hàng hóa, thu hộ tiền điện, nước, internet, làm sim, trực tiếp dán và trang trí sản phẩm cho khách hàng</p>\r\n\r\n<p>+ Giao hàng tại nhà cho Khách (không lắp đặt)</p>\r\n\r\n<p>- Ca làm việc chủ yếu: Ca Xoay (08:00-15:00 và 15:00-22:00)</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h2>YÊU CẦU CÔNG VIỆC</h2>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>- Bạn tốt nghiệp THPT trở lên và có ngoại hình khá.<b>&nbsp;Ưu tiên NAM</b></p>\r\n\r\n<p>- Tuổi từ 18 - 27 tuổi.</p>\r\n\r\n<p>- Bạn là người vui vẻ, thân thiện, cởi mở với mọi người, giao tiếp tự tin.</p>\r\n\r\n<p>- Có niềm đam mê, có kiến thức công nghệ và mong muốn được chia sẻ kiến thức cho khách hàng.</p>\r\n\r\n<p>- Bạn là người cẩn thận, tỉ mỉ, trung thực.</p>\r\n\r\n<p>- Bạn mong muốn gắn bó lâu dài với công ty và khát khao phát triển.&nbsp;</p>\r\n\r\n<h2>QUYỀN LỢI</h2>\r\n\r\n<p>- Làm việc tại tập đoàn bán lẻ hàng đầu Việt Nam</p>\r\n\r\n<p>- Môi trường làm việc chuyên nghiệp, lớn mạnh</p>\r\n\r\n<p>- Cơ hội thăng tiến, phát triển bản thân</p>\r\n\r\n<p>- Ký HĐLĐ, Phúc lợi đầy đủ tăng dần</p>\r\n\r\n<p>- Thưởng cuối năm hấp dẫn, lên đến 3 tháng - số liệu 2018,2019</p>\r\n\r\n<h2>LƯU Ý</h2>\r\n\r\n<p>-&nbsp; Ứng viên có Smartphone, có Xe máy là phương tiện di chuyển</p>', NULL, 'http://localhost:8000/uploads/images/banner-dmx-new-campaign2.jpg', NULL, NULL, 'nhan-vien-sieu-thi-dien-may-xanh-mo-hinh-supermini', 'Nhân viên siêu thị Điện Máy Xanh mô hình Supermini', NULL, NULL, 'index,follow', 'index,follow', 'vi', 14, NULL, '2021-05-17 04:36:18', '2021-05-17 04:36:18'),
-(15, 'dcf52a4c-673e-4a66-bae9-1b7529789c3d', 'Thực tập sinh Kế Toán - Accountant Fresher 2021', 'Vũ Quốc Tuấn', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<ul>\r\n	<li>Nơi làm việc<strong>Trụ sở quận 9, TP.HCM&nbsp;</strong></li>\r\n	<li>Cấp bậc:<strong>Thực tập</strong></li>\r\n	<li>Hình thức:<strong>Sinh viên mới tốt nghiệp/ Thực tập</strong></li>\r\n	<li>Bằng cấp:<strong>Đại học</strong></li>\r\n	<li>Kinh nghiệm:<strong>Không cần kinh nghiệm</strong></li>\r\n	<li>Thu nhập:<strong>Có hỗ trợ thu nhập</strong></li>\r\n</ul>', '<p>MWG Accountant Fresher mùa 4 - Thực tập sinh Kế Toán tiềm năng chính thức khởi động tháng 4 này mang tên:</p>\r\n\r\n<p><strong>MWG Passport 2021 - A Journey to touch you dream!</strong></p>\r\n\r\n<p>MWG Passport 2021 là chương trình trao cơ hội cho các bạn sinh viên trẻ tiếp tục hành trình chinh phục ước mơ trở thành một Accountant chuyên nghiệp. Cơ hội để trải nghiệm, học tập và trở thành \"bàn tay vàng trong làng kế toán\" với hơn 500 Accountants vững nghiệp vụ, giỏi chuyên môn của tập đoàn bán lẻ hàng đầu Việt Nam. MWG sẵn sàng đào tạo và trao cho bạn cơ hội để thể hiện năng lực của chính mình.</p>\r\n\r\n<h2>Giá trị nổi bật:</h2>\r\n\r\n<p>- Được học tập và trải nghiệm làm việc tại trụ sở MWG - Tập đoàn bán lẻ hàng đầu Việt Nam</p>\r\n\r\n<p>- Được đào Tạo về văn hoá công ty, chuyên môn nghiệp vụ, đào tạo các kỹ năng mềm</p>\r\n\r\n<p>- Thời gian thử thách tối thiểu 03 tháng, làm việc tối thiểu 04 ngày/tuần (tương đương trên 100 giờ công/ tháng).</p>\r\n\r\n<p>- Đặc biệt nhận được<b>&nbsp;</b>học bổng đào tạo lên tới 6 triệu/ 3 tháng. Tương đương 2 triệu/ tháng nếu đáp ứng được giờ làm việc chuẩn và năng lực học việc.</p>\r\n\r\n<p>- Cơ hội trở thành nhân viên Kế toán chính thức sau khi hoàn thành chương trình thực tập</p>\r\n\r\n<h2>Điều kiện tham gia chương trình:</h2>\r\n\r\n<p>- Nam Nữ, sinh viên&nbsp;Đại học&nbsp;năm cuối hoặc vừa mới tốt nghiệp các khoa: Kế Toán, Kiểm Toán, Tài Chính, hoặc các ngành có liên quan,...không quá 6 tháng kinh nghiệm nếu đã đi làm.</p>\r\n\r\n<p>- Có điểm TB tích luỹ&nbsp;GPA tương đương Khá - Giỏi trở lên&nbsp;( &gt; 7.0 điểm và tương đương)</p>\r\n\r\n<p>- Thời gian thực tập&nbsp;tối thiểu 03 tháng, làm việc tối thiểu 04 ngày/tuần&nbsp;(tương đương trên 100 giờ công/ tháng).</p>\r\n\r\n<p>- Là bạn trẻ có tinh thần ham học hỏi, yêu nghề Kế toán</p>\r\n\r\n<p>- Có niềm yêu thích với các con số; Sử dụng tốt excel, các hàm thông dụng</p>\r\n\r\n<p>- Có kiến thức tốt chuyên ngành kế toán, am hiểu luật về thuế, luật kế toán,…</p>\r\n\r\n<p>- Bạn cẩn thận, tỉ mỉ, trung thực; Có trách nhiệm và cầu tiến.</p>\r\n\r\n<p>- Sẵn sàng làm việc địa điểm ngoài Hồ Chí Minh cũng là lợi thế (di chuyển về quê làm việc)</p>\r\n\r\n<h2>Kinh nghiệm học được:</h2>\r\n\r\n<p>- Được đào tạo các công việc, nghiệp vụ kế toán liên quan của thế giới di động, điện máy xanh, bách hoá xanh</p>\r\n\r\n<p>- Trực tiếp làm việc các công việc kế toán nội bộ, nghiệp vụ, chiết khấu,...</p>\r\n\r\n<p>- Hỗ trợ các công việc do anh chị nhân viên dày dặn kinh nghiệm hướng dẫn</p>\r\n\r\n<h2>Lộ trình của Accountant Fresher</h2>\r\n\r\n<p>Vòng 1. Register - Đăng ký</p>\r\n\r\n<p>1. Đăng ký hồ sơ Online</p>\r\n\r\n<p>2. Đính kèm CV cá nhân</p>\r\n\r\n<p>3. Ghi rõ trong mục Giới thiệu bản thân về các câu hỏi:</p>\r\n\r\n<p>+ Giới thiệu bản thân</p>\r\n\r\n<p>+ Lý do bạn tham gia chương trình</p>\r\n\r\n<p>+ Mục tiêu nghề nghiệp tương lai của bạn</p>\r\n\r\n<p><em>Lưu ý: mục Giới thiệu bản thân sẽ là yếu tố được xem xét và sàng lọc kỹ lưỡng bởi Phòng Nhân Sự. Hãy thể hiện bạn xứng đáng được check-in chương trình nhé !</em></p>\r\n\r\n<p>Vòng 2. Check In</p>\r\n\r\n<p>1. Tham quan trụ sở MWG</p>\r\n\r\n<p>2. Hội thảo: \" Nghề Kế Toán\"</p>\r\n\r\n<p>Vòng 3: Sercurity Check: Phỏng vấn chuyên môn</p>\r\n\r\n<p>1. Làm bài Test năng lực Kế Toán và Test IQ/EQ/AQ</p>\r\n\r\n<p>2. Phỏng vấn với Phòng Nhân sự và Bộ phận Kế Toán chuyên môn</p>\r\n\r\n<p>Vòng 4. Flight : Hành trình chạm tới giấc mơ</p>\r\n\r\n<p>1. Bổ sung giấy tờ hồ sơ cá nhân</p>\r\n\r\n<p>2. Nhận việc và Onboarding</p>\r\n\r\n<p>3. Kèm cặp và hướng dẫn</p>\r\n\r\n<p>Chúc bạn thành công và trải nghiệm MWG Passport xứng tầm !</p>', NULL, 'http://localhost:8000/uploads/images/banner-tgdd-new-campaign2.jpg', NULL, NULL, 'thuc-tap-sinh-ke-toan-accountant-fresher-2021', 'Thực tập sinh Kế Toán - Accountant Fresher 2021', NULL, NULL, 'index,follow', 'index,follow', 'vi', 15, NULL, '2021-05-17 04:37:13', '2021-05-17 04:37:13'),
-(16, '8950d9b5-5311-4acd-b1b5-4375537ebd6e', 'Nhân viên Tư Vấn Bán Hàng Nhà Thuốc An Khang', 'Vũ Quốc Tuấn', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<ul>\r\n	<li>Cấp bậc:<strong>Nhân viên</strong></li>\r\n	<li>Hình thức:<strong>Việc làm theo Ca</strong></li>\r\n	<li>Bằng cấp:<strong>Trung cấp/ Cao đẳng/ Đại học</strong></li>\r\n	<li>Kinh nghiệm:<strong>Trên 3 tháng</strong></li>\r\n	<li>Thu nhập:<strong>TB 5 - 8 Triệu</strong></li>\r\n</ul>', '<h2>MÔ TẢ CÔNG VIỆC</h2>\r\n\r\n<p dir=\"ltr\">Bán và hướng dẫn cách sử dụng thuốc</p>\r\n\r\n<p dir=\"ltr\">- Bán thuốc, Dược phẩm, Thực phẩm chức năng và các sản phẩm tại Nhà thuốc An Khang</p>\r\n\r\n<p dir=\"ltr\">- Trực tiếp giao dịch, thanh toán hóa đơn cho Khách Hàng.</p>\r\n\r\n<p dir=\"ltr\">- Hướng dẫn và giải đáp cho Khách hàng những thông tin liên quan đến Dược phẩm, Thực phẩm chức năng.</p>\r\n\r\n<p dir=\"ltr\">Bảo quản hàng hóa và tài sản Nhà thuốc</p>\r\n\r\n<p dir=\"ltr\">- Giữ nhà thuốc sạch sẽ, ngăn nắp, sắp xếp thuốc đúng vị trí.</p>\r\n\r\n<p dir=\"ltr\">- Cập nhật kiến thức về thuốc đảm bảo tư vấn thuốc đúng.</p>\r\n\r\n<p dir=\"ltr\">- Có trách nhiệm bảo quản Dược phẩm và sắp xếp/ vệ sinh khuôn viên nhà thuốc sạch sẽ, gọn gàng, tuân thủ các quy định về Y tế, ngành Dược và của Công ty.</p>\r\n\r\n<p dir=\"ltr\">- Thực hiện một số công việc khác theo sự phân công của quản lý</p>\r\n\r\n<h2>YÊU CẦU CÔNG VIỆC</h2>\r\n\r\n<p>- Nam/ Nữ thân thiện, dễ nhìn, từ 20 tuổi trở lên.</p>\r\n\r\n<p dir=\"ltr\">- Tốt nghiệp Trung cấp/ Cao đẳng/Đại học chuyên ngành Dược.</p>\r\n\r\n<p dir=\"ltr\">- Có kinh nghiệm ít nhất 03 tháng đứng bán tại Nhà thuốc là lợi thế</p>\r\n\r\n<p dir=\"ltr\">- Trung thực, hoạt bát, vui vẻ hòa đồng.</p>\r\n\r\n<p dir=\"ltr\">- Thân thiện, yêu nghề Dược, chú trọng phục vụ KH</p>\r\n\r\n<p dir=\"ltr\">- Ham học hỏi những kiến thức mới, chú trọng trau dồi chuyên môn Dược</p>\r\n\r\n<p dir=\"ltr\">- Làm việc Ca XOAY linh hoạt: 07h - 22h. Trung bình 8h/ngày, các ngày trong tuần từ Thứ 2 đến Chủ Nhật:</p>\r\n\r\n<p dir=\"ltr\">+ Ca 1: 7g00 - 15g00</p>\r\n\r\n<p dir=\"ltr\">+ Ca 2: 15g00 - 22g00</p>\r\n\r\n<p dir=\"ltr\">- Thu nhập trung bình 6,5 triệu/tháng, tăng theo hiệu quả làm việc và giờ công.</p>\r\n\r\n<h2>QUYỀN LỢI</h2>\r\n\r\n<p>- Làm việc tại Tập đoàn Bán lẻ hàng đầu Việt Nam.</p>\r\n\r\n<p dir=\"ltr\">- Môi trường làm việc chuyên nghiệp, thân thiện, năng động.</p>\r\n\r\n<p dir=\"ltr\">- Cơ hội thăng tiến, phát triển bản thân với lộ trình rõ ràng.</p>\r\n\r\n<p dir=\"ltr\">- Được hướng dẫn, đào tạo kiến thức chuyên môn.</p>\r\n\r\n<p dir=\"ltr\">- Phúc lợi dành riêng cho nhân viên (Bảo hiểm sức khỏe đặc biệt, mua hàng ưu đãi,...)</p>\r\n\r\n<p dir=\"ltr\">- Văn hóa công ty với 5 Giá trị cốt lõi là trọng tâm</p>\r\n\r\n<p dir=\"ltr\">- Lương thưởng cuối năm hấp dẫn, nghỉ phép năm,...</p>', NULL, 'http://localhost:8000/uploads/images/banner-ank-new-campaign2.jpg', NULL, NULL, 'nhan-vien-tu-van-ban-hang-nha-thuoc-an-khang', 'Nhân viên Tư Vấn Bán Hàng Nhà Thuốc An Khang', NULL, NULL, 'index,follow', 'index,follow', 'vi', 16, NULL, '2021-05-17 04:38:06', '2021-05-17 04:39:45'),
-(17, 'a5766ee5-2859-482b-b9ab-d22950626ab4', 'Nhân viên Content/ SEO sản phẩm TGDĐ/ĐMX', 'Vũ Quốc Tuấn', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<ul>\r\n	<li>Nơi làm việc<strong>Trụ sở quận 9, TP.HCM&nbsp;</strong></li>\r\n	<li>Cấp bậc:<strong>Nhân viên</strong></li>\r\n	<li>Hình thức:<strong>Việc làm Giờ Hành Chánh</strong></li>\r\n	<li>Bằng cấp:<strong>Cao Đẳng/ Đại Học</strong></li>\r\n	<li>Kinh nghiệm:<strong>Không cần kinh nghiệm</strong></li>\r\n	<li>Thu nhập:<strong>Thỏa thuận</strong></li>\r\n</ul>', '<h2>MÔ TẢ CÔNG VIỆC</h2>\r\n\r\n<p>Ứng viên có thể chọn 1 trong 5 vị trí bên dưới: (viết rõ trong phần giới thiệu bản thân khi ứng tuyển)</p>\r\n\r\n<p><strong>Vị trí 1:&nbsp;Biên tập Nội dung Sản phẩm TGDD &amp; DMX</strong></p>\r\n\r\n<p>- Làm bài viết, hình ảnh, thông số kỹ thuật SP</p>\r\n\r\n<p>-&nbsp;Làm nội dung giải thích công nghệ, tư vấn chọn mua, hướng dẫn sử dụng SP</p>\r\n\r\n<p>-&nbsp;Tối ưu các tính năng, bộ lọc, kết quả tìm kiếm... giúp khách hàng mua SP</p>\r\n\r\n<p>- Phối hợp đảm bảo 100% SP có hình ảnh &amp; video.</p>\r\n\r\n<p>- Phối hợp SEO onpage</p>\r\n\r\n<p>- Quản lý Thực tập - Cộng tác viên</p>\r\n\r\n<p>- Các công việc khác do trưởng nhóm phân công</p>\r\n\r\n<p><strong>Vị trí 2:&nbsp;Biên tập chuyên mục&nbsp;<a href=\"https://www.thegioididong.com/game-app\">Game&nbsp;</a><a href=\"https://www.thegioididong.com/game-app\">app</a></strong></p>\r\n\r\n<p>- Tìm đề tài, lên outline, viết bài giới thiệu, đánh giá, hướng dẫn sử dụng, mẹo, thủ thuật game, ứng dụng trên tất cả nền tảng</p>\r\n\r\n<p>- Quản lý Thực tập - CTV</p>\r\n\r\n<p>-&nbsp;Các công việc khác do trưởng nhóm phân công</p>\r\n\r\n<p><strong>Vị trí 3: Biên tập chuyên mục&nbsp;<a href=\"https://www.dienmayxanh.com/vao-bep\">Vào Bếp</a></strong></p>\r\n\r\n<p>- Viết bài về công thức món ăn, định nghĩa, hướng dẫn, mẹo liên quan tới ẩm thực, dinh dưỡng.</p>\r\n\r\n<p>- Tìm đề tài, lên outline, liên hệ cộng đồng lấy công thức triển khai bài viết</p>\r\n\r\n<p>-&nbsp;Quản lý Thực tập - CTV</p>\r\n\r\n<p>- Các công việc khác do trưởng nhóm phân công</p>\r\n\r\n<p><strong>Vị trí 4: Biên tập chuyên mục&nbsp;<a href=\"https://www.dienmayxanh.com/kinh-nghiem-hay\">Kinh nghiệm hay</a></strong></p>\r\n\r\n<p>- Tìm đề tài, lên outline &amp; viết tin&nbsp;<a href=\"https://www.dienmayxanh.com/kinh-nghiem-hay\">Kinh nghiệm hay</a></p>\r\n\r\n<p>- Làm nội dung tin khuyến mãi, giới thiệu khai trương siêu thị</p>\r\n\r\n<p>- Khai báo Google Business cho hệ siêu thị&nbsp;</p>\r\n\r\n<p>- Quản lý Thực tập - CTV</p>\r\n\r\n<p>- Các công việc khác do trưởng nhóm phân công</p>\r\n\r\n<p><strong>Vị trí 5:&nbsp;Nhân viên SEO sản phẩm TGDD &amp; DMX&nbsp;</strong></p>\r\n\r\n<p>- Tìm đề tài, lên outline, viết bài phục vụ khách hàng xoay quanh sản phẩm, ngành hàng cần SEO&nbsp;</p>\r\n\r\n<p>- Quản lý và triển khai hệ bài viết trên các hệ thống Social, Blog Offpage</p>\r\n\r\n<p>- Quản lý Thực tập - CTV</p>\r\n\r\n<p>- Các công việc khác do trưởng nhóm phân công</p>\r\n\r\n<h2>YÊU CẦU CÔNG VIỆC</h2>\r\n\r\n<p><strong>Yêu cầu chung cho 5 vị trí:</strong></p>\r\n\r\n<p>- Viết tốt: diễn đạt súc tích, rành mạch, dễ hiểu, đúng chính tả.</p>\r\n\r\n<p>- Yêu thích và hay tìm hiểu lĩnh vực công nghệ, điện máy, điện gia dụng…</p>\r\n\r\n<p>- Biết xử lý hình ảnh bằng Photoshop cơ bản (cắt, ghép, chỉnh màu, chỉnh sáng…)</p>\r\n\r\n<p>- Có khả năng chịu được áp lực khối lượng công việc lớn hoặc vận hành dự án</p>\r\n\r\n<p>- Tin học văn phòng (soạn thảo văn bản, xử lý dữ liệu bằng hàm exel, làm file trình chiếu, Google Drive...)</p>\r\n\r\n<p>- Có tư duy về đo lường, sử dụng và hiểu các chỉ số Google Analytic</p>\r\n\r\n<p>- Điểm cộng nếu có: Tiếng Anh đọc hiểu tốt, biết SEO, có kinh nghiệm bán hàng online/truyền thống.</p>\r\n\r\n<p><strong>Đặc biệt:</strong></p>\r\n\r\n<p><strong>&nbsp;Biên tập chuyên mục&nbsp;<a href=\"https://www.thegioididong.com/game-app\">Game&nbsp;</a><a href=\"https://www.thegioididong.com/game-app\">app</a></strong></p>\r\n\r\n<p>- Am hiểu về PC, điện thoại, công nghệ.&nbsp;</p>\r\n\r\n<p>- Thích chơi &amp; tìm hiểu về game &amp; ứng dụng trên điện thoại.</p>\r\n\r\n<p><strong>Biên tập chuyên mục&nbsp;<a href=\"https://www.dienmayxanh.com/vao-bep\">Vào Bếp</a>:&nbsp;</strong></p>\r\n\r\n<p>- Yêu thích và hay tìm hiểu các món ăn mới, xu hướng ẩm thực.</p>\r\n\r\n<p>- Biết nấu ăn và có kiến thức về dinh dưỡng, ẩm thực, biết tính chất và sử dụng từng nguyên liệu phù hợp trong từng loại món ăn.</p>\r\n\r\n<p><strong>Nhân viên SEO sản phẩm TGDD &amp; DMX&nbsp;</strong></p>\r\n\r\n<p>- Có kiến thức SEO onpage căn bản tới chuyên sâu</p>\r\n\r\n<p>- Mindset tốt về SEO, người dùng, luôn cập nhật xu hướng SEO mới của thế giới</p>\r\n\r\n<p>- Sử dụng tốt các công cụ SEO như ahrefs, keywordtool.io, Website Auditor…</p>\r\n\r\n<p>- Hiểu và sử dụng Google Analytic, Google Console, Data Studio</p>\r\n\r\n<h2>QUYỀN LỢI</h2>\r\n\r\n<p>- Môi trường làm việc chuyên nghiệp, lớn mạnh</p>\r\n\r\n<p>- Cọ xát kinh nghiệm từ đội ngũ nhân viên dày dặn kinh nghiệm</p>\r\n\r\n<p>- Ký HĐLĐ, Phúc lợi đầy đủ tăng dần</p>\r\n\r\n<p>- Du lịch Teambuilding hàng năm</p>\r\n\r\n<p>- Thưởng cuối năm hấp dẫn ( 3-8 tháng theo KPI – Số liệu 2020)</p>\r\n\r\n<h2>LƯU Ý</h2>\r\n\r\n<p>- Làm việc tại trụ sở MWG Quận 9 HCM</p>\r\n\r\n<p>- Nhân viên tự trang bị Laptop cá nhân</p>', NULL, 'http://localhost:8000/uploads/images/banner-tgdd-new-campaign2.jpg', NULL, NULL, 'nhan-vien-content-seo-san-pham-tgdddmx', 'Nhân viên Content/ SEO sản phẩm TGDĐ/ĐMX', NULL, NULL, 'index,follow', 'index,follow', 'vi', 17, NULL, '2021-05-17 04:39:08', '2021-05-17 04:39:08'),
-(18, '95258095-5cd7-454b-8e27-3a847b77b0e9', 'MobiFone ưu đãi gói cước Z70', 'Vũ Quốc Tuấn', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<p>Người dùng được miễn phí 500 MB data trong 30 ngày, tương đương 15 GB dữ liệu mỗi tháng, với cước phí 70.000 đồng khi đăng ký gói cước Z70.</p>', '<p>Nhằm mang đến những trải nghiệm data tối ưu cho người dùng, thay thế dần sự phụ thuộc vào WiFi, MobiFone tung ra gói chương trình ưu đãi cho gói cước Z70.</p>\r\n\r\n<article>\r\n<p>Cụ thể, chương trình này áp dụng cho những thuê bao đang hoạt động 2 chiều, có lịch sử phát sinh cước với mức tiêu dùng tài khoản chính cho dịch vụ data tháng liền trước từ 70.000 đồng hoặc thuê bao trả trước phát triển mới kích hoạt từ 1/8 (không áp dụng cho thuê bao Fast Connect). Gói cước Z70 có giá 70.000 đồng, chu kỳ sử dụng 30 ngày tính từ ngày đăng ký thành công.</p>\r\n\r\n<figure data-size=\"true\" itemprop=\"associatedMedia image\" itemscope=\"\" itemtype=\"http://schema.org/ImageObject\"><img alt=\"Khách hàng giao dịch tại MobiFone.\" data-ll-status=\"loaded\" data-src=\"https://i1-kinhdoanh.vnecdn.net/2020/10/30/KM-1511-1604044681.jpg?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=6d5RaEv5mhpXeO43MZQ8xg\" intrinsicsize=\"680x0\" itemprop=\"contentUrl\" loading=\"lazy\" src=\"https://i1-kinhdoanh.vnecdn.net/2020/10/30/KM-1511-1604044681.jpg?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=6d5RaEv5mhpXeO43MZQ8xg\" />\r\n<figcaption itemprop=\"description\">\r\n<p>Khách hàng giao dịch tại MobiFone.</p>\r\n</figcaption>\r\n</figure>\r\n\r\n<p>Khi đăng ký thành công, khách hàng sẽ được miễn phí 500MB data/ngày liên tiếp trong 30 ngày, tương đương 15GB data/ tháng. Ngoài ra, với khách hàng tại Hà Nội, MobiFone miễn phí data trong khung giờ từ 19h đến 7h sáng hôm sau. Người dùng có thể sử dụng data với các ứng dụng yêu thích trên điện thoại, không hạn chế. Cú pháp đăng ký gói cước Z70 như sau: DK Z70 gửi 999</p>\r\n\r\n<p>Gói cước này có tính năng gia hạn tự động khi kết thúc chu kỳ 1 chuyển sang những chu kỳ tiếp theo. Do đó, để tiếp tục sử dụng gói cước, người dùng cần duy trì tiền trong tài khoản lớn hơn hoặc bằng giá gói cước. Người dùng cần khởi động lại điện thoại sau khi đăng ký thành công để hệ thống cập nhật data sử dụng mới.</p>\r\n\r\n<p><img alt=\"A\" data-natural-h=\"415\" data-natural-width=\"624\" src=\"https://i1-kinhdoanh.vnecdn.net/2020/10/21/image003-2321-1603297211.jpg?w=0&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=YkqIXz4S8kLnKeIhZGVkuA\" /></p>\r\n\r\n<p>Ngoài cú pháp đăng ký, quá trình dùng gói ưu đãi Z70 MobiFone thuê bao có thể sử dụng một số cú pháp hỗ trợ sau: Kiểm tra ưu đãi còn lại: KT ALL gửi 999; Hủy gói cước soạn tin nhắn: HUY Z70 gửi 999.</p>\r\n\r\n<p>Trước diễn biến phức tạp của Covid-19, MobiFone triển khai nhiều chiến dịch đồng hành, chia sẻ như giảm cước phí cho y, bác sĩ, cán bộ phòng chồng dịch tuyến đầu; tăng dung lượng gấp 3 đến 4 lần tại các điểm cách lý xã hội, hỗ trợ thay sim 4G miễn phí tại nhà...</p>\r\n\r\n<p>Đại diện nhà mạng này cho biết, mọi chiến lược của MobiFone đều đề cao sự an toàn và lợi ích của người dùng.</p>\r\n</article>', NULL, 'http://localhost:8000/uploads/images/image003-2321-1603297211.jpg', NULL, NULL, 'mobifone-uu-dai-goi-cuoc-z70', 'MobiFone ưu đãi gói cước Z70', NULL, NULL, 'index,follow', 'index,follow', 'vi', 18, NULL, '2021-05-17 04:41:59', '2021-05-17 04:41:59'),
-(19, 'd266a754-afe1-4aa7-9d95-855d5ef7002b', 'Viettel tặng quà Tết 70 triệu khách hàng', 'Vũ Quốc Tuấn', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<p>Nhà mạng tặng khách hàng Data 4G miễn phí tới 7 GB&nbsp; dịp Tết Canh Tý.&nbsp;</p>\r\n\r\n<article>&nbsp;</article>', '<p><span style=\"font-size:18px\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizespeed\"><span style=\"line-height:28.8px\"><span style=\"color:#222222\"><span style=\"font-family:arial\"><span style=\"font-style:normal\"><span style=\"font-variant-ligatures:normal\"><span style=\"font-variant-caps:normal\"><span style=\"font-weight:400\"><span style=\"letter-spacing:normal\"><span style=\"orphans:2\"><span style=\"text-transform:none\"><span style=\"white-space:normal\"><span style=\"widows:2\"><span style=\"word-spacing:0px\"><span style=\"background-color:#fcfaf6\"><span style=\"text-decoration-thickness:initial\"><span style=\"text-decoration-style:initial\"><span style=\"text-decoration-color:initial\">Với slogan \"Có data, Tết đâu cũng là nhà\", Viettel triển khai chương trình tặng quà data cho 100% khách hàng di động. Chỉ cần nhắn tin \"TET\" gửi 191, người dùng mạng Viettel sẽ được tặng lưu lượng data 4G. Khách hàng có thể nhận lưu lượng data là 7GB/7 ngày, 3GB/3 ngày hoặc 1 GB/1 ngày.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n\r\n<p><span style=\"font-size:18px\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizespeed\"><span style=\"line-height:28.8px\"><span style=\"color:#222222\"><span style=\"font-family:arial\"><span style=\"font-style:normal\"><span style=\"font-variant-ligatures:normal\"><span style=\"font-variant-caps:normal\"><span style=\"font-weight:400\"><span style=\"letter-spacing:normal\"><span style=\"orphans:2\"><span style=\"text-transform:none\"><span style=\"white-space:normal\"><span style=\"widows:2\"><span style=\"word-spacing:0px\"><span style=\"background-color:#fcfaf6\"><span style=\"text-decoration-thickness:initial\"><span style=\"text-decoration-style:initial\"><span style=\"text-decoration-color:initial\">Viettel triển khai chương trình tặng quà data cho 100% khách hàng<br />\r\nViettel triển khai chương trình tặng quà data cho 100% khách hàng</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n\r\n<p><span style=\"font-size:18px\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizespeed\"><span style=\"line-height:28.8px\"><span style=\"color:#222222\"><span style=\"font-family:arial\"><span style=\"font-style:normal\"><span style=\"font-variant-ligatures:normal\"><span style=\"font-variant-caps:normal\"><span style=\"font-weight:400\"><span style=\"letter-spacing:normal\"><span style=\"orphans:2\"><span style=\"text-transform:none\"><span style=\"white-space:normal\"><span style=\"widows:2\"><span style=\"word-spacing:0px\"><span style=\"background-color:#fcfaf6\"><span style=\"text-decoration-thickness:initial\"><span style=\"text-decoration-style:initial\"><span style=\"text-decoration-color:initial\">Thời gian triển khai chương trình từ 23-29 tháng Chạp (tức là từ 17/1 đến 23/1/2020 Dương lịch). Để sử dụng lưu lượng data 4G miễn phí, khách hàng sử dụng máy 4G, Sim 4G và bật chế độ 4G trên máy.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n\r\n<p><span style=\"font-size:18px\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizespeed\"><span style=\"line-height:28.8px\"><span style=\"color:#222222\"><span style=\"font-family:arial\"><span style=\"font-style:normal\"><span style=\"font-variant-ligatures:normal\"><span style=\"font-variant-caps:normal\"><span style=\"font-weight:400\"><span style=\"letter-spacing:normal\"><span style=\"orphans:2\"><span style=\"text-transform:none\"><span style=\"white-space:normal\"><span style=\"widows:2\"><span style=\"word-spacing:0px\"><span style=\"background-color:#fcfaf6\"><span style=\"text-decoration-thickness:initial\"><span style=\"text-decoration-style:initial\"><span style=\"text-decoration-color:initial\">Trước đó, từ tháng 6/2019 Viettel có chương trình chăm sóc khách hàng Viettel++. Chương trình đưa toàn bộ khách hàng vào danh sách chăm sóc thường xuyên để cộng điểm tích lũy để đổi phần thưởng. Tính đến hết tháng 12/2019, &nbsp;9,7 triệu khách hàng đã sử dụng điểm thưởng của Viettel++.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n\r\n<p><span style=\"font-size:18px\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizespeed\"><span style=\"line-height:28.8px\"><span style=\"color:#222222\"><span style=\"font-family:arial\"><span style=\"font-style:normal\"><span style=\"font-variant-ligatures:normal\"><span style=\"font-variant-caps:normal\"><span style=\"font-weight:400\"><span style=\"letter-spacing:normal\"><span style=\"orphans:2\"><span style=\"text-transform:none\"><span style=\"white-space:normal\"><span style=\"widows:2\"><span style=\"word-spacing:0px\"><span style=\"background-color:#fcfaf6\"><span style=\"text-decoration-thickness:initial\"><span style=\"text-decoration-style:initial\"><span style=\"text-decoration-color:initial\">Là nhà mạng sở hữu hạ tầng 3G/4G lớn nhất Việt Nam với hơn 70.000 trạm phát sóng, Viettel Telecom đang có số thuê bao 3G/4G lớn nhất và liên tục tăng trưởng tốt, đặc biệt là thuê bao 4G. Trong 9 tháng năm 2019, số thuê bao 4G Viettel đã tăng lên gấp 2 lần so với năm 2018, đạt 21 triệu thuê bao (chiếm 65% tổng số thuê bao đang sử dụng data trên mạng Viettel).</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n\r\n<p><span style=\"font-size:18px\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizespeed\"><span style=\"line-height:28.8px\"><span style=\"color:#222222\"><span style=\"font-family:arial\"><span style=\"font-style:normal\"><span style=\"font-variant-ligatures:normal\"><span style=\"font-variant-caps:normal\"><span style=\"font-weight:400\"><span style=\"letter-spacing:normal\"><span style=\"orphans:2\"><span style=\"text-transform:none\"><span style=\"white-space:normal\"><span style=\"widows:2\"><span style=\"word-spacing:0px\"><span style=\"background-color:#fcfaf6\"><span style=\"text-decoration-thickness:initial\"><span style=\"text-decoration-style:initial\"><span style=\"text-decoration-color:initial\">Mạng 4G của Viettel sử dụng công nghệ hiện đại&nbsp;<br />\r\nKhách hàng dự một sự kiện của Viettel.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n\r\n<p><span style=\"font-size:18px\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizespeed\"><span style=\"line-height:28.8px\"><span style=\"color:#222222\"><span style=\"font-family:arial\"><span style=\"font-style:normal\"><span style=\"font-variant-ligatures:normal\"><span style=\"font-variant-caps:normal\"><span style=\"font-weight:400\"><span style=\"letter-spacing:normal\"><span style=\"orphans:2\"><span style=\"text-transform:none\"><span style=\"white-space:normal\"><span style=\"widows:2\"><span style=\"word-spacing:0px\"><span style=\"background-color:#fcfaf6\"><span style=\"text-decoration-thickness:initial\"><span style=\"text-decoration-style:initial\"><span style=\"text-decoration-color:initial\">Khai trương vào ngày 18/4/2017, mạng 4G Viettel phủ sóng toàn quốc bằng 36.000 trạm phát sóng 4G sử dụng công nghệ 4T4R (4 phát, 4 thu) hiện đại bậc nhất thế giới. Công nghệ và vùng phủ sóng này đảm bảo khách hàng có thể sử dụng dịch vụ 4G siêu tốc độ, ít hao pin và không bị gián đoạn truy cập cho dù di chuyển đến các khu vực vùng sâu, vùng xa.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n\r\n<p><span style=\"font-size:18px\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizespeed\"><span style=\"line-height:28.8px\"><span style=\"color:#222222\"><span style=\"font-family:arial\"><span style=\"font-style:normal\"><span style=\"font-variant-ligatures:normal\"><span style=\"font-variant-caps:normal\"><span style=\"font-weight:400\"><span style=\"letter-spacing:normal\"><span style=\"orphans:2\"><span style=\"text-transform:none\"><span style=\"white-space:normal\"><span style=\"widows:2\"><span style=\"word-spacing:0px\"><span style=\"background-color:#fcfaf6\"><span style=\"text-decoration-thickness:initial\"><span style=\"text-decoration-style:initial\"><span style=\"text-decoration-color:initial\">Bên cạnh vùng phủ sóng rộng khắp, Viettel còn cho ra mắt 6 gói cước 4G với mức giá rẻ hơn 3G từ 40-60% cùng hàng loạt gói cước chuyên biệt khác. Các gói cước phục vụ nhu cầu công việc, liên lạc và giải trí chất lượng cao trên công nghệ 4G siêu tốc độ.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n\r\n<p><span style=\"font-size:18px\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizespeed\"><span style=\"line-height:28.8px\"><span style=\"color:#222222\"><span style=\"font-family:arial\"><span style=\"font-style:normal\"><span style=\"font-variant-ligatures:normal\"><span style=\"font-variant-caps:normal\"><span style=\"font-weight:400\"><span style=\"letter-spacing:normal\"><span style=\"orphans:2\"><span style=\"text-transform:none\"><span style=\"white-space:normal\"><span style=\"widows:2\"><span style=\"word-spacing:0px\"><span style=\"background-color:#fcfaf6\"><span style=\"text-decoration-thickness:initial\"><span style=\"text-decoration-style:initial\"><span style=\"text-decoration-color:initial\">Năm 2019, Viettel được Tổ chức nghiên cứu và phân tích thị trường hàng đầu thế giới Frost &amp; Sullivan trao giải thưởng \"Nhà cung cấp dịch vụ data di động tốt nhất Việt Nam - 2019\".</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n\r\n<p><span style=\"font-size:18px\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizespeed\"><span style=\"line-height:28.8px\"><span style=\"color:#222222\"><span style=\"font-family:arial\"><span style=\"font-style:normal\"><span style=\"font-variant-ligatures:normal\"><span style=\"font-variant-caps:normal\"><span style=\"font-weight:400\"><span style=\"letter-spacing:normal\"><span style=\"orphans:2\"><span style=\"text-transform:none\"><span style=\"white-space:normal\"><span style=\"widows:2\"><span style=\"word-spacing:0px\"><span style=\"background-color:#fcfaf6\"><span style=\"text-decoration-thickness:initial\"><span style=\"text-decoration-style:initial\"><span style=\"text-decoration-color:initial\">Tháng 10/2019 vừa qua, Viettel Telecom phát đi thông điệp \"Chuyển dịch số - Khởi động hành trình mới\" với mục tiêu trở thành đơn vị có doanh thu dịch vụ số đạt mức ngang bằng với các nhà mạng lớn trên thế giới.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>', NULL, 'http://localhost:8000/uploads/images/image002-1579248319-5013-1579248375.jpg', NULL, NULL, 'viettel-ta-ng-qua-te-t-70-trie-u-kha-ch-ha-ng', 'Viettel tặng quà Tết 70 triệu khách hàng', NULL, NULL, 'index,follow', 'index,follow', 'vi', 19, NULL, '2021-05-17 04:43:19', '2021-05-17 04:43:19'),
-(20, '2a53a1f7-6382-41ea-821f-c6f005de1f1c', 'Vạn Hạnh Mall ưu đãi lớn dịp Tết', 'Vũ Quốc Tuấn', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<p>Người dân du xuân được giảm giá đến 50% từ hơn 200 hãng thời trang, bên cạnh tham gia các hoạt động vui chơi, giải trí.</p>\r\n\r\n<p>&nbsp;</p>', '<p class=\"description\" style=\"padding:0px; text-align:start; text-indent:0px; -webkit-text-stroke-width:0px; margin-bottom:15px\"><span style=\"font-size:18px\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizelegibility\"><span style=\"line-height:28.8px\"><span style=\"font-weight:400\"><span style=\"color:#222222\"><span style=\"font-family:arial\"><span style=\"font-style:normal\"><span style=\"font-variant-ligatures:normal\"><span style=\"font-variant-caps:normal\"><span style=\"letter-spacing:normal\"><span style=\"orphans:2\"><span style=\"text-transform:none\"><span style=\"white-space:normal\"><span style=\"widows:2\"><span style=\"word-spacing:0px\"><span style=\"background-color:#fcfaf6\"><span style=\"text-decoration-thickness:initial\"><span style=\"text-decoration-style:initial\"><span style=\"text-decoration-color:initial\">Người dân du xuân được giảm giá đến 50% từ hơn 200 hãng thời trang, bên cạnh tham gia các hoạt động vui chơi, giải trí.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n\r\n<article class=\"fck_detail \" style=\"padding:0px; box-sizing:border-box; text-rendering:optimizelegibility; width:670px; float:left; position:relative; font:400 18px / 28.8px arial; color:#222222; letter-spacing:normal; orphans:2; text-align:start; text-indent:0px; text-transform:none; white-space:normal; widows:2; word-spacing:0px; -webkit-text-stroke-width:0px; background-color:#fcfaf6; text-decoration-thickness:initial; text-decoration-style:initial; text-decoration-color:initial\">\r\n<div class=\"WordSection1\" style=\"padding:0px\">\r\n<p class=\"Normal\" style=\"padding:0px; margin-bottom:13px\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizelegibility\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizespeed\"><span style=\"line-height:28.8px\">Theo đại diện trung tâm thương mại Vạn Hạnh Mall, để phục vụ khách hàng đến tham quan, mua sắm trong dịp lễ lớn nhất năm,&nbsp;hơn 50 nhà hàng ẩm thực cùng các cụm vui chơi quy mô đã sẵn sàng đón du khách.</span></span></span></span></span></p>\r\n\r\n<p class=\"Normal\" style=\"padding:0px; margin-bottom:13px\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizelegibility\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizespeed\"><span style=\"line-height:28.8px\"><span style=\"padding:0px; box-sizing:border-box\"><span style=\"text-rendering:optimizelegibility\"><span style=\"color:#222222\">Sự kiện giảm giá áo dài duy nhất trong năm mang tên \"Ngày hội áo dài\" diễn ra tại tầng 1 đến hết ngày 19/1. Trong đó giảm giá tới 50% các sản phẩm của các thương hiệu áo dài nổi tiếng trong nước như OLV, F2 Fashion, Parity, Joven, MCA, S-Line</span></span></span><span style=\"padding:0px; box-sizing:border-box\"><span style=\"text-rendering:optimizelegibility\"><span style=\"color:#222222\">. Đồng thời,</span></span></span><span style=\"padding:0px; box-sizing:border-box\"><span style=\"text-rendering:optimizelegibility\"><span style=\"color:#222222\">&nbsp;một số hãng thời trang trong nước và quốc tế như Mujosh, Aojo, Aldo, Gumac, Marc... cũng giảm giá sâu hoặc lì xì khách hàng.</span></span></span></span></span></span></span></span></p>\r\n\r\n<p style=\"padding:0px; margin-bottom:13px\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizelegibility\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizespeed\"><span style=\"line-height:28.8px\">Dịp này khách có hóa đơn mua sắm tại các cửa hàng Vạn Hạnh Mall còn được tham gia chương trình khuyến mãi rút thăm&nbsp;<a href=\"https://vanhanhmall.com/the-le-chuong-trinh-khuyen-mai-rut-thamtrung-thuong/\" rel=\"nofollow\" style=\"padding:0px; box-sizing:border-box; text-rendering:optimizelegibility; color:#076db6; text-decoration:underline; position:relative; text-underline-position:under\" target=\"_blank\">trúng thưởng</a>&nbsp;từ nay đến 19/1.</span></span></span></span></span></p>\r\n\r\n<figure class=\"tplCaption action_thumb_added\" data-size=\"true\" itemprop=\"associatedMedia image\" itemscope=\"\" itemtype=\"http://schema.org/ImageObject\" style=\"padding:0px; box-sizing:border-box; text-rendering:optimizelegibility; max-width:100%; clear:both; position:relative; text-align:center; width:670px; float:left; margin-bottom:15px\">\r\n<div class=\"fig-picture\" style=\"padding:0px 0px 280px; width:669.6px; text-align:center\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizelegibility\"><span style=\"background:#f0eeea\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizelegibility\"><span style=\"float:left\"><span style=\"display:table\"><span style=\"justify-content:center\"><span style=\"position:relative\"><picture style=\"padding:0px; box-sizing:border-box; text-rendering:optimizelegibility\"><source data-srcset=\"https://i1-kinhdoanh.vnecdn.net/2020/01/17/gu-2736-1579231481.png?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=jRXQRjET8t9ON6ZN02JShA 1x, https://i1-kinhdoanh.vnecdn.net/2020/01/17/gu-2736-1579231481.png?w=1020&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=IhAT17bpfOD0omb_m0cuaQ 1.5x, https://i1-kinhdoanh.vnecdn.net/2020/01/17/gu-2736-1579231481.png?w=680&amp;h=0&amp;q=100&amp;dpr=2&amp;fit=crop&amp;s=VW59pRCo4qON71s-2UCHCw 2x\" srcset=\"https://i1-kinhdoanh.vnecdn.net/2020/01/17/gu-2736-1579231481.png?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=jRXQRjET8t9ON6ZN02JShA 1x, https://i1-kinhdoanh.vnecdn.net/2020/01/17/gu-2736-1579231481.png?w=1020&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=IhAT17bpfOD0omb_m0cuaQ 1.5x, https://i1-kinhdoanh.vnecdn.net/2020/01/17/gu-2736-1579231481.png?w=680&amp;h=0&amp;q=100&amp;dpr=2&amp;fit=crop&amp;s=VW59pRCo4qON71s-2UCHCw 2x\" style=\"padding:0px; box-sizing:border-box; text-rendering:optimizelegibility\" /><img alt=\"Một góc khu mua sắm tầng 1 trong sự kiện Ngày hội áo dài.\" class=\"lazy lazied\" data-ll-status=\"loaded\" data-src=\"https://i1-kinhdoanh.vnecdn.net/2020/01/17/gu-2736-1579231481.png?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=jRXQRjET8t9ON6ZN02JShA\" intrinsicsize=\"680x0\" itemprop=\"contentUrl\" loading=\"lazy\" src=\"https://i1-kinhdoanh.vnecdn.net/2020/01/17/gu-2736-1579231481.png?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=jRXQRjET8t9ON6ZN02JShA\" style=\"padding:0px; box-sizing:border-box; text-rendering:optimizelegibility; border:0px; font-size:0px; line-height:0; max-width:100%; position:absolute; top:0px; left:85px; max-height:700px; width:500px\" /></picture></span></span></span></span></span></span></span></span></span></div>\r\n\r\n<figcaption itemprop=\"description\" style=\"padding:0px; box-sizing:border-box; text-rendering:optimizelegibility; width:670px; float:left; text-align:left\">\r\n<p class=\"Image\" style=\"padding:10px 0px 0px; text-align:left\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizelegibility\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizespeed\"><span style=\"font:400 14px / 22.4px arial\"><span style=\"color:#222222\">Một góc khu mua sắm tầng 1 trong sự kiện \"Ngày hội áo dài\".</span></span></span></span></span></span></p>\r\n</figcaption>\r\n</figure>\r\n\r\n<p style=\"padding:0px; margin-bottom:13px\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizelegibility\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizespeed\"><span style=\"line-height:28.8px\">Hiện đơn vị đã trang trí trung tâm thương mại, phía mặt tiền tòa nhà và hai cổng vào với chủ đề \"Rộn ràng sắc Xuân\".</span></span></span></span></span></p>\r\n\r\n<p style=\"padding:0px; margin-bottom:13px\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizelegibility\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizespeed\"><span style=\"line-height:28.8px\">\"Chúng tôi lựa chọn tông đỏ, vàng xanh và các hình ảnh tượng trưng cho dịp Tết như cây mai, cây đào, nón lá nhằm giúp khách tham quan, mua sắm tận hưởng không khí Xuân và thoải mái lưu lại những khoảnh khắc đáng nhớ bên gia đình, người thân\", vị đại diện nói.</span></span></span></span></span></p>\r\n</div>\r\n</article>', NULL, 'http://localhost:8000/uploads/images/g-1579231395-3551-1579231482.png', NULL, NULL, 'van-hanh-mall-uu-dai-lon-dip-tet', 'Vạn Hạnh Mall ưu đãi lớn dịp Tết', NULL, NULL, 'index,follow', 'index,follow', 'vi', 20, NULL, '2021-05-17 04:45:00', '2021-05-17 04:45:00'),
-(21, '14e85fd7-6814-42ea-b25b-3e15e578dc36', 'Samsung tổ chức chuỗi ưu đãi tri ân khách hàng', 'Vũ Quốc Tuấn', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<p>Chương trình giảm giá, tặng quà kéo dài đến hết tháng 9 nhằm tri ân khách hàng nhân kỷ niệm sinh nhật lần thứ 50.</p>', '<p>Với chương trình \"Vinh danh 50 chủ sở hữu TV Samsung lâu đời nhất\", 50 người dùng sở hữu một trong 5 dòng sản phẩm Bordeaux LCD, LED, Smart, 3D, Curved UHD đăng ký tham dự chương trình sớm nhất sẽ may mắn nhận 50 giải thưởng. Mỗi giải là một chiếc Smart TV 4K UHD 50 inch RU7400 phiên bản 2019 trị giá 18,4 triệu đồng.</p>\r\n\r\n<p>Ông Nguyễn Minh Tâm - Giám đốc ngành hàng điện tử tiêu dùng cho biết, hơn 10 năm trước, Samsung mang đến thị trường Việt Nam những chiếc TV LCD chất lượng. Trong dịp sinh nhật lần này, với mong muốn truyền tải thông điệp \"Tất cả vì bạn\", doanh nghiệp tặng những chiếc TV 4K mới nhất giúp khách hàng Việt có thể trải nghiệm đỉnh cao công nghệ trên thế giới\".</p>\r\n\r\n<figure data-size=\"true\" itemprop=\"associatedMedia image\" itemscope=\"\" itemtype=\"http://schema.org/ImageObject\"><img alt=\"Chương trình Vinh danh 50 chủ sở hữu TV Samsung lâu đời nhất tặng 50 tivi cho khách hàng.\" data-ll-status=\"loaded\" data-src=\"https://i1-kinhdoanh.vnecdn.net/2019/08/21/Anh-2-2402-1566361855.jpg?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=i_6LH5jmPtDTIsaAcDW2fA\" intrinsicsize=\"680x0\" itemprop=\"contentUrl\" loading=\"lazy\" src=\"https://i1-kinhdoanh.vnecdn.net/2019/08/21/Anh-2-2402-1566361855.jpg?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=i_6LH5jmPtDTIsaAcDW2fA\" />\r\n<figcaption itemprop=\"description\">\r\n<p>Chương trình \"Vinh danh 50 chủ sở hữu TV Samsung lâu đời nhất\" tặng 50 tivi cho khách hàng.</p>\r\n</figcaption>\r\n</figure>\r\n\r\n<p>Bên cạnh đó, Samsung cũng tặng 1.000 chiếc One Remote TV đa nhiệm được chạm khắc độc quyền cho 1.000 khách hàng đăng ký nhận quà đầu tiên trên toàn quốc. Chiếc remote đa nhiệm này có thiết kế gọn nhẹ, tích hợp tối giản các phím số, các phím chức năng. Ngoài sử dụng để điều khiển tivi, bạn còn có thể sử dụng cho đầu thu kỹ thuật số, loa, dàn âm thanh... khi kết nối với TV Samsung qua cáp HDMI.</p>\r\n\r\n<figure data-size=\"true\" itemprop=\"associatedMedia image\" itemscope=\"\" itemtype=\"http://schema.org/ImageObject\"><img alt=\"50 năm có mặt tại thị trường Việt Nam, Sumsung mang đến nhiều sản phẩm chất lượng.\" data-ll-status=\"loaded\" data-src=\"https://i1-kinhdoanh.vnecdn.net/2019/08/21/Anh-3-9027-1566361855.jpg?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=p9-7PeGNNKGBgWUKEIpYhw\" intrinsicsize=\"680x0\" itemprop=\"contentUrl\" loading=\"lazy\" src=\"https://i1-kinhdoanh.vnecdn.net/2019/08/21/Anh-3-9027-1566361855.jpg?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=p9-7PeGNNKGBgWUKEIpYhw\" />\r\n<figcaption itemprop=\"description\">\r\n<p>Chiếc One Remote TV đa nhiệm.</p>\r\n</figcaption>\r\n</figure>\r\n\r\n<p>Ngoài ra, hãng cũng triển khai chương trình \"Đặc quyền vàng 50 năm, ưu đãi lên đến 50%\". Khách hàng mua tivi Samsung tại điện máy Pico được giảm giá lên đến 50%, trong đó, tivi QLED cao cấp được giảm trực tiếp 30%. Cơ hội này chỉ áp dụng trong tháng 8 và 9 khi mua TV Samsung tại Điện máy Pico.&nbsp;</p>\r\n\r\n<p>Từ ngày 15/8 đến ngày 15/9, khách hàng còn có cơ hội ngẫu nhiên nhận phiếu giảm giá lên đến 50% khi đăng ký thông tin tham gia chương trình \"Đặc quyền vàng 50 năm\" tại&nbsp;<a href=\"http://www.samsung.com/vn/offer/tv-so-1-the-gioi/dac-quyen-vang-50-nam.\" rel=\"nofollow\" target=\"_blank\">website</a>.</p>\r\n\r\n<figure data-size=\"true\" itemprop=\"associatedMedia image\" itemscope=\"\" itemtype=\"http://schema.org/ImageObject\"><img alt=\"Nhiều ưu đãi khi mua tivi Samsung.\" data-ll-status=\"loaded\" data-src=\"https://i1-kinhdoanh.vnecdn.net/2019/08/21/Anh-4-6672-1566361856.jpg?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=bXnTnYJEaJNz7jR1lLl9MQ\" intrinsicsize=\"680x0\" itemprop=\"contentUrl\" loading=\"lazy\" src=\"https://i1-kinhdoanh.vnecdn.net/2019/08/21/Anh-4-6672-1566361856.jpg?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=bXnTnYJEaJNz7jR1lLl9MQ\" />\r\n<figcaption itemprop=\"description\">\r\n<p>Nhiều ưu đãi khi mua tivi Samsung.</p>\r\n</figcaption>\r\n</figure>\r\n\r\n<p>Từ 15/8 đến hết ngày 30/9, Samsung gửi đến khách hàng mua TV gói ứng dụng giải trí gồm: Fim+ - gói quà tặng xem độc quyền kho phim chiếu rạp mới nhất không giới hạn (50 phim TVOD) và nội dung chất lượng 4K trị giá lên đến 4,52 triệu đồng; 30 ngày sử dụng miễn phí HBO GO trực tuyến trên FPT Play.</p>\r\n\r\n<p>Khách hàng được tặng 12 tháng xem miễn phí toàn bộ nội dung bao gồm live TV và VOD trong gói Gia đình của ClipTV; độc quyền nội dung giải trí giáo dục an toàn cho bé với 120 bài tiếng anh theo giáo trình Cambridge của VUS trên Pops Kids.</p>\r\n\r\n<figure data-size=\"true\" itemprop=\"associatedMedia image\" itemscope=\"\" itemtype=\"http://schema.org/ImageObject\">\r\n<p>&nbsp;</p>\r\n<img alt=\"Pico giảm giá đến 50% tivi Samsung.\" data-ll-status=\"loaded\" data-src=\"https://i1-kinhdoanh.vnecdn.net/2019/08/21/ANH-1-4624-1566361856.jpg?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=k-XPTTNIgRt5UwBhkoUi9A\" intrinsicsize=\"680x0\" itemprop=\"contentUrl\" loading=\"lazy\" src=\"https://i1-kinhdoanh.vnecdn.net/2019/08/21/ANH-1-4624-1566361856.jpg?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=k-XPTTNIgRt5UwBhkoUi9A\" />\r\n<figcaption itemprop=\"description\">\r\n<p>Pico giảm giá đến 50% tivi Samsung.</p>\r\n</figcaption>\r\n</figure>\r\n\r\n<p>Song song các chương trình trên, khách hàng mua TV Samsung tại Điện máy Pico trên toàn quốc sẽ có cơ hội trúng 50 TV 50 inch cùng các quà tặng có giá trị như nồi lẩu Elmich trị giá 1,05 triệu đồng đồng. Người mua TV QLED 8K Q900R sẽ được tặng điện thoại Samsung GalaxyS10+ trị giá 22,99 triệu đồng, bộ loa thanh Samsung Harman/Kardon Q90R trị giá 29,99 triệu đồng cùng với gói 8K VIP Care.</p>', NULL, 'http://localhost:8000/uploads/images/anh-2-1566361772-6339-1566361859.png', NULL, NULL, 'samsung-to-chuc-chuoi-uu-dai-tri-an-khach-hang', 'Samsung tổ chức chuỗi ưu đãi tri ân khách hàng', NULL, NULL, 'index,follow', 'index,follow', 'vi', 21, NULL, '2021-05-17 04:46:24', '2021-05-17 04:46:24');
+(13, 'bedaedf1-3a93-4db1-ad73-9c4f23886054', 'Cộng Tác Viên Giao Hàng Lắp Đặt Điện Máy Xanh', 'Trần Thanh Luân', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<ul>\r\n	<li>Nơi làm việc<strong>26 tỉnh thành</strong></li>\r\n	<li>Cấp bậc:<strong>Cộng tác viên</strong></li>\r\n	<li>Hình thức:<strong>Cộng tác viên/Thời vụ/ Bán thời gian</strong></li>\r\n	<li>Bằng cấp:<strong>Không yêu cầu</strong></li>\r\n	<li>Kinh nghiệm:<strong>Không cần kinh nghiệm</strong></li>\r\n	<li>Thu nhập:<strong>7 - 10 Triệu</strong></li>\r\n</ul>', '<h2>MÔ TẢ CÔNG VIỆC</h2>\r\n\r\n<p>Công việc của bạn sẽ linh hoạt giữa việc Tư vấn bán hàng cho KH và Giao nhận lắp đặt sản phẩm cho KH khi cần, cụ thể:<br />\r\n- Tư vấn các sản phẩm điện tử điện lạnh gia dụng<br />\r\n- Mang sản phẩm đến tận nhà cho Khách Hàng, hỗ trợ thông tin, hướng dẫn cách sử dụng sản phẩm.<br />\r\n- Hỗ trợ khách hàng thủ tục thanh toán và thu tiền hàng hoá.<br />\r\n- Tư vấn linh kiện phục vụ việc lắp đặt các thiết bị Điện Tử, Điện Lạnh cho Khách Hàng.<br />\r\n- Lắp đặt, bảo trì các thiết bị Điện Tử, Điện Lạnh theo yêu cầu Khách Hàng.<br />\r\n- Được đào tạo chuyên môn trước khi làm việc.</p>\r\n\r\n<h2>YÊU CẦU CÔNG VIỆC</h2>\r\n\r\n<p>- Nam, tuổi từ 20 đến 30, sức khỏe tốt.</p>\r\n\r\n<p>- Có xe máy, có Smartphone</p>\r\n\r\n<p>- Nếu bạn chưa có kinh nghiệm, chỉ cần bạn yêu thích công việc này công ty sẽ đào tạo cho bạn&nbsp;</p>\r\n\r\n<p>- Có tính kỷ luật, trách nhiệm và nghiêm túc trong công việc&nbsp;</p>\r\n\r\n<h2>QUYỀN LỢI</h2>\r\n\r\n<p>- Môi trường làm việc thân thiện chuyên nghiệp<br />\r\n- Được hướng dẫn đào tạo từ Công ty và Quản lý trực tiếp<br />\r\n- Cơ hội học hỏi, tiếp xúc với quy trình làm việc chuyên nghiệp<br />\r\n- Cơ hội lên nhân viên chính thức</p>', NULL, 'http://localhost:8000/uploads/images/banner-dmx-new-campaign2.jpg', NULL, NULL, 'cong-tac-vien-giao-hang-lap-dat-dien-may-xanh', 'Cộng Tác Viên Giao Hàng Lắp Đặt Điện Máy Xanh', NULL, NULL, 'index,follow', 'index,follow', 'vi', 13, NULL, '2021-05-17 04:35:23', '2021-05-17 04:35:23'),
+(14, '875c33df-c927-45c5-a7c5-7cf24a895d7f', 'Nhân viên siêu thị Điện Máy Xanh mô hình Supermini', 'Trần Thanh Luân', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<ul>\r\n	<li>Nơi làm việc<strong>TP.HCM và 45 tỉnh thành khác</strong></li>\r\n	<li>Cấp bậc:<strong>Nhân viên</strong></li>\r\n	<li>Hình thức:<strong>Việc làm theo Ca</strong></li>\r\n	<li>Bằng cấp:<strong>THPT</strong></li>\r\n	<li>Kinh nghiệm:<strong>Không cần kinh nghiệm</strong></li>\r\n	<li>Thu nhập:<strong>7 - 10 triệu</strong></li>\r\n</ul>', '<h2>MÔ TẢ CÔNG VIỆC</h2>\r\n\r\n<p>- Làm việc tại các siêu thị Điện Máy Xanh Supermini (cửa hàng có sắp xếp tinh gọn về vận hành với diện tích chỉ tầm 1/2 Điện Máy Xanh nhỏ).</p>\r\n\r\n<p>- Bạn sẽ trở thành nhân viên đa nhiệm, đa năng (gia tăng năng suất, một nhân viên làm tất cả các việc, sử dụng tối đa tác nghiệp qua smartphone). Cụ thể:</p>\r\n\r\n<p>+ Tư vấn bán hàng, hỗ trợ và hướng dẫn Khách Hàng đến tham quan và mua sắm</p>\r\n\r\n<p>+ Quản lý, sắp xếp, trưng bày hàng hóa tại siêu thị&nbsp;</p>\r\n\r\n<p>+ Hỗ trợ cài đặt phần mềm, hình ảnh, nhạc cho sản phẩm</p>\r\n\r\n<p>+ Thu tiền hàng hóa, thu hộ tiền điện, nước, internet, làm sim, trực tiếp dán và trang trí sản phẩm cho khách hàng</p>\r\n\r\n<p>+ Giao hàng tại nhà cho Khách (không lắp đặt)</p>\r\n\r\n<p>- Ca làm việc chủ yếu: Ca Xoay (08:00-15:00 và 15:00-22:00)</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h2>YÊU CẦU CÔNG VIỆC</h2>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>- Bạn tốt nghiệp THPT trở lên và có ngoại hình khá.<b>&nbsp;Ưu tiên NAM</b></p>\r\n\r\n<p>- Tuổi từ 18 - 27 tuổi.</p>\r\n\r\n<p>- Bạn là người vui vẻ, thân thiện, cởi mở với mọi người, giao tiếp tự tin.</p>\r\n\r\n<p>- Có niềm đam mê, có kiến thức công nghệ và mong muốn được chia sẻ kiến thức cho khách hàng.</p>\r\n\r\n<p>- Bạn là người cẩn thận, tỉ mỉ, trung thực.</p>\r\n\r\n<p>- Bạn mong muốn gắn bó lâu dài với công ty và khát khao phát triển.&nbsp;</p>\r\n\r\n<h2>QUYỀN LỢI</h2>\r\n\r\n<p>- Làm việc tại tập đoàn bán lẻ hàng đầu Việt Nam</p>\r\n\r\n<p>- Môi trường làm việc chuyên nghiệp, lớn mạnh</p>\r\n\r\n<p>- Cơ hội thăng tiến, phát triển bản thân</p>\r\n\r\n<p>- Ký HĐLĐ, Phúc lợi đầy đủ tăng dần</p>\r\n\r\n<p>- Thưởng cuối năm hấp dẫn, lên đến 3 tháng - số liệu 2018,2019</p>\r\n\r\n<h2>LƯU Ý</h2>\r\n\r\n<p>-&nbsp; Ứng viên có Smartphone, có Xe máy là phương tiện di chuyển</p>', NULL, 'http://localhost:8000/uploads/images/banner-dmx-new-campaign2.jpg', NULL, NULL, 'nhan-vien-sieu-thi-dien-may-xanh-mo-hinh-supermini', 'Nhân viên siêu thị Điện Máy Xanh mô hình Supermini', NULL, NULL, 'index,follow', 'index,follow', 'vi', 14, NULL, '2021-05-17 04:36:18', '2021-05-17 04:36:18'),
+(15, 'dcf52a4c-673e-4a66-bae9-1b7529789c3d', 'Thực tập sinh Kế Toán - Accountant Fresher 2021', 'Trần Thanh Luân', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<ul>\r\n	<li>Nơi làm việc<strong>Trụ sở quận 9, TP.HCM&nbsp;</strong></li>\r\n	<li>Cấp bậc:<strong>Thực tập</strong></li>\r\n	<li>Hình thức:<strong>Sinh viên mới tốt nghiệp/ Thực tập</strong></li>\r\n	<li>Bằng cấp:<strong>Đại học</strong></li>\r\n	<li>Kinh nghiệm:<strong>Không cần kinh nghiệm</strong></li>\r\n	<li>Thu nhập:<strong>Có hỗ trợ thu nhập</strong></li>\r\n</ul>', '<p>MWG Accountant Fresher mùa 4 - Thực tập sinh Kế Toán tiềm năng chính thức khởi động tháng 4 này mang tên:</p>\r\n\r\n<p><strong>MWG Passport 2021 - A Journey to touch you dream!</strong></p>\r\n\r\n<p>MWG Passport 2021 là chương trình trao cơ hội cho các bạn sinh viên trẻ tiếp tục hành trình chinh phục ước mơ trở thành một Accountant chuyên nghiệp. Cơ hội để trải nghiệm, học tập và trở thành \"bàn tay vàng trong làng kế toán\" với hơn 500 Accountants vững nghiệp vụ, giỏi chuyên môn của tập đoàn bán lẻ hàng đầu Việt Nam. MWG sẵn sàng đào tạo và trao cho bạn cơ hội để thể hiện năng lực của chính mình.</p>\r\n\r\n<h2>Giá trị nổi bật:</h2>\r\n\r\n<p>- Được học tập và trải nghiệm làm việc tại trụ sở MWG - Tập đoàn bán lẻ hàng đầu Việt Nam</p>\r\n\r\n<p>- Được đào Tạo về văn hoá công ty, chuyên môn nghiệp vụ, đào tạo các kỹ năng mềm</p>\r\n\r\n<p>- Thời gian thử thách tối thiểu 03 tháng, làm việc tối thiểu 04 ngày/tuần (tương đương trên 100 giờ công/ tháng).</p>\r\n\r\n<p>- Đặc biệt nhận được<b>&nbsp;</b>học bổng đào tạo lên tới 6 triệu/ 3 tháng. Tương đương 2 triệu/ tháng nếu đáp ứng được giờ làm việc chuẩn và năng lực học việc.</p>\r\n\r\n<p>- Cơ hội trở thành nhân viên Kế toán chính thức sau khi hoàn thành chương trình thực tập</p>\r\n\r\n<h2>Điều kiện tham gia chương trình:</h2>\r\n\r\n<p>- Nam Nữ, sinh viên&nbsp;Đại học&nbsp;năm cuối hoặc vừa mới tốt nghiệp các khoa: Kế Toán, Kiểm Toán, Tài Chính, hoặc các ngành có liên quan,...không quá 6 tháng kinh nghiệm nếu đã đi làm.</p>\r\n\r\n<p>- Có điểm TB tích luỹ&nbsp;GPA tương đương Khá - Giỏi trở lên&nbsp;( &gt; 7.0 điểm và tương đương)</p>\r\n\r\n<p>- Thời gian thực tập&nbsp;tối thiểu 03 tháng, làm việc tối thiểu 04 ngày/tuần&nbsp;(tương đương trên 100 giờ công/ tháng).</p>\r\n\r\n<p>- Là bạn trẻ có tinh thần ham học hỏi, yêu nghề Kế toán</p>\r\n\r\n<p>- Có niềm yêu thích với các con số; Sử dụng tốt excel, các hàm thông dụng</p>\r\n\r\n<p>- Có kiến thức tốt chuyên ngành kế toán, am hiểu luật về thuế, luật kế toán,…</p>\r\n\r\n<p>- Bạn cẩn thận, tỉ mỉ, trung thực; Có trách nhiệm và cầu tiến.</p>\r\n\r\n<p>- Sẵn sàng làm việc địa điểm ngoài Hồ Chí Minh cũng là lợi thế (di chuyển về quê làm việc)</p>\r\n\r\n<h2>Kinh nghiệm học được:</h2>\r\n\r\n<p>- Được đào tạo các công việc, nghiệp vụ kế toán liên quan của thế giới di động, điện máy xanh, bách hoá xanh</p>\r\n\r\n<p>- Trực tiếp làm việc các công việc kế toán nội bộ, nghiệp vụ, chiết khấu,...</p>\r\n\r\n<p>- Hỗ trợ các công việc do anh chị nhân viên dày dặn kinh nghiệm hướng dẫn</p>\r\n\r\n<h2>Lộ trình của Accountant Fresher</h2>\r\n\r\n<p>Vòng 1. Register - Đăng ký</p>\r\n\r\n<p>1. Đăng ký hồ sơ Online</p>\r\n\r\n<p>2. Đính kèm CV cá nhân</p>\r\n\r\n<p>3. Ghi rõ trong mục Giới thiệu bản thân về các câu hỏi:</p>\r\n\r\n<p>+ Giới thiệu bản thân</p>\r\n\r\n<p>+ Lý do bạn tham gia chương trình</p>\r\n\r\n<p>+ Mục tiêu nghề nghiệp tương lai của bạn</p>\r\n\r\n<p><em>Lưu ý: mục Giới thiệu bản thân sẽ là yếu tố được xem xét và sàng lọc kỹ lưỡng bởi Phòng Nhân Sự. Hãy thể hiện bạn xứng đáng được check-in chương trình nhé !</em></p>\r\n\r\n<p>Vòng 2. Check In</p>\r\n\r\n<p>1. Tham quan trụ sở MWG</p>\r\n\r\n<p>2. Hội thảo: \" Nghề Kế Toán\"</p>\r\n\r\n<p>Vòng 3: Sercurity Check: Phỏng vấn chuyên môn</p>\r\n\r\n<p>1. Làm bài Test năng lực Kế Toán và Test IQ/EQ/AQ</p>\r\n\r\n<p>2. Phỏng vấn với Phòng Nhân sự và Bộ phận Kế Toán chuyên môn</p>\r\n\r\n<p>Vòng 4. Flight : Hành trình chạm tới giấc mơ</p>\r\n\r\n<p>1. Bổ sung giấy tờ hồ sơ cá nhân</p>\r\n\r\n<p>2. Nhận việc và Onboarding</p>\r\n\r\n<p>3. Kèm cặp và hướng dẫn</p>\r\n\r\n<p>Chúc bạn thành công và trải nghiệm MWG Passport xứng tầm !</p>', NULL, 'http://localhost:8000/uploads/images/banner-tgdd-new-campaign2.jpg', NULL, NULL, 'thuc-tap-sinh-ke-toan-accountant-fresher-2021', 'Thực tập sinh Kế Toán - Accountant Fresher 2021', NULL, NULL, 'index,follow', 'index,follow', 'vi', 15, NULL, '2021-05-17 04:37:13', '2021-05-17 04:37:13'),
+(16, '8950d9b5-5311-4acd-b1b5-4375537ebd6e', 'Nhân viên Tư Vấn Bán Hàng Nhà Thuốc An Khang', 'Trần Thanh Luân', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<ul>\r\n	<li>Cấp bậc:<strong>Nhân viên</strong></li>\r\n	<li>Hình thức:<strong>Việc làm theo Ca</strong></li>\r\n	<li>Bằng cấp:<strong>Trung cấp/ Cao đẳng/ Đại học</strong></li>\r\n	<li>Kinh nghiệm:<strong>Trên 3 tháng</strong></li>\r\n	<li>Thu nhập:<strong>TB 5 - 8 Triệu</strong></li>\r\n</ul>', '<h2>MÔ TẢ CÔNG VIỆC</h2>\r\n\r\n<p dir=\"ltr\">Bán và hướng dẫn cách sử dụng thuốc</p>\r\n\r\n<p dir=\"ltr\">- Bán thuốc, Dược phẩm, Thực phẩm chức năng và các sản phẩm tại Nhà thuốc An Khang</p>\r\n\r\n<p dir=\"ltr\">- Trực tiếp giao dịch, thanh toán hóa đơn cho Khách Hàng.</p>\r\n\r\n<p dir=\"ltr\">- Hướng dẫn và giải đáp cho Khách hàng những thông tin liên quan đến Dược phẩm, Thực phẩm chức năng.</p>\r\n\r\n<p dir=\"ltr\">Bảo quản hàng hóa và tài sản Nhà thuốc</p>\r\n\r\n<p dir=\"ltr\">- Giữ nhà thuốc sạch sẽ, ngăn nắp, sắp xếp thuốc đúng vị trí.</p>\r\n\r\n<p dir=\"ltr\">- Cập nhật kiến thức về thuốc đảm bảo tư vấn thuốc đúng.</p>\r\n\r\n<p dir=\"ltr\">- Có trách nhiệm bảo quản Dược phẩm và sắp xếp/ vệ sinh khuôn viên nhà thuốc sạch sẽ, gọn gàng, tuân thủ các quy định về Y tế, ngành Dược và của Công ty.</p>\r\n\r\n<p dir=\"ltr\">- Thực hiện một số công việc khác theo sự phân công của quản lý</p>\r\n\r\n<h2>YÊU CẦU CÔNG VIỆC</h2>\r\n\r\n<p>- Nam/ Nữ thân thiện, dễ nhìn, từ 20 tuổi trở lên.</p>\r\n\r\n<p dir=\"ltr\">- Tốt nghiệp Trung cấp/ Cao đẳng/Đại học chuyên ngành Dược.</p>\r\n\r\n<p dir=\"ltr\">- Có kinh nghiệm ít nhất 03 tháng đứng bán tại Nhà thuốc là lợi thế</p>\r\n\r\n<p dir=\"ltr\">- Trung thực, hoạt bát, vui vẻ hòa đồng.</p>\r\n\r\n<p dir=\"ltr\">- Thân thiện, yêu nghề Dược, chú trọng phục vụ KH</p>\r\n\r\n<p dir=\"ltr\">- Ham học hỏi những kiến thức mới, chú trọng trau dồi chuyên môn Dược</p>\r\n\r\n<p dir=\"ltr\">- Làm việc Ca XOAY linh hoạt: 07h - 22h. Trung bình 8h/ngày, các ngày trong tuần từ Thứ 2 đến Chủ Nhật:</p>\r\n\r\n<p dir=\"ltr\">+ Ca 1: 7g00 - 15g00</p>\r\n\r\n<p dir=\"ltr\">+ Ca 2: 15g00 - 22g00</p>\r\n\r\n<p dir=\"ltr\">- Thu nhập trung bình 6,5 triệu/tháng, tăng theo hiệu quả làm việc và giờ công.</p>\r\n\r\n<h2>QUYỀN LỢI</h2>\r\n\r\n<p>- Làm việc tại Tập đoàn Bán lẻ hàng đầu Việt Nam.</p>\r\n\r\n<p dir=\"ltr\">- Môi trường làm việc chuyên nghiệp, thân thiện, năng động.</p>\r\n\r\n<p dir=\"ltr\">- Cơ hội thăng tiến, phát triển bản thân với lộ trình rõ ràng.</p>\r\n\r\n<p dir=\"ltr\">- Được hướng dẫn, đào tạo kiến thức chuyên môn.</p>\r\n\r\n<p dir=\"ltr\">- Phúc lợi dành riêng cho nhân viên (Bảo hiểm sức khỏe đặc biệt, mua hàng ưu đãi,...)</p>\r\n\r\n<p dir=\"ltr\">- Văn hóa công ty với 5 Giá trị cốt lõi là trọng tâm</p>\r\n\r\n<p dir=\"ltr\">- Lương thưởng cuối năm hấp dẫn, nghỉ phép năm,...</p>', NULL, 'http://localhost:8000/uploads/images/banner-ank-new-campaign2.jpg', NULL, NULL, 'nhan-vien-tu-van-ban-hang-nha-thuoc-an-khang', 'Nhân viên Tư Vấn Bán Hàng Nhà Thuốc An Khang', NULL, NULL, 'index,follow', 'index,follow', 'vi', 16, NULL, '2021-05-17 04:38:06', '2021-05-17 04:39:45'),
+(17, 'a5766ee5-2859-482b-b9ab-d22950626ab4', 'Nhân viên Content/ SEO sản phẩm TGDĐ/ĐMX', 'Trần Thanh Luân', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<ul>\r\n	<li>Nơi làm việc<strong>Trụ sở quận 9, TP.HCM&nbsp;</strong></li>\r\n	<li>Cấp bậc:<strong>Nhân viên</strong></li>\r\n	<li>Hình thức:<strong>Việc làm Giờ Hành Chánh</strong></li>\r\n	<li>Bằng cấp:<strong>Cao Đẳng/ Đại Học</strong></li>\r\n	<li>Kinh nghiệm:<strong>Không cần kinh nghiệm</strong></li>\r\n	<li>Thu nhập:<strong>Thỏa thuận</strong></li>\r\n</ul>', '<h2>MÔ TẢ CÔNG VIỆC</h2>\r\n\r\n<p>Ứng viên có thể chọn 1 trong 5 vị trí bên dưới: (viết rõ trong phần giới thiệu bản thân khi ứng tuyển)</p>\r\n\r\n<p><strong>Vị trí 1:&nbsp;Biên tập Nội dung Sản phẩm TGDD &amp; DMX</strong></p>\r\n\r\n<p>- Làm bài viết, hình ảnh, thông số kỹ thuật SP</p>\r\n\r\n<p>-&nbsp;Làm nội dung giải thích công nghệ, tư vấn chọn mua, hướng dẫn sử dụng SP</p>\r\n\r\n<p>-&nbsp;Tối ưu các tính năng, bộ lọc, kết quả tìm kiếm... giúp khách hàng mua SP</p>\r\n\r\n<p>- Phối hợp đảm bảo 100% SP có hình ảnh &amp; video.</p>\r\n\r\n<p>- Phối hợp SEO onpage</p>\r\n\r\n<p>- Quản lý Thực tập - Cộng tác viên</p>\r\n\r\n<p>- Các công việc khác do trưởng nhóm phân công</p>\r\n\r\n<p><strong>Vị trí 2:&nbsp;Biên tập chuyên mục&nbsp;<a href=\"https://www.thegioididong.com/game-app\">Game&nbsp;</a><a href=\"https://www.thegioididong.com/game-app\">app</a></strong></p>\r\n\r\n<p>- Tìm đề tài, lên outline, viết bài giới thiệu, đánh giá, hướng dẫn sử dụng, mẹo, thủ thuật game, ứng dụng trên tất cả nền tảng</p>\r\n\r\n<p>- Quản lý Thực tập - CTV</p>\r\n\r\n<p>-&nbsp;Các công việc khác do trưởng nhóm phân công</p>\r\n\r\n<p><strong>Vị trí 3: Biên tập chuyên mục&nbsp;<a href=\"https://www.dienmayxanh.com/vao-bep\">Vào Bếp</a></strong></p>\r\n\r\n<p>- Viết bài về công thức món ăn, định nghĩa, hướng dẫn, mẹo liên quan tới ẩm thực, dinh dưỡng.</p>\r\n\r\n<p>- Tìm đề tài, lên outline, liên hệ cộng đồng lấy công thức triển khai bài viết</p>\r\n\r\n<p>-&nbsp;Quản lý Thực tập - CTV</p>\r\n\r\n<p>- Các công việc khác do trưởng nhóm phân công</p>\r\n\r\n<p><strong>Vị trí 4: Biên tập chuyên mục&nbsp;<a href=\"https://www.dienmayxanh.com/kinh-nghiem-hay\">Kinh nghiệm hay</a></strong></p>\r\n\r\n<p>- Tìm đề tài, lên outline &amp; viết tin&nbsp;<a href=\"https://www.dienmayxanh.com/kinh-nghiem-hay\">Kinh nghiệm hay</a></p>\r\n\r\n<p>- Làm nội dung tin khuyến mãi, giới thiệu khai trương siêu thị</p>\r\n\r\n<p>- Khai báo Google Business cho hệ siêu thị&nbsp;</p>\r\n\r\n<p>- Quản lý Thực tập - CTV</p>\r\n\r\n<p>- Các công việc khác do trưởng nhóm phân công</p>\r\n\r\n<p><strong>Vị trí 5:&nbsp;Nhân viên SEO sản phẩm TGDD &amp; DMX&nbsp;</strong></p>\r\n\r\n<p>- Tìm đề tài, lên outline, viết bài phục vụ khách hàng xoay quanh sản phẩm, ngành hàng cần SEO&nbsp;</p>\r\n\r\n<p>- Quản lý và triển khai hệ bài viết trên các hệ thống Social, Blog Offpage</p>\r\n\r\n<p>- Quản lý Thực tập - CTV</p>\r\n\r\n<p>- Các công việc khác do trưởng nhóm phân công</p>\r\n\r\n<h2>YÊU CẦU CÔNG VIỆC</h2>\r\n\r\n<p><strong>Yêu cầu chung cho 5 vị trí:</strong></p>\r\n\r\n<p>- Viết tốt: diễn đạt súc tích, rành mạch, dễ hiểu, đúng chính tả.</p>\r\n\r\n<p>- Yêu thích và hay tìm hiểu lĩnh vực công nghệ, điện máy, điện gia dụng…</p>\r\n\r\n<p>- Biết xử lý hình ảnh bằng Photoshop cơ bản (cắt, ghép, chỉnh màu, chỉnh sáng…)</p>\r\n\r\n<p>- Có khả năng chịu được áp lực khối lượng công việc lớn hoặc vận hành dự án</p>\r\n\r\n<p>- Tin học văn phòng (soạn thảo văn bản, xử lý dữ liệu bằng hàm exel, làm file trình chiếu, Google Drive...)</p>\r\n\r\n<p>- Có tư duy về đo lường, sử dụng và hiểu các chỉ số Google Analytic</p>\r\n\r\n<p>- Điểm cộng nếu có: Tiếng Anh đọc hiểu tốt, biết SEO, có kinh nghiệm bán hàng online/truyền thống.</p>\r\n\r\n<p><strong>Đặc biệt:</strong></p>\r\n\r\n<p><strong>&nbsp;Biên tập chuyên mục&nbsp;<a href=\"https://www.thegioididong.com/game-app\">Game&nbsp;</a><a href=\"https://www.thegioididong.com/game-app\">app</a></strong></p>\r\n\r\n<p>- Am hiểu về PC, điện thoại, công nghệ.&nbsp;</p>\r\n\r\n<p>- Thích chơi &amp; tìm hiểu về game &amp; ứng dụng trên điện thoại.</p>\r\n\r\n<p><strong>Biên tập chuyên mục&nbsp;<a href=\"https://www.dienmayxanh.com/vao-bep\">Vào Bếp</a>:&nbsp;</strong></p>\r\n\r\n<p>- Yêu thích và hay tìm hiểu các món ăn mới, xu hướng ẩm thực.</p>\r\n\r\n<p>- Biết nấu ăn và có kiến thức về dinh dưỡng, ẩm thực, biết tính chất và sử dụng từng nguyên liệu phù hợp trong từng loại món ăn.</p>\r\n\r\n<p><strong>Nhân viên SEO sản phẩm TGDD &amp; DMX&nbsp;</strong></p>\r\n\r\n<p>- Có kiến thức SEO onpage căn bản tới chuyên sâu</p>\r\n\r\n<p>- Mindset tốt về SEO, người dùng, luôn cập nhật xu hướng SEO mới của thế giới</p>\r\n\r\n<p>- Sử dụng tốt các công cụ SEO như ahrefs, keywordtool.io, Website Auditor…</p>\r\n\r\n<p>- Hiểu và sử dụng Google Analytic, Google Console, Data Studio</p>\r\n\r\n<h2>QUYỀN LỢI</h2>\r\n\r\n<p>- Môi trường làm việc chuyên nghiệp, lớn mạnh</p>\r\n\r\n<p>- Cọ xát kinh nghiệm từ đội ngũ nhân viên dày dặn kinh nghiệm</p>\r\n\r\n<p>- Ký HĐLĐ, Phúc lợi đầy đủ tăng dần</p>\r\n\r\n<p>- Du lịch Teambuilding hàng năm</p>\r\n\r\n<p>- Thưởng cuối năm hấp dẫn ( 3-8 tháng theo KPI – Số liệu 2020)</p>\r\n\r\n<h2>LƯU Ý</h2>\r\n\r\n<p>- Làm việc tại trụ sở MWG Quận 9 HCM</p>\r\n\r\n<p>- Nhân viên tự trang bị Laptop cá nhân</p>', NULL, 'http://localhost:8000/uploads/images/banner-tgdd-new-campaign2.jpg', NULL, NULL, 'nhan-vien-content-seo-san-pham-tgdddmx', 'Nhân viên Content/ SEO sản phẩm TGDĐ/ĐMX', NULL, NULL, 'index,follow', 'index,follow', 'vi', 17, NULL, '2021-05-17 04:39:08', '2021-05-17 04:39:08'),
+(18, '95258095-5cd7-454b-8e27-3a847b77b0e9', 'MobiFone ưu đãi gói cước Z70', 'Trần Thanh Luân', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<p>Người dùng được miễn phí 500 MB data trong 30 ngày, tương đương 15 GB dữ liệu mỗi tháng, với cước phí 70.000 đồng khi đăng ký gói cước Z70.</p>', '<p>Nhằm mang đến những trải nghiệm data tối ưu cho người dùng, thay thế dần sự phụ thuộc vào WiFi, MobiFone tung ra gói chương trình ưu đãi cho gói cước Z70.</p>\r\n\r\n<article>\r\n<p>Cụ thể, chương trình này áp dụng cho những thuê bao đang hoạt động 2 chiều, có lịch sử phát sinh cước với mức tiêu dùng tài khoản chính cho dịch vụ data tháng liền trước từ 70.000 đồng hoặc thuê bao trả trước phát triển mới kích hoạt từ 1/8 (không áp dụng cho thuê bao Fast Connect). Gói cước Z70 có giá 70.000 đồng, chu kỳ sử dụng 30 ngày tính từ ngày đăng ký thành công.</p>\r\n\r\n<figure data-size=\"true\" itemprop=\"associatedMedia image\" itemscope=\"\" itemtype=\"http://schema.org/ImageObject\"><img alt=\"Khách hàng giao dịch tại MobiFone.\" data-ll-status=\"loaded\" data-src=\"https://i1-kinhdoanh.vnecdn.net/2020/10/30/KM-1511-1604044681.jpg?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=6d5RaEv5mhpXeO43MZQ8xg\" intrinsicsize=\"680x0\" itemprop=\"contentUrl\" loading=\"lazy\" src=\"https://i1-kinhdoanh.vnecdn.net/2020/10/30/KM-1511-1604044681.jpg?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=6d5RaEv5mhpXeO43MZQ8xg\" />\r\n<figcaption itemprop=\"description\">\r\n<p>Khách hàng giao dịch tại MobiFone.</p>\r\n</figcaption>\r\n</figure>\r\n\r\n<p>Khi đăng ký thành công, khách hàng sẽ được miễn phí 500MB data/ngày liên tiếp trong 30 ngày, tương đương 15GB data/ tháng. Ngoài ra, với khách hàng tại Hà Nội, MobiFone miễn phí data trong khung giờ từ 19h đến 7h sáng hôm sau. Người dùng có thể sử dụng data với các ứng dụng yêu thích trên điện thoại, không hạn chế. Cú pháp đăng ký gói cước Z70 như sau: DK Z70 gửi 999</p>\r\n\r\n<p>Gói cước này có tính năng gia hạn tự động khi kết thúc chu kỳ 1 chuyển sang những chu kỳ tiếp theo. Do đó, để tiếp tục sử dụng gói cước, người dùng cần duy trì tiền trong tài khoản lớn hơn hoặc bằng giá gói cước. Người dùng cần khởi động lại điện thoại sau khi đăng ký thành công để hệ thống cập nhật data sử dụng mới.</p>\r\n\r\n<p><img alt=\"A\" data-natural-h=\"415\" data-natural-width=\"624\" src=\"https://i1-kinhdoanh.vnecdn.net/2020/10/21/image003-2321-1603297211.jpg?w=0&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=YkqIXz4S8kLnKeIhZGVkuA\" /></p>\r\n\r\n<p>Ngoài cú pháp đăng ký, quá trình dùng gói ưu đãi Z70 MobiFone thuê bao có thể sử dụng một số cú pháp hỗ trợ sau: Kiểm tra ưu đãi còn lại: KT ALL gửi 999; Hủy gói cước soạn tin nhắn: HUY Z70 gửi 999.</p>\r\n\r\n<p>Trước diễn biến phức tạp của Covid-19, MobiFone triển khai nhiều chiến dịch đồng hành, chia sẻ như giảm cước phí cho y, bác sĩ, cán bộ phòng chồng dịch tuyến đầu; tăng dung lượng gấp 3 đến 4 lần tại các điểm cách lý xã hội, hỗ trợ thay sim 4G miễn phí tại nhà...</p>\r\n\r\n<p>Đại diện nhà mạng này cho biết, mọi chiến lược của MobiFone đều đề cao sự an toàn và lợi ích của người dùng.</p>\r\n</article>', NULL, 'http://localhost:8000/uploads/images/image003-2321-1603297211.jpg', NULL, NULL, 'mobifone-uu-dai-goi-cuoc-z70', 'MobiFone ưu đãi gói cước Z70', NULL, NULL, 'index,follow', 'index,follow', 'vi', 18, NULL, '2021-05-17 04:41:59', '2021-05-17 04:41:59'),
+(19, 'd266a754-afe1-4aa7-9d95-855d5ef7002b', 'Viettel tặng quà Tết 70 triệu khách hàng', 'Trần Thanh Luân', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<p>Nhà mạng tặng khách hàng Data 4G miễn phí tới 7 GB&nbsp; dịp Tết Canh Tý.&nbsp;</p>\r\n\r\n<article>&nbsp;</article>', '<p><span style=\"font-size:18px\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizespeed\"><span style=\"line-height:28.8px\"><span style=\"color:#222222\"><span style=\"font-family:arial\"><span style=\"font-style:normal\"><span style=\"font-variant-ligatures:normal\"><span style=\"font-variant-caps:normal\"><span style=\"font-weight:400\"><span style=\"letter-spacing:normal\"><span style=\"orphans:2\"><span style=\"text-transform:none\"><span style=\"white-space:normal\"><span style=\"widows:2\"><span style=\"word-spacing:0px\"><span style=\"background-color:#fcfaf6\"><span style=\"text-decoration-thickness:initial\"><span style=\"text-decoration-style:initial\"><span style=\"text-decoration-color:initial\">Với slogan \"Có data, Tết đâu cũng là nhà\", Viettel triển khai chương trình tặng quà data cho 100% khách hàng di động. Chỉ cần nhắn tin \"TET\" gửi 191, người dùng mạng Viettel sẽ được tặng lưu lượng data 4G. Khách hàng có thể nhận lưu lượng data là 7GB/7 ngày, 3GB/3 ngày hoặc 1 GB/1 ngày.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n\r\n<p><span style=\"font-size:18px\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizespeed\"><span style=\"line-height:28.8px\"><span style=\"color:#222222\"><span style=\"font-family:arial\"><span style=\"font-style:normal\"><span style=\"font-variant-ligatures:normal\"><span style=\"font-variant-caps:normal\"><span style=\"font-weight:400\"><span style=\"letter-spacing:normal\"><span style=\"orphans:2\"><span style=\"text-transform:none\"><span style=\"white-space:normal\"><span style=\"widows:2\"><span style=\"word-spacing:0px\"><span style=\"background-color:#fcfaf6\"><span style=\"text-decoration-thickness:initial\"><span style=\"text-decoration-style:initial\"><span style=\"text-decoration-color:initial\">Viettel triển khai chương trình tặng quà data cho 100% khách hàng<br />\r\nViettel triển khai chương trình tặng quà data cho 100% khách hàng</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n\r\n<p><span style=\"font-size:18px\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizespeed\"><span style=\"line-height:28.8px\"><span style=\"color:#222222\"><span style=\"font-family:arial\"><span style=\"font-style:normal\"><span style=\"font-variant-ligatures:normal\"><span style=\"font-variant-caps:normal\"><span style=\"font-weight:400\"><span style=\"letter-spacing:normal\"><span style=\"orphans:2\"><span style=\"text-transform:none\"><span style=\"white-space:normal\"><span style=\"widows:2\"><span style=\"word-spacing:0px\"><span style=\"background-color:#fcfaf6\"><span style=\"text-decoration-thickness:initial\"><span style=\"text-decoration-style:initial\"><span style=\"text-decoration-color:initial\">Thời gian triển khai chương trình từ 23-29 tháng Chạp (tức là từ 17/1 đến 23/1/2020 Dương lịch). Để sử dụng lưu lượng data 4G miễn phí, khách hàng sử dụng máy 4G, Sim 4G và bật chế độ 4G trên máy.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n\r\n<p><span style=\"font-size:18px\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizespeed\"><span style=\"line-height:28.8px\"><span style=\"color:#222222\"><span style=\"font-family:arial\"><span style=\"font-style:normal\"><span style=\"font-variant-ligatures:normal\"><span style=\"font-variant-caps:normal\"><span style=\"font-weight:400\"><span style=\"letter-spacing:normal\"><span style=\"orphans:2\"><span style=\"text-transform:none\"><span style=\"white-space:normal\"><span style=\"widows:2\"><span style=\"word-spacing:0px\"><span style=\"background-color:#fcfaf6\"><span style=\"text-decoration-thickness:initial\"><span style=\"text-decoration-style:initial\"><span style=\"text-decoration-color:initial\">Trước đó, từ tháng 6/2019 Viettel có chương trình chăm sóc khách hàng Viettel++. Chương trình đưa toàn bộ khách hàng vào danh sách chăm sóc thường xuyên để cộng điểm tích lũy để đổi phần thưởng. Tính đến hết tháng 12/2019, &nbsp;9,7 triệu khách hàng đã sử dụng điểm thưởng của Viettel++.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n\r\n<p><span style=\"font-size:18px\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizespeed\"><span style=\"line-height:28.8px\"><span style=\"color:#222222\"><span style=\"font-family:arial\"><span style=\"font-style:normal\"><span style=\"font-variant-ligatures:normal\"><span style=\"font-variant-caps:normal\"><span style=\"font-weight:400\"><span style=\"letter-spacing:normal\"><span style=\"orphans:2\"><span style=\"text-transform:none\"><span style=\"white-space:normal\"><span style=\"widows:2\"><span style=\"word-spacing:0px\"><span style=\"background-color:#fcfaf6\"><span style=\"text-decoration-thickness:initial\"><span style=\"text-decoration-style:initial\"><span style=\"text-decoration-color:initial\">Là nhà mạng sở hữu hạ tầng 3G/4G lớn nhất Việt Nam với hơn 70.000 trạm phát sóng, Viettel Telecom đang có số thuê bao 3G/4G lớn nhất và liên tục tăng trưởng tốt, đặc biệt là thuê bao 4G. Trong 9 tháng năm 2019, số thuê bao 4G Viettel đã tăng lên gấp 2 lần so với năm 2018, đạt 21 triệu thuê bao (chiếm 65% tổng số thuê bao đang sử dụng data trên mạng Viettel).</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n\r\n<p><span style=\"font-size:18px\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizespeed\"><span style=\"line-height:28.8px\"><span style=\"color:#222222\"><span style=\"font-family:arial\"><span style=\"font-style:normal\"><span style=\"font-variant-ligatures:normal\"><span style=\"font-variant-caps:normal\"><span style=\"font-weight:400\"><span style=\"letter-spacing:normal\"><span style=\"orphans:2\"><span style=\"text-transform:none\"><span style=\"white-space:normal\"><span style=\"widows:2\"><span style=\"word-spacing:0px\"><span style=\"background-color:#fcfaf6\"><span style=\"text-decoration-thickness:initial\"><span style=\"text-decoration-style:initial\"><span style=\"text-decoration-color:initial\">Mạng 4G của Viettel sử dụng công nghệ hiện đại&nbsp;<br />\r\nKhách hàng dự một sự kiện của Viettel.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n\r\n<p><span style=\"font-size:18px\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizespeed\"><span style=\"line-height:28.8px\"><span style=\"color:#222222\"><span style=\"font-family:arial\"><span style=\"font-style:normal\"><span style=\"font-variant-ligatures:normal\"><span style=\"font-variant-caps:normal\"><span style=\"font-weight:400\"><span style=\"letter-spacing:normal\"><span style=\"orphans:2\"><span style=\"text-transform:none\"><span style=\"white-space:normal\"><span style=\"widows:2\"><span style=\"word-spacing:0px\"><span style=\"background-color:#fcfaf6\"><span style=\"text-decoration-thickness:initial\"><span style=\"text-decoration-style:initial\"><span style=\"text-decoration-color:initial\">Khai trương vào ngày 18/4/2017, mạng 4G Viettel phủ sóng toàn quốc bằng 36.000 trạm phát sóng 4G sử dụng công nghệ 4T4R (4 phát, 4 thu) hiện đại bậc nhất thế giới. Công nghệ và vùng phủ sóng này đảm bảo khách hàng có thể sử dụng dịch vụ 4G siêu tốc độ, ít hao pin và không bị gián đoạn truy cập cho dù di chuyển đến các khu vực vùng sâu, vùng xa.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n\r\n<p><span style=\"font-size:18px\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizespeed\"><span style=\"line-height:28.8px\"><span style=\"color:#222222\"><span style=\"font-family:arial\"><span style=\"font-style:normal\"><span style=\"font-variant-ligatures:normal\"><span style=\"font-variant-caps:normal\"><span style=\"font-weight:400\"><span style=\"letter-spacing:normal\"><span style=\"orphans:2\"><span style=\"text-transform:none\"><span style=\"white-space:normal\"><span style=\"widows:2\"><span style=\"word-spacing:0px\"><span style=\"background-color:#fcfaf6\"><span style=\"text-decoration-thickness:initial\"><span style=\"text-decoration-style:initial\"><span style=\"text-decoration-color:initial\">Bên cạnh vùng phủ sóng rộng khắp, Viettel còn cho ra mắt 6 gói cước 4G với mức giá rẻ hơn 3G từ 40-60% cùng hàng loạt gói cước chuyên biệt khác. Các gói cước phục vụ nhu cầu công việc, liên lạc và giải trí chất lượng cao trên công nghệ 4G siêu tốc độ.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n\r\n<p><span style=\"font-size:18px\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizespeed\"><span style=\"line-height:28.8px\"><span style=\"color:#222222\"><span style=\"font-family:arial\"><span style=\"font-style:normal\"><span style=\"font-variant-ligatures:normal\"><span style=\"font-variant-caps:normal\"><span style=\"font-weight:400\"><span style=\"letter-spacing:normal\"><span style=\"orphans:2\"><span style=\"text-transform:none\"><span style=\"white-space:normal\"><span style=\"widows:2\"><span style=\"word-spacing:0px\"><span style=\"background-color:#fcfaf6\"><span style=\"text-decoration-thickness:initial\"><span style=\"text-decoration-style:initial\"><span style=\"text-decoration-color:initial\">Năm 2019, Viettel được Tổ chức nghiên cứu và phân tích thị trường hàng đầu thế giới Frost &amp; Sullivan trao giải thưởng \"Nhà cung cấp dịch vụ data di động tốt nhất Việt Nam - 2019\".</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n\r\n<p><span style=\"font-size:18px\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizespeed\"><span style=\"line-height:28.8px\"><span style=\"color:#222222\"><span style=\"font-family:arial\"><span style=\"font-style:normal\"><span style=\"font-variant-ligatures:normal\"><span style=\"font-variant-caps:normal\"><span style=\"font-weight:400\"><span style=\"letter-spacing:normal\"><span style=\"orphans:2\"><span style=\"text-transform:none\"><span style=\"white-space:normal\"><span style=\"widows:2\"><span style=\"word-spacing:0px\"><span style=\"background-color:#fcfaf6\"><span style=\"text-decoration-thickness:initial\"><span style=\"text-decoration-style:initial\"><span style=\"text-decoration-color:initial\">Tháng 10/2019 vừa qua, Viettel Telecom phát đi thông điệp \"Chuyển dịch số - Khởi động hành trình mới\" với mục tiêu trở thành đơn vị có doanh thu dịch vụ số đạt mức ngang bằng với các nhà mạng lớn trên thế giới.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>', NULL, 'http://localhost:8000/uploads/images/image002-1579248319-5013-1579248375.jpg', NULL, NULL, 'viettel-ta-ng-qua-te-t-70-trie-u-kha-ch-ha-ng', 'Viettel tặng quà Tết 70 triệu khách hàng', NULL, NULL, 'index,follow', 'index,follow', 'vi', 19, NULL, '2021-05-17 04:43:19', '2021-05-17 04:43:19'),
+(20, '2a53a1f7-6382-41ea-821f-c6f005de1f1c', 'Vạn Hạnh Mall ưu đãi lớn dịp Tết', 'Trần Thanh Luân', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<p>Người dân du xuân được giảm giá đến 50% từ hơn 200 hãng thời trang, bên cạnh tham gia các hoạt động vui chơi, giải trí.</p>\r\n\r\n<p>&nbsp;</p>', '<p class=\"description\" style=\"padding:0px; text-align:start; text-indent:0px; -webkit-text-stroke-width:0px; margin-bottom:15px\"><span style=\"font-size:18px\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizelegibility\"><span style=\"line-height:28.8px\"><span style=\"font-weight:400\"><span style=\"color:#222222\"><span style=\"font-family:arial\"><span style=\"font-style:normal\"><span style=\"font-variant-ligatures:normal\"><span style=\"font-variant-caps:normal\"><span style=\"letter-spacing:normal\"><span style=\"orphans:2\"><span style=\"text-transform:none\"><span style=\"white-space:normal\"><span style=\"widows:2\"><span style=\"word-spacing:0px\"><span style=\"background-color:#fcfaf6\"><span style=\"text-decoration-thickness:initial\"><span style=\"text-decoration-style:initial\"><span style=\"text-decoration-color:initial\">Người dân du xuân được giảm giá đến 50% từ hơn 200 hãng thời trang, bên cạnh tham gia các hoạt động vui chơi, giải trí.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n\r\n<article class=\"fck_detail \" style=\"padding:0px; box-sizing:border-box; text-rendering:optimizelegibility; width:670px; float:left; position:relative; font:400 18px / 28.8px arial; color:#222222; letter-spacing:normal; orphans:2; text-align:start; text-indent:0px; text-transform:none; white-space:normal; widows:2; word-spacing:0px; -webkit-text-stroke-width:0px; background-color:#fcfaf6; text-decoration-thickness:initial; text-decoration-style:initial; text-decoration-color:initial\">\r\n<div class=\"WordSection1\" style=\"padding:0px\">\r\n<p class=\"Normal\" style=\"padding:0px; margin-bottom:13px\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizelegibility\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizespeed\"><span style=\"line-height:28.8px\">Theo đại diện trung tâm thương mại Vạn Hạnh Mall, để phục vụ khách hàng đến tham quan, mua sắm trong dịp lễ lớn nhất năm,&nbsp;hơn 50 nhà hàng ẩm thực cùng các cụm vui chơi quy mô đã sẵn sàng đón du khách.</span></span></span></span></span></p>\r\n\r\n<p class=\"Normal\" style=\"padding:0px; margin-bottom:13px\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizelegibility\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizespeed\"><span style=\"line-height:28.8px\"><span style=\"padding:0px; box-sizing:border-box\"><span style=\"text-rendering:optimizelegibility\"><span style=\"color:#222222\">Sự kiện giảm giá áo dài duy nhất trong năm mang tên \"Ngày hội áo dài\" diễn ra tại tầng 1 đến hết ngày 19/1. Trong đó giảm giá tới 50% các sản phẩm của các thương hiệu áo dài nổi tiếng trong nước như OLV, F2 Fashion, Parity, Joven, MCA, S-Line</span></span></span><span style=\"padding:0px; box-sizing:border-box\"><span style=\"text-rendering:optimizelegibility\"><span style=\"color:#222222\">. Đồng thời,</span></span></span><span style=\"padding:0px; box-sizing:border-box\"><span style=\"text-rendering:optimizelegibility\"><span style=\"color:#222222\">&nbsp;một số hãng thời trang trong nước và quốc tế như Mujosh, Aojo, Aldo, Gumac, Marc... cũng giảm giá sâu hoặc lì xì khách hàng.</span></span></span></span></span></span></span></span></p>\r\n\r\n<p style=\"padding:0px; margin-bottom:13px\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizelegibility\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizespeed\"><span style=\"line-height:28.8px\">Dịp này khách có hóa đơn mua sắm tại các cửa hàng Vạn Hạnh Mall còn được tham gia chương trình khuyến mãi rút thăm&nbsp;<a href=\"https://vanhanhmall.com/the-le-chuong-trinh-khuyen-mai-rut-thamtrung-thuong/\" rel=\"nofollow\" style=\"padding:0px; box-sizing:border-box; text-rendering:optimizelegibility; color:#076db6; text-decoration:underline; position:relative; text-underline-position:under\" target=\"_blank\">trúng thưởng</a>&nbsp;từ nay đến 19/1.</span></span></span></span></span></p>\r\n\r\n<figure class=\"tplCaption action_thumb_added\" data-size=\"true\" itemprop=\"associatedMedia image\" itemscope=\"\" itemtype=\"http://schema.org/ImageObject\" style=\"padding:0px; box-sizing:border-box; text-rendering:optimizelegibility; max-width:100%; clear:both; position:relative; text-align:center; width:670px; float:left; margin-bottom:15px\">\r\n<div class=\"fig-picture\" style=\"padding:0px 0px 280px; width:669.6px; text-align:center\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizelegibility\"><span style=\"background:#f0eeea\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizelegibility\"><span style=\"float:left\"><span style=\"display:table\"><span style=\"justify-content:center\"><span style=\"position:relative\"><picture style=\"padding:0px; box-sizing:border-box; text-rendering:optimizelegibility\"><source data-srcset=\"https://i1-kinhdoanh.vnecdn.net/2020/01/17/gu-2736-1579231481.png?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=jRXQRjET8t9ON6ZN02JShA 1x, https://i1-kinhdoanh.vnecdn.net/2020/01/17/gu-2736-1579231481.png?w=1020&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=IhAT17bpfOD0omb_m0cuaQ 1.5x, https://i1-kinhdoanh.vnecdn.net/2020/01/17/gu-2736-1579231481.png?w=680&amp;h=0&amp;q=100&amp;dpr=2&amp;fit=crop&amp;s=VW59pRCo4qON71s-2UCHCw 2x\" srcset=\"https://i1-kinhdoanh.vnecdn.net/2020/01/17/gu-2736-1579231481.png?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=jRXQRjET8t9ON6ZN02JShA 1x, https://i1-kinhdoanh.vnecdn.net/2020/01/17/gu-2736-1579231481.png?w=1020&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=IhAT17bpfOD0omb_m0cuaQ 1.5x, https://i1-kinhdoanh.vnecdn.net/2020/01/17/gu-2736-1579231481.png?w=680&amp;h=0&amp;q=100&amp;dpr=2&amp;fit=crop&amp;s=VW59pRCo4qON71s-2UCHCw 2x\" style=\"padding:0px; box-sizing:border-box; text-rendering:optimizelegibility\" /><img alt=\"Một góc khu mua sắm tầng 1 trong sự kiện Ngày hội áo dài.\" class=\"lazy lazied\" data-ll-status=\"loaded\" data-src=\"https://i1-kinhdoanh.vnecdn.net/2020/01/17/gu-2736-1579231481.png?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=jRXQRjET8t9ON6ZN02JShA\" intrinsicsize=\"680x0\" itemprop=\"contentUrl\" loading=\"lazy\" src=\"https://i1-kinhdoanh.vnecdn.net/2020/01/17/gu-2736-1579231481.png?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=jRXQRjET8t9ON6ZN02JShA\" style=\"padding:0px; box-sizing:border-box; text-rendering:optimizelegibility; border:0px; font-size:0px; line-height:0; max-width:100%; position:absolute; top:0px; left:85px; max-height:700px; width:500px\" /></picture></span></span></span></span></span></span></span></span></span></div>\r\n\r\n<figcaption itemprop=\"description\" style=\"padding:0px; box-sizing:border-box; text-rendering:optimizelegibility; width:670px; float:left; text-align:left\">\r\n<p class=\"Image\" style=\"padding:10px 0px 0px; text-align:left\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizelegibility\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizespeed\"><span style=\"font:400 14px / 22.4px arial\"><span style=\"color:#222222\">Một góc khu mua sắm tầng 1 trong sự kiện \"Ngày hội áo dài\".</span></span></span></span></span></span></p>\r\n</figcaption>\r\n</figure>\r\n\r\n<p style=\"padding:0px; margin-bottom:13px\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizelegibility\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizespeed\"><span style=\"line-height:28.8px\">Hiện đơn vị đã trang trí trung tâm thương mại, phía mặt tiền tòa nhà và hai cổng vào với chủ đề \"Rộn ràng sắc Xuân\".</span></span></span></span></span></p>\r\n\r\n<p style=\"padding:0px; margin-bottom:13px\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizelegibility\"><span style=\"box-sizing:border-box\"><span style=\"text-rendering:optimizespeed\"><span style=\"line-height:28.8px\">\"Chúng tôi lựa chọn tông đỏ, vàng xanh và các hình ảnh tượng trưng cho dịp Tết như cây mai, cây đào, nón lá nhằm giúp khách tham quan, mua sắm tận hưởng không khí Xuân và thoải mái lưu lại những khoảnh khắc đáng nhớ bên gia đình, người thân\", vị đại diện nói.</span></span></span></span></span></p>\r\n</div>\r\n</article>', NULL, 'http://localhost:8000/uploads/images/g-1579231395-3551-1579231482.png', NULL, NULL, 'van-hanh-mall-uu-dai-lon-dip-tet', 'Vạn Hạnh Mall ưu đãi lớn dịp Tết', NULL, NULL, 'index,follow', 'index,follow', 'vi', 20, NULL, '2021-05-17 04:45:00', '2021-05-17 04:45:00'),
+(21, '14e85fd7-6814-42ea-b25b-3e15e578dc36', 'Samsung tổ chức chuỗi ưu đãi tri ân khách hàng', 'Trần Thanh Luân', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<p>Chương trình giảm giá, tặng quà kéo dài đến hết tháng 9 nhằm tri ân khách hàng nhân kỷ niệm sinh nhật lần thứ 50.</p>', '<p>Với chương trình \"Vinh danh 50 chủ sở hữu TV Samsung lâu đời nhất\", 50 người dùng sở hữu một trong 5 dòng sản phẩm Bordeaux LCD, LED, Smart, 3D, Curved UHD đăng ký tham dự chương trình sớm nhất sẽ may mắn nhận 50 giải thưởng. Mỗi giải là một chiếc Smart TV 4K UHD 50 inch RU7400 phiên bản 2019 trị giá 18,4 triệu đồng.</p>\r\n\r\n<p>Ông Nguyễn Minh Tâm - Giám đốc ngành hàng điện tử tiêu dùng cho biết, hơn 10 năm trước, Samsung mang đến thị trường Việt Nam những chiếc TV LCD chất lượng. Trong dịp sinh nhật lần này, với mong muốn truyền tải thông điệp \"Tất cả vì bạn\", doanh nghiệp tặng những chiếc TV 4K mới nhất giúp khách hàng Việt có thể trải nghiệm đỉnh cao công nghệ trên thế giới\".</p>\r\n\r\n<figure data-size=\"true\" itemprop=\"associatedMedia image\" itemscope=\"\" itemtype=\"http://schema.org/ImageObject\"><img alt=\"Chương trình Vinh danh 50 chủ sở hữu TV Samsung lâu đời nhất tặng 50 tivi cho khách hàng.\" data-ll-status=\"loaded\" data-src=\"https://i1-kinhdoanh.vnecdn.net/2019/08/21/Anh-2-2402-1566361855.jpg?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=i_6LH5jmPtDTIsaAcDW2fA\" intrinsicsize=\"680x0\" itemprop=\"contentUrl\" loading=\"lazy\" src=\"https://i1-kinhdoanh.vnecdn.net/2019/08/21/Anh-2-2402-1566361855.jpg?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=i_6LH5jmPtDTIsaAcDW2fA\" />\r\n<figcaption itemprop=\"description\">\r\n<p>Chương trình \"Vinh danh 50 chủ sở hữu TV Samsung lâu đời nhất\" tặng 50 tivi cho khách hàng.</p>\r\n</figcaption>\r\n</figure>\r\n\r\n<p>Bên cạnh đó, Samsung cũng tặng 1.000 chiếc One Remote TV đa nhiệm được chạm khắc độc quyền cho 1.000 khách hàng đăng ký nhận quà đầu tiên trên toàn quốc. Chiếc remote đa nhiệm này có thiết kế gọn nhẹ, tích hợp tối giản các phím số, các phím chức năng. Ngoài sử dụng để điều khiển tivi, bạn còn có thể sử dụng cho đầu thu kỹ thuật số, loa, dàn âm thanh... khi kết nối với TV Samsung qua cáp HDMI.</p>\r\n\r\n<figure data-size=\"true\" itemprop=\"associatedMedia image\" itemscope=\"\" itemtype=\"http://schema.org/ImageObject\"><img alt=\"50 năm có mặt tại thị trường Việt Nam, Sumsung mang đến nhiều sản phẩm chất lượng.\" data-ll-status=\"loaded\" data-src=\"https://i1-kinhdoanh.vnecdn.net/2019/08/21/Anh-3-9027-1566361855.jpg?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=p9-7PeGNNKGBgWUKEIpYhw\" intrinsicsize=\"680x0\" itemprop=\"contentUrl\" loading=\"lazy\" src=\"https://i1-kinhdoanh.vnecdn.net/2019/08/21/Anh-3-9027-1566361855.jpg?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=p9-7PeGNNKGBgWUKEIpYhw\" />\r\n<figcaption itemprop=\"description\">\r\n<p>Chiếc One Remote TV đa nhiệm.</p>\r\n</figcaption>\r\n</figure>\r\n\r\n<p>Ngoài ra, hãng cũng triển khai chương trình \"Đặc quyền vàng 50 năm, ưu đãi lên đến 50%\". Khách hàng mua tivi Samsung tại điện máy Pico được giảm giá lên đến 50%, trong đó, tivi QLED cao cấp được giảm trực tiếp 30%. Cơ hội này chỉ áp dụng trong tháng 8 và 9 khi mua TV Samsung tại Điện máy Pico.&nbsp;</p>\r\n\r\n<p>Từ ngày 15/8 đến ngày 15/9, khách hàng còn có cơ hội ngẫu nhiên nhận phiếu giảm giá lên đến 50% khi đăng ký thông tin tham gia chương trình \"Đặc quyền vàng 50 năm\" tại&nbsp;<a href=\"http://www.samsung.com/vn/offer/tv-so-1-the-gioi/dac-quyen-vang-50-nam.\" rel=\"nofollow\" target=\"_blank\">website</a>.</p>\r\n\r\n<figure data-size=\"true\" itemprop=\"associatedMedia image\" itemscope=\"\" itemtype=\"http://schema.org/ImageObject\"><img alt=\"Nhiều ưu đãi khi mua tivi Samsung.\" data-ll-status=\"loaded\" data-src=\"https://i1-kinhdoanh.vnecdn.net/2019/08/21/Anh-4-6672-1566361856.jpg?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=bXnTnYJEaJNz7jR1lLl9MQ\" intrinsicsize=\"680x0\" itemprop=\"contentUrl\" loading=\"lazy\" src=\"https://i1-kinhdoanh.vnecdn.net/2019/08/21/Anh-4-6672-1566361856.jpg?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=bXnTnYJEaJNz7jR1lLl9MQ\" />\r\n<figcaption itemprop=\"description\">\r\n<p>Nhiều ưu đãi khi mua tivi Samsung.</p>\r\n</figcaption>\r\n</figure>\r\n\r\n<p>Từ 15/8 đến hết ngày 30/9, Samsung gửi đến khách hàng mua TV gói ứng dụng giải trí gồm: Fim+ - gói quà tặng xem độc quyền kho phim chiếu rạp mới nhất không giới hạn (50 phim TVOD) và nội dung chất lượng 4K trị giá lên đến 4,52 triệu đồng; 30 ngày sử dụng miễn phí HBO GO trực tuyến trên FPT Play.</p>\r\n\r\n<p>Khách hàng được tặng 12 tháng xem miễn phí toàn bộ nội dung bao gồm live TV và VOD trong gói Gia đình của ClipTV; độc quyền nội dung giải trí giáo dục an toàn cho bé với 120 bài tiếng anh theo giáo trình Cambridge của VUS trên Pops Kids.</p>\r\n\r\n<figure data-size=\"true\" itemprop=\"associatedMedia image\" itemscope=\"\" itemtype=\"http://schema.org/ImageObject\">\r\n<p>&nbsp;</p>\r\n<img alt=\"Pico giảm giá đến 50% tivi Samsung.\" data-ll-status=\"loaded\" data-src=\"https://i1-kinhdoanh.vnecdn.net/2019/08/21/ANH-1-4624-1566361856.jpg?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=k-XPTTNIgRt5UwBhkoUi9A\" intrinsicsize=\"680x0\" itemprop=\"contentUrl\" loading=\"lazy\" src=\"https://i1-kinhdoanh.vnecdn.net/2019/08/21/ANH-1-4624-1566361856.jpg?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=k-XPTTNIgRt5UwBhkoUi9A\" />\r\n<figcaption itemprop=\"description\">\r\n<p>Pico giảm giá đến 50% tivi Samsung.</p>\r\n</figcaption>\r\n</figure>\r\n\r\n<p>Song song các chương trình trên, khách hàng mua TV Samsung tại Điện máy Pico trên toàn quốc sẽ có cơ hội trúng 50 TV 50 inch cùng các quà tặng có giá trị như nồi lẩu Elmich trị giá 1,05 triệu đồng đồng. Người mua TV QLED 8K Q900R sẽ được tặng điện thoại Samsung GalaxyS10+ trị giá 22,99 triệu đồng, bộ loa thanh Samsung Harman/Kardon Q90R trị giá 29,99 triệu đồng cùng với gói 8K VIP Care.</p>', NULL, 'http://localhost:8000/uploads/images/anh-2-1566361772-6339-1566361859.png', NULL, NULL, 'samsung-to-chuc-chuoi-uu-dai-tri-an-khach-hang', 'Samsung tổ chức chuỗi ưu đãi tri ân khách hàng', NULL, NULL, 'index,follow', 'index,follow', 'vi', 21, NULL, '2021-05-17 04:46:24', '2021-05-17 04:46:24');
 INSERT INTO `samcms_news_translations` (`id`, `uuid`, `title`, `author`, `price_min`, `copyright`, `form_of_work`, `price_max`, `need`, `benefit`, `soft_desc`, `promotion_percent`, `intro`, `content`, `foot`, `image`, `youtube`, `file`, `slug`, `title_tag`, `meta_keywords`, `meta_description`, `meta_robots`, `meta_google_bot`, `locale`, `news_id`, `deleted_at`, `created_at`, `updated_at`) VALUES
-(22, '10363caf-d53b-4c4d-86be-dec3f180fbdd', 'VNPT tung loạt ưu đãi cho khách hàng thanh toán điện tử', 'Vũ Quốc Tuấn', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<p>Nhà mạng tặng 30% giá trị thẻ nạp, tặng data miễn phí, giảm giá 30% cho khách đặt phòng mùa du lịch cùng nhiều ưu đãi khác.&nbsp;</p>', '<p>VNPT cho biết, nhân \"Ngày không tiền mặt\", Tập đoàn tung nhiều ưu đãi cho khách hàng thuộc mảng Fintech (tài chính công nghệ) đang sử dụng VNPT Pay. Cụ thể, nhà mạng khuyến mại 30% giá trị thẻ nạp, tặng data miễn phí, giảm giá 30% khi đặt khách sạn mùa du lịch với tính năng Auto pay.</p>\r\n\r\n<figure data-size=\"true\" itemprop=\"associatedMedia image\" itemscope=\"\" itemtype=\"http://schema.org/ImageObject\"><img alt=\"polyad\" data-ll-status=\"loaded\" data-src=\"https://i1-kinhdoanh.vnecdn.net/2019/06/11/11-6-20192-w500-6304-1560233293.png?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=6IKAAGEZYWRdJuZm0ioNJw\" intrinsicsize=\"680x0\" itemprop=\"contentUrl\" loading=\"lazy\" src=\"https://i1-kinhdoanh.vnecdn.net/2019/06/11/11-6-20192-w500-6304-1560233293.png?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=6IKAAGEZYWRdJuZm0ioNJw\" />\r\n<figcaption itemprop=\"description\">\r\n<p>VNPT Pay là mảng kinh doanh chiến lược trong hệ sinh thái VNPT.</p>\r\n</figcaption>\r\n</figure>\r\n\r\n<p>Với VNPT Pay, khách hàng có thể thanh toán cước di động, nạp thẻ cào điện thoại truyền hình, Internet; điện, nước; mua vé xem phim, vé máy bay, bảo hiểm.... VNPT Pay cung cấp tiện ích qua 3 hình thức là ví điện tử, thẻ nội địa 34 ngân hàng, thẻ quốc tế trên ứng dụng và website.</p>\r\n\r\n<p>\"Điểm nội trội của VNPT Pay là dịch vụ thanh toán tự động (auto pay) tự động, an toàn, tiện lợi và hoàn toàn miễn phí. Khách hàng không mất thời gian ghi nhớ hạn thanh toán cước, tiết kiệm chi phí, thời gian và công sức so với nộp tiền mặt\", đại diện doanh nghiệp đánh giá.</p>\r\n\r\n<p>Từ ngày 12-30/6, khách hàng còn được tặng 1Gb data 3G hoặc 4G của VinaPhone khi tải app VNPT Pay. Riêng trong ngày 16/6, tất cả giao dịch nạp thẻ cào VinaPhone qua VNPT Pay đều hưởng khuyến mại 30% giá trị thẻ nạp.</p>\r\n\r\n<p>Cũng khởi động mùa du lịch 2019, VNPT Pay giảm 30% giá khách sạn cho người dùng khi đặt trước tại Vntrip.vn trên VNPT Pay.</p>\r\n\r\n<p>VNPT Pay sở hữu tính năng Dealtoday cho phép mua hàng ở nhiều lĩnh vực: du lịch, làm đẹp, làm răng, ẩm thực, sức khỏe,... với mức giá ưu đãi, khuyến mại lên đến 90%. Các thẻ mua hàng giá rẻ được cập nhật liên tục, không giới hạn về thời gian sử dụng</p>\r\n\r\n<p>VNPT Pay là một mảng dịch vụ chiến lược trong hệ sinh thái của VNPT. Doanh nghiệp sở hữu hệ sinh thái đa dạng gồm các dịch vụ: di động, băng rộng, truyền hình, các dịch vụ GTGT...</p>\r\n\r\n<p>Hiện tại, VNPT đã ký kết thỏa thuận hợp tác chiến lược với 53 tỉnh/thành phố; triển khai các giải pháp Chính quyền điện tử cho 61/63 địa phương; cung cấp Phần mềm quản lý Y tế cho hơn 50% các cơ sở y tế trên cả nước; triển khai Hệ thống quản lý Giáo dục cho hơn 12.000 trường học với gần 5 triệu hồ sơ học sinh.</p>\r\n\r\n<p>\"Song song với việc hoàn thiện hệ sinh thái đa dạng, VNPT tích hợp hệ thống thanh toán điện tử. Sử dụng VNPT Pay, khách hàng sẽ dễ dàng thanh toán hóa đơn cước các dịch vụ này, thậm chí còn có thể được hưởng những mức cước thanh toán ưu đãi hấp dẫn\", đại diện VNPT cho biết.</p>', NULL, 'http://localhost:8000/uploads/images/11-6-20192-w500-6304-156023329-3192-3149-1560239474.png', NULL, NULL, 'vnpt-tung-loat-uu-dai-cho-khach-hang-thanh-toan-dien-tu', 'VNPT tung loạt ưu đãi cho khách hàng thanh toán điện tử', NULL, NULL, 'index,follow', 'index,follow', 'vi', 22, NULL, '2021-05-17 04:47:18', '2021-05-17 04:47:18'),
-(23, '36f4849d-0693-4905-95e2-85656e499f57', 'Think Nature tặng 2018 phần quà cho fan hâm mộ tuyển Việt Nam', 'Vũ Quốc Tuấn', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<p>Người hâm mộ không cần mua hàng vẫn được tặng bộ mỹ phẩm trị giá hơn một triệu đồng từ thương hiệu Think Nature.</p>', '<p>Trong 90 phút chương trình \"Quà tặng Giờ Vàng - Mừng nhà Vô địch\", đúng 2018 phần quà đã được Think Nature trao tận tay hàng nghìn người hâm mộ đội tuyển Việt Nam. Sự kiện diễn ra tại Vincom Đồng Khởi - TP HCM và Vincom Times City - Hà Nội trong hai ngày cuối tuần 22 và 23/12. Tổng giá trị các phần quà lên đến 2,1 tỷ đồng.</p>\r\n\r\n<figure data-size=\"true\" itemprop=\"associatedMedia image\" itemscope=\"\" itemtype=\"http://schema.org/ImageObject\"><img alt=\"polyad\" data-ll-status=\"loaded\" data-src=\"https://i1-kinhdoanh.vnecdn.net/2018/12/24/24-12-201812-237223791-w500-6102-1545638567.png?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=54tgltr7FhEEA42_v_6bzw\" intrinsicsize=\"680x0\" itemprop=\"contentUrl\" loading=\"lazy\" src=\"https://i1-kinhdoanh.vnecdn.net/2018/12/24/24-12-201812-237223791-w500-6102-1545638567.png?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=54tgltr7FhEEA42_v_6bzw\" />\r\n<figcaption itemprop=\"description\">\r\n<p>Hàng dài khách hàng đã đến các gian hàng của Think Nature để mua hàng và nhận&nbsp;quà.&nbsp;</p>\r\n</figcaption>\r\n</figure>\r\n\r\n<p>Ông Kim Seong Gon - đại diện thương hiệu Think Nature tại Việt Nam cho biết, mỗi phần quà trị giá 1.053.000 đồng, bao gồm 5 sản phẩm bán chạy nhất của hãng mỹ phẩm thiên nhiên đến từ Hàn Quốc. \"Đó là dầu gội đặc trị muối hồng Himalaya, kem ủ muối hồng Himalaya, kem chống nắng dạng thỏi và 2 mặt nạ dưỡng da\", vị đại diện nói.</p>\r\n\r\n<p>Think Nature còn tặng thêm 3 postcard bắt mắt in hình nam thần tượng nổi tiếng Kang Daniel, cũng là gương mặt đại diện cho thương hiệu Think Nature.</p>\r\n\r\n<p>Đặc biệt, người hâm mộ không cần mua hàng, chỉ cần ghé gian hàng Think Nature đúng khung giờ trùng với 90 phút diễn ra trận chung kết lượt về giữa Việt Nam và Malaysia sẽ được nhận quà. Ngoài ra, thương hiệu mỹ phẩm này còn tặng thêm 22 món quà bất ngờ cho người hâm mộ khoe ảnh check-in đẹp nhất trên mạng xã hội.</p>\r\n\r\n<figure data-size=\"true\" itemprop=\"associatedMedia image\" itemscope=\"\" itemtype=\"http://schema.org/ImageObject\"><img alt=\"polyad\" data-ll-status=\"loaded\" data-src=\"https://i1-kinhdoanh.vnecdn.net/2018/12/24/24-12-201820-w500-5155-1545638570.png?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=vP_S9tQKXY9VJ4G8THyiIQ\" intrinsicsize=\"680x0\" itemprop=\"contentUrl\" loading=\"lazy\" src=\"https://i1-kinhdoanh.vnecdn.net/2018/12/24/24-12-201820-w500-5155-1545638570.png?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=vP_S9tQKXY9VJ4G8THyiIQ\" />\r\n<figcaption itemprop=\"description\">\r\n<p>Khách hàng chụp ảnh check-in để nhận phần quà từ Think Nature.&nbsp;</p>\r\n</figcaption>\r\n</figure>\r\n\r\n<p>Chia sẻ về chương trình tặng quà đặc biệt này, đại diện Think Nature nói đây là tình cảm của đất nước Hàn Quốc dành cho đội tuyển Việt Nam và huấn luyện viên Park Hang-Seo. Thương hiệu mỹ phẩm Hàn Quốc muốn chia sẻ niềm vui cùng người hâm mộ Việt Nam bằng hành động thật ý nghĩa. Tuy nhiên, do thủ tục xin cấp phép tổ chức mất nhiều thời gian, nên chương trình tặng quà ăn mừng chiến thắng đã diễn ra chậm hơn so với dự định ban đầu.</p>\r\n\r\n<p>Đại diện Think Nature nói: \"15 năm làm việc tại Việt Nam, tôi luôn dành tình cảm đặc biệt cho đất nước các bạn. Tôi vô cùng sung sướng, xúc động khi Việt Nam đăng quang AFF Cup 2018\".</p>\r\n\r\n<figure data-size=\"true\" itemprop=\"associatedMedia image\" itemscope=\"\" itemtype=\"http://schema.org/ImageObject\"><img alt=\"polyad\" data-ll-status=\"loaded\" data-src=\"https://i1-kinhdoanh.vnecdn.net/2018/12/24/24-12-201833-w500-1121-1545638571.png?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=q5XCAkCiG7PI9Xf3KCZf_Q\" intrinsicsize=\"680x0\" itemprop=\"contentUrl\" loading=\"lazy\" src=\"https://i1-kinhdoanh.vnecdn.net/2018/12/24/24-12-201833-w500-1121-1545638571.png?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=q5XCAkCiG7PI9Xf3KCZf_Q\" />\r\n<figcaption itemprop=\"description\">\r\n<p>Think Nature cung cấp các sản phẩm thiên nhiên xuất xứ từ Hàn Quốc. website:&nbsp;<a href=\"http://thinknature.com.vn/\" rel=\"nofollow\">thinknature.com.vn.</a>&nbsp;<a href=\"https://www.facebook.com/thinknature.com.vn/\" rel=\"nofollow\">facebook.com/thinknature.com.vn/</a></p>\r\n</figcaption>\r\n</figure>\r\n\r\n<p>Think Nature là thương hiệu mỹ phẩm thiên nhiên đến từ Hàn Quốc, quê hương của huấn luyện viên tài ba Park Hang Seo. Vì vậy, thông qua chương trình tặng quà không lợi nhuận này, Think Nature mong muốn chúc mừng cho chiến thắng của đội tuyển và tăng thêm tình cảm với khách hàng Việt Nam.&nbsp;</p>\r\n\r\n<p>Các sản phẩm Think Nature được chiết xuất từ thiên nhiên, không màu, không mùi hương nhân tạo và được ưa chuộng ở Hàn Quốc. Ngay sau chương trình tặng quà, Think Nature cũng tung nhiều ưu đãi như mua một tặng một, quay số trúng thưởng, tặng sách ảnh in hình Kang Daniel nhân dịp mở thêm cửa hàng thứ 3 tại Vincom Hải Phòng ngày 24/12.</p>', NULL, 'http://localhost:8000/uploads/images/24-12-201812-237223791-w500-15-3601-4864-1545638572.png', NULL, NULL, 'think-nature-tang-2018-phan-qua-cho-fan-ham-mo-tuyen-viet-nam', 'Think Nature tặng 2018 phần quà cho fan hâm mộ tuyển Việt Nam', NULL, NULL, 'index,follow', 'index,follow', 'vi', 23, NULL, '2021-05-17 06:09:42', '2021-05-17 06:09:42');
+(22, '10363caf-d53b-4c4d-86be-dec3f180fbdd', 'VNPT tung loạt ưu đãi cho khách hàng thanh toán điện tử', 'Trần Thanh Luân', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<p>Nhà mạng tặng 30% giá trị thẻ nạp, tặng data miễn phí, giảm giá 30% cho khách đặt phòng mùa du lịch cùng nhiều ưu đãi khác.&nbsp;</p>', '<p>VNPT cho biết, nhân \"Ngày không tiền mặt\", Tập đoàn tung nhiều ưu đãi cho khách hàng thuộc mảng Fintech (tài chính công nghệ) đang sử dụng VNPT Pay. Cụ thể, nhà mạng khuyến mại 30% giá trị thẻ nạp, tặng data miễn phí, giảm giá 30% khi đặt khách sạn mùa du lịch với tính năng Auto pay.</p>\r\n\r\n<figure data-size=\"true\" itemprop=\"associatedMedia image\" itemscope=\"\" itemtype=\"http://schema.org/ImageObject\"><img alt=\"polyad\" data-ll-status=\"loaded\" data-src=\"https://i1-kinhdoanh.vnecdn.net/2019/06/11/11-6-20192-w500-6304-1560233293.png?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=6IKAAGEZYWRdJuZm0ioNJw\" intrinsicsize=\"680x0\" itemprop=\"contentUrl\" loading=\"lazy\" src=\"https://i1-kinhdoanh.vnecdn.net/2019/06/11/11-6-20192-w500-6304-1560233293.png?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=6IKAAGEZYWRdJuZm0ioNJw\" />\r\n<figcaption itemprop=\"description\">\r\n<p>VNPT Pay là mảng kinh doanh chiến lược trong hệ sinh thái VNPT.</p>\r\n</figcaption>\r\n</figure>\r\n\r\n<p>Với VNPT Pay, khách hàng có thể thanh toán cước di động, nạp thẻ cào điện thoại truyền hình, Internet; điện, nước; mua vé xem phim, vé máy bay, bảo hiểm.... VNPT Pay cung cấp tiện ích qua 3 hình thức là ví điện tử, thẻ nội địa 34 ngân hàng, thẻ quốc tế trên ứng dụng và website.</p>\r\n\r\n<p>\"Điểm nội trội của VNPT Pay là dịch vụ thanh toán tự động (auto pay) tự động, an toàn, tiện lợi và hoàn toàn miễn phí. Khách hàng không mất thời gian ghi nhớ hạn thanh toán cước, tiết kiệm chi phí, thời gian và công sức so với nộp tiền mặt\", đại diện doanh nghiệp đánh giá.</p>\r\n\r\n<p>Từ ngày 12-30/6, khách hàng còn được tặng 1Gb data 3G hoặc 4G của VinaPhone khi tải app VNPT Pay. Riêng trong ngày 16/6, tất cả giao dịch nạp thẻ cào VinaPhone qua VNPT Pay đều hưởng khuyến mại 30% giá trị thẻ nạp.</p>\r\n\r\n<p>Cũng khởi động mùa du lịch 2019, VNPT Pay giảm 30% giá khách sạn cho người dùng khi đặt trước tại Vntrip.vn trên VNPT Pay.</p>\r\n\r\n<p>VNPT Pay sở hữu tính năng Dealtoday cho phép mua hàng ở nhiều lĩnh vực: du lịch, làm đẹp, làm răng, ẩm thực, sức khỏe,... với mức giá ưu đãi, khuyến mại lên đến 90%. Các thẻ mua hàng giá rẻ được cập nhật liên tục, không giới hạn về thời gian sử dụng</p>\r\n\r\n<p>VNPT Pay là một mảng dịch vụ chiến lược trong hệ sinh thái của VNPT. Doanh nghiệp sở hữu hệ sinh thái đa dạng gồm các dịch vụ: di động, băng rộng, truyền hình, các dịch vụ GTGT...</p>\r\n\r\n<p>Hiện tại, VNPT đã ký kết thỏa thuận hợp tác chiến lược với 53 tỉnh/thành phố; triển khai các giải pháp Chính quyền điện tử cho 61/63 địa phương; cung cấp Phần mềm quản lý Y tế cho hơn 50% các cơ sở y tế trên cả nước; triển khai Hệ thống quản lý Giáo dục cho hơn 12.000 trường học với gần 5 triệu hồ sơ học sinh.</p>\r\n\r\n<p>\"Song song với việc hoàn thiện hệ sinh thái đa dạng, VNPT tích hợp hệ thống thanh toán điện tử. Sử dụng VNPT Pay, khách hàng sẽ dễ dàng thanh toán hóa đơn cước các dịch vụ này, thậm chí còn có thể được hưởng những mức cước thanh toán ưu đãi hấp dẫn\", đại diện VNPT cho biết.</p>', NULL, 'http://localhost:8000/uploads/images/11-6-20192-w500-6304-156023329-3192-3149-1560239474.png', NULL, NULL, 'vnpt-tung-loat-uu-dai-cho-khach-hang-thanh-toan-dien-tu', 'VNPT tung loạt ưu đãi cho khách hàng thanh toán điện tử', NULL, NULL, 'index,follow', 'index,follow', 'vi', 22, NULL, '2021-05-17 04:47:18', '2021-05-17 04:47:18'),
+(23, '36f4849d-0693-4905-95e2-85656e499f57', 'Think Nature tặng 2018 phần quà cho fan hâm mộ tuyển Việt Nam', 'Trần Thanh Luân', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<p>Người hâm mộ không cần mua hàng vẫn được tặng bộ mỹ phẩm trị giá hơn một triệu đồng từ thương hiệu Think Nature.</p>', '<p>Trong 90 phút chương trình \"Quà tặng Giờ Vàng - Mừng nhà Vô địch\", đúng 2018 phần quà đã được Think Nature trao tận tay hàng nghìn người hâm mộ đội tuyển Việt Nam. Sự kiện diễn ra tại Vincom Đồng Khởi - TP HCM và Vincom Times City - Hà Nội trong hai ngày cuối tuần 22 và 23/12. Tổng giá trị các phần quà lên đến 2,1 tỷ đồng.</p>\r\n\r\n<figure data-size=\"true\" itemprop=\"associatedMedia image\" itemscope=\"\" itemtype=\"http://schema.org/ImageObject\"><img alt=\"polyad\" data-ll-status=\"loaded\" data-src=\"https://i1-kinhdoanh.vnecdn.net/2018/12/24/24-12-201812-237223791-w500-6102-1545638567.png?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=54tgltr7FhEEA42_v_6bzw\" intrinsicsize=\"680x0\" itemprop=\"contentUrl\" loading=\"lazy\" src=\"https://i1-kinhdoanh.vnecdn.net/2018/12/24/24-12-201812-237223791-w500-6102-1545638567.png?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=54tgltr7FhEEA42_v_6bzw\" />\r\n<figcaption itemprop=\"description\">\r\n<p>Hàng dài khách hàng đã đến các gian hàng của Think Nature để mua hàng và nhận&nbsp;quà.&nbsp;</p>\r\n</figcaption>\r\n</figure>\r\n\r\n<p>Ông Kim Seong Gon - đại diện thương hiệu Think Nature tại Việt Nam cho biết, mỗi phần quà trị giá 1.053.000 đồng, bao gồm 5 sản phẩm bán chạy nhất của hãng mỹ phẩm thiên nhiên đến từ Hàn Quốc. \"Đó là dầu gội đặc trị muối hồng Himalaya, kem ủ muối hồng Himalaya, kem chống nắng dạng thỏi và 2 mặt nạ dưỡng da\", vị đại diện nói.</p>\r\n\r\n<p>Think Nature còn tặng thêm 3 postcard bắt mắt in hình nam thần tượng nổi tiếng Kang Daniel, cũng là gương mặt đại diện cho thương hiệu Think Nature.</p>\r\n\r\n<p>Đặc biệt, người hâm mộ không cần mua hàng, chỉ cần ghé gian hàng Think Nature đúng khung giờ trùng với 90 phút diễn ra trận chung kết lượt về giữa Việt Nam và Malaysia sẽ được nhận quà. Ngoài ra, thương hiệu mỹ phẩm này còn tặng thêm 22 món quà bất ngờ cho người hâm mộ khoe ảnh check-in đẹp nhất trên mạng xã hội.</p>\r\n\r\n<figure data-size=\"true\" itemprop=\"associatedMedia image\" itemscope=\"\" itemtype=\"http://schema.org/ImageObject\"><img alt=\"polyad\" data-ll-status=\"loaded\" data-src=\"https://i1-kinhdoanh.vnecdn.net/2018/12/24/24-12-201820-w500-5155-1545638570.png?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=vP_S9tQKXY9VJ4G8THyiIQ\" intrinsicsize=\"680x0\" itemprop=\"contentUrl\" loading=\"lazy\" src=\"https://i1-kinhdoanh.vnecdn.net/2018/12/24/24-12-201820-w500-5155-1545638570.png?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=vP_S9tQKXY9VJ4G8THyiIQ\" />\r\n<figcaption itemprop=\"description\">\r\n<p>Khách hàng chụp ảnh check-in để nhận phần quà từ Think Nature.&nbsp;</p>\r\n</figcaption>\r\n</figure>\r\n\r\n<p>Chia sẻ về chương trình tặng quà đặc biệt này, đại diện Think Nature nói đây là tình cảm của đất nước Hàn Quốc dành cho đội tuyển Việt Nam và huấn luyện viên Park Hang-Seo. Thương hiệu mỹ phẩm Hàn Quốc muốn chia sẻ niềm vui cùng người hâm mộ Việt Nam bằng hành động thật ý nghĩa. Tuy nhiên, do thủ tục xin cấp phép tổ chức mất nhiều thời gian, nên chương trình tặng quà ăn mừng chiến thắng đã diễn ra chậm hơn so với dự định ban đầu.</p>\r\n\r\n<p>Đại diện Think Nature nói: \"15 năm làm việc tại Việt Nam, tôi luôn dành tình cảm đặc biệt cho đất nước các bạn. Tôi vô cùng sung sướng, xúc động khi Việt Nam đăng quang AFF Cup 2018\".</p>\r\n\r\n<figure data-size=\"true\" itemprop=\"associatedMedia image\" itemscope=\"\" itemtype=\"http://schema.org/ImageObject\"><img alt=\"polyad\" data-ll-status=\"loaded\" data-src=\"https://i1-kinhdoanh.vnecdn.net/2018/12/24/24-12-201833-w500-1121-1545638571.png?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=q5XCAkCiG7PI9Xf3KCZf_Q\" intrinsicsize=\"680x0\" itemprop=\"contentUrl\" loading=\"lazy\" src=\"https://i1-kinhdoanh.vnecdn.net/2018/12/24/24-12-201833-w500-1121-1545638571.png?w=680&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=q5XCAkCiG7PI9Xf3KCZf_Q\" />\r\n<figcaption itemprop=\"description\">\r\n<p>Think Nature cung cấp các sản phẩm thiên nhiên xuất xứ từ Hàn Quốc. website:&nbsp;<a href=\"http://thinknature.com.vn/\" rel=\"nofollow\">thinknature.com.vn.</a>&nbsp;<a href=\"https://www.facebook.com/thinknature.com.vn/\" rel=\"nofollow\">facebook.com/thinknature.com.vn/</a></p>\r\n</figcaption>\r\n</figure>\r\n\r\n<p>Think Nature là thương hiệu mỹ phẩm thiên nhiên đến từ Hàn Quốc, quê hương của huấn luyện viên tài ba Park Hang Seo. Vì vậy, thông qua chương trình tặng quà không lợi nhuận này, Think Nature mong muốn chúc mừng cho chiến thắng của đội tuyển và tăng thêm tình cảm với khách hàng Việt Nam.&nbsp;</p>\r\n\r\n<p>Các sản phẩm Think Nature được chiết xuất từ thiên nhiên, không màu, không mùi hương nhân tạo và được ưa chuộng ở Hàn Quốc. Ngay sau chương trình tặng quà, Think Nature cũng tung nhiều ưu đãi như mua một tặng một, quay số trúng thưởng, tặng sách ảnh in hình Kang Daniel nhân dịp mở thêm cửa hàng thứ 3 tại Vincom Hải Phòng ngày 24/12.</p>', NULL, 'http://localhost:8000/uploads/images/24-12-201812-237223791-w500-15-3601-4864-1545638572.png', NULL, NULL, 'think-nature-tang-2018-phan-qua-cho-fan-ham-mo-tuyen-viet-nam', 'Think Nature tặng 2018 phần quà cho fan hâm mộ tuyển Việt Nam', NULL, NULL, 'index,follow', 'index,follow', 'vi', 23, NULL, '2021-05-17 06:09:42', '2021-05-17 06:09:42');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_oauth_access_tokens`
+-- Cấu trúc bảng cho bảng `samcms_oauth_access_tokens`
 --
 
 CREATE TABLE `samcms_oauth_access_tokens` (
@@ -2306,7 +2306,7 @@ CREATE TABLE `samcms_oauth_access_tokens` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_oauth_access_tokens`
+-- Đang đổ dữ liệu cho bảng `samcms_oauth_access_tokens`
 --
 
 INSERT INTO `samcms_oauth_access_tokens` (`id`, `user_id`, `client_id`, `name`, `scopes`, `revoked`, `created_at`, `updated_at`, `expires_at`) VALUES
@@ -2348,7 +2348,7 @@ INSERT INTO `samcms_oauth_access_tokens` (`id`, `user_id`, `client_id`, `name`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_oauth_auth_codes`
+-- Cấu trúc bảng cho bảng `samcms_oauth_auth_codes`
 --
 
 CREATE TABLE `samcms_oauth_auth_codes` (
@@ -2363,7 +2363,7 @@ CREATE TABLE `samcms_oauth_auth_codes` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_oauth_clients`
+-- Cấu trúc bảng cho bảng `samcms_oauth_clients`
 --
 
 CREATE TABLE `samcms_oauth_clients` (
@@ -2381,7 +2381,7 @@ CREATE TABLE `samcms_oauth_clients` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_oauth_clients`
+-- Đang đổ dữ liệu cho bảng `samcms_oauth_clients`
 --
 
 INSERT INTO `samcms_oauth_clients` (`id`, `user_id`, `name`, `secret`, `provider`, `redirect`, `personal_access_client`, `password_client`, `revoked`, `created_at`, `updated_at`) VALUES
@@ -2391,7 +2391,7 @@ INSERT INTO `samcms_oauth_clients` (`id`, `user_id`, `name`, `secret`, `provider
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_oauth_personal_access_clients`
+-- Cấu trúc bảng cho bảng `samcms_oauth_personal_access_clients`
 --
 
 CREATE TABLE `samcms_oauth_personal_access_clients` (
@@ -2402,7 +2402,7 @@ CREATE TABLE `samcms_oauth_personal_access_clients` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_oauth_personal_access_clients`
+-- Đang đổ dữ liệu cho bảng `samcms_oauth_personal_access_clients`
 --
 
 INSERT INTO `samcms_oauth_personal_access_clients` (`id`, `client_id`, `created_at`, `updated_at`) VALUES
@@ -2411,7 +2411,7 @@ INSERT INTO `samcms_oauth_personal_access_clients` (`id`, `client_id`, `created_
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_oauth_refresh_tokens`
+-- Cấu trúc bảng cho bảng `samcms_oauth_refresh_tokens`
 --
 
 CREATE TABLE `samcms_oauth_refresh_tokens` (
@@ -2424,7 +2424,7 @@ CREATE TABLE `samcms_oauth_refresh_tokens` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_pages`
+-- Cấu trúc bảng cho bảng `samcms_pages`
 --
 
 CREATE TABLE `samcms_pages` (
@@ -2438,7 +2438,7 @@ CREATE TABLE `samcms_pages` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_pages`
+-- Đang đổ dữ liệu cho bảng `samcms_pages`
 --
 
 INSERT INTO `samcms_pages` (`id`, `uuid`, `status`, `user_id`, `deleted_at`, `created_at`, `updated_at`) VALUES
@@ -2457,7 +2457,7 @@ INSERT INTO `samcms_pages` (`id`, `uuid`, `status`, `user_id`, `deleted_at`, `cr
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_pages_translations`
+-- Cấu trúc bảng cho bảng `samcms_pages_translations`
 --
 
 CREATE TABLE `samcms_pages_translations` (
@@ -2479,7 +2479,7 @@ CREATE TABLE `samcms_pages_translations` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_pages_translations`
+-- Đang đổ dữ liệu cho bảng `samcms_pages_translations`
 --
 
 INSERT INTO `samcms_pages_translations` (`id`, `uuid`, `name`, `content`, `image`, `title_tag`, `meta_keywords`, `meta_description`, `meta_robots`, `meta_google_bot`, `locale`, `page_id`, `deleted_at`, `created_at`, `updated_at`) VALUES
@@ -2498,7 +2498,7 @@ INSERT INTO `samcms_pages_translations` (`id`, `uuid`, `name`, `content`, `image
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_password_resets`
+-- Cấu trúc bảng cho bảng `samcms_password_resets`
 --
 
 CREATE TABLE `samcms_password_resets` (
@@ -2512,7 +2512,7 @@ CREATE TABLE `samcms_password_resets` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_paydetails`
+-- Cấu trúc bảng cho bảng `samcms_paydetails`
 --
 
 CREATE TABLE `samcms_paydetails` (
@@ -2531,7 +2531,7 @@ CREATE TABLE `samcms_paydetails` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_paydetails`
+-- Đang đổ dữ liệu cho bảng `samcms_paydetails`
 --
 
 INSERT INTO `samcms_paydetails` (`id`, `uuid`, `payorders_id`, `product_id`, `quantity`, `price`, `total`, `attribute`, `fee`, `deleted_at`, `created_at`, `updated_at`) VALUES
@@ -2545,7 +2545,7 @@ INSERT INTO `samcms_paydetails` (`id`, `uuid`, `payorders_id`, `product_id`, `qu
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_payorders`
+-- Cấu trúc bảng cho bảng `samcms_payorders`
 --
 
 CREATE TABLE `samcms_payorders` (
@@ -2571,7 +2571,7 @@ CREATE TABLE `samcms_payorders` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_payorders`
+-- Đang đổ dữ liệu cho bảng `samcms_payorders`
 --
 
 INSERT INTO `samcms_payorders` (`id`, `uuid`, `user_id`, `fullname`, `email`, `address`, `phone`, `name_receive`, `phone_receive`, `note`, `status`, `coupon_id`, `delivery`, `total`, `fee`, `payment_method`, `deleted_at`, `created_at`, `updated_at`) VALUES
@@ -2584,7 +2584,7 @@ INSERT INTO `samcms_payorders` (`id`, `uuid`, `user_id`, `fullname`, `email`, `a
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_permissions`
+-- Cấu trúc bảng cho bảng `samcms_permissions`
 --
 
 CREATE TABLE `samcms_permissions` (
@@ -2596,7 +2596,7 @@ CREATE TABLE `samcms_permissions` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_permissions`
+-- Đang đổ dữ liệu cho bảng `samcms_permissions`
 --
 
 INSERT INTO `samcms_permissions` (`id`, `name`, `guard_name`, `created_at`, `updated_at`) VALUES
@@ -2699,7 +2699,7 @@ INSERT INTO `samcms_permissions` (`id`, `name`, `guard_name`, `created_at`, `upd
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_positions`
+-- Cấu trúc bảng cho bảng `samcms_positions`
 --
 
 CREATE TABLE `samcms_positions` (
@@ -2722,7 +2722,7 @@ CREATE TABLE `samcms_positions` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_positions`
+-- Đang đổ dữ liệu cho bảng `samcms_positions`
 --
 
 INSERT INTO `samcms_positions` (`id`, `uuid`, `name`, `position`, `width`, `height`, `link`, `image`, `access`, `open_link`, `parent_id`, `status`, `user_id`, `deleted_at`, `created_at`, `updated_at`) VALUES
@@ -2737,7 +2737,7 @@ INSERT INTO `samcms_positions` (`id`, `uuid`, `name`, `position`, `width`, `heig
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_producers`
+-- Cấu trúc bảng cho bảng `samcms_producers`
 --
 
 CREATE TABLE `samcms_producers` (
@@ -2758,7 +2758,7 @@ CREATE TABLE `samcms_producers` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_producers`
+-- Đang đổ dữ liệu cho bảng `samcms_producers`
 --
 
 INSERT INTO `samcms_producers` (`id`, `uuid`, `status`, `image`, `banner1`, `banner2`, `banner3`, `link1`, `link2`, `link3`, `user_id`, `deleted_at`, `created_at`, `updated_at`) VALUES
@@ -2779,7 +2779,7 @@ INSERT INTO `samcms_producers` (`id`, `uuid`, `status`, `image`, `banner1`, `ban
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_producers_translations`
+-- Cấu trúc bảng cho bảng `samcms_producers_translations`
 --
 
 CREATE TABLE `samcms_producers_translations` (
@@ -2804,7 +2804,7 @@ CREATE TABLE `samcms_producers_translations` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_producers_translations`
+-- Đang đổ dữ liệu cho bảng `samcms_producers_translations`
 --
 
 INSERT INTO `samcms_producers_translations` (`id`, `uuid`, `name`, `address`, `phone`, `email`, `description`, `slug`, `title_tag`, `meta_keywords`, `meta_description`, `meta_robots`, `meta_google_bot`, `locale`, `producer_id`, `deleted_at`, `created_at`, `updated_at`) VALUES
@@ -2825,7 +2825,7 @@ INSERT INTO `samcms_producers_translations` (`id`, `uuid`, `name`, `address`, `p
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_producer_images`
+-- Cấu trúc bảng cho bảng `samcms_producer_images`
 --
 
 CREATE TABLE `samcms_producer_images` (
@@ -2840,7 +2840,7 @@ CREATE TABLE `samcms_producer_images` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_products`
+-- Cấu trúc bảng cho bảng `samcms_products`
 --
 
 CREATE TABLE `samcms_products` (
@@ -2869,7 +2869,7 @@ CREATE TABLE `samcms_products` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_products`
+-- Đang đổ dữ liệu cho bảng `samcms_products`
 --
 
 INSERT INTO `samcms_products` (`id`, `uuid`, `date_start`, `time_start`, `date_end`, `time_end`, `position`, `access`, `open_link`, `price`, `discount`, `status`, `featured`, `template`, `installment`, `viewed`, `img360`, `producer_id`, `user_id`, `deleted_at`, `created_at`, `updated_at`) VALUES
@@ -2894,7 +2894,7 @@ INSERT INTO `samcms_products` (`id`, `uuid`, `date_start`, `time_start`, `date_e
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_products_translations`
+-- Cấu trúc bảng cho bảng `samcms_products_translations`
 --
 
 CREATE TABLE `samcms_products_translations` (
@@ -2922,7 +2922,7 @@ CREATE TABLE `samcms_products_translations` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_products_translations`
+-- Đang đổ dữ liệu cho bảng `samcms_products_translations`
 --
 
 INSERT INTO `samcms_products_translations` (`id`, `uuid`, `name`, `description`, `content`, `image`, `youtube`, `parent_id`, `file`, `slug`, `title_tag`, `meta_keywords`, `meta_description`, `meta_robots`, `meta_google_bot`, `locale`, `product_id`, `promotion_id`, `deleted_at`, `created_at`, `updated_at`) VALUES
@@ -2940,7 +2940,7 @@ INSERT INTO `samcms_products_translations` (`id`, `uuid`, `name`, `description`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_product_attributes`
+-- Cấu trúc bảng cho bảng `samcms_product_attributes`
 --
 
 CREATE TABLE `samcms_product_attributes` (
@@ -2954,7 +2954,7 @@ CREATE TABLE `samcms_product_attributes` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_product_attributes`
+-- Đang đổ dữ liệu cho bảng `samcms_product_attributes`
 --
 
 INSERT INTO `samcms_product_attributes` (`id`, `attribute`, `product_id`, `value`, `deleted_at`, `updated_at`, `created_at`) VALUES
@@ -3383,7 +3383,7 @@ INSERT INTO `samcms_product_attributes` (`id`, `attribute`, `product_id`, `value
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_product_images`
+-- Cấu trúc bảng cho bảng `samcms_product_images`
 --
 
 CREATE TABLE `samcms_product_images` (
@@ -3397,7 +3397,7 @@ CREATE TABLE `samcms_product_images` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_product_images`
+-- Đang đổ dữ liệu cho bảng `samcms_product_images`
 --
 
 INSERT INTO `samcms_product_images` (`id`, `image`, `image_position`, `alt`, `position`, `product_id`, `deleted_at`) VALUES
@@ -3519,7 +3519,7 @@ INSERT INTO `samcms_product_images` (`id`, `image`, `image_position`, `alt`, `po
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_promotions`
+-- Cấu trúc bảng cho bảng `samcms_promotions`
 --
 
 CREATE TABLE `samcms_promotions` (
@@ -3532,7 +3532,7 @@ CREATE TABLE `samcms_promotions` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_promotions`
+-- Đang đổ dữ liệu cho bảng `samcms_promotions`
 --
 
 INSERT INTO `samcms_promotions` (`id`, `uuid`, `value`, `product_id`, `created_at`, `updated_at`) VALUES
@@ -3542,7 +3542,7 @@ INSERT INTO `samcms_promotions` (`id`, `uuid`, `value`, `product_id`, `created_a
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_provinces`
+-- Cấu trúc bảng cho bảng `samcms_provinces`
 --
 
 CREATE TABLE `samcms_provinces` (
@@ -3558,7 +3558,7 @@ CREATE TABLE `samcms_provinces` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_provinces`
+-- Đang đổ dữ liệu cho bảng `samcms_provinces`
 --
 
 INSERT INTO `samcms_provinces` (`id`, `name`, `gso_id`, `status`, `featured`, `fee`, `deleted_at`, `created_at`, `updated_at`) VALUES
@@ -3629,7 +3629,7 @@ INSERT INTO `samcms_provinces` (`id`, `name`, `gso_id`, `status`, `featured`, `f
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_question_product`
+-- Cấu trúc bảng cho bảng `samcms_question_product`
 --
 
 CREATE TABLE `samcms_question_product` (
@@ -3643,7 +3643,7 @@ CREATE TABLE `samcms_question_product` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_question_product`
+-- Đang đổ dữ liệu cho bảng `samcms_question_product`
 --
 
 INSERT INTO `samcms_question_product` (`id`, `uuid`, `question`, `answer`, `status`, `created_at`, `updated_at`) VALUES
@@ -3655,7 +3655,7 @@ INSERT INTO `samcms_question_product` (`id`, `uuid`, `question`, `answer`, `stat
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_reply_contacts`
+-- Cấu trúc bảng cho bảng `samcms_reply_contacts`
 --
 
 CREATE TABLE `samcms_reply_contacts` (
@@ -3672,7 +3672,7 @@ CREATE TABLE `samcms_reply_contacts` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_reply_contacts`
+-- Đang đổ dữ liệu cho bảng `samcms_reply_contacts`
 --
 
 INSERT INTO `samcms_reply_contacts` (`id`, `uuid`, `full_name`, `reply`, `status`, `contact_id`, `user_id`, `deleted_at`, `created_at`, `updated_at`) VALUES
@@ -3688,7 +3688,7 @@ INSERT INTO `samcms_reply_contacts` (`id`, `uuid`, `full_name`, `reply`, `status
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_review`
+-- Cấu trúc bảng cho bảng `samcms_review`
 --
 
 CREATE TABLE `samcms_review` (
@@ -3707,7 +3707,7 @@ CREATE TABLE `samcms_review` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_review`
+-- Đang đổ dữ liệu cho bảng `samcms_review`
 --
 
 INSERT INTO `samcms_review` (`id`, `uuid`, `name`, `phone`, `email`, `content`, `image`, `status`, `votes`, `product_id`, `created_at`, `updated_at`) VALUES
@@ -3721,7 +3721,7 @@ INSERT INTO `samcms_review` (`id`, `uuid`, `name`, `phone`, `email`, `content`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_roles`
+-- Cấu trúc bảng cho bảng `samcms_roles`
 --
 
 CREATE TABLE `samcms_roles` (
@@ -3735,7 +3735,7 @@ CREATE TABLE `samcms_roles` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_roles`
+-- Đang đổ dữ liệu cho bảng `samcms_roles`
 --
 
 INSERT INTO `samcms_roles` (`id`, `name`, `description`, `status`, `guard_name`, `created_at`, `updated_at`) VALUES
@@ -3744,7 +3744,7 @@ INSERT INTO `samcms_roles` (`id`, `name`, `description`, `status`, `guard_name`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_role_has_permissions`
+-- Cấu trúc bảng cho bảng `samcms_role_has_permissions`
 --
 
 CREATE TABLE `samcms_role_has_permissions` (
@@ -3753,7 +3753,7 @@ CREATE TABLE `samcms_role_has_permissions` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_role_has_permissions`
+-- Đang đổ dữ liệu cho bảng `samcms_role_has_permissions`
 --
 
 INSERT INTO `samcms_role_has_permissions` (`permission_id`, `role_id`) VALUES
@@ -3845,7 +3845,7 @@ INSERT INTO `samcms_role_has_permissions` (`permission_id`, `role_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_show_rooms`
+-- Cấu trúc bảng cho bảng `samcms_show_rooms`
 --
 
 CREATE TABLE `samcms_show_rooms` (
@@ -3870,7 +3870,7 @@ CREATE TABLE `samcms_show_rooms` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_show_rooms`
+-- Đang đổ dữ liệu cho bảng `samcms_show_rooms`
 --
 
 INSERT INTO `samcms_show_rooms` (`id`, `uuid`, `name`, `address`, `province_id`, `district_id`, `ward_id`, `phone`, `email`, `image`, `locale`, `description`, `script`, `status`, `user_id`, `deleted_at`, `created_at`, `updated_at`) VALUES
@@ -3888,7 +3888,7 @@ INSERT INTO `samcms_show_rooms` (`id`, `uuid`, `name`, `address`, `province_id`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_users`
+-- Cấu trúc bảng cho bảng `samcms_users`
 --
 
 CREATE TABLE `samcms_users` (
@@ -3914,18 +3914,17 @@ CREATE TABLE `samcms_users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_users`
+-- Đang đổ dữ liệu cho bảng `samcms_users`
 --
 
 INSERT INTO `samcms_users` (`id`, `uuid`, `email`, `email_verified_at`, `password`, `full_name`, `address`, `phone`, `avatar`, `status`, `level`, `token`, `api_token`, `provider`, `provider_id`, `deleted_at`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'c750b64e-3263-4bf1-971e-153e49c646c7', 'admin@quoctuan.info', NULL, '$2y$10$rV9ZamcC.PRv/NowdQPVOeMyWWkqiIyD2Z8Biz7t11B8zRLqgsGKG', 'Vũ Quốc Tuấn', NULL, '0933649647', NULL, 'on', 1, NULL, NULL, NULL, NULL, NULL, NULL, '2021-05-07 01:29:02', '2021-05-07 01:29:02'),
-(2, '6ffaa858-49ee-4ffd-9d48-9de3386594bc', 'support@quoctuan.info', NULL, '$2y$10$VINKUSOnyujJLV2t9.TMhO9XEpzrbl/o8bbuJMFrmmtdbPEbvEj.i', 'Trần Thị Kim Thanh', NULL, '0933649647', NULL, 'on', 1, NULL, NULL, NULL, NULL, NULL, NULL, '2021-05-07 01:29:02', '2021-05-07 01:29:02'),
+(1, 'c750b64e-3263-4bf1-971e-153e49c646c7', 'tranluan04555@gmai.com', NULL, '$2y$10$rV9ZamcC.PRv/NowdQPVOeMyWWkqiIyD2Z8Biz7t11B8zRLqgsGKG', 'Trần Thanh Luân', NULL, '0349394368', NULL, 'on', 1, NULL, NULL, NULL, NULL, NULL, NULL, '2021-05-07 01:29:02', '2021-05-07 01:29:02'),
 (3, '39f00f05-6fdb-4635-9395-2417d1c7dd7e', 'Luantran04555@gmail.com', NULL, '$2y$10$WTKr0VLNYAN32Xite9m91uqJPAOhZd8nJqkgyrcaLY1np1aYTGQCm', 'Trần Thanh Luân', 'Nguyễn Sĩ Sách', '0349394368', NULL, 'on', 1, NULL, NULL, NULL, NULL, NULL, NULL, '2021-05-14 02:16:25', '2021-05-14 02:38:31');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `samcms_wards`
+-- Cấu trúc bảng cho bảng `samcms_wards`
 --
 
 CREATE TABLE `samcms_wards` (
@@ -3941,7 +3940,7 @@ CREATE TABLE `samcms_wards` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `samcms_wards`
+-- Đang đổ dữ liệu cho bảng `samcms_wards`
 --
 
 INSERT INTO `samcms_wards` (`id`, `name`, `gso_id`, `status`, `featured`, `district_id`, `deleted_at`, `created_at`, `updated_at`) VALUES
@@ -14582,11 +14581,11 @@ INSERT INTO `samcms_wards` (`id`, `name`, `gso_id`, `status`, `featured`, `distr
 (10614, 'Xã Đất Mũi', '32248', 'on', 'off', 702, NULL, '2021-05-07 01:29:20', '2021-05-07 01:29:20');
 
 --
--- Indexes for dumped tables
+-- Chỉ mục cho các bảng đã đổ
 --
 
 --
--- Indexes for table `samcms_attributes`
+-- Chỉ mục cho bảng `samcms_attributes`
 --
 ALTER TABLE `samcms_attributes`
   ADD PRIMARY KEY (`id`),
@@ -14595,7 +14594,7 @@ ALTER TABLE `samcms_attributes`
   ADD KEY `samcms_attributes_position_parent_id_user_id_index` (`position`,`parent_id`,`user_id`);
 
 --
--- Indexes for table `samcms_attributes_translations`
+-- Chỉ mục cho bảng `samcms_attributes_translations`
 --
 ALTER TABLE `samcms_attributes_translations`
   ADD PRIMARY KEY (`id`),
@@ -14604,14 +14603,14 @@ ALTER TABLE `samcms_attributes_translations`
   ADD KEY `samcms_attributes_translations_name_locale_index` (`name`,`locale`);
 
 --
--- Indexes for table `samcms_bonus_product`
+-- Chỉ mục cho bảng `samcms_bonus_product`
 --
 ALTER TABLE `samcms_bonus_product`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `samcms_bonus_product_uuid_unique` (`uuid`);
 
 --
--- Indexes for table `samcms_categories`
+-- Chỉ mục cho bảng `samcms_categories`
 --
 ALTER TABLE `samcms_categories`
   ADD PRIMARY KEY (`id`),
@@ -14620,7 +14619,7 @@ ALTER TABLE `samcms_categories`
   ADD KEY `samcms_categories_position_parent_id_user_id_index` (`position`,`parent_id`,`user_id`);
 
 --
--- Indexes for table `samcms_categories_translations`
+-- Chỉ mục cho bảng `samcms_categories_translations`
 --
 ALTER TABLE `samcms_categories_translations`
   ADD PRIMARY KEY (`id`),
@@ -14629,14 +14628,14 @@ ALTER TABLE `samcms_categories_translations`
   ADD KEY `samcms_categories_translations_name_locale_slug_index` (`name`,`locale`,`slug`);
 
 --
--- Indexes for table `samcms_category_images`
+-- Chỉ mục cho bảng `samcms_category_images`
 --
 ALTER TABLE `samcms_category_images`
   ADD PRIMARY KEY (`id`),
   ADD KEY `samcms_category_images_category_id_foreign` (`category_id`);
 
 --
--- Indexes for table `samcms_category_news`
+-- Chỉ mục cho bảng `samcms_category_news`
 --
 ALTER TABLE `samcms_category_news`
   ADD PRIMARY KEY (`id`),
@@ -14644,7 +14643,7 @@ ALTER TABLE `samcms_category_news`
   ADD KEY `samcms_category_news_news_id_foreign` (`news_id`);
 
 --
--- Indexes for table `samcms_category_products`
+-- Chỉ mục cho bảng `samcms_category_products`
 --
 ALTER TABLE `samcms_category_products`
   ADD PRIMARY KEY (`id`),
@@ -14652,13 +14651,13 @@ ALTER TABLE `samcms_category_products`
   ADD KEY `samcms_category_products_product_id_foreign` (`product_id`);
 
 --
--- Indexes for table `samcms_configs`
+-- Chỉ mục cho bảng `samcms_configs`
 --
 ALTER TABLE `samcms_configs`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `samcms_contacts`
+-- Chỉ mục cho bảng `samcms_contacts`
 --
 ALTER TABLE `samcms_contacts`
   ADD PRIMARY KEY (`id`),
@@ -14666,7 +14665,7 @@ ALTER TABLE `samcms_contacts`
   ADD KEY `samcms_contacts_email_phone_index` (`email`,`phone`);
 
 --
--- Indexes for table `samcms_contents`
+-- Chỉ mục cho bảng `samcms_contents`
 --
 ALTER TABLE `samcms_contents`
   ADD PRIMARY KEY (`id`),
@@ -14675,7 +14674,7 @@ ALTER TABLE `samcms_contents`
   ADD KEY `samcms_contents_user_id_foreign` (`user_id`);
 
 --
--- Indexes for table `samcms_contents_translations`
+-- Chỉ mục cho bảng `samcms_contents_translations`
 --
 ALTER TABLE `samcms_contents_translations`
   ADD PRIMARY KEY (`id`),
@@ -14684,34 +14683,34 @@ ALTER TABLE `samcms_contents_translations`
   ADD KEY `samcms_contents_translations_locale_index` (`locale`);
 
 --
--- Indexes for table `samcms_coupons`
+-- Chỉ mục cho bảng `samcms_coupons`
 --
 ALTER TABLE `samcms_coupons`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `samcms_coupons_uuid_unique` (`uuid`);
 
 --
--- Indexes for table `samcms_districts`
+-- Chỉ mục cho bảng `samcms_districts`
 --
 ALTER TABLE `samcms_districts`
   ADD PRIMARY KEY (`id`),
   ADD KEY `samcms_districts_province_id_foreign` (`province_id`);
 
 --
--- Indexes for table `samcms_failed_jobs`
+-- Chỉ mục cho bảng `samcms_failed_jobs`
 --
 ALTER TABLE `samcms_failed_jobs`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `samcms_image360`
+-- Chỉ mục cho bảng `samcms_image360`
 --
 ALTER TABLE `samcms_image360`
   ADD PRIMARY KEY (`id`),
   ADD KEY `samcms_image360_product_id_foreign` (`product_id`);
 
 --
--- Indexes for table `samcms_images`
+-- Chỉ mục cho bảng `samcms_images`
 --
 ALTER TABLE `samcms_images`
   ADD PRIMARY KEY (`id`),
@@ -14721,7 +14720,7 @@ ALTER TABLE `samcms_images`
   ADD KEY `samcms_images_status_index` (`status`);
 
 --
--- Indexes for table `samcms_images_translations`
+-- Chỉ mục cho bảng `samcms_images_translations`
 --
 ALTER TABLE `samcms_images_translations`
   ADD PRIMARY KEY (`id`),
@@ -14730,7 +14729,7 @@ ALTER TABLE `samcms_images_translations`
   ADD KEY `samcms_images_translations_name_locale_index` (`name`,`locale`);
 
 --
--- Indexes for table `samcms_languages`
+-- Chỉ mục cho bảng `samcms_languages`
 --
 ALTER TABLE `samcms_languages`
   ADD PRIMARY KEY (`id`),
@@ -14739,41 +14738,41 @@ ALTER TABLE `samcms_languages`
   ADD KEY `samcms_languages_uuid_name_locale_flag_index` (`uuid`,`name`,`locale`,`flag`);
 
 --
--- Indexes for table `samcms_login_history`
+-- Chỉ mục cho bảng `samcms_login_history`
 --
 ALTER TABLE `samcms_login_history`
   ADD PRIMARY KEY (`id`),
   ADD KEY `samcms_login_history_user_uuid_foreign` (`user_uuid`);
 
 --
--- Indexes for table `samcms_log_activity`
+-- Chỉ mục cho bảng `samcms_log_activity`
 --
 ALTER TABLE `samcms_log_activity`
   ADD PRIMARY KEY (`id`),
   ADD KEY `samcms_log_activity_user_id_foreign` (`user_id`);
 
 --
--- Indexes for table `samcms_migrations`
+-- Chỉ mục cho bảng `samcms_migrations`
 --
 ALTER TABLE `samcms_migrations`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `samcms_model_has_permissions`
+-- Chỉ mục cho bảng `samcms_model_has_permissions`
 --
 ALTER TABLE `samcms_model_has_permissions`
   ADD PRIMARY KEY (`permission_id`,`model_id`,`model_type`),
   ADD KEY `model_has_permissions_model_id_model_type_index` (`model_id`,`model_type`);
 
 --
--- Indexes for table `samcms_model_has_roles`
+-- Chỉ mục cho bảng `samcms_model_has_roles`
 --
 ALTER TABLE `samcms_model_has_roles`
   ADD PRIMARY KEY (`role_id`,`model_id`,`model_type`),
   ADD KEY `model_has_roles_model_id_model_type_index` (`model_id`,`model_type`);
 
 --
--- Indexes for table `samcms_news`
+-- Chỉ mục cho bảng `samcms_news`
 --
 ALTER TABLE `samcms_news`
   ADD PRIMARY KEY (`id`),
@@ -14782,14 +14781,14 @@ ALTER TABLE `samcms_news`
   ADD KEY `samcms_news_status_featured_template_index` (`status`,`featured`,`template`);
 
 --
--- Indexes for table `samcms_news_image`
+-- Chỉ mục cho bảng `samcms_news_image`
 --
 ALTER TABLE `samcms_news_image`
   ADD PRIMARY KEY (`id`),
   ADD KEY `samcms_news_image_news_id_foreign` (`news_id`);
 
 --
--- Indexes for table `samcms_news_translations`
+-- Chỉ mục cho bảng `samcms_news_translations`
 --
 ALTER TABLE `samcms_news_translations`
   ADD PRIMARY KEY (`id`),
@@ -14798,41 +14797,41 @@ ALTER TABLE `samcms_news_translations`
   ADD KEY `samcms_news_translations_title_locale_slug_index` (`title`,`locale`,`slug`);
 
 --
--- Indexes for table `samcms_oauth_access_tokens`
+-- Chỉ mục cho bảng `samcms_oauth_access_tokens`
 --
 ALTER TABLE `samcms_oauth_access_tokens`
   ADD PRIMARY KEY (`id`),
   ADD KEY `samcms_oauth_access_tokens_user_id_index` (`user_id`);
 
 --
--- Indexes for table `samcms_oauth_auth_codes`
+-- Chỉ mục cho bảng `samcms_oauth_auth_codes`
 --
 ALTER TABLE `samcms_oauth_auth_codes`
   ADD PRIMARY KEY (`id`),
   ADD KEY `samcms_oauth_auth_codes_user_id_index` (`user_id`);
 
 --
--- Indexes for table `samcms_oauth_clients`
+-- Chỉ mục cho bảng `samcms_oauth_clients`
 --
 ALTER TABLE `samcms_oauth_clients`
   ADD PRIMARY KEY (`id`),
   ADD KEY `samcms_oauth_clients_user_id_index` (`user_id`);
 
 --
--- Indexes for table `samcms_oauth_personal_access_clients`
+-- Chỉ mục cho bảng `samcms_oauth_personal_access_clients`
 --
 ALTER TABLE `samcms_oauth_personal_access_clients`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `samcms_oauth_refresh_tokens`
+-- Chỉ mục cho bảng `samcms_oauth_refresh_tokens`
 --
 ALTER TABLE `samcms_oauth_refresh_tokens`
   ADD PRIMARY KEY (`id`),
   ADD KEY `samcms_oauth_refresh_tokens_access_token_id_index` (`access_token_id`);
 
 --
--- Indexes for table `samcms_pages`
+-- Chỉ mục cho bảng `samcms_pages`
 --
 ALTER TABLE `samcms_pages`
   ADD PRIMARY KEY (`id`),
@@ -14840,7 +14839,7 @@ ALTER TABLE `samcms_pages`
   ADD KEY `samcms_pages_user_id_foreign` (`user_id`);
 
 --
--- Indexes for table `samcms_pages_translations`
+-- Chỉ mục cho bảng `samcms_pages_translations`
 --
 ALTER TABLE `samcms_pages_translations`
   ADD PRIMARY KEY (`id`),
@@ -14849,14 +14848,14 @@ ALTER TABLE `samcms_pages_translations`
   ADD KEY `samcms_pages_translations_name_locale_index` (`name`,`locale`);
 
 --
--- Indexes for table `samcms_password_resets`
+-- Chỉ mục cho bảng `samcms_password_resets`
 --
 ALTER TABLE `samcms_password_resets`
   ADD PRIMARY KEY (`id`),
   ADD KEY `samcms_password_resets_email_index` (`email`);
 
 --
--- Indexes for table `samcms_paydetails`
+-- Chỉ mục cho bảng `samcms_paydetails`
 --
 ALTER TABLE `samcms_paydetails`
   ADD PRIMARY KEY (`id`),
@@ -14865,7 +14864,7 @@ ALTER TABLE `samcms_paydetails`
   ADD KEY `samcms_paydetails_product_id_foreign` (`product_id`);
 
 --
--- Indexes for table `samcms_payorders`
+-- Chỉ mục cho bảng `samcms_payorders`
 --
 ALTER TABLE `samcms_payorders`
   ADD PRIMARY KEY (`id`),
@@ -14873,13 +14872,13 @@ ALTER TABLE `samcms_payorders`
   ADD KEY `samcms_payorders_user_id_foreign` (`user_id`);
 
 --
--- Indexes for table `samcms_permissions`
+-- Chỉ mục cho bảng `samcms_permissions`
 --
 ALTER TABLE `samcms_permissions`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `samcms_positions`
+-- Chỉ mục cho bảng `samcms_positions`
 --
 ALTER TABLE `samcms_positions`
   ADD PRIMARY KEY (`id`),
@@ -14888,7 +14887,7 @@ ALTER TABLE `samcms_positions`
   ADD KEY `samcms_positions_name_index` (`name`);
 
 --
--- Indexes for table `samcms_producers`
+-- Chỉ mục cho bảng `samcms_producers`
 --
 ALTER TABLE `samcms_producers`
   ADD PRIMARY KEY (`id`),
@@ -14896,7 +14895,7 @@ ALTER TABLE `samcms_producers`
   ADD KEY `samcms_producers_user_id_foreign` (`user_id`);
 
 --
--- Indexes for table `samcms_producers_translations`
+-- Chỉ mục cho bảng `samcms_producers_translations`
 --
 ALTER TABLE `samcms_producers_translations`
   ADD PRIMARY KEY (`id`),
@@ -14905,14 +14904,14 @@ ALTER TABLE `samcms_producers_translations`
   ADD KEY `samcms_producers_translations_name_locale_index` (`name`,`locale`);
 
 --
--- Indexes for table `samcms_producer_images`
+-- Chỉ mục cho bảng `samcms_producer_images`
 --
 ALTER TABLE `samcms_producer_images`
   ADD PRIMARY KEY (`id`),
   ADD KEY `samcms_producer_images_producer_id_foreign` (`producer_id`);
 
 --
--- Indexes for table `samcms_products`
+-- Chỉ mục cho bảng `samcms_products`
 --
 ALTER TABLE `samcms_products`
   ADD PRIMARY KEY (`id`),
@@ -14922,7 +14921,7 @@ ALTER TABLE `samcms_products`
   ADD KEY `samcms_products_status_featured_template_index` (`status`,`featured`,`template`);
 
 --
--- Indexes for table `samcms_products_translations`
+-- Chỉ mục cho bảng `samcms_products_translations`
 --
 ALTER TABLE `samcms_products_translations`
   ADD PRIMARY KEY (`id`),
@@ -14931,41 +14930,41 @@ ALTER TABLE `samcms_products_translations`
   ADD KEY `samcms_products_translations_name_locale_slug_index` (`name`,`locale`,`slug`);
 
 --
--- Indexes for table `samcms_product_attributes`
+-- Chỉ mục cho bảng `samcms_product_attributes`
 --
 ALTER TABLE `samcms_product_attributes`
   ADD PRIMARY KEY (`id`),
   ADD KEY `samcms_product_attributes_product_id_foreign` (`product_id`);
 
 --
--- Indexes for table `samcms_product_images`
+-- Chỉ mục cho bảng `samcms_product_images`
 --
 ALTER TABLE `samcms_product_images`
   ADD PRIMARY KEY (`id`),
   ADD KEY `samcms_product_images_product_id_foreign` (`product_id`);
 
 --
--- Indexes for table `samcms_promotions`
+-- Chỉ mục cho bảng `samcms_promotions`
 --
 ALTER TABLE `samcms_promotions`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `samcms_promotions_uuid_unique` (`uuid`);
 
 --
--- Indexes for table `samcms_provinces`
+-- Chỉ mục cho bảng `samcms_provinces`
 --
 ALTER TABLE `samcms_provinces`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `samcms_question_product`
+-- Chỉ mục cho bảng `samcms_question_product`
 --
 ALTER TABLE `samcms_question_product`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `samcms_question_product_uuid_unique` (`uuid`);
 
 --
--- Indexes for table `samcms_reply_contacts`
+-- Chỉ mục cho bảng `samcms_reply_contacts`
 --
 ALTER TABLE `samcms_reply_contacts`
   ADD PRIMARY KEY (`id`),
@@ -14974,27 +14973,27 @@ ALTER TABLE `samcms_reply_contacts`
   ADD KEY `samcms_reply_contacts_user_id_foreign` (`user_id`);
 
 --
--- Indexes for table `samcms_review`
+-- Chỉ mục cho bảng `samcms_review`
 --
 ALTER TABLE `samcms_review`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `samcms_review_uuid_unique` (`uuid`);
 
 --
--- Indexes for table `samcms_roles`
+-- Chỉ mục cho bảng `samcms_roles`
 --
 ALTER TABLE `samcms_roles`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `samcms_role_has_permissions`
+-- Chỉ mục cho bảng `samcms_role_has_permissions`
 --
 ALTER TABLE `samcms_role_has_permissions`
   ADD PRIMARY KEY (`permission_id`,`role_id`),
   ADD KEY `samcms_role_has_permissions_role_id_foreign` (`role_id`);
 
 --
--- Indexes for table `samcms_show_rooms`
+-- Chỉ mục cho bảng `samcms_show_rooms`
 --
 ALTER TABLE `samcms_show_rooms`
   ADD PRIMARY KEY (`id`),
@@ -15002,7 +15001,7 @@ ALTER TABLE `samcms_show_rooms`
   ADD KEY `samcms_show_rooms_user_id_foreign` (`user_id`);
 
 --
--- Indexes for table `samcms_users`
+-- Chỉ mục cho bảng `samcms_users`
 --
 ALTER TABLE `samcms_users`
   ADD PRIMARY KEY (`id`),
@@ -15012,508 +15011,508 @@ ALTER TABLE `samcms_users`
   ADD KEY `samcms_users_email_index` (`email`);
 
 --
--- Indexes for table `samcms_wards`
+-- Chỉ mục cho bảng `samcms_wards`
 --
 ALTER TABLE `samcms_wards`
   ADD PRIMARY KEY (`id`),
   ADD KEY `samcms_wards_district_id_foreign` (`district_id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT cho các bảng đã đổ
 --
 
 --
--- AUTO_INCREMENT for table `samcms_attributes`
+-- AUTO_INCREMENT cho bảng `samcms_attributes`
 --
 ALTER TABLE `samcms_attributes`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
--- AUTO_INCREMENT for table `samcms_attributes_translations`
+-- AUTO_INCREMENT cho bảng `samcms_attributes_translations`
 --
 ALTER TABLE `samcms_attributes_translations`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
--- AUTO_INCREMENT for table `samcms_bonus_product`
+-- AUTO_INCREMENT cho bảng `samcms_bonus_product`
 --
 ALTER TABLE `samcms_bonus_product`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=244;
 
 --
--- AUTO_INCREMENT for table `samcms_categories`
+-- AUTO_INCREMENT cho bảng `samcms_categories`
 --
 ALTER TABLE `samcms_categories`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
--- AUTO_INCREMENT for table `samcms_categories_translations`
+-- AUTO_INCREMENT cho bảng `samcms_categories_translations`
 --
 ALTER TABLE `samcms_categories_translations`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
--- AUTO_INCREMENT for table `samcms_category_images`
+-- AUTO_INCREMENT cho bảng `samcms_category_images`
 --
 ALTER TABLE `samcms_category_images`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `samcms_category_news`
+-- AUTO_INCREMENT cho bảng `samcms_category_news`
 --
 ALTER TABLE `samcms_category_news`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
--- AUTO_INCREMENT for table `samcms_category_products`
+-- AUTO_INCREMENT cho bảng `samcms_category_products`
 --
 ALTER TABLE `samcms_category_products`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=128;
 
 --
--- AUTO_INCREMENT for table `samcms_configs`
+-- AUTO_INCREMENT cho bảng `samcms_configs`
 --
 ALTER TABLE `samcms_configs`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
--- AUTO_INCREMENT for table `samcms_contacts`
+-- AUTO_INCREMENT cho bảng `samcms_contacts`
 --
 ALTER TABLE `samcms_contacts`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table `samcms_contents`
+-- AUTO_INCREMENT cho bảng `samcms_contents`
 --
 ALTER TABLE `samcms_contents`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=95;
 
 --
--- AUTO_INCREMENT for table `samcms_contents_translations`
+-- AUTO_INCREMENT cho bảng `samcms_contents_translations`
 --
 ALTER TABLE `samcms_contents_translations`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=95;
 
 --
--- AUTO_INCREMENT for table `samcms_coupons`
+-- AUTO_INCREMENT cho bảng `samcms_coupons`
 --
 ALTER TABLE `samcms_coupons`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `samcms_districts`
+-- AUTO_INCREMENT cho bảng `samcms_districts`
 --
 ALTER TABLE `samcms_districts`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=703;
 
 --
--- AUTO_INCREMENT for table `samcms_failed_jobs`
+-- AUTO_INCREMENT cho bảng `samcms_failed_jobs`
 --
 ALTER TABLE `samcms_failed_jobs`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `samcms_image360`
+-- AUTO_INCREMENT cho bảng `samcms_image360`
 --
 ALTER TABLE `samcms_image360`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
 
 --
--- AUTO_INCREMENT for table `samcms_images`
+-- AUTO_INCREMENT cho bảng `samcms_images`
 --
 ALTER TABLE `samcms_images`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT for table `samcms_images_translations`
+-- AUTO_INCREMENT cho bảng `samcms_images_translations`
 --
 ALTER TABLE `samcms_images_translations`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT for table `samcms_languages`
+-- AUTO_INCREMENT cho bảng `samcms_languages`
 --
 ALTER TABLE `samcms_languages`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `samcms_login_history`
+-- AUTO_INCREMENT cho bảng `samcms_login_history`
 --
 ALTER TABLE `samcms_login_history`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
 
 --
--- AUTO_INCREMENT for table `samcms_log_activity`
+-- AUTO_INCREMENT cho bảng `samcms_log_activity`
 --
 ALTER TABLE `samcms_log_activity`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=532;
 
 --
--- AUTO_INCREMENT for table `samcms_migrations`
+-- AUTO_INCREMENT cho bảng `samcms_migrations`
 --
 ALTER TABLE `samcms_migrations`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
 
 --
--- AUTO_INCREMENT for table `samcms_news`
+-- AUTO_INCREMENT cho bảng `samcms_news`
 --
 ALTER TABLE `samcms_news`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
--- AUTO_INCREMENT for table `samcms_news_image`
+-- AUTO_INCREMENT cho bảng `samcms_news_image`
 --
 ALTER TABLE `samcms_news_image`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `samcms_news_translations`
+-- AUTO_INCREMENT cho bảng `samcms_news_translations`
 --
 ALTER TABLE `samcms_news_translations`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
--- AUTO_INCREMENT for table `samcms_oauth_clients`
+-- AUTO_INCREMENT cho bảng `samcms_oauth_clients`
 --
 ALTER TABLE `samcms_oauth_clients`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `samcms_oauth_personal_access_clients`
+-- AUTO_INCREMENT cho bảng `samcms_oauth_personal_access_clients`
 --
 ALTER TABLE `samcms_oauth_personal_access_clients`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `samcms_pages`
+-- AUTO_INCREMENT cho bảng `samcms_pages`
 --
 ALTER TABLE `samcms_pages`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
--- AUTO_INCREMENT for table `samcms_pages_translations`
+-- AUTO_INCREMENT cho bảng `samcms_pages_translations`
 --
 ALTER TABLE `samcms_pages_translations`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
--- AUTO_INCREMENT for table `samcms_password_resets`
+-- AUTO_INCREMENT cho bảng `samcms_password_resets`
 --
 ALTER TABLE `samcms_password_resets`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `samcms_paydetails`
+-- AUTO_INCREMENT cho bảng `samcms_paydetails`
 --
 ALTER TABLE `samcms_paydetails`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table `samcms_payorders`
+-- AUTO_INCREMENT cho bảng `samcms_payorders`
 --
 ALTER TABLE `samcms_payorders`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `samcms_permissions`
+-- AUTO_INCREMENT cho bảng `samcms_permissions`
 --
 ALTER TABLE `samcms_permissions`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=96;
 
 --
--- AUTO_INCREMENT for table `samcms_positions`
+-- AUTO_INCREMENT cho bảng `samcms_positions`
 --
 ALTER TABLE `samcms_positions`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table `samcms_producers`
+-- AUTO_INCREMENT cho bảng `samcms_producers`
 --
 ALTER TABLE `samcms_producers`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
--- AUTO_INCREMENT for table `samcms_producers_translations`
+-- AUTO_INCREMENT cho bảng `samcms_producers_translations`
 --
 ALTER TABLE `samcms_producers_translations`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
--- AUTO_INCREMENT for table `samcms_producer_images`
+-- AUTO_INCREMENT cho bảng `samcms_producer_images`
 --
 ALTER TABLE `samcms_producer_images`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `samcms_products`
+-- AUTO_INCREMENT cho bảng `samcms_products`
 --
 ALTER TABLE `samcms_products`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
--- AUTO_INCREMENT for table `samcms_products_translations`
+-- AUTO_INCREMENT cho bảng `samcms_products_translations`
 --
 ALTER TABLE `samcms_products_translations`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
--- AUTO_INCREMENT for table `samcms_product_attributes`
+-- AUTO_INCREMENT cho bảng `samcms_product_attributes`
 --
 ALTER TABLE `samcms_product_attributes`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=534;
 
 --
--- AUTO_INCREMENT for table `samcms_product_images`
+-- AUTO_INCREMENT cho bảng `samcms_product_images`
 --
 ALTER TABLE `samcms_product_images`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=284;
 
 --
--- AUTO_INCREMENT for table `samcms_promotions`
+-- AUTO_INCREMENT cho bảng `samcms_promotions`
 --
 ALTER TABLE `samcms_promotions`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
--- AUTO_INCREMENT for table `samcms_provinces`
+-- AUTO_INCREMENT cho bảng `samcms_provinces`
 --
 ALTER TABLE `samcms_provinces`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=64;
 
 --
--- AUTO_INCREMENT for table `samcms_question_product`
+-- AUTO_INCREMENT cho bảng `samcms_question_product`
 --
 ALTER TABLE `samcms_question_product`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `samcms_reply_contacts`
+-- AUTO_INCREMENT cho bảng `samcms_reply_contacts`
 --
 ALTER TABLE `samcms_reply_contacts`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT for table `samcms_review`
+-- AUTO_INCREMENT cho bảng `samcms_review`
 --
 ALTER TABLE `samcms_review`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table `samcms_roles`
+-- AUTO_INCREMENT cho bảng `samcms_roles`
 --
 ALTER TABLE `samcms_roles`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `samcms_show_rooms`
+-- AUTO_INCREMENT cho bảng `samcms_show_rooms`
 --
 ALTER TABLE `samcms_show_rooms`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT for table `samcms_users`
+-- AUTO_INCREMENT cho bảng `samcms_users`
 --
 ALTER TABLE `samcms_users`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `samcms_wards`
+-- AUTO_INCREMENT cho bảng `samcms_wards`
 --
 ALTER TABLE `samcms_wards`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10615;
 
 --
--- Constraints for dumped tables
+-- Các ràng buộc cho các bảng đã đổ
 --
 
 --
--- Constraints for table `samcms_attributes`
+-- Các ràng buộc cho bảng `samcms_attributes`
 --
 ALTER TABLE `samcms_attributes`
   ADD CONSTRAINT `samcms_attributes_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `samcms_users` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `samcms_attributes_translations`
+-- Các ràng buộc cho bảng `samcms_attributes_translations`
 --
 ALTER TABLE `samcms_attributes_translations`
   ADD CONSTRAINT `samcms_attributes_translations_attribute_id_foreign` FOREIGN KEY (`attribute_id`) REFERENCES `samcms_attributes` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `samcms_categories`
+-- Các ràng buộc cho bảng `samcms_categories`
 --
 ALTER TABLE `samcms_categories`
   ADD CONSTRAINT `samcms_categories_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `samcms_users` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `samcms_categories_translations`
+-- Các ràng buộc cho bảng `samcms_categories_translations`
 --
 ALTER TABLE `samcms_categories_translations`
   ADD CONSTRAINT `samcms_categories_translations_category_id_foreign` FOREIGN KEY (`category_id`) REFERENCES `samcms_categories` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `samcms_category_images`
+-- Các ràng buộc cho bảng `samcms_category_images`
 --
 ALTER TABLE `samcms_category_images`
   ADD CONSTRAINT `samcms_category_images_category_id_foreign` FOREIGN KEY (`category_id`) REFERENCES `samcms_categories` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `samcms_category_news`
+-- Các ràng buộc cho bảng `samcms_category_news`
 --
 ALTER TABLE `samcms_category_news`
   ADD CONSTRAINT `samcms_category_news_category_id_foreign` FOREIGN KEY (`category_id`) REFERENCES `samcms_categories` (`id`) ON DELETE CASCADE,
   ADD CONSTRAINT `samcms_category_news_news_id_foreign` FOREIGN KEY (`news_id`) REFERENCES `samcms_news` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `samcms_category_products`
+-- Các ràng buộc cho bảng `samcms_category_products`
 --
 ALTER TABLE `samcms_category_products`
   ADD CONSTRAINT `samcms_category_products_category_id_foreign` FOREIGN KEY (`category_id`) REFERENCES `samcms_categories` (`id`) ON DELETE CASCADE,
   ADD CONSTRAINT `samcms_category_products_product_id_foreign` FOREIGN KEY (`product_id`) REFERENCES `samcms_products` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `samcms_contents`
+-- Các ràng buộc cho bảng `samcms_contents`
 --
 ALTER TABLE `samcms_contents`
   ADD CONSTRAINT `samcms_contents_page_id_foreign` FOREIGN KEY (`page_id`) REFERENCES `samcms_pages` (`id`) ON DELETE CASCADE,
   ADD CONSTRAINT `samcms_contents_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `samcms_users` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `samcms_contents_translations`
+-- Các ràng buộc cho bảng `samcms_contents_translations`
 --
 ALTER TABLE `samcms_contents_translations`
   ADD CONSTRAINT `samcms_contents_translations_content_id_foreign` FOREIGN KEY (`content_id`) REFERENCES `samcms_contents` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `samcms_districts`
+-- Các ràng buộc cho bảng `samcms_districts`
 --
 ALTER TABLE `samcms_districts`
   ADD CONSTRAINT `samcms_districts_province_id_foreign` FOREIGN KEY (`province_id`) REFERENCES `samcms_provinces` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `samcms_image360`
+-- Các ràng buộc cho bảng `samcms_image360`
 --
 ALTER TABLE `samcms_image360`
   ADD CONSTRAINT `samcms_image360_product_id_foreign` FOREIGN KEY (`product_id`) REFERENCES `samcms_products` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `samcms_images`
+-- Các ràng buộc cho bảng `samcms_images`
 --
 ALTER TABLE `samcms_images`
   ADD CONSTRAINT `samcms_images_position_id_foreign` FOREIGN KEY (`position_id`) REFERENCES `samcms_positions` (`id`) ON DELETE CASCADE,
   ADD CONSTRAINT `samcms_images_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `samcms_users` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `samcms_images_translations`
+-- Các ràng buộc cho bảng `samcms_images_translations`
 --
 ALTER TABLE `samcms_images_translations`
   ADD CONSTRAINT `samcms_images_translations_image_id_foreign` FOREIGN KEY (`image_id`) REFERENCES `samcms_images` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `samcms_languages`
+-- Các ràng buộc cho bảng `samcms_languages`
 --
 ALTER TABLE `samcms_languages`
   ADD CONSTRAINT `samcms_languages_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `samcms_users` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `samcms_login_history`
+-- Các ràng buộc cho bảng `samcms_login_history`
 --
 ALTER TABLE `samcms_login_history`
   ADD CONSTRAINT `samcms_login_history_user_uuid_foreign` FOREIGN KEY (`user_uuid`) REFERENCES `samcms_users` (`uuid`) ON DELETE CASCADE;
 
 --
--- Constraints for table `samcms_log_activity`
+-- Các ràng buộc cho bảng `samcms_log_activity`
 --
 ALTER TABLE `samcms_log_activity`
   ADD CONSTRAINT `samcms_log_activity_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `samcms_users` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `samcms_model_has_permissions`
+-- Các ràng buộc cho bảng `samcms_model_has_permissions`
 --
 ALTER TABLE `samcms_model_has_permissions`
   ADD CONSTRAINT `samcms_model_has_permissions_permission_id_foreign` FOREIGN KEY (`permission_id`) REFERENCES `samcms_permissions` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `samcms_model_has_roles`
+-- Các ràng buộc cho bảng `samcms_model_has_roles`
 --
 ALTER TABLE `samcms_model_has_roles`
   ADD CONSTRAINT `samcms_model_has_roles_role_id_foreign` FOREIGN KEY (`role_id`) REFERENCES `samcms_roles` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `samcms_news`
+-- Các ràng buộc cho bảng `samcms_news`
 --
 ALTER TABLE `samcms_news`
   ADD CONSTRAINT `samcms_news_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `samcms_users` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `samcms_news_image`
+-- Các ràng buộc cho bảng `samcms_news_image`
 --
 ALTER TABLE `samcms_news_image`
   ADD CONSTRAINT `samcms_news_image_news_id_foreign` FOREIGN KEY (`news_id`) REFERENCES `samcms_news` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `samcms_news_translations`
+-- Các ràng buộc cho bảng `samcms_news_translations`
 --
 ALTER TABLE `samcms_news_translations`
   ADD CONSTRAINT `samcms_news_translations_news_id_foreign` FOREIGN KEY (`news_id`) REFERENCES `samcms_news` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `samcms_pages`
+-- Các ràng buộc cho bảng `samcms_pages`
 --
 ALTER TABLE `samcms_pages`
   ADD CONSTRAINT `samcms_pages_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `samcms_users` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `samcms_pages_translations`
+-- Các ràng buộc cho bảng `samcms_pages_translations`
 --
 ALTER TABLE `samcms_pages_translations`
   ADD CONSTRAINT `samcms_pages_translations_page_id_foreign` FOREIGN KEY (`page_id`) REFERENCES `samcms_pages` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `samcms_paydetails`
+-- Các ràng buộc cho bảng `samcms_paydetails`
 --
 ALTER TABLE `samcms_paydetails`
   ADD CONSTRAINT `samcms_paydetails_payorders_id_foreign` FOREIGN KEY (`payorders_id`) REFERENCES `samcms_payorders` (`id`) ON DELETE CASCADE,
   ADD CONSTRAINT `samcms_paydetails_product_id_foreign` FOREIGN KEY (`product_id`) REFERENCES `samcms_products` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `samcms_payorders`
+-- Các ràng buộc cho bảng `samcms_payorders`
 --
 ALTER TABLE `samcms_payorders`
   ADD CONSTRAINT `samcms_payorders_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `samcms_users` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `samcms_positions`
+-- Các ràng buộc cho bảng `samcms_positions`
 --
 ALTER TABLE `samcms_positions`
   ADD CONSTRAINT `samcms_positions_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `samcms_users` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `samcms_producers`
+-- Các ràng buộc cho bảng `samcms_producers`
 --
 ALTER TABLE `samcms_producers`
   ADD CONSTRAINT `samcms_producers_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `samcms_users` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `samcms_producers_translations`
+-- Các ràng buộc cho bảng `samcms_producers_translations`
 --
 ALTER TABLE `samcms_producers_translations`
   ADD CONSTRAINT `samcms_producers_translations_producer_id_foreign` FOREIGN KEY (`producer_id`) REFERENCES `samcms_producers` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `samcms_producer_images`
+-- Các ràng buộc cho bảng `samcms_producer_images`
 --
 ALTER TABLE `samcms_producer_images`
   ADD CONSTRAINT `samcms_producer_images_producer_id_foreign` FOREIGN KEY (`producer_id`) REFERENCES `samcms_producers` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `samcms_products`
+-- Các ràng buộc cho bảng `samcms_products`
 --
 ALTER TABLE `samcms_products`
   ADD CONSTRAINT `samcms_products_producer_id_foreign` FOREIGN KEY (`producer_id`) REFERENCES `samcms_producers` (`id`) ON DELETE CASCADE,
   ADD CONSTRAINT `samcms_products_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `samcms_users` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `samcms_products_translations`
+-- Các ràng buộc cho bảng `samcms_products_translations`
 --
 ALTER TABLE `samcms_products_translations`
   ADD CONSTRAINT `samcms_products_translations_product_id_foreign` FOREIGN KEY (`product_id`) REFERENCES `samcms_products` (`id`) ON DELETE CASCADE;

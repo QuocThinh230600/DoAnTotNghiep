@@ -16,10 +16,10 @@ class UserSeeder extends Seeder
             [
                 [
                     'uuid'       => (string)Str::uuid(),
-                    'email'      => 'admin@quoctuan.info',
+                    'email'      => 'luantran04555@gmail.com',
                     'password'   => Hash::make('password'),
-                    'full_name'  => 'Vũ Quốc Tuấn',
-                    'phone'      => '0933649647',
+                    'full_name'  => 'Trần Thanh Luân',
+                    'phone'      => '0349394368',
                     'status'     => 'on',
                     'level'      => 1,
                     'created_at' => new \DateTime(),
@@ -27,10 +27,10 @@ class UserSeeder extends Seeder
                 ],
                 [
                     'uuid'       => (string)Str::uuid(),
-                    'email'      => 'support@quoctuan.info',
+                    'email'      => 'support@tranluan.com',
                     'password'   => Hash::make('password'),
-                    'full_name'  => 'Trần Thị Kim Thanh',
-                    'phone'      => '0933649647',
+                    'full_name'  => 'Luân Trần',
+                    'phone'      => '0349394368',
                     'status'     => 'on',
                     'level'      => 1,
                     'created_at' => new \DateTime(),

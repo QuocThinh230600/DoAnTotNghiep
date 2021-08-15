@@ -1,11 +1,11 @@
 {
-    "name": "quoctuan/sam-cms",
+    "name": "tranluan/sam-cms",
     "type": "project",
     "authors": [
         {
-            "name": "Vũ Quốc Tuấn",
-            "email": "contact.quoctuan@gmail.com",
-            "homepage": "https://quoctuan.info",
+            "name": "Trần Thanh Luân",
+            "email": "luantran04555@gmail.com",
+            "homepage": "#",
             "role": "Developer"
         }
     ],

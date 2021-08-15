@@ -136,15 +136,15 @@ In order to ensure that the Laravel community is welcoming to all, please review
 
 ## Security Vulnerabilities
 
-If you discover a security vulnerability within Sam CMS, please send an e-mail to Quốc Tuấn via [contact.quoctuan@gmail.com](mailto:contact.quoctuan@gmail.com). All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within Sam CMS, please send an e-mail to Luân Trần via [luantran04555@gmail.com](mailto:luantran04555@gmail.com). All security vulnerabilities will be promptly addressed.
 
 ## Authors
 
-- Name: Vũ Quốc Tuấn 
-- Email: contact.quoctuan@gmail.com
-- Phone: 0933 649 647
-- Website: quoctuan.info
-- Skype: quoctuan.it64
+- Name: Trần Thanh Luân
+- Email: luantran04555@gmail.com
+- Phone: 0349394368
+- Website: Chưa có
+- Zalo: 0349394368
 
 ## License
 
